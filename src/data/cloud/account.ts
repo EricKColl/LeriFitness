@@ -1,12 +1,13 @@
 /**
- * Cuenta opcional: inicio de sesión sin contraseña (código de un solo uso por email),
- * sincronización con Supabase y borrado de la cuenta. Todo se carga de forma perezosa.
+ * Cuenta opcional: inicio de sesión sin contraseña (enlace por email; también acepta el código
+ * de un solo uso si la plantilla del correo lo incluye), sincronización con Supabase y borrado
+ * de la cuenta. Todo se carga de forma perezosa.
  */
 import { useSyncExternalStore } from 'react'
 import type { Session } from '@supabase/supabase-js'
 
 import { recordConsent } from '../profile'
-import { cloudConfigured, getClient } from './client'
+import { authParamsIn, cloudConfigured, getClient } from './client'
 import { resetSyncState, sync, type RemoteRow, type RemoteStore } from './sync'
 
 export type AccountStatus = 'disabled' | 'loading' | 'signedOut' | 'signedIn'
@@ -59,6 +60,40 @@ export async function sendCode(email: string) {
     options: { shouldCreateUser: true, emailRedirectTo: `${location.origin}/perfil/cuenta` },
   })
   if (error) throw error
+}
+
+export type LinkResult = 'none' | 'signedIn' | 'error'
+let linkResult: LinkResult = 'none'
+
+/** Resultado del último enlace de inicio de sesión (se consume una vez). */
+export function takeLinkResult() {
+  const result = linkResult
+  linkResult = 'none'
+  return result
+}
+
+/**
+ * Al abrir el enlace del email, la sesión llega en la URL. Se recoge antes de montar la app (el
+ * enrutador cambiaría la URL) y se sincroniza para traer el perfil si este dispositivo es nuevo.
+ */
+export async function completeSignInFromUrl() {
+  if (!cloudConfigured() || !authParamsIn(location.href)) return
+  const failed = /error_description=/.test(location.hash)
+  try {
+    const client = await getClient()
+    const { data } = await client.auth.getSession()
+    history.replaceState(null, '', location.pathname + location.search)
+    if (!data.session || failed) {
+      linkResult = 'error'
+      return
+    }
+    linkResult = 'signedIn'
+    publish(data.session)
+    await recordConsent('cloud', true)
+    await Promise.race([syncNow(), new Promise((resolve) => setTimeout(resolve, 8000))])
+  } catch {
+    linkResult = 'error'
+  }
 }
 
 export async function verifyCode(email: string, token: string) {

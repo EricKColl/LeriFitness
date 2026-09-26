@@ -44,12 +44,6 @@ export const router = createBrowserRouter([
                 }),
               },
               {
-                path: '/perfil/cuenta',
-                lazy: async () => ({
-                  Component: (await import('@/features/profile/AccountPage')).AccountPage,
-                }),
-              },
-              {
                 path: '/forja-plus',
                 lazy: async () => ({
                   Component: (await import('@/features/premium/PremiumPage')).PremiumPage,
@@ -114,6 +108,14 @@ export const router = createBrowserRouter([
             }),
           },
         ],
+      },
+      {
+        // Fuera de la guarda de perfil: en un dispositivo nuevo se puede entrar y recuperar los
+        // datos de la nube antes del onboarding.
+        path: '/perfil/cuenta',
+        lazy: async () => ({
+          Component: (await import('@/features/profile/AccountPage')).AccountPage,
+        }),
       },
       {
         path: '/legal/:doc',

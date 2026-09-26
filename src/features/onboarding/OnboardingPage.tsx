@@ -7,6 +7,7 @@ import { toast } from 'sonner'
 
 import { SEXES, type Weekday } from '@/domain'
 import { importAll } from '@/data/backup'
+import { cloudConfigured } from '@/data/cloud/client'
 import { loadCatalog } from '@/data/catalog'
 import { createFirstPlan } from '@/data/plans'
 import { recordConsent, saveProfile } from '@/data/profile'
@@ -463,6 +464,11 @@ function Welcome({ onStart }: { onStart: () => void }) {
         <Button variant="ghost" className="w-full" onClick={() => input.current?.click()}>
           {t('welcome.import')}
         </Button>
+        {cloudConfigured() && (
+          <Button variant="ghost" className="w-full" asChild>
+            <Link to="/perfil/cuenta">{t('welcome.account')}</Link>
+          </Button>
+        )}
         <input
           ref={input}
           type="file"
