@@ -54,7 +54,7 @@
 - [x] Atribución CC BY-SA 4.0, licencia junto al modelo y crédito visible; sin piezas NC
 - [x] Verificación: check, build, E2E de producción con CSP (incluye `wasm-unsafe-eval`)
 
-## Fase 3 — IA, cuentas y premium ✅ (la nube queda lista a falta de crear las cuentas)
+## Fase 3 — IA, cuentas y premium ✅
 
 - [x] Asistente que **solo explica** (`src/features/assistant`): glosario curado sin conexión que
       añade las razones del motor para tu semana; modelo local con WebLLM (Qwen2.5 1,5B/0,5B)
@@ -62,15 +62,18 @@
 - [x] Contexto del asistente remoto sin datos personales ni de salud (garantizado por tests);
       aviso sanitario automático ante preguntas de dolor; conversación solo en memoria
 - [x] Supabase opcional (UE): esquema con RLS en todas las tablas, cuenta sin contraseña con
-      código por email, sincronización mínima local-first testada (perfil sin lesiones,
+      enlace por email (o código, si algún día hay SMTP propio), sincronización mínima local-first testada (perfil sin lesiones,
       sesiones sin notas, logros), borrado de cuenta en un clic
 - [x] Edge Functions: asistente con Gemini (cuota diaria por persona, clave solo en servidor)
       y borrado de cuenta; workflow que aplica migraciones y publica funciones
 - [x] Arquitectura premium sin pagos: funciones por plan (todo lo actual gratis), plan leído
       del servidor (tabla solo escribible por el servidor), pantalla Forja+
 - [x] Privacidad actualizada (cuenta, sincronización, asistente y condiciones de Gemini)
-- [ ] Crear el proyecto de Supabase y la clave de Gemini y añadir secretos/variables en GitHub
-      (pasos en `supabase/README.md`)
+- [x] Proyecto de Supabase, clave de Gemini y secretos/variables en GitHub
+      (pasos en `supabase/README.md`); app publicada en https://forja-13u.pages.dev
+- [x] Workflow «Comprobación» (`scripts/smoke/production.ts`): tras cada despliegue, cada lunes
+      y a mano prueba la web, Gemini, la configuración de Auth y la nube con un usuario temporal.
+      20/20 en verde el 26/09/2026 (asistente con `gemini-3.5-flash-lite`)
 
 ### Ideas para después
 
