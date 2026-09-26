@@ -21,7 +21,8 @@
     "icons": "tsx scripts/icons/generate.ts",
     "data:exercises": "tsx scripts/exercises/build.ts",
     "data:dump": "tsx scripts/exercises/tools/dump.ts",
-    "data:review": "tsx scripts/exercises/tools/review.ts"
+    "data:review": "tsx scripts/exercises/tools/review.ts",
+    "plan:preview": "tsx scripts/plan-preview.ts"
   },
   "dependencies": {
     "@fontsource-variable/bricolage-grotesque": "^5.3.0",

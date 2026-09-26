@@ -230,6 +230,8 @@ export const STAPLES: Record<string, 1 | 2 | 3> = {
   'jogging-treadmill': 2,
   'running-treadmill': 1,
   'rope-jumping': 1,
+  // Cardio sin máquinas para quien entrena en casa.
+  'trail-running-walking': 2,
 }
 
 /**
@@ -354,6 +356,9 @@ export const OVERRIDES: Record<string, ExerciseOverride> = {
   'dips-chest-version': { equipment: ['dipStation'] },
   'parallel-bar-dip': { equipment: ['dipStation'] },
   'ring-dips': { equipment: ['other'] },
+  'close-grip-push-up-off-of-a-dumbbell': { equipment: ['dumbbell'] },
+  // Se hace con una barra a la altura de la cintura (rack o multipower).
+  'body-tricep-press': { equipment: ['barbell', 'rack'] },
   'smith-incline-shoulder-raise': { equipment: ['bench', 'machine'] },
   'speed-box-squat': { equipment: ['bands', 'barbell', 'box', 'rack'] },
   // Tumbado boca abajo, la elevación con barra al frente es una elevación frontal.
