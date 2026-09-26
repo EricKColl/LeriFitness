@@ -25,6 +25,7 @@ export function useReasonText(exerciseName?: (id: string) => string) {
   const { t, i18n } = useTranslation()
   const tr = t as unknown as DynamicT
   const list = new Intl.ListFormat(i18n.language, { type: 'conjunction' })
+  const number = new Intl.NumberFormat(i18n.language, { maximumFractionDigits: 1 })
   return (reason: Reason) => {
     const params: Record<string, unknown> = {}
     for (const [name, value] of Object.entries(reason.params ?? {})) {
@@ -39,7 +40,7 @@ export function useReasonText(exerciseName?: (id: string) => string) {
         params[name] = list.format(
           value.split(',').map((m) => tr(`domain:muscles.${m}`).toLowerCase()),
         )
-      else params[name] = value
+      else params[name] = typeof value === 'number' ? number.format(value) : value
     }
     const text = tr(`engine:${reason.key}`, params)
     return text.charAt(0).toUpperCase() + text.slice(1)
