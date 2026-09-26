@@ -108,7 +108,9 @@
       "plannedDeload": "Toca descarga: menos series y más margen para recuperar.",
       "earlyDeload": "Rendimiento a la baja o mucha fatiga: adelantamos la descarga.",
       "newMesocycle": "Empieza el bloque {{index}}: volvemos a la base de volumen con cargas renovadas.",
-      "temporaryPain": "Molestia en {{zone}} esta semana: se trata como una lesión leve temporal."
+      "temporaryPain": "Molestia en {{zone}} esta semana: se trata como una lesión leve temporal.",
+      "comeback": "¡Bienvenido de vuelta! Tras {{weeks}} semanas sin entrenar, empezamos un bloque nuevo desde la base.",
+      "profileChanged": "Has actualizado tu perfil: el plan de esta semana se ha recalculado."
     }
   },
   "warnings": {
