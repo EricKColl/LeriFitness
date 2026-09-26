@@ -1,0 +1,515 @@
+{
+  "Standing_Cable_Wood_Chop": {
+    "name": "Leñador en polea alta",
+    "steps": [
+      "Coloca un estribo en la polea más alta y ponte de lado a un brazo de distancia, con los pies a la anchura de los hombros.",
+      "Agarra el estribo con ambas manos por encima del hombro, con los brazos estirados.",
+      "En un solo movimiento, tira del estribo en diagonal hacia abajo cruzando el cuerpo hasta la rodilla delantera, girando el tronco, pivotando el pie de atrás y flexionando las rodillas.",
+      "Vuelve despacio a la posición inicial y, al terminar la serie, cambia de lado."
+    ],
+    "mistakes": [
+      "Tirar solo con los brazos sin girar el tronco.",
+      "Redondear la espalda al bajar.",
+      "Volver de golpe hacia la polea sin controlar."
+    ]
+  },
+  "Standing_Calf_Raises": {
+    "name": "Elevación de talones de pie en máquina",
+    "steps": [
+      "Ajusta la máquina a tu altura, coloca los hombros bajo las almohadillas y apoya la parte delantera de los pies en el bloque con los talones fuera.",
+      "Ponte de pie con las rodillas ligeramente flexionadas, nunca bloqueadas.",
+      "Eleva los talones tanto como puedas mientras espiras y mantén un segundo arriba.",
+      "Baja despacio hasta estirar al máximo los gemelos mientras inspiras."
+    ],
+    "mistakes": [
+      "Rebotar en la parte baja del recorrido.",
+      "Flexionar y estirar las rodillas para ayudarte.",
+      "Hacer medio recorrido sin estirar ni subir del todo."
+    ],
+    "tips": ["Una pausa de un segundo abajo, con el gemelo estirado, elimina el rebote y mejora el estímulo."]
+  },
+  "Standing_Concentration_Curl": {
+    "name": "Curl concentrado de pie",
+    "steps": [
+      "Con una mancuerna en la mano que trabaja, inclínate hacia delante y deja colgar el brazo perpendicular al suelo, con el codo hacia fuera.",
+      "Flexiona el codo para subir la mancuerna sin mover el brazo.",
+      "Arriba, aprieta el bíceps y haz una pausa.",
+      "Baja despacio y cambia de brazo al terminar."
+    ]
+  },
+  "Standing_Dumbbell_Calf_Raise": {
+    "name": "Elevación de talones de pie con mancuernas",
+    "steps": [
+      "De pie, con una mancuerna en cada mano junto a los costados, apoya la parte delantera de los pies en un escalón o una tabla firme de 5-8 cm, con los talones fuera.",
+      "Eleva los talones contrayendo los gemelos mientras espiras y mantén un segundo arriba.",
+      "Baja despacio hasta estirar los gemelos mientras inspiras.",
+      "Mantén las rodillas estiradas sin bloquear durante toda la serie."
+    ],
+    "mistakes": [
+      "Rebotar en la parte baja.",
+      "Inclinar el cuerpo hacia delante para ayudarte.",
+      "Hacer medio recorrido."
+    ],
+    "tips": ["Si pierdes el equilibrio, usa una sola mancuerna y sujétate con la otra mano."]
+  },
+  "Standing_Dumbbell_Press": {
+    "name": "Press de hombro de pie con mancuernas",
+    "steps": [
+      "De pie, con los pies a la anchura de los hombros, sube una mancuerna a cada lado de la cabeza con los codos hacia fuera a unos 90 grados.",
+      "Sin impulso de piernas ni echar el tronco atrás, estira los codos para subir ambas mancuernas por encima de la cabeza.",
+      "Haz una pausa arriba.",
+      "Baja despacio a la posición inicial."
+    ]
+  },
+  "Standing_Dumbbell_Reverse_Curl": {
+    "name": "Curl inverso con mancuernas",
+    "steps": [
+      "De pie, con los pies a la anchura de los hombros y una mancuerna en cada mano, con agarre prono y los brazos estirados.",
+      "Sin mover los brazos, sube las mancuernas hasta los hombros mientras espiras.",
+      "Aprieta un segundo arriba.",
+      "Baja despacio mientras inspiras."
+    ]
+  },
+  "Standing_Dumbbell_Straight-Arm_Front_Delt_Raise_Above_Head": {
+    "name": "Elevación frontal hasta arriba con mancuernas",
+    "steps": [
+      "De pie, sujeta las mancuernas delante de los muslos con las palmas hacia ellos y los codos ligeramente flexionados pero fijos.",
+      "Eleva las mancuernas en semicírculo hasta tenerlas por encima de la cabeza, con los brazos estirados, mientras espiras.",
+      "Baja despacio por el mismo recorrido mientras inspiras.",
+      "Mantén el tronco quieto durante todo el movimiento."
+    ]
+  },
+  "Standing_Dumbbell_Triceps_Extension": {
+    "name": "Extensión de tríceps de pie con mancuerna",
+    "steps": [
+      "De pie, con los pies a la anchura de los hombros, sujeta una mancuerna con ambas manos por encima de la cabeza, rodeando el disco superior con las palmas.",
+      "Con los brazos pegados a la cabeza y verticales, baja la mancuerna en semicírculo por detrás de la cabeza hasta que los antebrazos toquen los bíceps, mientras inspiras.",
+      "Estira los codos con el tríceps para volver arriba mientras espiras.",
+      "Solo se mueven los antebrazos."
+    ],
+    "mistakes": [
+      "Abrir los codos hacia los lados.",
+      "Arquear la zona lumbar al subir el peso.",
+      "Mover los brazos en lugar de solo los antebrazos."
+    ]
+  },
+  "Standing_Dumbbell_Upright_Row": {
+    "name": "Remo al mentón con mancuernas",
+    "steps": [
+      "Sujeta una mancuerna en cada mano con agarre prono delante de los muslos, con los brazos estirados, los codos algo flexionados y la espalda recta.",
+      "Sube las mancuernas pegadas al cuerpo guiando con los codos, que deben quedar por encima de los antebrazos, hasta casi tocar la barbilla.",
+      "Haz una pausa arriba sin mover el tronco.",
+      "Baja despacio mientras inspiras."
+    ],
+    "tips": ["Si notas molestias en el hombro, sube solo hasta la altura del pecho."]
+  },
+  "Standing_Elevated_Quad_Stretch": {
+    "name": "Estiramiento de cuádriceps con pie elevado",
+    "steps": [
+      "De pie, de espaldas a un banco o un escalón, a unos 60-90 cm.",
+      "Lleva una pierna atrás y apoya el empeine o la punta del pie sobre el banco.",
+      "Flexiona ligeramente la rodilla de apoyo sin que sobrepase la punta del pie y nota el estiramiento del muslo trasero.",
+      "Mantén 20-30 segundos y cambia de lado."
+    ]
+  },
+  "Standing_Front_Barbell_Raise_Over_Head": {
+    "name": "Elevación frontal hasta arriba con barra",
+    "steps": [
+      "De pie, sujeta una barra con agarre prono más cerrado que los hombros, con los codos ligeramente flexionados.",
+      "Eleva la barra con los brazos casi estirados hasta tenerla justo encima de la cabeza mientras espiras.",
+      "Nota la contracción arriba.",
+      "Baja despacio a la posición inicial mientras inspiras."
+    ]
+  },
+  "Standing_Gastrocnemius_Calf_Stretch": {
+    "name": "Estiramiento de gemelo con talón en escalón",
+    "steps": [
+      "Apoya el talón derecho en un escalón con la rodilla estirada e inclínate para agarrar la punta del pie con la mano derecha.",
+      "Flexiona ligeramente la rodilla izquierda, apoya la mano izquierda en ese muslo y mantén la espalda recta.",
+      "Tira de la punta del pie hacia la rodilla hasta notar el estiramiento del gemelo.",
+      "Mantén 20-30 segundos y cambia de lado."
+    ]
+  },
+  "Standing_Hamstring_and_Calf_Stretch": {
+    "name": "Estiramiento de isquiotibiales y gemelo de pie con cinta",
+    "steps": [
+      "Pasa un cinturón, una banda o una cuerda por un pie y adelanta ese pie.",
+      "Flexiona la pierna de atrás y mantén la delantera estirada, con las puntas del pie levantadas.",
+      "Inclínate hacia delante y tira de la cinta para aumentar el estiramiento del gemelo.",
+      "Mantén 10-20 segundos y cambia de pie."
+    ]
+  },
+  "Standing_Hip_Circles": {
+    "name": "Círculos de cadera de pie",
+    "steps": [
+      "De pie sobre una pierna, sujétate a un apoyo vertical.",
+      "Sube la otra rodilla a 90 grados.",
+      "Abre la cadera todo lo que puedas dibujando un gran círculo con la rodilla, despacio.",
+      "Haz varias repeticiones y cambia de lado."
+    ]
+  },
+  "Standing_Hip_Flexors": {
+    "name": "Estiramiento de psoas de pie",
+    "steps": [
+      "De pie, con la columna vertical, adelanta ligeramente el pie izquierdo.",
+      "Flexiona ambas rodillas y despega el talón de atrás del suelo.",
+      "Empuja la cadera derecha hacia delante hasta notar el estiramiento.",
+      "Mantén 20-30 segundos y cambia de lado."
+    ],
+    "tips": ["Si quieres un estiramiento más profundo, hazlo de rodillas en zancada."]
+  },
+  "Standing_Inner-Biceps_Curl": {
+    "name": "Curl de pie con mancuernas hacia fuera",
+    "steps": [
+      "De pie, con una mancuerna en cada mano, los brazos estirados, los codos pegados y las palmas enfrentadas.",
+      "Sube las mancuernas hacia fuera girando las muñecas hasta que las palmas miren arriba, con los antebrazos alineados con los hombros.",
+      "Continúa hasta la altura de los hombros y aprieta un segundo.",
+      "Baja despacio deshaciendo el giro."
+    ]
+  },
+  "Standing_Lateral_Stretch": {
+    "name": "Estiramiento lateral de pie",
+    "steps": [
+      "Separa los pies algo más que la cadera con las rodillas ligeramente flexionadas.",
+      "Apoya la mano derecha en la cadera derecha para proteger la espalda.",
+      "Sube el brazo izquierdo y lleva la mano detrás de la cabeza; inclina el tronco hacia la derecha.",
+      "Reparte el peso entre ambas piernas, mantén 15-30 segundos y cambia de lado."
+    ]
+  },
+  "Standing_Leg_Curl": {
+    "name": "Curl femoral de pie a una pierna",
+    "steps": [
+      "Ajusta la máquina a tu altura y colócate con el tronco inclinado unos 30-45 grados, el rodillo justo por encima del talón y la parte delantera del muslo sobre el cojín.",
+      "Agarra las asas con la pierna estirada.",
+      "Flexiona la rodilla todo lo que puedas mientras espiras, sin despegar el muslo, y mantén un segundo.",
+      "Baja despacio mientras inspiras y cambia de pierna al terminar."
+    ],
+    "mistakes": [
+      "Despegar el muslo del cojín para subir más.",
+      "Dejar caer la pierna sin controlar.",
+      "Girar la cadera para ayudarte."
+    ]
+  },
+  "Standing_Long_Jump": {
+    "name": "Salto de longitud sin carrera",
+    "steps": [
+      "Colócate en media sentadilla con los pies a la anchura de los hombros, a ser posible sobre una superficie blanda.",
+      "Con un buen balanceo de brazos y un contramovimiento de piernas, salta hacia delante lo más lejos que puedas.",
+      "Adelanta los pies para aterrizar lo más lejos posible, amortiguando con las piernas.",
+      "Mide la distancia y anota tus resultados."
+    ]
+  },
+  "Standing_Low-Pulley_Deltoid_Raise": {
+    "name": "Elevación lateral a una mano en polea baja",
+    "steps": [
+      "Colócate con el costado derecho junto a una polea baja y agarra el estribo con la mano izquierda por delante del cuerpo, con agarre prono; sujétate a la máquina con la derecha.",
+      "Con la espalda recta y los pies a la anchura de los hombros, eleva el brazo izquierdo cruzando el cuerpo hasta la altura del hombro mientras espiras.",
+      "Mantén un segundo arriba.",
+      "Baja despacio y cambia de brazo al terminar."
+    ],
+    "mistakes": [
+      "Inclinar el tronco para subir el estribo.",
+      "Subir por encima del hombro encogiendo el trapecio.",
+      "Flexionar el codo para ayudarte."
+    ]
+  },
+  "Standing_Low-Pulley_One-Arm_Triceps_Extension": {
+    "name": "Extensión de tríceps a una mano en polea baja",
+    "steps": [
+      "Agarra un estribo de la polea baja con la mano izquierda y colócate de espaldas a la máquina.",
+      "Sube el estribo por encima de la cabeza con el brazo vertical y la palma hacia delante; sujeta el codo con la otra mano.",
+      "Baja el estribo en semicírculo por detrás de la cabeza sin mover el brazo, hasta que el antebrazo toque el bíceps.",
+      "Estira el codo con el tríceps y cambia de brazo al terminar."
+    ]
+  },
+  "Standing_Military_Press": {
+    "name": "Press militar de pie con barra",
+    "steps": [
+      "Coloca la barra en el rack a la altura del pecho, agárrala con agarre prono algo más abierto que los hombros y apóyala sobre las clavículas.",
+      "Da un paso atrás con los pies a la anchura de los hombros, glúteos y abdomen apretados.",
+      "Empuja la barra por encima de la cabeza apartando la cara a su paso; al superar la frente, adelanta la cabeza para que la barra acabe sobre la mitad del pie.",
+      "Baja despacio hasta las clavículas mientras inspiras."
+    ],
+    "mistakes": [
+      "Arquear la zona lumbar y echar el tronco atrás.",
+      "Empujar la barra hacia delante en lugar de en vertical.",
+      "Abrir demasiado los codos hacia los lados.",
+      "Ayudarse con las piernas sin querer."
+    ]
+  },
+  "Standing_Olympic_Plate_Hand_Squeeze": {
+    "name": "Apretón de disco con los dedos",
+    "steps": [
+      "De pie, sujeta un disco en cada mano por el borde, con los brazos estirados y agarre neutro.",
+      "Deja que los discos bajen abriendo los dedos casi del todo, sin soltarlos, mientras inspiras.",
+      "Cierra las manos para subirlos de nuevo mientras espiras.",
+      "Repite con control."
+    ]
+  },
+  "Standing_One-Arm_Cable_Curl": {
+    "name": "Curl a una mano en polea baja",
+    "steps": [
+      "Agarra un estribo de la polea baja con una mano y aléjate lo suficiente para que el brazo soporte la carga; apoya la otra mano en la cintura.",
+      "Con el brazo vertical, el codo pegado y la palma hacia delante, sube el estribo hasta que el antebrazo toque el bíceps mientras espiras.",
+      "Aprieta un segundo arriba.",
+      "Baja despacio y cambia de brazo al terminar."
+    ]
+  },
+  "Standing_One-Arm_Dumbbell_Curl_Over_Incline_Bench": {
+    "name": "Curl a una mano apoyado en banco inclinado",
+    "steps": [
+      "Colócate detrás de un banco inclinado, con el pecho apoyado en la parte alta del respaldo y los pies bien separados.",
+      "Apoya el brazo sobre el respaldo con una mancuerna en agarre supino y sujétate al banco con la otra mano.",
+      "Sube la mancuerna hasta la altura del hombro sin mover el brazo y aprieta un segundo.",
+      "Baja despacio y cambia de brazo al terminar."
+    ]
+  },
+  "Standing_One-Arm_Dumbbell_Triceps_Extension": {
+    "name": "Extensión de tríceps de pie a una mano",
+    "steps": [
+      "De pie, con los pies a la anchura de los hombros, sube una mancuerna por encima de la cabeza con el brazo estirado y la palma hacia delante.",
+      "Con el brazo pegado a la cabeza y vertical, baja la mancuerna en semicírculo por detrás de la cabeza hasta que el antebrazo toque el bíceps.",
+      "Estira el codo con el tríceps para volver arriba.",
+      "Cambia de brazo al terminar."
+    ]
+  },
+  "Standing_Overhead_Barbell_Triceps_Extension": {
+    "name": "Extensión de tríceps de pie con barra por encima de la cabeza",
+    "steps": [
+      "De pie, sujeta una barra recta o Z con agarre prono más cerrado que los hombros.",
+      "Súbela por encima de la cabeza con los brazos estirados y los codos cerrados.",
+      "Baja la barra en semicírculo por detrás de la cabeza sin mover los brazos, hasta que los antebrazos toquen los bíceps.",
+      "Estira los codos con el tríceps para volver arriba."
+    ]
+  },
+  "Standing_Palm-In_One-Arm_Dumbbell_Press": {
+    "name": "Press de hombro a una mano con agarre neutro",
+    "steps": [
+      "De pie, sujeta una mancuerna con agarre neutro y sujétate con la otra mano a un banco para mantener el equilibrio.",
+      "Sube la mancuerna hasta que el codo forme 90 grados, con el antebrazo vertical, y desde ahí empújala hasta estirar el brazo.",
+      "Baja despacio hasta que el codo vuelva a formar 90 grados mientras inspiras.",
+      "Vuelve a empujar hacia arriba y cambia de brazo al terminar."
+    ]
+  },
+  "Standing_Palms-In_Dumbbell_Press": {
+    "name": "Press de hombro de pie con agarre neutro",
+    "steps": [
+      "De pie, con los pies a la anchura de los hombros, sube una mancuerna a cada lado con agarre neutro, los codos a 90 grados y los antebrazos verticales.",
+      "Empuja las mancuernas hacia arriba hasta estirar los brazos, manteniendo las palmas enfrentadas.",
+      "Baja despacio hasta que los codos vuelvan a formar 90 grados mientras inspiras.",
+      "Repite sin arquear la espalda."
+    ]
+  },
+  "Standing_Palms-Up_Barbell_Behind_The_Back_Wrist_Curl": {
+    "name": "Curl de muñeca con barra por detrás de la espalda",
+    "steps": [
+      "De pie, sujeta una barra detrás de los glúteos con los brazos estirados, las manos a la anchura de los hombros y las palmas hacia atrás.",
+      "Con la mirada al frente, sube la barra flexionando las muñecas hacia arriba en semicírculo mientras espiras.",
+      "Mantén un segundo y baja despacio; solo se mueven las muñecas.",
+      "Es más fácil coger la barra de un rack o que te la pase un compañero."
+    ]
+  },
+  "Standing_Pelvic_Tilt": {
+    "name": "Basculación pélvica de pie",
+    "steps": [
+      "De pie, con los pies a la anchura de la cadera y las rodillas ligeramente flexionadas.",
+      "Mueve la pelvis adelante y atrás varias veces.",
+      "Termina llevando el coxis hacia delante y mantén la posición unos segundos para estirar la zona lumbar.",
+      "Respira con calma."
+    ]
+  },
+  "Standing_Rope_Crunch": {
+    "name": "Crunch de pie en polea alta con cuerda",
+    "steps": [
+      "Coloca una cuerda en la polea alta y ponte de espaldas a la máquina.",
+      "Sujeta la cuerda con ambas manos por encima de los hombros, pegada a la parte alta del pecho.",
+      "Flexiona la columna llevando las costillas hacia la pelvis tanto como puedas.",
+      "Mantén la contracción un instante y vuelve despacio."
+    ]
+  },
+  "Standing_Soleus_And_Achilles_Stretch": {
+    "name": "Estiramiento de sóleo y tendón de Aquiles",
+    "steps": [
+      "De pie, con los pies a la anchura de la cadera y uno ligeramente adelantado.",
+      "Flexiona ambas rodillas manteniendo el talón de atrás apoyado en el suelo.",
+      "Nota el estiramiento en la parte baja de la pantorrilla de atrás.",
+      "Mantén 20-30 segundos y cambia de lado."
+    ]
+  },
+  "Standing_Toe_Touches": {
+    "name": "Flexión de tronco de pie",
+    "steps": [
+      "De pie, con espacio delante y detrás.",
+      "Inclínate desde la cintura con las piernas estiradas hasta dejar colgar el tronco relajado.",
+      "Deja caer los brazos y las manos de forma natural.",
+      "Mantén 10-20 segundos y sube despacio."
+    ]
+  },
+  "Standing_Towel_Triceps_Extension": {
+    "name": "Extensión de tríceps con toalla y compañero",
+    "steps": [
+      "De pie, sujeta un extremo de una toalla con ambas manos por encima de la cabeza, con los brazos estirados y los codos cerrados.",
+      "Tu compañero, detrás de ti, sujeta el otro extremo y opone resistencia.",
+      "Baja las manos en semicírculo por detrás de la cabeza sin mover los brazos, hasta que los antebrazos toquen los bíceps.",
+      "Estira los codos con el tríceps contra la resistencia de tu compañero."
+    ]
+  },
+  "Standing_Two-Arm_Overhead_Throw": {
+    "name": "Lanzamiento de balón medicinal por encima de la cabeza de pie",
+    "steps": [
+      "De pie, con los pies a la anchura de los hombros, lleva un balón medicinal por detrás de la cabeza flexionando un poco las rodillas y echándote atrás.",
+      "Lánzalo hacia delante con fuerza, flexionando la cadera y usando todo el cuerpo.",
+      "Lánzalo a un compañero o contra una pared.",
+      "Recógelo al rebote y repite."
+    ]
+  },
+  "Star_Jump": {
+    "name": "Salto en estrella",
+    "steps": [
+      "De pie, relajado, con los pies a la anchura de los hombros y los brazos junto al cuerpo.",
+      "Baja a media sentadilla y salta de forma explosiva lo más alto que puedas.",
+      "En el aire, abre brazos y piernas formando una estrella.",
+      "Vuelve a cerrarlos antes de aterrizar y amortigua con las piernas."
+    ]
+  },
+  "Step_Mill": {
+    "name": "Escalera mecánica de gimnasio",
+    "steps": [
+      "Súbete a la máquina con cuidado y elige el modo manual o un programa.",
+      "Sube los escalones a un ritmo constante, apoyando todo el pie y con el tronco erguido.",
+      "Sujeta las asas lo justo para no perder el equilibrio.",
+      "Ajusta la velocidad para mantener la intensidad indicada."
+    ]
+  },
+  "Step-up_with_Knee_Raise": {
+    "name": "Subida al cajón con elevación de rodilla",
+    "steps": [
+      "De pie frente a un cajón o un banco de altura adecuada, con los pies juntos.",
+      "Apoya el pie izquierdo en el cajón y súbete extendiendo cadera y rodilla.",
+      "Arriba, eleva la rodilla derecha todo lo que puedas.",
+      "Baja con control y repite con la otra pierna."
+    ]
+  },
+  "Stiff_Leg_Barbell_Good_Morning": {
+    "name": "Buenos días con piernas rígidas",
+    "steps": [
+      "Apoya la barra en la parte alta de la espalda, sácala del rack y separa los pies a la anchura de los hombros.",
+      "Con las piernas estiradas y quietas y la espalda recta, inclina el tronco desde la cadera hasta quedar paralelo al suelo mientras inspiras.",
+      "Vuelve a subir extendiendo la cadera mientras espiras.",
+      "Usa poco peso: sin flexión de rodillas, la carga sobre la zona lumbar es alta."
+    ]
+  },
+  "Stiff-Legged_Barbell_Deadlift": {
+    "name": "Peso muerto con piernas rígidas con barra",
+    "steps": [
+      "De pie, sujeta una barra con agarre prono, con los pies a la anchura de los hombros o algo más juntos y las rodillas ligeramente flexionadas.",
+      "Sin mover las rodillas, inclínate desde la cadera con la espalda recta y baja la barra hacia los pies hasta notar estiramiento en los isquiotibiales.",
+      "Vuelve a erguirte extendiendo la cadera mientras espiras.",
+      "Mantén la barra cerca de las piernas durante todo el recorrido."
+    ]
+  },
+  "Stiff-Legged_Dumbbell_Deadlift": {
+    "name": "Peso muerto rumano con mancuernas",
+    "steps": [
+      "De pie, con una mancuerna en cada mano delante de los muslos, los pies a la anchura de la cadera y las rodillas ligeramente flexionadas.",
+      "Sin mover las rodillas, lleva la cadera atrás con la espalda recta y baja las mancuernas pegadas a las piernas hasta notar estiramiento en los isquiotibiales.",
+      "Vuelve a erguirte extendiendo la cadera y apretando los glúteos.",
+      "Mantén el cuello alineado con la espalda durante todo el movimiento."
+    ],
+    "mistakes": [
+      "Redondear la espalda para bajar más.",
+      "Separar las mancuernas de las piernas.",
+      "Flexionar las rodillas y convertirlo en una sentadilla.",
+      "Bajar más allá de tu flexibilidad."
+    ]
+  },
+  "Stomach_Vacuum": {
+    "name": "Vacío abdominal",
+    "steps": [
+      "De pie, con los pies a la anchura de los hombros y las manos en la cintura.",
+      "Coge todo el aire que puedas y luego suéltalo por completo mientras metes el abdomen al máximo, como si el ombligo tocara la columna.",
+      "Mantén la contracción unos 20 segundos respirando con suavidad.",
+      "Suelta, respira y repite. Con práctica, llega a 40-60 segundos."
+    ]
+  },
+  "Straight-Arm_Dumbbell_Pullover": {
+    "name": "Pullover con mancuerna y brazos estirados",
+    "steps": [
+      "Túmbate atravesado sobre un banco plano, con solo la parte alta de la espalda apoyada, la cadera más baja y los pies firmes en el suelo.",
+      "Sujeta una mancuerna bien cerrada con ambas manos por un disco, con los brazos estirados sobre el pecho.",
+      "Con los brazos casi estirados, baja la mancuerna en arco por detrás de la cabeza hasta notar el estiramiento mientras inspiras.",
+      "Vuelve por el mismo arco hasta la posición inicial mientras espiras."
+    ],
+    "mistakes": [
+      "Bajar más de lo que permite la movilidad del hombro.",
+      "Flexionar y estirar los codos durante el recorrido.",
+      "Subir la cadera al bajar la mancuerna."
+    ],
+    "tips": ["Comprueba antes que los discos de la mancuerna están bien sujetos."]
+  },
+  "Straight-Arm_Pulldown": {
+    "name": "Jalón con brazos estirados",
+    "steps": [
+      "Agarra la barra de la polea alta con agarre prono más abierto que los hombros y da unos 60 cm hacia atrás.",
+      "Inclina el tronco unos 30 grados con los brazos estirados y los codos ligeramente flexionados; activa los dorsales.",
+      "Sin flexionar los brazos, lleva la barra hasta los muslos contrayendo los dorsales mientras espiras.",
+      "Vuelve despacio a la posición inicial."
+    ],
+    "mistakes": [
+      "Flexionar los codos y convertirlo en un jalón o una extensión de tríceps.",
+      "Balancear el tronco para bajar la barra.",
+      "Encoger los hombros al subir."
+    ]
+  },
+  "Straight_Bar_Bench_Mid_Rows": {
+    "name": "Remo con barra de pie sobre banco",
+    "steps": [
+      "Coloca una barra cargada junto al extremo de un banco y súbete a él, detrás de la barra.",
+      "Agárrala con agarre prono medio, con la cadera atrás, el pecho alto y la espalda neutra.",
+      "Tira de la barra hacia el tronco juntando las escápulas y flexionando los codos, sin tirones.",
+      "Tras una breve pausa, bájala despacio hasta estirar del todo los brazos."
+    ]
+  },
+  "Straight_Raises_on_Incline_Bench": {
+    "name": "Elevación frontal boca abajo en banco inclinado",
+    "steps": [
+      "Coloca una barra en el suelo junto a la cabecera de un banco inclinado y túmbate boca abajo.",
+      "Coge la barra con agarre prono y los brazos estirados, dejándola colgar.",
+      "Eleva la barra por delante de la cabeza con los brazos estirados.",
+      "Vuelve despacio a la posición inicial."
+    ]
+  },
+  "Stride_Jump_Crossover": {
+    "name": "Salto cruzado sobre cajón",
+    "steps": [
+      "Colócate junto a un cajón con el pie más cercano apoyado encima, cerca del borde.",
+      "Lleva los brazos arriba mientras empujas con la pierna del cajón y saltas lo más alto posible, subiendo la rodilla contraria.",
+      "Aterriza al otro lado del cajón con los pies cambiados: el que estaba arriba ahora en el suelo y el otro sobre el cajón.",
+      "Repite cruzando de un lado a otro."
+    ]
+  },
+  "Sumo_Deadlift": {
+    "name": "Peso muerto sumo",
+    "steps": [
+      "Colócate con los pies muy abiertos, las puntas hacia fuera y la barra sobre la mitad del pie.",
+      "Agarra la barra con los brazos por dentro de las piernas, justo bajo los hombros, y relaja los hombros para alargar los brazos.",
+      "Coge aire, baja la cadera con el pecho alto y empuja el suelo separando los pies, con el peso en la mitad trasera del pie.",
+      "Al pasar las rodillas, lleva la cadera hacia la barra y junta las escápulas; baja con control flexionando la cadera."
+    ],
+    "mistakes": [
+      "Dejar que las rodillas se cierren hacia dentro.",
+      "Subir la cadera antes que la barra y convertirlo en un peso muerto con piernas rígidas.",
+      "Redondear la espalda al despegar la barra.",
+      "Separar la barra del cuerpo."
+    ]
+  },
+  "Sumo_Deadlift_with_Bands": {
+    "name": "Peso muerto sumo con bandas",
+    "steps": [
+      "Pasa unas bandas cortas por encima de la barra y písalas por la mitad trasera del pie al colocarte.",
+      "Colócate con los pies muy abiertos y agarra la barra con los brazos por dentro de las piernas.",
+      "Coge aire, baja la cadera con el pecho alto y empuja el suelo separando los pies.",
+      "Al pasar las rodillas, lleva la cadera hacia la barra y junta las escápulas; baja con control."
+    ]
+  }
+}

@@ -356,6 +356,12 @@ export const OVERRIDES: Record<string, ExerciseOverride> = {
   'ring-dips': { equipment: ['other'] },
   'smith-incline-shoulder-raise': { equipment: ['bench', 'machine'] },
   'speed-box-squat': { equipment: ['bands', 'barbell', 'box', 'rack'] },
+  // Tumbado boca abajo, la elevación con barra al frente es una elevación frontal.
+  'straight-raises-on-incline-bench': {
+    pattern: 'frontRaise',
+    primaryMuscles: ['frontDelts'],
+    secondaryMuscles: ['upperBack', 'traps'],
+  },
   'neck-press': { jointStress: { shoulder: 'high', neck: 'moderate' } },
   'barbell-guillotine-bench-press': { jointStress: { shoulder: 'high', neck: 'moderate' } },
   // El press con mina (landmine) es de los empujes verticales más amables con el hombro.

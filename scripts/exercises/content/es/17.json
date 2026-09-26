@@ -1,0 +1,510 @@
+{
+  "Sumo_Deadlift_with_Chains": {
+    "name": "Peso muerto sumo con cadenas",
+    "steps": [
+      "Cuelga las cadenas de los extremos de la barra o del centro, sin que choquen con los discos.",
+      "Colócate con los pies muy abiertos y agarra la barra con los brazos por dentro de las piernas.",
+      "Coge aire, baja la cadera con el pecho alto y empuja el suelo separando los pies.",
+      "Al pasar las rodillas, lleva la cadera hacia la barra y junta las escápulas; baja con control."
+    ]
+  },
+  "Superman": {
+    "name": "Superman",
+    "steps": [
+      "Túmbate boca abajo con los brazos estirados por delante.",
+      "Eleva a la vez brazos, piernas y pecho del suelo mientras espiras, apretando la zona lumbar y los glúteos.",
+      "Mantén 2 segundos, como si volaras.",
+      "Baja despacio mientras inspiras."
+    ]
+  },
+  "Supine_Chest_Throw": {
+    "name": "Lanzamiento de pecho tumbado con balón medicinal",
+    "steps": [
+      "Túmbate boca arriba con las rodillas flexionadas y el balón sobre el pecho, sujeto por debajo con ambas manos.",
+      "Estira los brazos de forma explosiva para lanzarlo hacia arriba lo más alto posible.",
+      "Atrápalo con ambas manos al bajar.",
+      "Llévalo al pecho y repite."
+    ]
+  },
+  "Supine_One-Arm_Overhead_Throw": {
+    "name": "Lanzamiento tumbado a una mano con balón medicinal",
+    "steps": [
+      "Túmbate boca arriba con las rodillas flexionadas y sujeta el balón con una mano, con el brazo estirado por detrás de la cabeza.",
+      "Lanza el balón hacia delante desde el hombro mientras te incorporas, buscando la máxima distancia.",
+      "Lánzalo a un compañero o contra una pared.",
+      "Completa las repeticiones y cambia de brazo."
+    ]
+  },
+  "Supine_Two-Arm_Overhead_Throw": {
+    "name": "Lanzamiento tumbado a dos manos con balón medicinal",
+    "steps": [
+      "Túmbate boca arriba con las rodillas flexionadas y sujeta el balón con ambas manos, con los brazos estirados por detrás de la cabeza.",
+      "Lanza el balón hacia delante desde los hombros mientras te incorporas, buscando la máxima distancia.",
+      "Lánzalo a un compañero o contra una pared.",
+      "Recupéralo y repite."
+    ]
+  },
+  "Suspended_Fallout": {
+    "name": "Caída hacia delante con correas de suspensión",
+    "steps": [
+      "Ajusta las correas con las asas por debajo de la cintura, agárralas de pie e inclínate hasta quedar en posición de flexión inclinada.",
+      "Con los brazos estirados, deja caer el cuerpo hacia delante mientras los brazos suben por encima de la cabeza.",
+      "Mantén la columna neutra y el cuerpo recto: solo se mueven los hombros.",
+      "Haz una pausa y vuelve a la posición inicial tirando con el abdomen."
+    ]
+  },
+  "Suspended_Push-Up": {
+    "name": "Flexión con correas de suspensión",
+    "steps": [
+      "Fija las correas a un punto alto y firme, agarra un asa con cada mano e inclínate hasta quedar en plancha, lo más paralelo al suelo que puedas, con los brazos estirados.",
+      "Con el tronco rígido, baja despacio flexionando los codos.",
+      "Continúa hasta pasar los 90 grados de codo.",
+      "Haz una pausa y empuja hasta estirar los brazos."
+    ]
+  },
+  "Suspended_Reverse_Crunch": {
+    "name": "Crunch inverso con correas de suspensión",
+    "steps": [
+      "Ajusta las correas con las asas a unos 30 cm del suelo y colócate en plancha de espaldas al anclaje, con los pies metidos en las asas.",
+      "Mantén el cuerpo recto sin hundir la cadera.",
+      "Lleva las rodillas hacia el pecho flexionando cadera y rodillas y enrollando la pelvis.",
+      "Vuelve con control a la posición de plancha."
+    ]
+  },
+  "Suspended_Row": {
+    "name": "Remo con correas de suspensión",
+    "steps": [
+      "Ajusta las correas a la altura del pecho, agarra un asa con cada mano e inclínate hacia atrás con el cuerpo recto y los brazos estirados.",
+      "Tira del cuerpo hacia las manos flexionando los codos y juntando las escápulas.",
+      "Haz una pausa arriba.",
+      "Baja despacio hasta estirar los brazos."
+    ]
+  },
+  "Suspended_Split_Squat": {
+    "name": "Sentadilla búlgara con correas de suspensión",
+    "steps": [
+      "Ajusta las correas con las asas a unos 45-75 cm del suelo y colócate de espaldas al anclaje.",
+      "Mete el pie de atrás en el asa, con la mirada al frente, el pecho alto y la rodilla delantera algo flexionada.",
+      "Baja flexionando la rodilla y la cadera delanteras con el peso en el talón.",
+      "Sube extendiendo cadera y rodilla y cambia de pierna al terminar."
+    ]
+  },
+  "Svend_Press": {
+    "name": "Press Svend con discos",
+    "steps": [
+      "De pie, junta dos discos ligeros entre las palmas y sujétalos contra el pecho, con los dedos hacia delante.",
+      "Aprieta los discos entre las manos para contraer el pecho.",
+      "Sin dejar de apretar, estira los brazos al frente con control.",
+      "Haz una pausa y vuelve despacio al pecho."
+    ]
+  },
+  "T-Bar_Row_with_Handle": {
+    "name": "Remo en barra T con agarre en V",
+    "steps": [
+      "Ancla un extremo de la barra en un soporte landmine o en una esquina y carga el otro extremo.",
+      "Colócate a horcajadas sobre la barra, pasa un agarre en V por debajo junto a los discos y ponte de pie usando piernas y cadera.",
+      "Separa bien los pies, lleva la cadera atrás con el pecho alto y los brazos estirados.",
+      "Tira hacia la parte alta del abdomen juntando las escápulas, sin tirones, y baja con control."
+    ],
+    "mistakes": [
+      "Redondear la espalda baja al inclinarse.",
+      "Levantar el tronco para mover el peso con impulso.",
+      "Tirar con los brazos sin juntar las escápulas."
+    ]
+  },
+  "Tate_Press": {
+    "name": "Press Tate con mancuernas",
+    "steps": [
+      "Túmbate en un banco plano con las mancuernas sobre los muslos, súbelas y sostenlas sobre el pecho con agarre prono y los codos abiertos.",
+      "Sin mover los brazos, baja las mancuernas hacia dentro en semicírculo hasta que toquen la parte alta del pecho mientras inspiras.",
+      "Súbelas con el tríceps por el mismo recorrido, intentando que vayan juntas, mientras espiras.",
+      "Tarda el doble en bajar que en subir."
+    ]
+  },
+  "The_Straddle": {
+    "name": "Estiramiento en V sentado",
+    "steps": [
+      "Siéntate erguido con las piernas estiradas y abiertas en V.",
+      "Apoya las manos en el suelo delante de ti.",
+      "Inclínate hacia delante desde la cadera todo lo que puedas.",
+      "Mantén 10-20 segundos."
+    ]
+  },
+  "Thigh_Abductor": {
+    "name": "Abducción de cadera en máquina",
+    "steps": [
+      "Siéntate en la máquina de abductores, elige la carga y coloca las piernas contra los cojines, agarrando las asas.",
+      "Mantén quieto el tronco durante todo el ejercicio.",
+      "Separa las piernas empujando los cojines hacia fuera mientras espiras y mantén un segundo.",
+      "Vuelve despacio a la posición inicial sin dejar que la carga se apoye."
+    ],
+    "mistakes": [
+      "Inclinar el tronco hacia delante o balancearse.",
+      "Dejar que las piernas vuelvan de golpe.",
+      "Hacer medio recorrido."
+    ]
+  },
+  "Thigh_Adductor": {
+    "name": "Aducción de cadera en máquina",
+    "steps": [
+      "Siéntate en la máquina de aductores, elige la carga y coloca las piernas contra los cojines, agarrando las asas.",
+      "Mantén quieto el tronco durante todo el ejercicio.",
+      "Junta las piernas empujando los cojines hacia dentro mientras espiras y mantén un segundo.",
+      "Vuelve despacio a la posición inicial, sin tirones."
+    ],
+    "mistakes": [
+      "Empezar con una apertura mayor de la que tu cadera tolera.",
+      "Juntar las piernas a tirones.",
+      "Dejar que la carga abra las piernas de golpe."
+    ]
+  },
+  "Tire_Flip": {
+    "name": "Volteo de neumático",
+    "steps": [
+      "Agarra el neumático por la parte baja de la banda de rodadura, con los pies algo retrasados y el pecho apoyado en él.",
+      "Levántalo extendiendo cadera, rodillas y tobillos, empujando hacia delante y arriba.",
+      "Cuando llegue a unos 45 grados, da un paso adelante y empújalo con la rodilla mientras cambias las manos a la parte de arriba.",
+      "Empújalo con fuerza para terminar de voltearlo y repite."
+    ]
+  },
+  "Toe_Touchers": {
+    "name": "Toques de puntas tumbado",
+    "steps": [
+      "Túmbate boca arriba con la zona lumbar pegada al suelo y eleva las piernas juntas casi en vertical, con las rodillas algo flexionadas.",
+      "Estira los brazos hacia los pies.",
+      "Despega el tronco del suelo e intenta tocarte las puntas de los pies mientras espiras.",
+      "Baja despacio mientras inspiras, con los brazos apuntando a los pies."
+    ]
+  },
+  "Torso_Rotation": {
+    "name": "Rotación de tronco con fitball",
+    "steps": [
+      "De pie, sujeta un fitball con ambas manos y los brazos estirados al frente.",
+      "Gira el tronco hacia un lado siguiendo el balón con la mirada.",
+      "Gira hacia el lado contrario.",
+      "Repite 10-20 veces con un movimiento fluido."
+    ]
+  },
+  "Trail_Running_Walking": {
+    "name": "Carrera o marcha por senderos",
+    "steps": [
+      "Usa un calzado con buen agarre y elige un recorrido adecuado a tu nivel.",
+      "En las subidas, acorta el paso y empuja con glúteos y gemelos.",
+      "En las bajadas, da pasos cortos con las rodillas algo flexionadas y reduce la velocidad para amortiguar el impacto.",
+      "Mantén un ritmo que te permita hablar si buscas intensidad moderada."
+    ]
+  },
+  "Trap_Bar_Deadlift": {
+    "name": "Peso muerto con barra hexagonal",
+    "steps": [
+      "Colócate en el centro de la barra hexagonal cargada y agarra las asas.",
+      "Baja la cadera con el pecho alto, la mirada al frente y la espalda neutra.",
+      "Empuja el suelo con todo el pie extendiendo cadera y rodillas hasta quedar de pie.",
+      "Baja la barra al suelo con control, sin redondear la espalda."
+    ],
+    "mistakes": [
+      "Redondear la espalda al despegar la barra.",
+      "Subir la cadera antes que los hombros.",
+      "Dejar caer la barra en lugar de bajarla con control."
+    ],
+    "tips": ["Es la forma más sencilla de aprender el peso muerto: la carga queda centrada con el cuerpo."]
+  },
+  "Tricep_Dumbbell_Kickback": {
+    "name": "Patada de tríceps con mancuernas",
+    "steps": [
+      "Con una mancuerna en cada mano y las palmas hacia el cuerpo, flexiona un poco las rodillas e inclina el tronco con la espalda recta hasta casi quedar paralelo al suelo.",
+      "Sube los brazos pegados al tronco hasta que queden paralelos al suelo, con los codos a 90 grados.",
+      "Sin mover los brazos, estira los codos hasta que los brazos queden rectos mientras espiras.",
+      "Haz una breve pausa y baja despacio."
+    ],
+    "mistakes": [
+      "Dejar caer los codos y mover el brazo entero.",
+      "Balancear las mancuernas con impulso.",
+      "Redondear la espalda."
+    ]
+  },
+  "Tricep_Side_Stretch": {
+    "name": "Estiramiento de tríceps cruzado",
+    "steps": [
+      "Lleva el brazo derecho por delante del cuerpo y por encima del hombro izquierdo.",
+      "Sujeta el codo con la mano izquierda y tira suavemente hasta notar el estiramiento en el tríceps.",
+      "Mantén 15-30 segundos.",
+      "Cambia de brazo."
+    ]
+  },
+  "Triceps_Overhead_Extension_with_Rope": {
+    "name": "Extensión de tríceps por encima de la cabeza en polea baja",
+    "steps": [
+      "Coloca una cuerda en la polea baja, agárrala con ambas manos y ponte de espaldas a la máquina.",
+      "Lleva las manos detrás de la cabeza con los codos flexionados apuntando al techo; escalona los pies e inclínate un poco adelante.",
+      "Estira los codos sin mover los brazos hasta tener las manos por encima de la cabeza.",
+      "Aprieta el tríceps y baja despacio."
+    ]
+  },
+  "Triceps_Pushdown": {
+    "name": "Extensión de tríceps en polea alta con barra",
+    "steps": [
+      "Coloca una barra recta o angulada en la polea alta y agárrala con agarre prono a la anchura de los hombros.",
+      "De pie, con el tronco recto y ligeramente inclinado, pega los codos a los costados con los antebrazos apuntando a la polea.",
+      "Empuja la barra hacia abajo hasta estirar los brazos por completo mientras espiras.",
+      "Mantén un segundo y deja subir la barra despacio sin despegar los codos."
+    ],
+    "mistakes": [
+      "Separar los codos del cuerpo o moverlos adelante y atrás.",
+      "Inclinar el tronco sobre la barra para empujar con el peso del cuerpo.",
+      "Dejar que la barra suba de golpe."
+    ]
+  },
+  "Triceps_Pushdown_-_Rope_Attachment": {
+    "name": "Extensión de tríceps en polea alta con cuerda",
+    "steps": [
+      "Coloca una cuerda en la polea alta y agárrala con agarre neutro.",
+      "De pie, con el tronco recto y ligeramente inclinado, pega los codos a los costados con los antebrazos apuntando a la polea.",
+      "Empuja la cuerda hacia abajo separando los extremos hacia los lados de los muslos hasta estirar los brazos.",
+      "Mantén un segundo y deja subir la cuerda despacio sin despegar los codos."
+    ],
+    "mistakes": [
+      "Separar los codos del cuerpo.",
+      "No separar los extremos de la cuerda al final del recorrido.",
+      "Encoger los hombros y empujar con ellos."
+    ]
+  },
+  "Triceps_Pushdown_-_V-Bar_Attachment": {
+    "name": "Extensión de tríceps en polea alta con agarre en V",
+    "steps": [
+      "Coloca un agarre en V en la polea alta y agárralo con los pulgares algo más altos que los meñiques.",
+      "De pie, con el tronco recto y ligeramente inclinado, pega los codos a los costados.",
+      "Empuja el agarre hacia abajo hasta estirar los brazos por completo mientras espiras.",
+      "Mantén un segundo y deja subir el agarre despacio sin despegar los codos."
+    ],
+    "mistakes": [
+      "Mover los codos hacia delante al subir.",
+      "Acortar el recorrido arriba.",
+      "Inclinarse sobre el agarre para empujar."
+    ]
+  },
+  "Triceps_Stretch": {
+    "name": "Estiramiento de tríceps por detrás de la cabeza",
+    "steps": [
+      "Lleva una mano por detrás de la cabeza, hacia la espalda.",
+      "Sujeta el codo con la otra mano y tira suavemente.",
+      "Mantén 10-20 segundos.",
+      "Cambia de lado."
+    ]
+  },
+  "Tuck_Crunch": {
+    "name": "Crunch con piernas recogidas",
+    "steps": [
+      "Túmbate boca arriba con la zona lumbar pegada al suelo, cruza los tobillos y sube las piernas hasta que los muslos queden verticales, con las rodillas algo flexionadas.",
+      "Cruza los brazos sobre el pecho.",
+      "Despega la parte alta del tronco del suelo mientras espiras.",
+      "Baja despacio mientras inspiras."
+    ]
+  },
+  "Two-Arm_Dumbbell_Preacher_Curl": {
+    "name": "Curl predicador con mancuernas",
+    "steps": [
+      "Apoya la parte trasera de ambos brazos en el banco predicador o en un banco inclinado, con una mancuerna en cada mano a la altura de los hombros.",
+      "Baja despacio mientras inspiras hasta estirar los brazos.",
+      "Sube con el bíceps mientras espiras hasta la altura de los hombros.",
+      "Aprieta un segundo arriba y repite."
+    ]
+  },
+  "Two-Arm_Kettlebell_Clean": {
+    "name": "Cargada con dos kettlebells",
+    "steps": [
+      "Coloca dos kettlebells entre los pies, lleva la cadera atrás y mira al frente.",
+      "Extiende piernas y cadera con fuerza para subirlas a los hombros, girando las muñecas en el recorrido.",
+      "Devuélvelas a la posición inicial con control.",
+      "Repite manteniendo la espalda recta."
+    ]
+  },
+  "Two-Arm_Kettlebell_Jerk": {
+    "name": "Envión de potencia con dos kettlebells",
+    "steps": [
+      "Sube dos kettlebells a los hombros con una cargada, con las palmas hacia delante.",
+      "Flexiona unos centímetros las rodillas e invierte el movimiento rápidamente para impulsarlas hacia arriba.",
+      "Justo después del impulso, vuelve a flexionar las rodillas para meterte bajo ellas con los brazos bloqueados.",
+      "Ponte de pie con las kettlebells arriba y bájalas a los hombros."
+    ]
+  },
+  "Two-Arm_Kettlebell_Military_Press": {
+    "name": "Press militar con dos kettlebells",
+    "steps": [
+      "Sube dos kettlebells a los hombros con una cargada, con las palmas hacia delante.",
+      "Empújalas hacia arriba y ligeramente hacia fuera.",
+      "Al pasar la cabeza, adelanta el cuerpo para que queden bloqueadas sobre la cabeza, apretando dorsales, glúteos y abdomen.",
+      "Bájalas a los hombros con control."
+    ]
+  },
+  "Two-Arm_Kettlebell_Row": {
+    "name": "Remo con dos kettlebells",
+    "steps": [
+      "Coloca dos kettlebells delante de los pies, flexiona un poco las rodillas y lleva la cadera atrás con la espalda recta.",
+      "Agarra ambas kettlebells.",
+      "Tira de ellas hacia el abdomen juntando las escápulas y flexionando los codos.",
+      "Bájalas con control y repite."
+    ]
+  },
+  "Underhand_Cable_Pulldowns": {
+    "name": "Jalón al pecho con agarre supino",
+    "steps": [
+      "Siéntate en la máquina de jalón, ajusta los rodillos sobre los muslos y agarra la barra con agarre supino, algo más cerrado que los hombros.",
+      "Con los brazos estirados, inclina el tronco unos 30 grados atrás y saca pecho.",
+      "Tira de la barra hacia la parte alta del pecho llevando los codos abajo y pegados al cuerpo mientras espiras.",
+      "Aprieta un segundo y sube despacio hasta estirar del todo los brazos."
+    ],
+    "mistakes": [
+      "Echarse atrás en exceso para tirar con el peso del cuerpo.",
+      "Tirar con los bíceps sin llevar los codos abajo.",
+      "No estirar del todo los brazos arriba."
+    ]
+  },
+  "Upper_Back-Leg_Grab": {
+    "name": "Estiramiento de espalda abrazando las piernas",
+    "steps": [
+      "Sentado, inclínate hacia delante y abraza los muslos por debajo con ambos brazos.",
+      "Mantén las rodillas juntas y las piernas estiradas mientras acercas el pecho a las rodillas.",
+      "Para estirar también la zona media de la espalda, empuja la espalda hacia atrás sin soltar los muslos.",
+      "Mantén 20-30 segundos."
+    ]
+  },
+  "Upper_Back_Stretch": {
+    "name": "Estiramiento de espalda alta",
+    "steps": [
+      "Entrelaza los dedos con los pulgares hacia abajo.",
+      "Estira los brazos hacia delante redondeando los hombros y la parte alta de la espalda.",
+      "Mantén 15-30 segundos respirando con calma."
+    ]
+  },
+  "Upright_Barbell_Row": {
+    "name": "Remo al mentón con barra",
+    "steps": [
+      "Sujeta una barra con agarre prono algo más cerrado que los hombros, apoyada en los muslos, con los brazos estirados y la espalda recta.",
+      "Sube la barra pegada al cuerpo elevando los codos hacia arriba y hacia los lados, siempre por encima de los antebrazos.",
+      "Continúa hasta que casi toque la barbilla y haz una pausa sin mover el tronco.",
+      "Baja despacio mientras inspiras."
+    ],
+    "tips": ["Un agarre algo más abierto y subir solo hasta el pecho reducen la carga sobre el hombro."]
+  },
+  "Upright_Cable_Row": {
+    "name": "Remo al mentón en polea baja",
+    "steps": [
+      "Agarra una barra recta enganchada a la polea baja con agarre prono algo más cerrado que los hombros, apoyada en los muslos.",
+      "Sube la barra pegada al cuerpo guiando con los codos, que quedan siempre por encima de los antebrazos.",
+      "Continúa hasta que casi toque la barbilla y haz una pausa.",
+      "Baja despacio mientras inspiras."
+    ]
+  },
+  "Upright_Row_-_With_Bands": {
+    "name": "Remo al mentón con banda",
+    "steps": [
+      "Pisa la banda de forma que tenga tensión con los brazos estirados y agarra los extremos con agarre prono delante de los muslos.",
+      "Sube los extremos pegados al cuerpo guiando con los codos, que quedan por encima de los antebrazos.",
+      "Continúa hasta que casi toquen la barbilla y haz una pausa.",
+      "Baja despacio mientras inspiras."
+    ]
+  },
+  "Upward_Stretch": {
+    "name": "Estiramiento hacia arriba con manos juntas",
+    "steps": [
+      "Estira los brazos por encima de la cabeza con las palmas juntas.",
+      "Empuja las manos despacio hacia arriba y ligeramente hacia atrás.",
+      "Mantén la espalda recta y el abdomen firme.",
+      "Mantén 15-20 segundos respirando con calma."
+    ]
+  },
+  "V-Bar_Pulldown": {
+    "name": "Jalón al pecho con agarre en V",
+    "steps": [
+      "Coloca un agarre en V en la polea alta, siéntate y ajusta los rodillos sobre los muslos.",
+      "Agarra el triángulo con las palmas enfrentadas, saca pecho e inclínate unos 30 grados atrás.",
+      "Tira del agarre hacia el pecho juntando las escápulas hasta casi tocarlo mientras espiras, sin mover el tronco.",
+      "Mantén un segundo y sube despacio hasta estirar los brazos."
+    ],
+    "mistakes": [
+      "Balancear el tronco para tirar.",
+      "Encoger los hombros hacia las orejas.",
+      "Acortar el recorrido arriba."
+    ]
+  },
+  "V-Bar_Pullup": {
+    "name": "Dominada con agarre en V",
+    "steps": [
+      "Coloca el centro de un agarre en V sobre la barra de dominadas, con las asas hacia abajo.",
+      "Cuélgate de las asas, saca pecho e inclínate ligeramente atrás.",
+      "Sube tirando con los dorsales y echando un poco la cabeza atrás hasta que el pecho casi toque el agarre, mientras espiras.",
+      "Mantén un segundo y baja despacio."
+    ]
+  },
+  "Vertical_Swing": {
+    "name": "Balanceo con salto con mancuerna",
+    "steps": [
+      "Sujeta una mancuerna con ambas manos colgando entre las piernas, con la espalda recta y la cabeza alta.",
+      "Balancéala entre las piernas flexionando la cadera y un poco las rodillas.",
+      "Invierte el movimiento extendiendo cadera, rodillas y tobillos con fuerza para saltar mientras llevas la mancuerna por encima de la cabeza.",
+      "Aterriza amortiguando, lleva la mancuerna al pecho y repite."
+    ]
+  },
+  "Walking_Treadmill": {
+    "name": "Caminar en cinta",
+    "steps": [
+      "Súbete a la cinta y elige el modo manual o un programa.",
+      "Camina a paso vivo, no de paseo, con el tronco erguido y un braceo natural.",
+      "Sube la inclinación para aumentar la intensidad sin necesidad de correr.",
+      "Sujeta las barras solo para bajarte o medir la frecuencia cardiaca."
+    ],
+    "mistakes": [
+      "Agarrarse a las barras con la cinta inclinada: reduce mucho el trabajo.",
+      "Caminar mirando al suelo.",
+      "Dar zancadas demasiado largas."
+    ],
+    "tips": ["Caminar con inclinación es una forma excelente de cardio de bajo impacto."]
+  },
+  "Weighted_Ball_Hyperextension": {
+    "name": "Hiperextensión lumbar con lastre en fitball",
+    "steps": [
+      "Túmbate boca abajo sobre un fitball con el tronco paralelo al suelo y la parte delantera de los pies apoyada.",
+      "Sujeta un disco bajo la barbilla o detrás del cuello.",
+      "Eleva el tronco extendiendo la zona lumbar mientras espiras, sin pasar de la línea recta.",
+      "Mantén un segundo y baja despacio."
+    ]
+  },
+  "Weighted_Ball_Side_Bend": {
+    "name": "Inclinación lateral con disco en fitball",
+    "steps": [
+      "Túmbate de lado sobre un fitball con la cintura, la cadera y el hombro apoyados y los pies en el suelo, con las piernas cruzadas.",
+      "Sujeta un disco junto a la cabeza con la mano de arriba y apoya el otro antebrazo sobre el abdomen.",
+      "Eleva el costado flexionando lateralmente la cintura mientras espiras.",
+      "Mantén un segundo, baja despacio y cambia de lado al terminar."
+    ]
+  },
+  "Weighted_Bench_Dip": {
+    "name": "Fondos entre bancos con lastre",
+    "steps": [
+      "Coloca un banco detrás y otro delante. Apoya las manos en el borde del de atrás, junto al cuerpo, con los brazos estirados, y los talones sobre el de delante.",
+      "Pide a un compañero que te coloque un disco o una mancuerna sobre los muslos.",
+      "Baja flexionando los codos, pegados al cuerpo, hasta que formen algo menos de 90 grados.",
+      "Sube con el tríceps hasta estirar los brazos."
+    ]
+  },
+  "Weighted_Crunches": {
+    "name": "Crunch con lastre",
+    "steps": [
+      "Túmbate boca arriba con las rodillas a 90 grados y los pies en el suelo o sobre un banco.",
+      "Sujeta un peso contra el pecho o con los brazos estirados sobre el tronco.",
+      "Despega los hombros del suelo unos 10 cm mientras espiras, con la zona lumbar apoyada.",
+      "Aprieta el abdomen un instante y baja despacio."
+    ]
+  },
+  "Weighted_Jump_Squat": {
+    "name": "Sentadilla con salto lastrada",
+    "steps": [
+      "Coloca una barra ligera sobre la parte alta de la espalda (o usa un chaleco lastrado), con los pies algo más abiertos que los hombros y el pecho alto.",
+      "Baja a media sentadilla con un contramovimiento rápido.",
+      "Invierte la dirección de forma explosiva y salta extendiendo cadera, rodillas y tobillos.",
+      "Aterriza amortiguando con las piernas y mantén la postura."
+    ],
+    "tips": ["El peso debe ser ligero: si te frena mucho, sobra carga."]
+  }
+}
