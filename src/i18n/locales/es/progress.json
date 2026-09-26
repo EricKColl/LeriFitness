@@ -1,1 +1,85 @@
-{}
+{
+  "title": "Progreso",
+  "tabs": {
+    "overview": "Resumen",
+    "strength": "Fuerza",
+    "body": "Cuerpo",
+    "history": "Historial"
+  },
+  "empty": {
+    "title": "Aún no hay datos",
+    "body": "Completa tu primera sesión y aquí verás cómo avanzas."
+  },
+  "map": {
+    "title": "Músculos trabajados esta semana",
+    "front": "Frente",
+    "back": "Espalda",
+    "low": "Nada",
+    "high": "Por encima del rango",
+    "hint": "Toca un músculo para ver sus series.",
+    "muscle": "{{muscle}}: {{done}} series hechas de {{min}}-{{max}} recomendadas",
+    "label": "Mapa muscular ({{view}}) con las series de esta semana"
+  },
+  "weekly": {
+    "title": "Últimas 8 semanas",
+    "sessions": "Sesiones por semana",
+    "volume": "Volumen por semana (kg)",
+    "chartSessions": "Sesiones por semana en las últimas 8 semanas",
+    "chartVolume": "Volumen en kilos por semana en las últimas 8 semanas"
+  },
+  "totals": {
+    "sessions": "Sesiones",
+    "hours": "Horas",
+    "tonnage": "Toneladas",
+    "records": "Récords"
+  },
+  "strength": {
+    "title": "1RM estimado",
+    "hint": "Estimación de tu máximo a una repetición a partir de tu mejor serie de cada sesión (fórmula de Epley corregida por las repeticiones en reserva). No hace falta probarlo.",
+    "select": "Ejercicio",
+    "best": "Mejor serie: {{kg}} kg × {{reps}}",
+    "chart": "Evolución del 1RM estimado de {{exercise}}",
+    "empty": "Registra series con peso para ver tu evolución."
+  },
+  "body": {
+    "weight": "Peso corporal",
+    "chart": "Evolución del peso corporal",
+    "add": "Añadir medición",
+    "edit": "Editar medición",
+    "date": "Fecha",
+    "fields": {
+      "weightKg": "Peso (kg)",
+      "bodyFatPercent": "Grasa corporal (%)",
+      "waistCm": "Cintura (cm)",
+      "hipCm": "Cadera (cm)",
+      "chestCm": "Pecho (cm)",
+      "armCm": "Brazo (cm)",
+      "thighCm": "Muslo (cm)",
+      "calfCm": "Gemelo (cm)",
+      "neckCm": "Cuello (cm)"
+    },
+    "optional": "Rellena solo lo que quieras medir.",
+    "saved": "Medición guardada",
+    "deleted": "Medición eliminada",
+    "empty": "Registra tu peso o tus medidas de vez en cuando (por ejemplo, cada 2 semanas, a la misma hora) para ver la tendencia.",
+    "history": "Mediciones",
+    "invalid": "Revisa los valores: alguno está fuera de rango.",
+    "nothing": "Añade al menos un valor."
+  },
+  "history": {
+    "empty": "Todavía no has terminado ninguna sesión.",
+    "session": "{{day}} · {{minutes}} min · {{sets}} series"
+  },
+  "detail": {
+    "notFound": "Esta sesión no existe.",
+    "duration": "Duración",
+    "volume": "Volumen",
+    "sets": "Series",
+    "rpe": "Esfuerzo (RPE)",
+    "notes": "Notas",
+    "delete": "Eliminar sesión",
+    "deleteTitle": "¿Eliminar esta sesión?",
+    "deleteBody": "Se borrarán sus series. Tu progreso y las cargas sugeridas se recalcularán sin ella.",
+    "deleted": "Sesión eliminada"
+  }
+}
