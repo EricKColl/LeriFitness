@@ -1,0 +1,484 @@
+{
+  "Smith_Machine_Calf_Raise": {
+    "name": "Elevación de talones en multipower",
+    "steps": [
+      "Coloca un bloque o un disco bajo la barra del multipower y ajústala a tu altura.",
+      "Súbete con la parte delantera de los pies al bloque, apoya la barra en la parte alta de la espalda y desbloquéala girándola.",
+      "Con las rodillas estiradas sin bloquear, eleva los talones tanto como puedas y aprieta un segundo.",
+      "Baja despacio hasta estirar los gemelos mientras inspiras."
+    ]
+  },
+  "Smith_Machine_Close-Grip_Bench_Press": {
+    "name": "Press de banca cerrado en multipower",
+    "steps": [
+      "Coloca un banco plano bajo el multipower y túmbate con la barra sobre la mitad del pecho.",
+      "Agárrala con agarre prono a la anchura de los hombros y desbloquéala con los brazos estirados.",
+      "Baja despacio hasta la mitad del pecho con los codos pegados al cuerpo mientras inspiras.",
+      "Empuja con el tríceps hasta estirar los brazos mientras espiras y bloquea la barra al terminar."
+    ]
+  },
+  "Smith_Machine_Decline_Press": {
+    "name": "Press declinado en multipower con banco",
+    "steps": [
+      "Coloca un banco declinado en el multipower de forma que la barra quede sobre el pecho y túmbate.",
+      "Desbloquea la barra girándola y estira los brazos, con la espalda ligeramente arqueada y las escápulas juntas.",
+      "Baja la barra hasta el pecho flexionando los brazos.",
+      "Haz una breve pausa y empuja hasta estirarlos; bloquea la barra al terminar."
+    ]
+  },
+  "Smith_Machine_Hang_Power_Clean": {
+    "name": "Cargada colgante de potencia en multipower",
+    "steps": [
+      "Coloca la barra a la altura de las rodillas, agárrala con agarre prono algo más abierto que los hombros y desbloquéala.",
+      "Con los brazos estirados, el pecho alto, los codos hacia fuera y la cadera atrás, carga tensión en los isquiotibiales.",
+      "Extiende con fuerza cadera y rodillas para acelerar la barra sin flexionar los brazos.",
+      "Tras la extensión, vuelve a flexionar cadera y rodillas, gira los codos alrededor de la barra para recibirla en los hombros y ponte de pie."
+    ]
+  },
+  "Smith_Machine_Hip_Raise": {
+    "name": "Elevación de cadera en multipower",
+    "steps": [
+      "Coloca un banco bajo el multipower, túmbate y apoya las plantas de los pies en la barra; desbloquéala y estira las piernas, sujetándote a los laterales.",
+      "Con las rodillas ligeramente flexionadas, enrolla la pelvis y flexiona la columna para despegar la cadera del banco.",
+      "Haz una breve pausa arriba.",
+      "Vuelve a apoyar la cadera con control."
+    ]
+  },
+  "Smith_Machine_Incline_Bench_Press": {
+    "name": "Press inclinado en multipower",
+    "steps": [
+      "Coloca un banco inclinado bajo el multipower de forma que la barra baje sobre la parte alta del pecho.",
+      "Túmbate, agarra la barra con agarre prono algo más abierto que los hombros y desbloquéala con los brazos estirados.",
+      "Baja despacio hasta rozar la parte alta del pecho mientras inspiras.",
+      "Empuja hasta estirar los brazos mientras espiras; tarda el doble en bajar que en subir."
+    ],
+    "mistakes": [
+      "Colocar el banco mal y que la barra baje al cuello o a la mitad del pecho.",
+      "Despegar la espalda y los glúteos del banco.",
+      "Rebotar la barra en el pecho."
+    ]
+  },
+  "Smith_Machine_Leg_Press": {
+    "name": "Prensa de piernas en multipower",
+    "steps": [
+      "Coloca la barra del multipower a unos 60 cm del suelo, apoyada en los seguros, y túmbate debajo.",
+      "Apoya la mitad de los pies en la barra con las rodillas cerca del pecho.",
+      "Empuja la barra hacia arriba extendiendo cadera y rodillas, sin llegar a bloquearlas.",
+      "Haz una breve pausa y baja con control."
+    ]
+  },
+  "Smith_Machine_One-Arm_Upright_Row": {
+    "name": "Remo al mentón a una mano en multipower",
+    "steps": [
+      "Coloca la barra a la altura de los muslos, agárrala con una mano y desbloquéala.",
+      "Quédate erguido con el brazo estirado, la cabeza y el pecho altos.",
+      "Flexiona el codo llevándolo hacia fuera y arriba hasta que el brazo quede paralelo al suelo.",
+      "Tras una breve pausa, baja con control y cambia de brazo al terminar."
+    ]
+  },
+  "Smith_Machine_Overhead_Shoulder_Press": {
+    "name": "Press de hombro en multipower",
+    "steps": [
+      "Coloca un banco con respaldo bajo el multipower y ajusta la barra a la altura de las manos con los brazos casi estirados, sentado.",
+      "Siéntate ligeramente detrás de la barra, agárrala con agarre prono y desbloquéala con los brazos estirados.",
+      "Baja la barra despacio hasta la altura de la barbilla mientras inspiras.",
+      "Empuja hasta estirar los brazos mientras espiras."
+    ]
+  },
+  "Smith_Machine_Pistol_Squat": {
+    "name": "Sentadilla a una pierna en multipower",
+    "steps": [
+      "Apoya la barra del multipower en la parte alta de la espalda, desbloquéala y adelanta un pie unos 30 cm respecto a la barra.",
+      "Estira la otra pierna al frente sin apoyarla, con la espalda neutra y la mirada al frente.",
+      "Baja flexionando la rodilla y la cadera de la pierna de apoyo tanto como te permita la movilidad.",
+      "Haz una breve pausa y sube empujando con el talón; cambia de pierna al terminar."
+    ]
+  },
+  "Smith_Machine_Reverse_Calf_Raises": {
+    "name": "Elevación de puntas en multipower",
+    "steps": [
+      "Coloca una plataforma baja bajo la barra del multipower y súbete con los talones sobre ella y las puntas de los pies fuera.",
+      "Apoya la barra en la espalda y ponte de pie con las rodillas algo flexionadas; la barra solo sirve para el equilibrio.",
+      "Eleva las puntas de los pies tanto como puedas contrayendo el tibial anterior y mantén un segundo.",
+      "Bájalas despacio mientras inspiras."
+    ]
+  },
+  "Smith_Machine_Squat": {
+    "name": "Sentadilla en multipower",
+    "steps": [
+      "Ajusta la barra a la altura de los hombros, apóyala en la parte alta de la espalda y desbloquéala.",
+      "Coloca los pies a la anchura de los hombros, un poco adelantados respecto a la barra, con las puntas algo abiertas.",
+      "Baja despacio con la espalda recta y la cabeza alta hasta que los muslos queden algo por debajo de la paralela.",
+      "Sube empujando el suelo con todo el pie mientras espiras."
+    ],
+    "mistakes": [
+      "Colocar los pies justo bajo la barra: la trayectoria fija sobrecarga las rodillas y la espalda.",
+      "Despegar los talones del suelo.",
+      "Dejar que las rodillas se cierren hacia dentro."
+    ]
+  },
+  "Smith_Machine_Stiff-Legged_Deadlift": {
+    "name": "Peso muerto con piernas rígidas en multipower",
+    "steps": [
+      "Ajusta la barra a media altura de los muslos, agárrala con agarre prono a la anchura de los hombros y desbloquéala.",
+      "Quédate erguido con los pies a la anchura de los hombros o algo más juntos y las rodillas ligeramente flexionadas.",
+      "Sin mover las rodillas, inclínate desde la cadera con la espalda recta bajando la barra hasta notar estiramiento en los isquiotibiales.",
+      "Vuelve a erguirte extendiendo la cadera."
+    ]
+  },
+  "Smith_Machine_Upright_Row": {
+    "name": "Remo al mentón en multipower",
+    "steps": [
+      "Ajusta la barra a media altura de los muslos, agárrala con agarre prono a la anchura de los hombros y desbloquéala.",
+      "Quédate erguido con los brazos estirados y los codos algo flexionados.",
+      "Sube la barra pegada al cuerpo guiando con los codos, que deben quedar siempre por encima de los antebrazos, hasta casi tocar la barbilla.",
+      "Haz una pausa y baja despacio."
+    ],
+    "tips": ["Si notas molestias en el hombro, sube solo hasta la altura del pecho o elige elevaciones laterales."]
+  },
+  "Smith_Single-Leg_Split_Squat": {
+    "name": "Sentadilla búlgara en multipower",
+    "steps": [
+      "Coloca un banco plano a 60-90 cm detrás del multipower, apoya la barra en la parte alta de la espalda y desbloquéala.",
+      "Adelanta un pie bajo la barra y apoya el empeine del otro sobre el banco.",
+      "Baja despacio con el tronco erguido hasta que el muslo delantero quede algo por debajo de la paralela.",
+      "Sube empujando con el talón delantero y cambia de pierna al terminar."
+    ]
+  },
+  "Snatch": {
+    "name": "Arrancada",
+    "steps": [
+      "Colócate con los pies a la anchura de los hombros, la barra sobre la parte delantera del pie y agárrala con agarre ancho, espalda plana y cadera baja.",
+      "Despega la barra empujando el suelo y súbela pegada a las piernas.",
+      "Al llegar a medio muslo, extiende todo el cuerpo de forma explosiva, encoge los hombros y tira con los codos altos y hacia fuera.",
+      "Métete bajo la barra con rapidez, recíbela con los brazos bloqueados en sentadilla profunda y ponte de pie con los pies alineados."
+    ]
+  },
+  "Snatch_Balance": {
+    "name": "Caída de arrancada",
+    "steps": [
+      "Coloca la barra sobre la parte alta de la espalda con agarre ancho de arrancada y los pies en posición de tirón.",
+      "Haz una flexión corta de rodillas e impúlsate para descargar la barra.",
+      "Métete con fuerza bajo ella y recíbela con los brazos bloqueados cerca del fondo de la sentadilla, con el tronco vertical.",
+      "Baja hasta la profundidad completa, ponte de pie y baja la barra con cuidado."
+    ]
+  },
+  "Snatch_Deadlift": {
+    "name": "Peso muerto de arrancada",
+    "steps": [
+      "Agarra la barra en el suelo con agarre ancho de arrancada, pies bajo la cadera y algo abiertos, espalda completamente firme y mirada al frente.",
+      "Empuja con los talones elevando la cadera sin cambiar el ángulo de la espalda hasta que la barra pase las rodillas.",
+      "A partir de ahí, lleva la cadera hacia la barra hasta quedar de pie.",
+      "Devuelve la barra al suelo invirtiendo el movimiento."
+    ],
+    "tips": ["Fortalece el primer tirón de la arrancada."]
+  },
+  "Snatch_from_Blocks": {
+    "name": "Arrancada desde bloques",
+    "steps": [
+      "Coloca la barra sobre bloques a la altura elegida y agárrala con agarre ancho, pies bajo la cadera, cadera baja, pecho alto y codos hacia fuera.",
+      "Despega la barra de los bloques empujando con los talones.",
+      "Extiende con fuerza cadera, rodillas y tobillos; en la extensión máxima encoge los hombros y deja que los codos se flexionen hacia los lados.",
+      "Métete bajo la barra, recíbela lo más abajo posible con los brazos bloqueados, ponte de pie y devuélvela a los bloques."
+    ]
+  },
+  "Snatch_Pull": {
+    "name": "Tirón de arrancada",
+    "steps": [
+      "Agarra la barra en el suelo con agarre ancho de arrancada, cadera baja, espalda recta, pecho alto y hombros por delante de la barra.",
+      "Empuja con los talones extendiendo las rodillas sin cambiar el ángulo de la espalda ni flexionar los brazos.",
+      "Al llegar a medio muslo, extiende cadera, rodillas y tobillos de forma explosiva, como en un salto.",
+      "Termina con el cuerpo totalmente extendido y ligeramente atrás, sin alargar la extensión, y baja la barra con control."
+    ]
+  },
+  "Snatch_Shrug": {
+    "name": "Encogimiento de arrancada",
+    "steps": [
+      "Sujeta la barra con agarre ancho de arrancada a media altura de los muslos, con la espalda recta y el tronco algo inclinado.",
+      "Encoge los hombros hacia las orejas de forma rápida.",
+      "Baja con control y repite.",
+      "Aunque admite más peso que la arrancada, no cargues tanto que el gesto se vuelva lento."
+    ]
+  },
+  "Speed_Band_Overhead_Triceps": {
+    "name": "Extensión de tríceps rápida con banda",
+    "steps": [
+      "Ancla una banda al suelo o a la base de un banco, o písala.",
+      "Lleva la banda por detrás de la cabeza con agarre prono y los codos apuntando arriba.",
+      "Estira los codos rápidamente sin mover los brazos.",
+      "Haz una pausa y vuelve a la posición inicial."
+    ]
+  },
+  "Speed_Box_Squat": {
+    "name": "Sentadilla al cajón con velocidad",
+    "steps": [
+      "Engancha bandas a la barra ancladas cerca del suelo y carga un 50-70 % de tu máximo, un peso que no frene la velocidad.",
+      "Apoya la barra en la parte alta de la espalda con las escápulas juntas y todo el cuerpo firme, y colócate delante del cajón.",
+      "Siéntate en el cajón llevando la cadera atrás, con control y sin dejarte caer.",
+      "Tras una breve pausa, levántate de forma explosiva extendiendo cadera y rodillas."
+    ]
+  },
+  "Speed_Squats": {
+    "name": "Sentadilla con velocidad",
+    "steps": [
+      "Apoya la barra en la parte alta de la espalda, sácala del rack y colócate con los pies a la anchura de los hombros y las puntas algo abiertas.",
+      "Baja con la espalda recta y la cabeza alta hasta que los muslos queden algo por debajo de la paralela.",
+      "Sube lo más rápido posible empujando el suelo, sin perder la técnica ni rebotar.",
+      "Usa una carga moderada que te permita moverla con velocidad."
+    ]
+  },
+  "Spell_Caster": {
+    "name": "Hechicero con mancuernas",
+    "steps": [
+      "De pie, con los pies bien separados, sujeta una mancuerna en cada mano con agarre prono.",
+      "Lleva ambas mancuernas junto a una cadera girando el tronco.",
+      "Con los brazos estirados y las mancuernas paralelas al suelo, gira el tronco para balancearlas hacia el lado contrario.",
+      "Alterna de un lado a otro con control."
+    ]
+  },
+  "Spider_Crawl": {
+    "name": "Plancha araña",
+    "steps": [
+      "Colócate en posición de flexión con los pies juntos, el cuerpo recto y los codos flexionados a 90 grados.",
+      "Levanta un pie del suelo y lleva la rodilla por fuera hacia el codo del mismo lado, tan adelante como puedas.",
+      "Vuelve a la posición inicial.",
+      "Repite con la otra pierna sin mover la cadera."
+    ]
+  },
+  "Spider_Curl": {
+    "name": "Curl araña con barra Z",
+    "steps": [
+      "Apoya la barra Z en el asiento del banco predicador, bien equilibrada.",
+      "Colócate al otro lado del banco, apoyado con el pecho y el abdomen en la cara delantera, inclinado unos 45 grados, y apoya los brazos en el cojín interior.",
+      "Agarra la barra con agarre supino a la anchura de los hombros o algo más cerrado.",
+      "Súbela mientras espiras, aprieta un segundo y bájala despacio."
+    ]
+  },
+  "Spinal_Stretch": {
+    "name": "Estiramiento de columna sentado",
+    "steps": [
+      "Siéntate en una silla con la espalda recta y los pies apoyados en el suelo.",
+      "Entrelaza los dedos detrás de la cabeza, con los codos abiertos y la barbilla baja.",
+      "Gira el tronco hacia un lado tres veces tanto como puedas; después inclínate y gira para llevar el codo hacia el suelo por dentro de la rodilla.",
+      "Vuelve a erguirte y repite hacia el otro lado."
+    ]
+  },
+  "Split_Clean": {
+    "name": "Cargada en tijera",
+    "steps": [
+      "Agarra la barra en el suelo justo por fuera de las piernas, con la cadera baja, la espalda recta, el pecho alto y los hombros por delante de la barra.",
+      "Despega la barra con los talones sin cambiar el ángulo de la espalda; a medio muslo, extiende cadera, rodillas y tobillos como en un salto.",
+      "En la extensión máxima encoge los hombros, tira con los codos altos y métete bajo la barra.",
+      "Recíbela sobre los hombros cayendo en tijera, con un pie delante y otro detrás, y ponte de pie juntando los pies."
+    ]
+  },
+  "Split_Jerk": {
+    "name": "Envión en tijera",
+    "steps": [
+      "De pie, con la barra sobre la parte delantera de los hombros y los pies bajo la cadera.",
+      "Flexiona un poco las rodillas sin llevar la cadera atrás e invierte el movimiento con la máxima potencia, apartando la cabeza al paso de la barra.",
+      "Coloca los pies en tijera lo más rápido posible, uno delante y otro detrás, con las rodillas algo flexionadas.",
+      "Recibe la barra con los brazos bloqueados y ponte de pie juntando los pies."
+    ]
+  },
+  "Split_Jump": {
+    "name": "Salto en zancada",
+    "steps": [
+      "Colócate en zancada con la rodilla delantera sobre el pie y la de atrás casi tocando el suelo.",
+      "Salta lo más alto posible extendiendo ambas piernas y ayudándote con los brazos.",
+      "En el aire, junta los pies y vuelve a separarlos en la misma posición inicial.",
+      "Aterriza en zancada amortiguando y repite."
+    ]
+  },
+  "Split_Snatch": {
+    "name": "Arrancada en tijera",
+    "steps": [
+      "Agarra la barra en el suelo con agarre ancho, pies bajo la cadera, cadera baja, pecho alto y hombros justo por delante de la barra.",
+      "Despega la barra empujando con los talones sin cambiar el ángulo de la espalda hasta pasar las rodillas; luego extiende con fuerza cadera, rodillas y tobillos.",
+      "En la extensión máxima encoge los hombros y métete bajo la barra cayendo en tijera, con los brazos bloqueados arriba.",
+      "Ponte de pie juntando los pies y baja la barra al suelo con cuidado."
+    ]
+  },
+  "Split_Squat_with_Dumbbells": {
+    "name": "Sentadilla búlgara con mancuernas",
+    "steps": [
+      "Colócate delante de un banco con una mancuerna en cada mano y apoya el empeine de un pie sobre él; el otro pie queda adelantado.",
+      "Con el tronco erguido, baja flexionando la rodilla y la cadera delanteras hasta que el muslo quede casi paralelo al suelo.",
+      "Mantén la rodilla delantera alineada con el pie.",
+      "Sube empujando con el talón delantero y cambia de pierna al terminar."
+    ],
+    "mistakes": [
+      "Colocar el pie delantero demasiado cerca del banco y cargar la rodilla en exceso.",
+      "Dejar que la rodilla delantera se cierre hacia dentro.",
+      "Empujar con la pierna de atrás en lugar de con la delantera.",
+      "Inclinar demasiado el tronco y perder el equilibrio."
+    ]
+  },
+  "Split_Squats": {
+    "name": "Cambios de zancada con salto suave",
+    "steps": [
+      "De pie, salta a una posición de zancada con una pierna delante y otra detrás, flexionando un poco las rodillas.",
+      "Nada más bajar, invierte la dirección y salta cambiando la posición de las piernas.",
+      "Mantén el tronco erguido y aterrizajes suaves.",
+      "Haz 5-10 repeticiones por pierna como calentamiento."
+    ]
+  },
+  "Squat_Jerk": {
+    "name": "Envión con sentadilla",
+    "steps": [
+      "De pie, con la barra sobre la parte delantera de los hombros y los pies bajo la cadera.",
+      "Flexiona un poco las rodillas e invierte el movimiento con la máxima potencia, apartando la cabeza al paso de la barra.",
+      "Separa los pies justo por fuera de la cadera y recibe la barra en sentadilla completa con los brazos bloqueados.",
+      "Ponte de pie empujando con los talones y baja la barra con cuidado."
+    ]
+  },
+  "Squat_with_Bands": {
+    "name": "Sentadilla con bandas",
+    "steps": [
+      "Engancha bandas a los extremos de la barra, fijadas a la base del rack o a mancuernas pesadas.",
+      "Apoya la barra en la parte alta de la espalda, junta las escápulas, sácala del rack y separa bien los pies.",
+      "Con todo el cuerpo firme, lleva la cadera atrás y baja hasta pasar la paralela.",
+      "Sube empujando con los talones y abriendo rodillas y pies."
+    ]
+  },
+  "Squat_with_Chains": {
+    "name": "Sentadilla con cadenas",
+    "steps": [
+      "Cuelga las cadenas de los extremos de la barra de forma que algunos eslabones toquen el suelo arriba.",
+      "Apoya la barra en la parte alta de la espalda, junta las escápulas, sácala del rack y separa bien los pies.",
+      "Con todo el cuerpo firme, lleva la cadera atrás y baja hasta pasar la paralela.",
+      "Sube empujando con los talones y abriendo rodillas y pies."
+    ]
+  },
+  "Squat_with_Plate_Movers": {
+    "name": "Sentadilla con desplazamiento de disco",
+    "steps": [
+      "Coloca un disco en el suelo a unos 60 cm del rack, apoya la barra en la espalda y sácala.",
+      "Colócate con los pies bien separados y un pie sobre el disco.",
+      "Haz una sentadilla hasta algo por debajo de la paralela y sube empujando con los talones.",
+      "Arriba, da un paso lateral, empuja el disco con el pie interior hasta tu posición anterior y súbete a él para la siguiente repetición."
+    ]
+  },
+  "Squats_-_With_Bands": {
+    "name": "Sentadilla con banda elástica",
+    "steps": [
+      "Pisa el centro de la banda con los pies a la anchura de los hombros y sube los extremos junto a la cara, con agarre prono y la misma longitud a cada lado.",
+      "Baja flexionando las rodillas hasta que los muslos queden paralelos al suelo.",
+      "Sube empujando con los talones hasta la posición inicial.",
+      "Mantén el pecho alto durante todo el recorrido."
+    ]
+  },
+  "Stairmaster": {
+    "name": "Escaladora (stairmaster)",
+    "steps": [
+      "Súbete a la máquina y elige el modo manual o un programa.",
+      "Sube los escalones a un ritmo constante, apoyando todo el pie en cada peldaño.",
+      "Mantén el tronco erguido y sujeta las asas solo lo necesario para el equilibrio.",
+      "Ajusta la velocidad para mantener la intensidad indicada."
+    ],
+    "mistakes": [
+      "Apoyarse con fuerza en las asas y cargar el peso en los brazos.",
+      "Encorvar el tronco hacia delante.",
+      "Pisar solo con la punta del pie."
+    ],
+    "tips": ["Es bastante más exigente que otras máquinas de cardio: empieza con sesiones cortas."]
+  },
+  "Standing_Alternating_Dumbbell_Press": {
+    "name": "Press alterno de pie con mancuernas",
+    "steps": [
+      "De pie, sube una mancuerna a cada hombro con las palmas hacia delante y los codos hacia fuera.",
+      "Empuja una mancuerna hacia arriba mientras la otra se queda en el hombro, sin inclinar el tronco ni dar impulso.",
+      "Tras una breve pausa, bájala al hombro.",
+      "Repite con el otro brazo y continúa alternando."
+    ]
+  },
+  "Standing_Barbell_Calf_Raise": {
+    "name": "Elevación de talones de pie con barra",
+    "steps": [
+      "Apoya una barra en la parte alta de la espalda, sácala del rack y separa los pies a la anchura de los hombros, con las rodillas ligeramente flexionadas.",
+      "Si quieres más recorrido, apoya la parte delantera de los pies en un bloque firme.",
+      "Eleva los talones tanto como puedas mientras espiras, sin flexionar más las rodillas, y mantén un segundo.",
+      "Baja despacio hasta estirar los gemelos."
+    ]
+  },
+  "Standing_Barbell_Press_Behind_Neck": {
+    "name": "Press tras nuca de pie con barra",
+    "steps": [
+      "Apoya la barra en la parte alta de la espalda, sácala del rack y separa los pies a la anchura de los hombros.",
+      "Con la espalda recta, empuja la barra hasta estirar los brazos por encima de la cabeza mientras espiras.",
+      "Mantén un segundo.",
+      "Bájala despacio a la posición inicial mientras inspiras."
+    ],
+    "tips": [
+      "Exige mucha movilidad de hombro y supone más riesgo que el press por delante; no se incluye en los planes."
+    ]
+  },
+  "Standing_Bent-Over_One-Arm_Dumbbell_Triceps_Extension": {
+    "name": "Patada de tríceps de pie a una mano",
+    "steps": [
+      "Con una mancuerna en una mano y la palma hacia el cuerpo, flexiona un poco las rodillas e inclina el tronco con la espalda recta hasta casi quedar paralelo al suelo.",
+      "Sube el brazo pegado al tronco hasta que quede paralelo al suelo, con el codo a 90 grados.",
+      "Sin mover el brazo, estira el codo hasta que todo el brazo quede recto y aprieta un segundo.",
+      "Baja despacio y cambia de brazo al terminar."
+    ]
+  },
+  "Standing_Bent-Over_Two-Arm_Dumbbell_Triceps_Extension": {
+    "name": "Patada de tríceps de pie a dos manos",
+    "steps": [
+      "Con una mancuerna en cada mano y las palmas hacia el cuerpo, flexiona un poco las rodillas e inclina el tronco con la espalda recta hasta casi quedar paralelo al suelo.",
+      "Sube los brazos pegados al tronco hasta que queden paralelos al suelo, con los codos a 90 grados.",
+      "Sin mover los brazos, estira los codos y aprieta un segundo.",
+      "Baja despacio a la posición inicial."
+    ]
+  },
+  "Standing_Biceps_Cable_Curl": {
+    "name": "Curl de bíceps en polea baja",
+    "steps": [
+      "De pie, frente a una polea baja con barra, agárrala con agarre supino a la anchura de los hombros y los codos pegados al cuerpo.",
+      "Sin mover los brazos, sube la barra hasta la altura de los hombros mientras espiras.",
+      "Aprieta un segundo arriba.",
+      "Baja despacio sin perder la tensión del cable."
+    ],
+    "mistakes": [
+      "Echar el tronco atrás para subir la barra.",
+      "Adelantar los codos al final del recorrido.",
+      "Dejar que la carga baje de golpe."
+    ]
+  },
+  "Standing_Biceps_Stretch": {
+    "name": "Estiramiento de bíceps de pie",
+    "steps": [
+      "Entrelaza las manos detrás de la espalda con las palmas juntas.",
+      "Estira los brazos y gíralos para que las palmas miren hacia abajo.",
+      "Sube los brazos hasta notar el estiramiento en los bíceps.",
+      "Mantén 15-30 segundos."
+    ]
+  },
+  "Standing_Bradford_Press": {
+    "name": "Press Bradford de pie",
+    "steps": [
+      "Saca del rack una barra con agarre prono a la anchura de los hombros, apoyada en la parte delantera de los hombros.",
+      "Empújala por encima de la cabeza sin bloquear los codos y bájala por detrás hasta que los codos formen un ángulo recto.",
+      "Vuelve a pasarla por encima de la cabeza estirando los codos y bájala por delante.",
+      "Alterna así hasta completar las repeticiones, con poco peso y control."
+    ]
+  },
+  "Standing_Cable_Chest_Press": {
+    "name": "Press de pecho de pie en polea",
+    "steps": [
+      "Coloca ambas poleas a la altura del pecho y colócate a 30-60 cm por delante, con un estribo en cada mano y los pies escalonados.",
+      "Coloca los brazos a 90 grados con las escápulas juntas.",
+      "Sin mover el resto del cuerpo, estira los codos y lleva los estribos hacia delante hasta juntarlos.",
+      "Haz una pausa y vuelve despacio."
+    ]
+  },
+  "Standing_Cable_Lift": {
+    "name": "Leñador ascendente en polea",
+    "steps": [
+      "Coloca un estribo en la polea más baja y ponte de lado a un brazo de distancia, con los pies a la anchura de los hombros.",
+      "Agáchate y agarra el estribo con ambas manos, con los brazos estirados.",
+      "En un solo movimiento, tira del estribo en diagonal hacia arriba cruzando el cuerpo hasta estirar los brazos por encima de la cabeza, girando el pie de atrás y estirando las piernas.",
+      "Vuelve despacio a la posición inicial y cambia de lado al terminar."
+    ]
+  }
+}
