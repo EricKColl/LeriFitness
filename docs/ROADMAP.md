@@ -13,7 +13,7 @@
 - [x] Iconos PWA generados por script (`npm run icons`)
 - [x] Configuración PWA (Workbox) — pendiente de conectar el registro y el aviso de actualización
 
-## Fase 1 — MVP ✅ (pendiente solo de datos del responsable y de publicar)
+## Fase 1 — MVP ✅ (publicada en Cloudflare Pages)
 
 - [x] Vocabulario de dominio: músculos, material, lesiones, patrones, niveles (`src/domain`)
 - [x] Esquemas Zod del catálogo y del contenido traducible
@@ -40,25 +40,43 @@
 - [x] CI (GitHub Actions), despliegue en Cloudflare Pages, `_headers` con CSP estricta
 - [x] Verificación: build, check, preview y E2E con Playwright a 375×812 (claro y oscuro,
       con CSP y sin conexión)
-- [ ] **Datos del responsable del tratamiento** en `src/config/legal.ts` (los aporta la persona
-      titular)
-- [ ] Crear la cuenta gratuita de Cloudflare y los secretos del repositorio para publicar
+- [x] Datos del responsable del tratamiento en `src/config/legal.ts`
+- [x] Cuenta gratuita de Cloudflare y secretos del repositorio: despliegue automático activo
 
-### Mejoras detectadas para más adelante
+## Fase 2 — Anatomía 3D ✅
+
+- [x] Pipeline reproducible del modelo (`npm run anatomy:build`): Z-Anatomy (commit fijado y
+      sha256) → Blender (`bpy`) → músculos agrupados + esqueleto + anclas de lesión → glTF con
+      Meshopt (549 KB, ~117 000 triángulos, simetría para el lado derecho)
+- [x] Visor React Three Fiber + drei con carga perezosa: músculos por ejercicio con encuadre,
+      mapa de calor semanal interactivo, músculos de cada sesión, zonas con molestias
+- [x] Mapa 2D como respaldo (sin WebGL 2, dispositivos modestos, error o preferencia)
+- [x] Atribución CC BY-SA 4.0, licencia junto al modelo y crédito visible; sin piezas NC
+- [x] Verificación: check, build, E2E de producción con CSP (incluye `wasm-unsafe-eval`)
+
+## Fase 3 — IA, cuentas y premium ✅ (la nube queda lista a falta de crear las cuentas)
+
+- [x] Asistente que **solo explica** (`src/features/assistant`): glosario curado sin conexión que
+      añade las razones del motor para tu semana; modelo local con WebLLM (Qwen2.5 1,5B/0,5B)
+      en un Web Worker, descarga opcional y fuera del precache; respaldo en la nube opcional
+- [x] Contexto del asistente remoto sin datos personales ni de salud (garantizado por tests);
+      aviso sanitario automático ante preguntas de dolor; conversación solo en memoria
+- [x] Supabase opcional (UE): esquema con RLS en todas las tablas, cuenta sin contraseña con
+      código por email, sincronización mínima local-first testada (perfil sin lesiones,
+      sesiones sin notas, logros), borrado de cuenta en un clic
+- [x] Edge Functions: asistente con Gemini (cuota diaria por persona, clave solo en servidor)
+      y borrado de cuenta; workflow que aplica migraciones y publica funciones
+- [x] Arquitectura premium sin pagos: funciones por plan (todo lo actual gratis), plan leído
+      del servidor (tabla solo escribible por el servidor), pantalla Forja+
+- [x] Privacidad actualizada (cuenta, sincronización, asistente y condiciones de Gemini)
+- [ ] Crear el proyecto de Supabase y la clave de Gemini y añadir secretos/variables en GitHub
+      (pasos en `supabase/README.md`)
+
+### Ideas para después
 
 - [ ] Motor: con poco tiempo por sesión, cambiar series de accesorios por series de músculos
       por debajo del objetivo (p. ej. pecho con 3 días × 60 min)
-- [ ] Series de aproximación registrables en la sesión (hoy solo se muestran como guía)
+- [ ] Series de aproximación registrables en la sesión
 - [ ] Más idiomas (la estructura i18n ya lo permite)
-
-## Fase 2 — Anatomía 3D
-
-- [ ] Pipeline del modelo (Z-Anatomy/BodyParts3D → músculos + esqueleto → glTF Draco/Meshopt)
-- [ ] Visor React Three Fiber: músculos por ejercicio, mapa de calor semanal, zonas lesionadas
-- [ ] Atribución CC BY-SA 4.0 y publicación del modelo derivado con la misma licencia
-
-## Fase 3 — IA y cuentas
-
-- [ ] Asistente: WebLLM con WebGPU; respaldo Gemini (plan gratuito) vía Edge Function con cuota
-- [ ] Cuentas opcionales y sincronización con Supabase (UE, RLS)
-- [ ] Funciones premium (Stripe o Lemon Squeezy)
+- [ ] Pagos reales para Forja+ (webhook que escriba en `entitlements`), solo si algún día se
+      decide y sin quitar nada gratuito

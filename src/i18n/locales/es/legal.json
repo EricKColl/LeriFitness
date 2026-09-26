@@ -15,8 +15,8 @@
         {
           "title": "Dónde se guardan tus datos",
           "body": [
-            "Todo lo que introduces (perfil, sesiones, medidas, check-ins y ajustes) se guarda únicamente en el almacenamiento local de tu navegador (IndexedDB) en este dispositivo.",
-            "No hay cuentas ni servidores de Forja que reciban tus datos: el responsable no tiene acceso a ellos. Si borras los datos del navegador o desinstalas la app, se pierden salvo que hayas exportado una copia."
+            "Todo lo que introduces (perfil, sesiones, medidas, check-ins y ajustes) se guarda en el almacenamiento local de tu navegador (IndexedDB) en este dispositivo.",
+            "Sin cuenta, ningún servidor de Forja recibe tus datos y el responsable no tiene acceso a ellos. Si borras los datos del navegador o desinstalas la app, se pierden salvo que hayas exportado una copia o tengas la cuenta opcional."
           ]
         },
         {
@@ -45,6 +45,21 @@
           "title": "Alojamiento de la app",
           "body": [
             "Los archivos de la app se sirven desde Cloudflare Pages. Al descargarlos, Cloudflare trata datos técnicos de conexión (como la dirección IP) para entregar la web y protegerla frente a abusos, como encargado del tratamiento y con las garantías del Marco de Privacidad de Datos UE-EE. UU. y cláusulas contractuales tipo. Estos datos técnicos no incluyen nada de lo que introduces en la app."
+          ]
+        },
+        {
+          "title": "Cuenta opcional y sincronización",
+          "body": [
+            "Si creas una cuenta (solo con tu correo, sin contraseña), se guarda una copia en la nube para usar Forja en varios dispositivos: tu perfil de entrenamiento sin lesiones, tus sesiones terminadas sin notas y tus logros. Nunca se suben lesiones, molestias, check-ins, medidas corporales, notas ni planes.",
+            "Base jurídica: tu consentimiento al crear la cuenta y la prestación del servicio que solicitas (arts. 6.1.a y 6.1.b RGPD). Proveedor: Supabase, como encargado del tratamiento, en servidores de la Unión Europea; el acceso está protegido para que solo tu cuenta pueda leer tus filas.",
+            "Conservación: hasta que borres la cuenta. En Perfil › Cuenta puedes cerrar sesión o borrar la cuenta y todo lo guardado en la nube en un clic."
+          ]
+        },
+        {
+          "title": "Asistente",
+          "body": [
+            "El asistente solo explica el plan y conceptos de entrenamiento; no decide tu plan. Tiene tres modos: el glosario de Forja y el modelo que puedes descargar a tu dispositivo funcionan sin enviar nada fuera del móvil (el modelo se descarga una vez desde Hugging Face).",
+            "El asistente en la nube es opcional y requiere cuenta. Solo envía tu pregunta y un resumen de tu plan sin datos personales ni de salud (sin lesiones, molestias, edad, sexo, peso ni trabajo) a Google Gemini a través de nuestro servidor, que cuenta cuántas preguntas haces al día para aplicar un límite y no guarda su contenido. Google trata esas preguntas según las condiciones de su servicio gratuito, que le permiten usarlas para mejorar sus productos: no escribas en ellas datos personales ni de salud."
           ]
         },
         {
@@ -149,6 +164,13 @@
           ]
         },
         {
+          "title": "Modelo anatómico 3D",
+          "body": [
+            "El modelo 3D de músculos y esqueleto deriva de Z-Anatomy («The libre 3D atlas of anatomy», de Gauthier Kervyn y colaboradores, CC BY-SA 4.0), basado a su vez en BodyParts3D (© The Database Center for Life Science, CC BY-SA 2.1 Japón).",
+            "Forja ha seleccionado solo músculos y huesos, los ha agrupado, simplificado y comprimido. El modelo resultante (anatomy/body.glb) se distribuye bajo la misma licencia, CC BY-SA 4.0, con su archivo de licencia al lado (anatomy/LICENSE.txt). El proceso para generarlo está en el repositorio del proyecto."
+          ]
+        },
+        {
           "title": "Tipografías",
           "body": [
             "Inter, de Rasmus Andersson, bajo SIL Open Font License 1.1.",
@@ -163,7 +185,7 @@
         {
           "title": "Software",
           "body": [
-            "React, React Router, Radix UI, shadcn/ui, Tailwind CSS, Motion, Zustand, Zod, i18next, Sonner, Workbox y Vite, bajo licencia MIT. Dexie.js, bajo licencia Apache 2.0.",
+            "React, React Router, Radix UI, shadcn/ui, Tailwind CSS, Motion, Zustand, Zod, i18next, Sonner, Workbox, Vite, three.js, React Three Fiber, drei y meshoptimizer, bajo licencia MIT. Dexie.js, bajo licencia Apache 2.0.",
             "El listado completo de dependencias y sus licencias está en el repositorio del proyecto."
           ]
         }

@@ -1,0 +1,8 @@
+# Configuración mínima para la CLI de Supabase (supabase link / db push / functions deploy).
+project_id = "forja"
+
+[functions.assistant]
+verify_jwt = true
+
+[functions.delete-account]
+verify_jwt = true

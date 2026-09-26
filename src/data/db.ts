@@ -19,7 +19,8 @@ export interface ProfileRow extends Profile {
   updatedAt: number
 }
 
-export const CONSENT_KINDS = ['health', 'terms'] as const
+/** `cloud`: aceptación de la cuenta opcional y la sincronización (sin datos de salud). */
+export const CONSENT_KINDS = ['health', 'terms', 'cloud'] as const
 export type ConsentKind = (typeof CONSENT_KINDS)[number]
 
 /** Registro de consentimiento con fecha y versión del texto aceptado (RGPD art. 7 y 9). */

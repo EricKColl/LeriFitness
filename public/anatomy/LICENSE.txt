@@ -1,0 +1,23 @@
+Modelo anatómico 3D de Forja (body.glb)
+=======================================
+
+Licencia: Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)
+https://creativecommons.org/licenses/by-sa/4.0/deed.es
+
+Este archivo es una obra derivada de:
+
+- «Z-Anatomy - The libre 3D atlas of anatomy» (CC BY-SA 4.0), de Gauthier Kervyn y
+  colaboradores. https://github.com/Z-Anatomy/Models-of-human-anatomy
+  (commit 3f4bbd72ef45ef61483e9b03650c6f8843a0a183)
+- que a su vez deriva de «BodyParts3D, © The Database Center for Life Science»
+  (CC BY-SA 2.1 Japón), de Kousaku Okubo y colaboradores.
+  https://dbarchive.biosciencedbc.jp/en/bodyparts3d/
+
+Cambios realizados por Forja: se han seleccionado solo músculos esqueléticos y huesos (sin
+órganos, vasos, nervios ni ninguna pieza con licencia no comercial), se han agrupado los
+músculos por grupos de entrenamiento, se ha simplificado la geometría, se conserva solo el lado
+izquierdo (el derecho se obtiene por simetría) y se ha comprimido con meshoptimizer.
+
+El proceso completo y reproducible está en scripts/anatomy/ del repositorio de Forja. Puedes
+copiar, modificar y redistribuir este modelo, también con fines comerciales, siempre que
+atribuyas a sus autores y compartas tus derivados con esta misma licencia.

@@ -44,6 +44,24 @@ export const router = createBrowserRouter([
                 }),
               },
               {
+                path: '/perfil/cuenta',
+                lazy: async () => ({
+                  Component: (await import('@/features/profile/AccountPage')).AccountPage,
+                }),
+              },
+              {
+                path: '/forja-plus',
+                lazy: async () => ({
+                  Component: (await import('@/features/premium/PremiumPage')).PremiumPage,
+                }),
+              },
+              {
+                path: '/asistente',
+                lazy: async () => ({
+                  Component: (await import('@/features/assistant/AssistantPage')).AssistantPage,
+                }),
+              },
+              {
                 path: '/ejercicios',
                 lazy: async () => ({
                   Component: (await import('@/features/library/LibraryPage')).LibraryPage,

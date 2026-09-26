@@ -26,6 +26,7 @@ import {
 } from '@/domain'
 import { workingSets, type PlanDay } from '@/engine'
 import { exerciseName, useCatalog } from '@/data/catalog'
+import { syncInBackground } from '@/data/cloud/auto'
 import { db } from '@/data/db'
 import { useSessions } from '@/data/hooks'
 import { syncAchievements } from '@/features/achievements/sync'
@@ -118,6 +119,7 @@ export function LiveSession({
       await db.activeSession.delete('current')
     })
     await syncAchievements()
+    syncInBackground()
     onFinished(session)
   }
 

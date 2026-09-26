@@ -1,6 +1,8 @@
 import { useRef, useState, type ReactNode } from 'react'
 import {
   ChevronRight,
+  Cloud,
+  Sparkles,
   Download,
   FileText,
   HeartPulse,
@@ -19,6 +21,8 @@ import { toast } from 'sonner'
 import type { Profile } from '@/domain'
 import { downloadExport, importAll, wipeAll } from '@/data/backup'
 import { exerciseImage, useCatalog } from '@/data/catalog'
+import { cloudConfigured } from '@/data/cloud/client'
+import { supportsWebGL, useAnatomy3D } from '@/features/anatomy/support'
 import { db } from '@/data/db'
 import { useProfile } from '@/data/hooks'
 import { regeneratePlan } from '@/data/plans'
@@ -49,7 +53,7 @@ export function ProfilePage() {
 }
 
 function ProfileView({ profile }: { profile: Profile }) {
-  const { t } = useTranslation(['profile', 'domain', 'common'])
+  const { t } = useTranslation(['profile', 'domain', 'common', 'premium'])
   const catalog = useCatalog()
   const GoalIcon = GOAL_ICONS[profile.goal]
 
@@ -74,6 +78,33 @@ function ProfileView({ profile }: { profile: Profile }) {
         </div>
         <UserPen className="size-5 text-muted-foreground" />
       </Link>
+
+      <div className="surface mt-4 divide-y divide-border/70 overflow-hidden">
+        {cloudConfigured() && (
+          <Link
+            to="/perfil/cuenta"
+            className="flex min-h-16 items-center gap-3 px-4 py-3 transition-colors hover:bg-accent/40"
+          >
+            <Cloud className="size-5 text-muted-foreground" />
+            <span className="flex-1">
+              <span className="block font-medium">{t('account.title')}</span>
+              <span className="block text-xs text-muted-foreground">{t('account.rowHint')}</span>
+            </span>
+            <ChevronRight className="size-5 text-muted-foreground" />
+          </Link>
+        )}
+        <Link
+          to="/forja-plus"
+          className="flex min-h-16 items-center gap-3 px-4 py-3 transition-colors hover:bg-accent/40"
+        >
+          <Sparkles className="size-5 text-primary" />
+          <span className="flex-1">
+            <span className="block font-medium">{t('premium:rowTitle')}</span>
+            <span className="block text-xs text-muted-foreground">{t('premium:rowHint')}</span>
+          </span>
+          <ChevronRight className="size-5 text-muted-foreground" />
+        </Link>
+      </div>
 
       <Preferences />
       <Offline urls={catalog.exercises.flatMap((e) => e.images.map(exerciseImage))} />
@@ -132,6 +163,7 @@ function Preferences() {
   const prefs = usePrefs()
   const { preference, setPreference } = useThemeStore()
   const toggles = ['sound', 'vibration', 'keepAwake'] as const
+  const anatomy3d = useAnatomy3D()
   return (
     <Section title={t('prefs.title')}>
       <div className="surface divide-y divide-border/70">
@@ -161,6 +193,19 @@ function Preferences() {
             }
           />
         ))}
+        {supportsWebGL() && (
+          <Row
+            label={<label htmlFor="pref-anatomy3d">{t('prefs.anatomy3d')}</label>}
+            hint={t('prefs.anatomy3dHint')}
+            control={
+              <Switch
+                id="pref-anatomy3d"
+                checked={anatomy3d}
+                onCheckedChange={(v) => prefs.set({ anatomy3d: v })}
+              />
+            }
+          />
+        )}
         <Row
           label={t('prefs.language')}
           hint={t('prefs.languageHint')}

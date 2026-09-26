@@ -1,4 +1,11 @@
-import { Check, ChevronRight, Clock, Settings2, TriangleAlert } from 'lucide-react'
+import {
+  Check,
+  ChevronRight,
+  Clock,
+  MessageCircleQuestion,
+  Settings2,
+  TriangleAlert,
+} from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router'
 
@@ -155,6 +162,20 @@ function PlanView({
           </AccordionItem>
         </Accordion>
       </Section>
+
+      <Link
+        to="/asistente"
+        className="surface-glow mt-7 flex items-center gap-4 rounded-3xl border border-border/70 p-4 transition-colors hover:bg-accent/40"
+      >
+        <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-steel-soft text-steel">
+          <MessageCircleQuestion className="size-6" />
+        </span>
+        <span className="flex-1">
+          <span className="block font-semibold">{t('assistant.title')}</span>
+          <span className="block text-sm text-muted-foreground">{t('assistant.body')}</span>
+        </span>
+        <ChevronRight className="size-5 text-muted-foreground" />
+      </Link>
 
       <Section title={t('cardio.title')}>
         <p className="surface p-4 text-sm text-muted-foreground">

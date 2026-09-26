@@ -1,4 +1,5 @@
 import achievements from './achievements.json'
+import assistant from './assistant.json'
 import common from './common.json'
 import domain from './domain.json'
 import engine from './engine.json'
@@ -7,6 +8,7 @@ import library from './library.json'
 import motivation from './motivation.json'
 import onboarding from './onboarding.json'
 import plan from './plan.json'
+import premium from './premium.json'
 import profile from './profile.json'
 import progress from './progress.json'
 import session from './session.json'
@@ -26,6 +28,8 @@ const es = {
   motivation,
   profile,
   legal,
+  assistant,
+  premium,
 }
 
 export default es

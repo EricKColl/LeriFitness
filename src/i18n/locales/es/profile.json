@@ -12,6 +12,8 @@
     "sound": "Pitido al acabar el descanso",
     "vibration": "Vibración",
     "keepAwake": "Mantener la pantalla encendida en la sesión",
+    "anatomy3d": "Anatomía en 3D",
+    "anatomy3dHint": "Desactívala para usar el mapa 2D, más ligero.",
     "language": "Idioma",
     "languageValue": "Español",
     "languageHint": "Más idiomas próximamente."
@@ -86,5 +88,50 @@
     "save": "Guardar y recalcular plan",
     "saved": "Perfil guardado: tu plan se ha recalculado",
     "noDays": "Elige al menos un día."
+  },
+  "account": {
+    "title": "Cuenta y sincronización",
+    "rowHint": "Opcional: copia en la nube para usar Forja en varios dispositivos",
+    "subtitle": "Opcional. Sin cuenta, Forja funciona igual y todo se queda en este dispositivo.",
+    "what": "Qué se sincroniza",
+    "whatItems": [
+      "Tu perfil de entrenamiento (objetivo, nivel, días, material y datos físicos básicos)",
+      "Tus sesiones terminadas (series, cargas y esfuerzo)",
+      "Tus logros"
+    ],
+    "never": "Qué nunca sale de este dispositivo",
+    "neverItems": [
+      "Lesiones, molestias y check-ins (datos de salud)",
+      "Medidas corporales",
+      "Notas de las sesiones",
+      "Tus planes (cada dispositivo los recalcula)"
+    ],
+    "where": "Los datos se guardan en Supabase, en servidores de la Unión Europea, protegidos para que solo tu cuenta pueda leerlos. Puedes borrar la cuenta y todo lo que hay en la nube cuando quieras.",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "tu@correo.com",
+    "consent": "He leído la <privacy>política de privacidad</privacy> y quiero crear una cuenta para sincronizar estos datos.",
+    "sendCode": "Enviarme un código",
+    "codeSent": "Te hemos enviado un código a {{email}}. Revisa también la carpeta de spam.",
+    "code": "Código de 6 dígitos",
+    "verify": "Entrar",
+    "changeEmail": "Usar otro correo",
+    "invalidEmail": "Escribe un correo válido.",
+    "sendError": "No se pudo enviar el código. Inténtalo de nuevo en unos minutos.",
+    "verifyError": "El código no es correcto o ha caducado.",
+    "signedInAs": "Sesión iniciada como {{email}}",
+    "lastSync": "Última sincronización: {{date}}",
+    "neverSynced": "Aún no se ha sincronizado.",
+    "syncNow": "Sincronizar ahora",
+    "synced": "Sincronizado: {{pushed}} cambios subidos y {{pulled}} recibidos",
+    "syncError": "No se pudo sincronizar. Se reintentará automáticamente.",
+    "signOut": "Cerrar sesión",
+    "signedOut": "Sesión cerrada. Tus datos siguen en este dispositivo.",
+    "delete": "Borrar mi cuenta y mis datos de la nube",
+    "deleteTitle": "¿Borrar la cuenta?",
+    "deleteBody": "Se eliminarán la cuenta y todo lo guardado en la nube. Los datos de este dispositivo no se tocan (puedes borrarlos aparte en Tus datos).",
+    "deleted": "Cuenta y datos de la nube borrados",
+    "deleteError": "No se pudo borrar la cuenta. Inténtalo de nuevo o escríbenos.",
+    "plan": "Plan: {{plan}}",
+    "unavailable": "La sincronización en la nube no está disponible en esta instalación."
   }
 }

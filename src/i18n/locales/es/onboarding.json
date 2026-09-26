@@ -66,6 +66,7 @@
     "subtitle": "Marca las zonas y cuánto te molestan.",
     "none": "No tengo molestias",
     "severity": "¿Cuánto te molesta?",
+    "mapLabel": "Modelo anatómico con las zonas marcadas: {{zones}}",
     "zonesSelected_one": "{{count}} zona marcada",
     "zonesSelected_other": "{{count}} zonas marcadas"
   },

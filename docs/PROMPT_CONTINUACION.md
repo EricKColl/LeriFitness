@@ -168,6 +168,34 @@ como referencia del diseño. Estado real ahora (ver `docs/ROADMAP.md`, que es la
   - `window.forjaDev.seed()` (solo en desarrollo) genera historial realista para probar.
 - Siguiente paso: Fase 2 (anatomía 3D).
 
+## ACTUALIZACIÓN: FASE 2 TERMINADA (26/09/2026)
+
+- Modelo 3D en `public/anatomy/body.glb`, generado por `scripts/anatomy/` (ver su README). Los
+  nodos llevan `extras` (`muscle`, `side`) porque three.js elimina los «:» de los nombres.
+- Visor en `src/features/anatomy/body-3d.tsx` (perezoso) y envoltorio con respaldo 2D en
+  `anatomy-view.tsx`. Preferencia `anatomy3d` en `usePrefs` (`null` = automático).
+- La CSP incluye `'wasm-unsafe-eval'` (decodificador Meshopt). El GLB está en el precache.
+- Datos del responsable ya puestos (Erick Coll Rodríguez, erickcollrodriguez@gmail.com).
+- Siguiente paso: Fase 3 (asistente que explica, cuentas opcionales, arquitectura premium).
+
+## ACTUALIZACIÓN: FASE 3 TERMINADA (26/09/2026)
+
+- Asistente en `src/features/assistant`: `knowledge.ts` (glosario + búsqueda), `context.ts`
+  (contexto y `SYSTEM_PROMPT`; `buildContext(…, 'remote')` excluye todo dato personal o de salud),
+  `local-llm.ts` + `llm.worker.ts` (WebLLM perezoso; `webllm.ts` da nombre al fragmento para
+  excluirlo del precache), `remote.ts` (Edge Function `assistant`).
+- Nube opcional en `src/data/cloud` (se activa con `VITE_SUPABASE_URL` y
+  `VITE_SUPABASE_ANON_KEY`; en el despliegue salen de las variables del repositorio
+  `SUPABASE_URL` y `SUPABASE_ANON_KEY`). `sync.ts` es la lógica (testada con un almacén en
+  memoria); `account.ts` es el adaptador de Supabase y la cuenta.
+- Solo se sincronizan `profile` (sin `injuries`), `sessions` (sin `notes`) y `achievements`.
+  Si se amplía, actualizar la migración, `SYNCED_COLLECTIONS`, la política de privacidad y
+  la pantalla de cuenta.
+- Supabase: `supabase/` (migraciones, funciones y README con los pasos y límites gratuitos).
+  La copia de `SYSTEM_PROMPT` en `supabase/functions/_shared/prompt.ts` debe coincidir (test).
+- Premium: `src/features/premium/features.ts`; el plan solo lo escribe el servidor.
+- Pendiente de la persona titular: crear el proyecto de Supabase y la clave de Gemini.
+
 ## ESTADO ACTUAL DEL PROYECTO (26/09/2026, inicio de la Fase 1)
 
 Hay 2 commits previos en `main` más el de este traspaso. Todo `npm run check` pasa (tipos, lint,
