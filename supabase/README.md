@@ -26,8 +26,8 @@ actualizar `main`.
    - Variables (pestaña _Variables_): `SUPABASE_URL` y `SUPABASE_ANON_KEY` (son públicas por
      diseño; la seguridad la dan las políticas RLS).
 6. **Autenticación** (_Authentication › URL Configuration_ en Supabase): pon la URL de la app
-   (por ejemplo `https://forja.pages.dev`) como _Site URL_ y añade en _Redirect URLs_
-   `https://forja.pages.dev/**` (con tu dirección real). Se entra con el **enlace** que llega
+   (por ejemplo `https://forja-13u.pages.dev`) como _Site URL_ y añade en _Redirect URLs_
+   `https://forja-13u.pages.dev/**` (con tu dirección real). Se entra con el **enlace** que llega
    por email, así que no hace falta tocar las plantillas (Supabase solo deja editarlas con un
    SMTP propio). Si algún día configuras SMTP, puedes añadir `{{ .Token }}` a la plantilla
    _Magic link or OTP_ y la app también aceptará el código de 6 dígitos (útil en iPhone con la

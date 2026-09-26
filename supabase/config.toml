@@ -1,8 +1,10 @@
 # Configuración mínima para la CLI de Supabase (supabase link / db push / functions deploy).
 project_id = "forja"
 
+# Las funciones verifican la sesión ellas mismas (ver functions/_shared/admin.ts): la
+# verificación integrada de la pasarela no es compatible con las claves nuevas de Supabase.
 [functions.assistant]
-verify_jwt = true
+verify_jwt = false
 
 [functions.delete-account]
-verify_jwt = true
+verify_jwt = false
