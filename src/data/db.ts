@@ -102,6 +102,6 @@ export const TABLES = [
   'achievements',
   'settings',
   'activeSession',
-] as const satisfies readonly (keyof ForjaDatabase & string)[]
+] as const satisfies readonly Exclude<keyof ForjaDatabase, keyof Dexie>[]
 
 export type TableName = (typeof TABLES)[number]

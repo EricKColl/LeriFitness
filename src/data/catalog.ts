@@ -26,7 +26,7 @@ export function loadCatalog(): Promise<Catalog> {
     return {
       exercises,
       byId: new Map(exercises.map((e) => [e.id, e])),
-      content: content.default as Record<string, ExerciseContent>,
+      content: content.default,
       version: catalog.default.version,
     }
   })
