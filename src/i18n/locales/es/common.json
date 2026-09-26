@@ -1,0 +1,27 @@
+{
+  "appName": "Forja",
+  "actions": {
+    "continue": "Continuar",
+    "back": "Atrás",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "done": "Hecho",
+    "skip": "Saltar",
+    "start": "Empezar"
+  },
+  "nav": {
+    "today": "Hoy",
+    "plan": "Plan",
+    "library": "Ejercicios",
+    "progress": "Progreso",
+    "profile": "Perfil"
+  },
+  "theme": {
+    "dark": "Oscuro",
+    "light": "Claro",
+    "system": "Sistema"
+  }
+}

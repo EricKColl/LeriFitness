@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Forja — Entrenamiento personalizado</title>
+    <meta
+      name="description"
+      content="Entrenamiento de gimnasio personalizado, basado en principios con respaldo científico. Funciona sin conexión y tus datos se quedan en tu dispositivo."
+    />
+    <meta name="theme-color" content="#0f0d0c" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Forja" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <script>
+      // Aplica el tema antes del primer pintado para evitar parpadeos.
+      try {
+        var p = JSON.parse(localStorage.getItem('forja-theme') || '{}').state?.preference || 'dark'
+        var dark =
+          p === 'dark' || (p === 'system' && matchMedia('(prefers-color-scheme: dark)').matches)
+        document.documentElement.classList.toggle('dark', dark)
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Forja necesita JavaScript para funcionar.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

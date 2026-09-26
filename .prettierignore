@@ -1,0 +1,8 @@
+dist
+dev-dist
+coverage
+.cache
+public/exercises
+src/data/generated
+scripts/exercises/content
+package-lock.json

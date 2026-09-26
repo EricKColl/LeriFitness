@@ -1,0 +1,21 @@
+# dependencias y builds
+node_modules
+dist
+dev-dist
+coverage
+*.tsbuildinfo
+
+# caché de scripts de datos (descargas de origen)
+.cache
+
+# entorno y editor
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.log
+.wrangler
