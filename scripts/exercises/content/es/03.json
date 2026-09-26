@@ -1,0 +1,494 @@
+{
+  "Box_Skip": {
+    "name": "Saltos alternos sobre cajones",
+    "steps": [
+      "Coloca varios cajones en fila separados unos 2,5 metros y sitúate frente al primero con un pie algo retrasado.",
+      "Impúlsate con la pierna de atrás buscando la máxima altura de cadera y aterriza con un pie sobre el cajón.",
+      "Sin pausa, lanza la otra rodilla adelante y arriba para saltar desde el cajón y aterriza entre los dos cajones con la misma pierna que apoyaste arriba.",
+      "Avanza hasta el siguiente cajón y repite."
+    ]
+  },
+  "Box_Squat": {
+    "name": "Sentadilla al cajón",
+    "steps": [
+      "Coloca un cajón detrás de ti dentro del rack, a una altura que te deje en paralelo. Apoya la barra sobre los trapecios, junta las escápulas y sácala.",
+      "Separa los pies (más abiertos para glúteos e isquios, más cerrados para cuádriceps) y tensa espalda y abdomen.",
+      "Baja llevando la cadera atrás y las rodillas hacia fuera hasta sentarte en el cajón, con las espinillas casi verticales. Haz una pausa sin relajar el tronco; nunca rebotes.",
+      "Sube empujando con los talones y las rodillas hacia fuera, guiando el movimiento con la cabeza."
+    ]
+  },
+  "Box_Squat_with_Bands": {
+    "name": "Sentadilla al cajón con bandas",
+    "steps": [
+      "Coloca el cajón en el rack y fija las bandas a los extremos de la barra y a la base del rack (o a mancuernas pesadas bien sujetas) con la tensión deseada.",
+      "Apoya la barra sobre los trapecios, junta las escápulas, sácala y colócate con la anchura de pies elegida.",
+      "Baja llevando la cadera atrás hasta sentarte en el cajón, haz una pausa sin rebotar y sin perder tensión en el tronco.",
+      "Sube de forma explosiva empujando con los talones. Devuelve la barra al rack con cuidado."
+    ]
+  },
+  "Box_Squat_with_Chains": {
+    "name": "Sentadilla al cajón con cadenas",
+    "steps": [
+      "Coloca el cajón en el rack y cuelga las cadenas de los extremos de la barra, de modo que arriba queden algunos eslabones en el suelo.",
+      "Apoya la barra sobre los trapecios, junta las escápulas, sácala y colócate.",
+      "Baja llevando la cadera atrás hasta sentarte en el cajón, con pausa y sin rebotar.",
+      "Sube de forma explosiva empujando con los talones y manteniendo todo el cuerpo tenso."
+    ]
+  },
+  "Brachialis-SMR": {
+    "name": "Liberación del braquial con rodillo",
+    "steps": [
+      "Túmbate de lado con la parte externa del brazo apoyada sobre el rodillo, alineado con el cuerpo.",
+      "Eleva la cadera apoyándote en el brazo y en los pies.",
+      "Mantén la presión 10-30 segundos, moviéndote ligeramente si lo necesitas.",
+      "Cambia de lado."
+    ]
+  },
+  "Bradford_Rocky_Presses": {
+    "name": "Press Bradford",
+    "steps": [
+      "Siéntate en un banco de press militar con la barra a la altura de los hombros, agarre prono más abierto que los hombros.",
+      "Sube la barra por encima de la cabeza sin bloquear del todo los codos.",
+      "Bájala por detrás de la cabeza, vuelve a subirla y bájala después por delante; ida y vuelta cuentan como una repetición.",
+      "Usa poco peso: el paso por detrás de la cabeza exige buena movilidad de hombro."
+    ]
+  },
+  "Butt_Lift_Bridge": {
+    "name": "Puente de glúteo",
+    "steps": [
+      "Túmbate boca arriba con las rodillas flexionadas, los pies a la anchura de los hombros y los brazos junto al cuerpo.",
+      "Empuja con los talones y eleva la cadera hasta alinear rodillas, cadera y hombros, apretando los glúteos mientras espiras.",
+      "Mantén un segundo arriba.",
+      "Baja despacio mientras inspiras."
+    ],
+    "mistakes": [
+      "Arquear la zona lumbar en lugar de subir con los glúteos.",
+      "Empujar con las puntas de los pies.",
+      "Bajar sin control."
+    ],
+    "tips": ["Cuando te resulte fácil, prueba la versión a una pierna o añade peso sobre la cadera."]
+  },
+  "Butt-Ups": {
+    "name": "Elevación de glúteos desde plancha",
+    "steps": [
+      "Colócate en plancha sobre los antebrazos con los codos a 90 grados.",
+      "Eleva los glúteos hacia el techo apretando el abdomen para acercar las costillas a la cadera, mientras espiras.",
+      "Llega a una posición de «V» invertida.",
+      "Vuelve despacio a la plancha sin dejar que la zona lumbar se hunda."
+    ]
+  },
+  "Butterfly": {
+    "name": "Aperturas en máquina (contractor de pecho)",
+    "steps": [
+      "Ajusta el asiento para que los brazos queden paralelos al suelo y siéntate con la espalda apoyada.",
+      "Agarra las asas con los codos ligeramente flexionados.",
+      "Junta las asas delante del pecho apretando los pectorales mientras espiras y mantén un segundo.",
+      "Vuelve despacio hasta notar estiramiento en el pecho mientras inspiras."
+    ],
+    "mistakes": [
+      "Despegar la espalda del respaldo.",
+      "Dejar que el peso tire de los brazos hacia atrás sin control.",
+      "Asiento mal ajustado, con los brazos por encima o por debajo de los hombros."
+    ]
+  },
+  "Cable_Chest_Press": {
+    "name": "Press de pecho en polea",
+    "steps": [
+      "Elige la carga y siéntate agarrando las asas, con los brazos a unos 45 grados del cuerpo, los codos a 90 grados y el pecho alto.",
+      "Extiende los codos juntando las asas al frente, con las escápulas retraídas.",
+      "Haz una pausa con los brazos estirados.",
+      "Vuelve a la posición inicial sin perder la tensión de los cables."
+    ]
+  },
+  "Cable_Crossover": {
+    "name": "Cruce de poleas",
+    "steps": [
+      "Coloca las poleas en posición alta, elige la carga y sujeta un agarre con cada mano.",
+      "Da un paso al frente, inclina ligeramente el tronco y junta las manos delante del cuerpo con los codos algo flexionados.",
+      "Abre los brazos en un arco amplio hasta notar estiramiento en el pecho mientras inspiras; solo se mueve el hombro.",
+      "Vuelve por el mismo arco apretando el pecho mientras espiras y mantén un segundo."
+    ],
+    "mistakes": [
+      "Doblar y estirar los codos, convirtiéndolo en un press.",
+      "Mover el tronco para ayudarte.",
+      "Abrir demasiado atrás, más allá de la línea de los hombros."
+    ]
+  },
+  "Cable_Crunch": {
+    "name": "Crunch en polea alta",
+    "steps": [
+      "Arrodíllate bajo una polea alta con cuerda y sujeta los extremos junto a la cara.",
+      "Flexiona ligeramente la cadera y deja que el peso estire el abdomen.",
+      "Sin mover la cadera, enrolla el tronco llevando los codos hacia la mitad de los muslos mientras espiras, y mantén un segundo.",
+      "Vuelve despacio a la posición inicial mientras inspiras."
+    ],
+    "mistakes": [
+      "Sentarse sobre los talones: mover la cadera en lugar de flexionar el tronco.",
+      "Tirar con los brazos.",
+      "Usar tanto peso que la zona lumbar hace el trabajo."
+    ]
+  },
+  "Cable_Deadlifts": {
+    "name": "Peso muerto en polea",
+    "steps": [
+      "Coloca las poleas en la posición más baja, elige la carga y sitúate entre las dos torres.",
+      "Flexiona cadera y rodillas hasta alcanzar los agarres.",
+      "Empuja con los talones y extiende cadera y rodillas con los brazos colgando junto al cuerpo, el pecho alto.",
+      "Tras quedar erguido, vuelve a la posición inicial con la espalda neutra."
+    ]
+  },
+  "Cable_Hammer_Curls_-_Rope_Attachment": {
+    "name": "Curl martillo en polea con cuerda",
+    "steps": [
+      "Coloca una cuerda en la polea baja y sitúate de pie frente a ella, a unos 30 cm.",
+      "Agarra la cuerda con las palmas enfrentadas y los codos pegados al cuerpo.",
+      "Flexiona los codos y sube la cuerda hasta que los antebrazos toquen los bíceps mientras espiras, sin mover los brazos.",
+      "Aprieta un segundo y baja despacio."
+    ],
+    "mistakes": [
+      "Separar los codos del cuerpo.",
+      "Balancear el tronco.",
+      "Bajar a medias sin estirar el brazo."
+    ]
+  },
+  "Cable_Hip_Adduction": {
+    "name": "Aducción de cadera en polea",
+    "steps": [
+      "Coloca una tobillera en la polea baja y engánchala al tobillo de la pierna más cercana a la máquina.",
+      "Aléjate con una base amplia y sujétate a la máquina, apoyado en la pierna lejana, dejando que el cable lleve la otra pierna hacia la polea.",
+      "Lleva la pierna enganchada por delante de la de apoyo usando la cara interna del muslo mientras espiras.",
+      "Vuelve despacio y cambia de pierna al terminar."
+    ]
+  },
+  "Cable_Incline_Pushdown": {
+    "name": "Jalón con brazos estirados en banco inclinado",
+    "steps": [
+      "Túmbate en un banco inclinado de espaldas a una polea alta con barra recta.",
+      "Agarra la barra por encima de la cabeza con agarre prono a la anchura de los hombros y llévala hasta unos centímetros de los muslos con los brazos estirados.",
+      "Sin doblar los codos, deja que la barra suba en semicírculo hasta quedar sobre la cabeza mientras inspiras.",
+      "Vuelve a llevarla hacia los muslos con los dorsales y mantén la contracción mientras espiras."
+    ]
+  },
+  "Cable_Incline_Triceps_Extension": {
+    "name": "Extensión de tríceps en polea desde banco inclinado",
+    "steps": [
+      "Túmbate en un banco inclinado de espaldas a una polea alta con barra recta.",
+      "Agarra la barra por encima de la cabeza con agarre prono estrecho y los codos cerca de la cabeza.",
+      "Sin mover los brazos, extiende los codos contrayendo los tríceps mientras espiras y mantén un segundo.",
+      "Vuelve despacio a la posición inicial."
+    ]
+  },
+  "Cable_Internal_Rotation": {
+    "name": "Rotación interna de hombro en polea",
+    "steps": [
+      "Siéntate de lado junto a una polea baja (o ajústala a la altura del codo) y agarra el asa con el brazo más cercano.",
+      "Pega el codo al costado, flexionado a 90 grados, con el antebrazo apuntando a la polea.",
+      "Gira el hombro hacia dentro hasta llevar el antebrazo frente al abdomen, sin separar el codo.",
+      "Vuelve despacio y cambia de brazo al terminar. Usa cargas muy ligeras."
+    ]
+  },
+  "Cable_Iron_Cross": {
+    "name": "Cruz de hierro en polea",
+    "steps": [
+      "Coloca las poleas en posición alta, elige la carga y sujeta un agarre con cada mano.",
+      "Colócate entre las poleas con los brazos abiertos en cruz, el pecho alto.",
+      "Con los codos casi estirados, baja los brazos hacia los costados.",
+      "Haz una pausa y vuelve con control a la posición en cruz."
+    ]
+  },
+  "Cable_Judo_Flip": {
+    "name": "Lanzamiento de judo en polea",
+    "steps": [
+      "Coloca una cuerda en la polea más baja, ponte de lado con los pies muy separados y agárrala con ambas manos.",
+      "Gira el cuerpo alejándote de la polea y lleva la cuerda por encima del hombro, como en una proyección de judo.",
+      "Transfiere el peso entre los pies mientras giras y flexionas el tronco, tirando del cable hacia abajo.",
+      "Vuelve a la posición inicial y, al terminar, cambia de lado."
+    ]
+  },
+  "Cable_Lying_Triceps_Extension": {
+    "name": "Extensión de tríceps tumbado en polea",
+    "steps": [
+      "Túmbate en un banco plano con la cabeza hacia una polea baja y agarra la barra recta con agarre prono estrecho (es más fácil si alguien te la pasa).",
+      "Sitúa la barra sobre el pecho con los brazos estirados, perpendiculares al tronco.",
+      "Baja la barra hacia la frente flexionando los codos, sin mover los brazos y con los codos cerrados, mientras inspiras.",
+      "Extiende los codos para volver mientras espiras y mantén un segundo arriba."
+    ]
+  },
+  "Cable_One_Arm_Tricep_Extension": {
+    "name": "Extensión de tríceps a una mano en polea alta",
+    "steps": [
+      "De pie frente a una polea alta, agarra un asa con una mano en supinación (palma hacia arriba).",
+      "Pega el brazo al costado con el codo flexionado por debajo de 90 grados; adelanta un pie para mayor estabilidad.",
+      "Extiende el codo hasta estirar el brazo contrayendo el tríceps mientras espiras.",
+      "Aprieta un segundo, vuelve despacio y cambia de brazo al terminar."
+    ]
+  },
+  "Cable_Preacher_Curl": {
+    "name": "Curl predicador en polea",
+    "steps": [
+      "Coloca un banco predicador a unos 60 cm de una polea baja con barra recta.",
+      "Siéntate con los brazos bien apoyados en el cojín y agarra la barra con los brazos estirados.",
+      "Sube la barra hacia los hombros apretando los bíceps mientras espiras y mantén un segundo arriba.",
+      "Baja despacio hasta estirar los brazos."
+    ]
+  },
+  "Cable_Rear_Delt_Fly": {
+    "name": "Aperturas posteriores en polea",
+    "steps": [
+      "Ajusta las poleas por encima de la cabeza y elige la carga.",
+      "Agarra la polea izquierda con la mano derecha y la derecha con la izquierda, cruzando los cables delante de ti.",
+      "Con los brazos casi estirados, llévalos hacia atrás y hacia fuera hasta quedar en cruz.",
+      "Haz una pausa y vuelve con control."
+    ],
+    "mistakes": [
+      "Encoger los hombros.",
+      "Doblar los codos y convertirlo en un remo.",
+      "Balancear el tronco hacia atrás."
+    ]
+  },
+  "Cable_Reverse_Crunch": {
+    "name": "Crunch inverso en polea",
+    "steps": [
+      "Coloca tobilleras en una polea baja y una esterilla delante; siéntate con los pies hacia la polea y engancha los tobillos.",
+      "Túmbate, eleva las piernas con las rodillas a 90 grados, alineadas con el cable.",
+      "Con las manos tras la cabeza, lleva las rodillas hacia el pecho despegando la cadera del suelo.",
+      "Haz una pausa y baja despacio sin perder la tensión en el abdomen."
+    ]
+  },
+  "Cable_Rope_Overhead_Triceps_Extension": {
+    "name": "Extensión de tríceps por encima de la cabeza con cuerda",
+    "steps": [
+      "Coloca una cuerda en la polea baja, agárrala con las palmas enfrentadas y date la vuelta.",
+      "Lleva las manos por encima de la cabeza con los codos cerca de la cabeza y apuntando al techo; adelanta un pie para estabilizarte.",
+      "Baja la cuerda por detrás de la cabeza sin mover los brazos hasta estirar bien los tríceps mientras inspiras.",
+      "Extiende los codos para volver mientras espiras."
+    ],
+    "mistakes": [
+      "Abrir los codos hacia los lados.",
+      "Arquear la zona lumbar.",
+      "Recortar el recorrido abajo, justo donde más trabaja el tríceps."
+    ]
+  },
+  "Cable_Rope_Rear-Delt_Rows": {
+    "name": "Remo con cuerda para deltoides posterior",
+    "steps": [
+      "Siéntate en la estación de remo en polea baja con una cuerda y agárrala con agarre prono, brazos estirados y codos abiertos.",
+      "Mantén la espalda erguida y las rodillas ligeramente flexionadas.",
+      "Tira de la cuerda hacia la parte alta del pecho, justo debajo del cuello, con los codos altos y abiertos hasta pasar ligeramente la espalda, mientras espiras.",
+      "Vuelve estirando los brazos y dejando que los hombros avancen, mientras inspiras."
+    ]
+  },
+  "Cable_Russian_Twists": {
+    "name": "Giro ruso en polea",
+    "steps": [
+      "Coloca la polea a media altura con un asa. Túmbate sobre un fitball perpendicular al cable, apoyando la parte alta de la espalda.",
+      "Agarra el asa con ambas manos y extiende los brazos sobre el pecho, alineados con la polea.",
+      "Con la cadera elevada y el abdomen firme, gira el tronco un cuarto de vuelta alejándote de la polea.",
+      "Vuelve despacio sin perder la tensión y, al terminar, cambia de lado."
+    ]
+  },
+  "Cable_Seated_Crunch": {
+    "name": "Crunch sentado en polea",
+    "steps": [
+      "Siéntate en un banco plano de espaldas a una polea alta con cuerda.",
+      "Sujeta la cuerda con ambas manos sobre los hombros y deja que el peso estire ligeramente el abdomen.",
+      "Sin mover la cadera, flexiona el tronco llevando los codos hacia la cadera mientras espiras.",
+      "Vuelve despacio mientras inspiras."
+    ]
+  },
+  "Cable_Seated_Lateral_Raise": {
+    "name": "Elevación lateral en polea sentado",
+    "steps": [
+      "Sitúate entre dos poleas bajas enfrentadas con un banco detrás. Siéntate en su borde y apoya el tronco sobre los muslos con la espalda plana.",
+      "Agarra la polea izquierda con la mano derecha y la derecha con la izquierda; los cables pasan por debajo de las rodillas.",
+      "Eleva los brazos hacia los lados hasta la altura de los hombros, con los codos ligeramente flexionados, mientras espiras.",
+      "Mantén un segundo y baja despacio."
+    ],
+    "mistakes": [
+      "Cambiar el ángulo del codo durante el movimiento.",
+      "Subir por encima de los hombros encogiendo el trapecio.",
+      "Balancear el tronco."
+    ]
+  },
+  "Cable_Shoulder_Press": {
+    "name": "Press de hombro en polea",
+    "steps": [
+      "Coloca las poleas en la parte baja y sitúate entre las dos torres.",
+      "Sujeta los agarres a la altura de los hombros con las palmas hacia delante.",
+      "Con el pecho alto, extiende los codos para empujar los agarres por encima de la cabeza.",
+      "Haz una pausa arriba y vuelve con control."
+    ]
+  },
+  "Cable_Shrugs": {
+    "name": "Encogimiento de hombros en polea",
+    "steps": [
+      "Agarra la barra de una polea baja con agarre prono a la anchura de los hombros y ponte de pie cerca de la máquina.",
+      "Con los brazos estirados, eleva los hombros hacia las orejas todo lo posible mientras espiras.",
+      "Mantén un segundo arriba, sin doblar los codos.",
+      "Baja despacio."
+    ]
+  },
+  "Cable_Wrist_Curl": {
+    "name": "Curl de muñeca en polea",
+    "steps": [
+      "Coloca un banco frente a una polea baja con barra recta.",
+      "Agarra la barra en supinación (palmas arriba) y siéntate con los antebrazos apoyados sobre los muslos y las muñecas por delante de las rodillas.",
+      "Flexiona las muñecas hacia arriba mientras espiras y mantén un segundo; solo se mueven las muñecas.",
+      "Baja despacio mientras inspiras."
+    ]
+  },
+  "Calf-Machine_Shoulder_Shrug": {
+    "name": "Encogimiento de hombros en máquina de gemelos",
+    "steps": [
+      "Colócate en la máquina de gemelos de pie con los hombros bajo las almohadillas, el tronco recto y los brazos relajados.",
+      "Eleva los hombros hacia las orejas mientras espiras.",
+      "Mantén un segundo completo.",
+      "Baja despacio mientras inspiras."
+    ]
+  },
+  "Calf_Press": {
+    "name": "Extensión de tobillos en máquina",
+    "steps": [
+      "Ajusta el asiento para que las piernas queden casi estiradas y apoya la parte delantera de los pies en la plataforma.",
+      "Elige la carga, agarra las asas y extiende las rodillas levantando apenas el peso, con los tobillos flexionados.",
+      "Empuja con la parte delantera de los pies tanto como puedas.",
+      "Haz una breve pausa y vuelve hasta estirar bien los gemelos."
+    ]
+  },
+  "Calf_Press_On_The_Leg_Press_Machine": {
+    "name": "Gemelos en prensa de piernas",
+    "steps": [
+      "Siéntate en la prensa, extiende las piernas sin bloquear las rodillas y deja puestos los seguros si la máquina lo permite.",
+      "Coloca la parte delantera de los pies en el borde inferior de la plataforma con los talones fuera.",
+      "Empuja extendiendo los tobillos todo lo posible mientras espiras, sin doblar las rodillas, y mantén un segundo.",
+      "Baja despacio hasta estirar bien los gemelos."
+    ],
+    "mistakes": [
+      "Doblar las rodillas para empujar.",
+      "Hacer rebotes en lugar de pausar abajo.",
+      "Recorrido corto por usar demasiado peso."
+    ]
+  },
+  "Calf_Raise_On_A_Dumbbell": {
+    "name": "Elevación de talones sobre mancuerna",
+    "steps": [
+      "Sujétate a un apoyo firme y súbete con la parte delantera de un pie sobre el mango de una mancuerna de discos redondos.",
+      "Deja rodar ligeramente la mancuerna hacia delante para estirar el gemelo.",
+      "Sube el talón rodando el pie sobre el mango hasta la extensión completa mientras espiras y mantén un segundo.",
+      "Baja despacio buscando el estiramiento."
+    ]
+  },
+  "Calf_Raises_-_With_Bands": {
+    "name": "Elevación de talones con banda",
+    "steps": [
+      "Pisa la banda con la parte delantera de los pies, dejando la misma longitud a cada lado.",
+      "Lleva las asas junto a los hombros, como para un press, para tensar la banda.",
+      "Sube de puntillas contrayendo los gemelos mientras espiras.",
+      "Mantén un segundo y baja despacio."
+    ]
+  },
+  "Calf_Stretch_Elbows_Against_Wall": {
+    "name": "Estiramiento de gemelos con antebrazos en la pared",
+    "steps": [
+      "Colócate frente a una pared a unos 60 cm.",
+      "Apoya los antebrazos en la pared y deja caer el peso sobre ellos.",
+      "Mantén los talones en el suelo durante 10-20 segundos. Aléjate o acércate a la pared para aumentar o reducir la intensidad."
+    ]
+  },
+  "Calf_Stretch_Hands_Against_Wall": {
+    "name": "Estiramiento de gemelo con manos en la pared",
+    "steps": [
+      "Colócate frente a una pared con un pie adelantado.",
+      "Inclínate y apoya las manos en la pared, con talón, cadera y cabeza de la pierna de atrás en línea.",
+      "Mantén el talón de atrás en el suelo durante 10-20 segundos y cambia de lado."
+    ]
+  },
+  "Calves-SMR": {
+    "name": "Liberación de gemelos con rodillo",
+    "steps": [
+      "Siéntate en el suelo con un rodillo bajo la pantorrilla. La otra pierna puede ir cruzada encima o apoyada en el suelo.",
+      "Apoya las manos detrás y eleva la cadera para cargar peso sobre el gemelo.",
+      "Rueda desde debajo de la rodilla hasta encima del tobillo, deteniéndote 10-30 segundos en los puntos de tensión.",
+      "Repite con la otra pierna."
+    ]
+  },
+  "Car_Deadlift": {
+    "name": "Peso muerto de coche",
+    "steps": [
+      "Colócate entre las asas del implemento (cargado con un vehículo u objetos pesados) con los pies a la anchura de la cadera.",
+      "Flexiona la cadera para agarrar las asas, coge aire y baja la cadera flexionando las rodillas.",
+      "Con el pecho alto y la espalda neutra, empuja con los talones y lleva la cadera adelante juntando las escápulas.",
+      "Baja el peso flexionando la cadera y guiándolo hasta el suelo."
+    ]
+  },
+  "Car_Drivers": {
+    "name": "Volante con disco",
+    "steps": [
+      "De pie, sujeta un disco con ambas manos en las posiciones de las 3 y las 9, con los brazos estirados al frente.",
+      "Gira el disco hacia un lado todo lo posible, como si giraras un volante.",
+      "Gira después hacia el lado contrario.",
+      "Mantén los brazos a la altura de los hombros durante toda la serie."
+    ]
+  },
+  "Carioca_Quick_Step": {
+    "name": "Carioca con paso rápido",
+    "steps": [
+      "Colócate en posición atlética con los pies algo separados.",
+      "Cruza un pie por detrás del otro con un paso rápido y eleva la rodilla contraria.",
+      "Acompaña con un braceo enérgico; la rodilla sube y baja en vertical.",
+      "Desplázate lateralmente mirando siempre al frente, sin girar los pies."
+    ]
+  },
+  "Cat_Stretch": {
+    "name": "Estiramiento del gato",
+    "steps": [
+      "Colócate a cuatro patas.",
+      "Mete el ombligo y redondea la columna, desde la zona lumbar hasta el cuello, dejando caer la cabeza.",
+      "Mantén 15 segundos respirando con calma."
+    ]
+  },
+  "Catch_and_Overhead_Throw": {
+    "name": "Lanzamiento de balón medicinal por encima de la cabeza",
+    "steps": [
+      "De pie, frente a una pared o un compañero.",
+      "Lleva el balón con ambas manos detrás de la cabeza, estirándote al máximo.",
+      "Lánzalo al frente con fuerza y acompaña el lanzamiento con todo el cuerpo.",
+      "Prepárate para recibir el rebote. Contra la pared, colócate cerca y apunta un poco más alto."
+    ]
+  },
+  "Chain_Handle_Extension": {
+    "name": "Extensión de tríceps con cadenas",
+    "steps": [
+      "Engancha el centro de unas cadenas a dos asas de polea y túmbate en un banco plano con los codos apuntando al techo.",
+      "Extiende los codos sin mover los brazos, con las muñecas en pronación.",
+      "Haz una pausa con los brazos estirados.",
+      "Vuelve con control a la posición inicial."
+    ]
+  },
+  "Chain_Press": {
+    "name": "Press con cadenas",
+    "steps": [
+      "Engancha las cadenas a dos asas de polea y túmbate en un banco plano como para un press con mancuernas, con los brazos perpendiculares al suelo.",
+      "Baja las asas flexionando los codos; parte de la cadena irá descansando en el suelo.",
+      "Continúa hasta que los codos formen 90 grados.",
+      "Empuja hasta estirar los brazos."
+    ]
+  },
+  "Chair_Leg_Extended_Stretch": {
+    "name": "Estiramiento con pierna extendida en silla",
+    "steps": [
+      "Siéntate erguido en una silla y sujétate a los lados del asiento.",
+      "Eleva una pierna extendiendo la rodilla y flexionando el tobillo.",
+      "Llévala hacia fuera todo lo que puedas, vuelve al centro y bájala.",
+      "Repite con la otra pierna."
+    ]
+  },
+  "Chair_Lower_Back_Stretch": {
+    "name": "Estiramiento lateral sentado en silla",
+    "steps": [
+      "Siéntate erguido en una silla.",
+      "Inclínate hacia un lado llevando el brazo contrario por encima de la cabeza; sujétate a la silla con la mano libre.",
+      "Mantén 10 segundos y repite hacia el otro lado."
+    ]
+  }
+}

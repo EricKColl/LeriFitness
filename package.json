@@ -18,7 +18,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "check": "npm run typecheck && npm run lint && npm run format:check && npm run test",
-    "icons": "tsx scripts/icons/generate.ts"
+    "icons": "tsx scripts/icons/generate.ts",
+    "data:exercises": "tsx scripts/exercises/build.ts"
   },
   "dependencies": {
     "@fontsource-variable/bricolage-grotesque": "^5.3.0",

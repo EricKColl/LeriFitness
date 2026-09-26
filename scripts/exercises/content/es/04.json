@@ -1,0 +1,478 @@
+{
+  "Chair_Squat": {
+    "name": "Sentadilla con pies adelantados en máquina",
+    "steps": [
+      "Ajusta la barra de la máquina a tu altura, colócate debajo con la barra sobre los trapecios y desbloquéala extendiendo las piernas.",
+      "Adelanta los pies unos 45 cm respecto a la barra, a la anchura de los hombros y con las puntas algo abiertas.",
+      "Con la mirada al frente y la espalda neutra, baja flexionando las rodillas hasta pasar ligeramente los 90 grados.",
+      "Sube empujando con los talones mientras espiras."
+    ]
+  },
+  "Chair_Upper_Body_Stretch": {
+    "name": "Estiramiento de tren superior en silla",
+    "steps": [
+      "Siéntate en el borde de una silla y agarra el respaldo por detrás.",
+      "Estira los brazos con la espalda recta y lleva el tronco hacia delante hasta notar estiramiento en pecho y hombros.",
+      "Mantén 20-30 segundos."
+    ]
+  },
+  "Chest_And_Front_Of_Shoulder_Stretch": {
+    "name": "Estiramiento de pecho y hombro anterior con palo",
+    "steps": [
+      "De pie, con las piernas juntas, sujeta un palo o una barra ligera delante del cuerpo con las palmas hacia abajo y agarre algo más abierto que los hombros.",
+      "Sube el palo con cuidado por encima y por detrás de la cabeza, con los brazos estirados.",
+      "Detente donde notes estiramiento sin dolor y mantén 15-20 segundos."
+    ]
+  },
+  "Chest_Push_from_3_point_stance": {
+    "name": "Lanzamiento de pecho desde tres apoyos",
+    "steps": [
+      "Colócate en posición de tres apoyos, agachado con la espalda plana y una mano en el suelo, con el balón medicinal delante.",
+      "Da el primer paso mientras llevas el balón al pecho con ambas manos.",
+      "En el segundo paso, lanza el balón al frente de forma explosiva con toda la fuerza posible."
+    ]
+  },
+  "Chest_Push_multiple_response": {
+    "name": "Lanzamiento de pecho de rodillas encadenado",
+    "steps": [
+      "Arrodíllate frente a una pared o un compañero con el balón pegado al pecho.",
+      "Lanza el balón empujando de forma explosiva con la cadera hacia delante y los brazos.",
+      "Déjate caer hacia delante y frena con las manos.",
+      "Vuelve enseguida a la posición erguida y repite."
+    ]
+  },
+  "Chest_Push_single_response": {
+    "name": "Lanzamiento de pecho de rodillas",
+    "steps": [
+      "Arrodíllate con el balón medicinal pegado al pecho con ambas manos.",
+      "Lánzalo lo más lejos posible empujando de forma explosiva con la cadera y los brazos.",
+      "Déjate caer hacia delante y frena con las manos."
+    ]
+  },
+  "Chest_Push_with_Run_Release": {
+    "name": "Lanzamiento de pecho con arrancada",
+    "steps": [
+      "Colócate en posición atlética, con las rodillas flexionadas, la cadera atrás, la espalda plana y el balón cerca de las piernas.",
+      "En el primer paso, lleva el balón al pecho.",
+      "En el segundo, lánzalo al frente de forma explosiva y esprinta unos 10 metros justo después."
+    ]
+  },
+  "Chest_Stretch_on_Stability_Ball": {
+    "name": "Estiramiento de pecho con fitball",
+    "steps": [
+      "Colócate a cuatro patas junto a un fitball.",
+      "Apoya el codo sobre el balón con el brazo abierto hacia el lado.",
+      "Baja el tronco hacia el suelo manteniendo el codo sobre el balón.",
+      "Mantén 20-30 segundos y cambia de brazo."
+    ]
+  },
+  "Childs_Pose": {
+    "name": "Postura del niño",
+    "steps": [
+      "Colócate a cuatro patas y adelanta las manos.",
+      "Siéntate sobre los talones dejando que los brazos se deslicen por el suelo para estirar toda la espalda.",
+      "Apoya la frente en el suelo, lleva las manos junto a los pies si quieres y respira hacia la espalda.",
+      "Evita esta postura si tienes molestias de rodilla."
+    ]
+  },
+  "Chin_To_Chest_Stretch": {
+    "name": "Estiramiento de cuello: barbilla al pecho",
+    "steps": [
+      "Siéntate en el suelo con la espalda erguida.",
+      "Entrelaza los dedos detrás de la cabeza con los codos apuntando al frente.",
+      "Lleva la cabeza suavemente hacia el pecho, sin forzar.",
+      "Mantén 20-30 segundos."
+    ]
+  },
+  "Chin-Up": {
+    "name": "Dominada supina",
+    "steps": [
+      "Agarra la barra con las palmas hacia ti y las manos a la anchura de los hombros o algo más juntas.",
+      "Cuelga con los brazos estirados, el pecho alto y el abdomen firme.",
+      "Tira de ti hacia arriba llevando los codos hacia los costados hasta que la barbilla supere la barra, mientras espiras.",
+      "Aprieta un segundo arriba y baja despacio hasta estirar los brazos por completo."
+    ],
+    "mistakes": [
+      "Hacer medias repeticiones sin estirar los brazos abajo.",
+      "Balancearse o dar patadas.",
+      "Estirar el cuello para superar la barra."
+    ],
+    "tips": ["Si aún no puedes hacer ninguna, empieza con bajadas lentas o con una banda de asistencia."]
+  },
+  "Circus_Bell": {
+    "name": "Circus bell",
+    "steps": [
+      "Coloca la mancuerna gigante entre los pies y agarra el mango grueso con ambas manos.",
+      "Llévala al hombro extendiendo cadera y rodillas y suelta la mano de apoyo, con una de las cabezas por detrás del hombro.",
+      "Flexiona ligeramente las rodillas y empuja hacia arriba para bloquearla sobre la cabeza, inclinándote un poco hacia el lado contrario.",
+      "Devuélvela al suelo con control, preferiblemente sobre una esterilla gruesa."
+    ]
+  },
+  "Clean": {
+    "name": "Cargada",
+    "steps": [
+      "Con la barra en el suelo junto a las espinillas, agárrala con agarre prono (o de gancho) por fuera de las piernas. Baja la cadera con la espalda recta, el pecho alto y los hombros por delante de la barra.",
+      "Primer tirón: extiende las rodillas empujando con los talones, sin cambiar el ángulo de la espalda y con los brazos estirados, hasta pasar las rodillas.",
+      "Segundo tirón: al llegar a mitad del muslo, extiende cadera, rodillas y tobillos de forma explosiva, como un salto, sin tirar con los brazos.",
+      "Tercer tirón: encoge los hombros y métete bajo la barra girando los codos hacia delante para recibirla en sentadilla frontal, apoyada sobre los hombros.",
+      "Ponte de pie empujando con los talones, con el tronco erguido y los codos altos."
+    ]
+  },
+  "Clean_and_Jerk": {
+    "name": "Dos tiempos",
+    "steps": [
+      "Realiza una cargada: tira de la barra desde el suelo con la espalda recta, extiende cadera, rodillas y tobillos de forma explosiva y recíbela en sentadilla frontal sobre los hombros.",
+      "Ponte de pie con la barra apoyada en los hombros y los codos altos.",
+      "Haz un pequeño descenso flexionando las rodillas, sin llevar la cadera atrás, e invierte el movimiento con toda la potencia posible.",
+      "Mientras la barra sale de los hombros, aparta la cabeza y métete debajo abriendo las piernas en tijera, con los brazos bloqueados sobre la cabeza.",
+      "Junta los pies y ponte de pie con la barra arriba."
+    ]
+  },
+  "Clean_and_Press": {
+    "name": "Cargada y press",
+    "steps": [
+      "Colócate con los pies a la anchura de los hombros, flexiona cadera y rodillas y agarra la barra algo más abierto que los hombros, con la espalda plana y los hombros sobre la barra.",
+      "Tira de la barra extendiendo las rodillas y, al pasarlas, extiende cadera, rodillas y tobillos de forma explosiva, guiándola pegada al cuerpo con los codos hacia fuera.",
+      "Métete bajo la barra girando los codos y recíbela sobre la parte delantera de los hombros flexionando cadera y rodillas.",
+      "Ponte de pie y, sin mover los pies, empuja la barra por encima de la cabeza mientras espiras. Bájala con control."
+    ]
+  },
+  "Clean_Deadlift": {
+    "name": "Peso muerto de cargada",
+    "steps": [
+      "Colócate con la barra junto a las espinillas, los pies bajo la cadera y algo abiertos, y agárrala a la anchura de los hombros.",
+      "Agáchate con la espalda en extensión y los hombros por delante de la barra.",
+      "Empuja el suelo con la parte delantera del talón manteniendo el ángulo de la espalda y abriendo las rodillas para dejar paso a la barra.",
+      "Tras pasar las rodillas, lleva la cadera hacia la barra hasta extender cadera y rodillas."
+    ]
+  },
+  "Clean_from_Blocks": {
+    "name": "Cargada desde bloques",
+    "steps": [
+      "Coloca la barra sobre bloques a la altura deseada y agárrala por fuera de las piernas, con la espalda recta, el pecho alto y los hombros por delante de la barra.",
+      "Extiende rodillas y cadera de forma explosiva manteniendo los brazos estirados.",
+      "Al llegar a la extensión completa, encoge los hombros y métete bajo la barra para recibirla en sentadilla frontal.",
+      "Ponte de pie con el tronco erguido y devuelve la barra a los bloques."
+    ]
+  },
+  "Clean_Pull": {
+    "name": "Tirón de cargada",
+    "steps": [
+      "Con la barra junto a las espinillas, agárrala por fuera de las piernas con la espalda recta, el pecho alto y los hombros por delante de la barra.",
+      "Extiende las rodillas empujando con los talones sin cambiar el ángulo de la espalda y con los brazos estirados.",
+      "Al llegar a mitad del muslo, extiende cadera, rodillas y tobillos de forma explosiva, como un salto.",
+      "La extensión debe ser brusca y breve; después baja la barra con control."
+    ]
+  },
+  "Clean_Shrug": {
+    "name": "Encogimiento de cargada",
+    "steps": [
+      "Sujeta la barra a mitad del muslo con agarre prono o de gancho a la anchura de los hombros, la espalda recta y algo inclinada hacia delante.",
+      "Encoge los hombros hacia las orejas de forma rápida y enérgica.",
+      "Baja con control. Puedes usar más peso que en la cargada, pero sin que el movimiento se vuelva lento."
+    ]
+  },
+  "Clock_Push-Up": {
+    "name": "Flexión en reloj",
+    "steps": [
+      "Colócate en posición de flexión con las manos a la anchura de los hombros y el cuerpo recto.",
+      "Baja el pecho hacia el suelo flexionando los codos.",
+      "Empuja de forma explosiva hasta despegar las manos y desplázate unos 30-45 cm hacia un lado, girando el cuerpo unos 30 grados.",
+      "Repite dando la vuelta completa hasta volver al punto de partida."
+    ]
+  },
+  "Close-Grip_Barbell_Bench_Press": {
+    "name": "Press de banca con agarre estrecho",
+    "steps": [
+      "Túmbate en un banco plano y agarra la barra a la anchura de los hombros; sácala del soporte con los brazos estirados.",
+      "Inspira y baja la barra despacio hasta la parte media o baja del pecho, con los codos pegados al cuerpo.",
+      "Empuja con los tríceps hasta estirar los brazos mientras espiras.",
+      "Devuelve la barra al soporte al terminar."
+    ],
+    "mistakes": [
+      "Agarrar demasiado estrecho, lo que fuerza las muñecas.",
+      "Abrir los codos como en el press normal.",
+      "Rebotar la barra en el pecho."
+    ]
+  },
+  "Close-Grip_Dumbbell_Press": {
+    "name": "Press cerrado con mancuerna",
+    "steps": [
+      "Túmbate en un banco plano (o atravesado, apoyando solo la parte alta de la espalda) y sujeta una mancuerna con ambas manos, las palmas presionando sus lados.",
+      "Sostén la mancuerna sobre el pecho con los brazos estirados.",
+      "Bájala hasta el pecho con los codos pegados al cuerpo.",
+      "Empuja estirando los codos hasta la posición inicial."
+    ]
+  },
+  "Close-Grip_EZ_Bar_Curl": {
+    "name": "Curl con barra Z en agarre cerrado",
+    "steps": [
+      "De pie, sujeta la barra Z por el agarre interior con las palmas hacia delante y los codos pegados al cuerpo.",
+      "Sin mover los brazos, sube la barra hasta la altura de los hombros contrayendo los bíceps mientras espiras.",
+      "Aprieta un segundo arriba.",
+      "Baja despacio hasta estirar los brazos."
+    ]
+  },
+  "Close-Grip_EZ-Bar_Curl_with_Band": {
+    "name": "Curl con barra Z y bandas",
+    "steps": [
+      "Ata una banda a cada extremo de la barra Z y pisa el centro de la banda.",
+      "De pie, agarra la barra en supinación con agarre cerrado y los codos pegados al cuerpo.",
+      "Flexiona los codos hasta llevar la barra a la altura de los hombros mientras espiras y aprieta un segundo.",
+      "Baja despacio mientras inspiras."
+    ]
+  },
+  "Close-Grip_EZ-Bar_Press": {
+    "name": "Press cerrado con barra Z",
+    "steps": [
+      "Túmbate en un banco plano con una barra Z cargada y agárrala con agarre estrecho.",
+      "Sostén la barra sobre el pecho con los brazos perpendiculares al suelo y los codos cerrados.",
+      "Bájala a la parte baja del pecho mientras inspiras, sin abrir los codos.",
+      "Empuja con los tríceps hasta estirar los brazos mientras espiras."
+    ]
+  },
+  "Close-Grip_Front_Lat_Pulldown": {
+    "name": "Jalón al pecho con agarre estrecho",
+    "steps": [
+      "Siéntate en la máquina de jalón y ajusta el rodillo para fijar los muslos.",
+      "Agarra la barra con las palmas hacia delante y las manos algo más juntas que los hombros.",
+      "Inclina el tronco unos 20-30 grados atrás con el pecho alto y tira de la barra hasta la parte alta del pecho llevando los codos abajo y atrás, mientras espiras.",
+      "Aprieta la espalda un segundo y sube la barra despacio hasta estirar por completo los brazos."
+    ],
+    "mistakes": [
+      "Tirar balanceando el tronco hacia atrás.",
+      "Tirar con los antebrazos en lugar de con los codos.",
+      "No dejar subir la barra hasta estirar los dorsales."
+    ]
+  },
+  "Close-Grip_Push-Up_off_of_a_Dumbbell": {
+    "name": "Flexión cerrada sobre mancuerna",
+    "steps": [
+      "Apoya las manos sobre una mancuerna colocada en vertical y adopta la posición de flexión, con el cuerpo recto y los codos cerrados.",
+      "Baja flexionando los codos mientras inspiras, sin que la cadera suba ni se hunda.",
+      "Empuja hasta estirar los brazos mientras espiras.",
+      "Haz una breve pausa arriba y repite."
+    ]
+  },
+  "Close-Grip_Standing_Barbell_Curl": {
+    "name": "Curl con barra de pie con agarre cerrado",
+    "steps": [
+      "Sujeta la barra con las palmas hacia arriba y las manos separadas unos centímetros.",
+      "De pie, con el tronco erguido y los codos pegados al cuerpo.",
+      "Sube la barra en semicírculo hasta que los antebrazos toquen los bíceps mientras espiras, sin balancearte.",
+      "Aprieta un segundo arriba y baja despacio."
+    ]
+  },
+  "Cocoons": {
+    "name": "Capullos",
+    "steps": [
+      "Túmbate boca arriba con las piernas estiradas y los brazos extendidos por detrás de la cabeza.",
+      "Lleva las rodillas al pecho y despega los glúteos mientras flexionas la columna y traes los brazos por encima de la cabeza hacia las rodillas.",
+      "Haz una breve pausa en posición recogida.",
+      "Vuelve con control a la posición inicial."
+    ]
+  },
+  "Conans_Wheel": {
+    "name": "Rueda de Conan",
+    "steps": [
+      "Con el implemento cargado, sujeta el extremo del brazo en el pliegue de los codos (agarre Zercher), agarrándote las muñecas.",
+      "Levanta el peso del suelo y mantén una postura erguida y firme.",
+      "Camina en círculo con pasos cortos y rápidos, mirando al frente y sin contener la respiración.",
+      "Continúa hasta completar una o más vueltas."
+    ]
+  },
+  "Concentration_Curls": {
+    "name": "Curl concentrado",
+    "steps": [
+      "Siéntate en un banco con las piernas separadas y una mancuerna entre los pies.",
+      "Cógela con una mano y apoya la parte posterior del brazo en la cara interna del muslo, con el brazo estirado.",
+      "Sin mover el brazo, sube la mancuerna hasta el hombro mientras espiras, girando ligeramente el meñique hacia arriba.",
+      "Aprieta un segundo y baja despacio. Cambia de brazo al terminar."
+    ],
+    "mistakes": [
+      "Balancear el tronco para ayudar.",
+      "Separar el brazo del muslo.",
+      "No estirar el brazo abajo."
+    ]
+  },
+  "Cross-Body_Crunch": {
+    "name": "Crunch cruzado",
+    "steps": [
+      "Túmbate boca arriba con las rodillas flexionadas, los pies apoyados y las manos suavemente detrás de la cabeza.",
+      "Enrolla el tronco llevando un codo y su hombro hacia la rodilla contraria, que a su vez se acerca, mientras espiras.",
+      "Busca acercar el hombro, no solo el codo, contrayendo el abdomen.",
+      "Vuelve a la posición inicial y alterna los lados."
+    ]
+  },
+  "Cross_Body_Hammer_Curl": {
+    "name": "Curl martillo cruzado",
+    "steps": [
+      "De pie, con una mancuerna en cada mano, los brazos estirados y las palmas hacia el cuerpo.",
+      "Sin girar la muñeca, sube una mancuerna en diagonal hacia el hombro contrario mientras espiras.",
+      "Mantén un segundo arriba.",
+      "Baja por el mismo camino y repite con el otro brazo."
+    ]
+  },
+  "Cross_Over_-_With_Bands": {
+    "name": "Aperturas de pie con banda",
+    "steps": [
+      "Ata una banda a un poste firme, ponte de espaldas a él, agarra las asas y da un paso al frente para tensarla.",
+      "Abre los brazos en cruz, paralelos al suelo, con las palmas al frente y los codos ligeramente flexionados.",
+      "Junta los brazos delante del pecho en semicírculo contrayendo los pectorales mientras espiras, y mantén un segundo.",
+      "Vuelve despacio mientras inspiras."
+    ]
+  },
+  "Crossover_Reverse_Lunge": {
+    "name": "Zancada atrás con rotación",
+    "steps": [
+      "De pie, con los pies a la anchura de los hombros.",
+      "Da un paso atrás y baja en zancada, girando el tronco hacia el lado de la pierna delantera.",
+      "Haz una breve pausa y vuelve a la posición inicial.",
+      "Repite hacia el otro lado, alternando."
+    ]
+  },
+  "Crucifix": {
+    "name": "Crucifijo",
+    "steps": [
+      "De pie, sujeta un implemento (o una mancuerna) en cada mano.",
+      "Eleva los brazos hacia los lados hasta dejarlos paralelos al suelo.",
+      "Mantén la posición tanto tiempo como puedas; lo habitual es fallar entre 30 y 60 segundos."
+    ]
+  },
+  "Crunch_-_Hands_Overhead": {
+    "name": "Crunch con brazos por encima de la cabeza",
+    "steps": [
+      "Túmbate boca arriba con las rodillas flexionadas, los pies apoyados y los brazos estirados por encima de la cabeza con las manos cruzadas.",
+      "Despega los omóplatos del suelo enrollando el tronco, con los brazos siempre alineados con la cabeza, mientras espiras.",
+      "Mantén la contracción un segundo.",
+      "Baja despacio mientras inspiras."
+    ]
+  },
+  "Crunch_-_Legs_On_Exercise_Ball": {
+    "name": "Crunch con piernas sobre fitball",
+    "steps": [
+      "Túmbate boca arriba con los pies sobre un fitball y las rodillas a 90 grados.",
+      "Coloca las manos suavemente a los lados de la cabeza, sin entrelazar los dedos.",
+      "Presiona la zona lumbar contra el suelo y despega los hombros unos 10 cm mientras espiras; aprieta un segundo.",
+      "Baja despacio, sin usar impulso."
+    ]
+  },
+  "Crunches": {
+    "name": "Crunch abdominal",
+    "steps": [
+      "Túmbate boca arriba con las rodillas flexionadas y los pies apoyados en el suelo (o sobre un banco).",
+      "Coloca las manos suavemente a los lados de la cabeza, sin entrelazar los dedos, con los codos abiertos.",
+      "Presiona la zona lumbar contra el suelo y despega los hombros unos 10 cm contrayendo el abdomen mientras espiras.",
+      "Aprieta un segundo arriba y baja despacio mientras inspiras."
+    ],
+    "mistakes": [
+      "Tirar de la cabeza con las manos.",
+      "Subir con impulso.",
+      "Levantar todo el tronco, convirtiéndolo en un abdominal completo con los flexores de cadera."
+    ]
+  },
+  "Cuban_Press": {
+    "name": "Press cubano",
+    "steps": [
+      "De pie, sujeta una mancuerna en cada mano con agarre prono y eleva los brazos hasta que queden paralelos al suelo, con los antebrazos colgando (posición de espantapájaros).",
+      "Rota los hombros hacia fuera hasta que las muñecas queden sobre los codos y los antebrazos verticales.",
+      "Empuja las mancuernas por encima de la cabeza hasta estirar los brazos.",
+      "Deshaz los pasos en orden inverso. Usa cargas ligeras."
+    ]
+  },
+  "Dancers_Stretch": {
+    "name": "Estiramiento del bailarín",
+    "steps": [
+      "Siéntate en el suelo con la pierna izquierda estirada.",
+      "Cruza la pierna derecha por encima de la izquierda con la rodilla flexionada.",
+      "Apoya el brazo izquierdo sobre la pierna derecha y la mano derecha en el suelo detrás de ti.",
+      "Gira el tronco hacia la derecha, mantén 10-20 segundos y cambia de lado."
+    ]
+  },
+  "Dead_Bug": {
+    "name": "Bicho muerto (dead bug)",
+    "steps": [
+      "Túmbate boca arriba con los brazos estirados hacia el techo y cadera y rodillas flexionadas a 90 grados.",
+      "Espira con fuerza para bajar las costillas y pegar la zona lumbar al suelo. Mantén esa posición durante todo el ejercicio.",
+      "Estira una pierna despacio hasta dejarla justo por encima del suelo (puedes bajar a la vez el brazo contrario).",
+      "Vuelve a la posición inicial y alterna los lados."
+    ],
+    "mistakes": [
+      "Dejar que la zona lumbar se despegue del suelo.",
+      "Hacerlo deprisa.",
+      "Contener la respiración."
+    ]
+  },
+  "Deadlift_with_Bands": {
+    "name": "Peso muerto con bandas",
+    "steps": [
+      "Pasa bandas cortas por la barra y písalas, o ancla bandas largas a una base firme.",
+      "Con pies y agarre colocados, coge aire, baja la cadera hasta que las espinillas toquen la barra, con el pecho alto y la espalda neutra.",
+      "Empuja con los talones y, al pasar las rodillas, lleva la cadera hacia la barra juntando las escápulas.",
+      "Baja la barra flexionando la cadera y guiándola hasta el suelo."
+    ]
+  },
+  "Deadlift_with_Chains": {
+    "name": "Peso muerto con cadenas",
+    "steps": [
+      "Engancha las cadenas a los extremos de la barra o cuélgalas por el centro.",
+      "Colócate con la barra sobre la mitad del pie y agárrala a la anchura de los hombros; coge aire y baja la cadera hasta que las espinillas toquen la barra.",
+      "Con el pecho alto y la espalda neutra, empuja con los talones y, tras pasar las rodillas, lleva la cadera adelante.",
+      "Baja la barra flexionando la cadera y guiándola hasta el suelo."
+    ]
+  },
+  "Decline_Barbell_Bench_Press": {
+    "name": "Press declinado con barra",
+    "steps": [
+      "Sujeta las piernas en el extremo del banco declinado y túmbate despacio.",
+      "Agarra la barra algo más abierto que los hombros y sácala del soporte (mejor con ayuda de un compañero) con los brazos estirados.",
+      "Baja la barra despacio hasta la parte baja del pecho mientras inspiras.",
+      "Empuja hasta estirar los brazos mientras espiras y devuelve la barra al soporte al terminar."
+    ]
+  },
+  "Decline_Close-Grip_Bench_To_Skull_Crusher": {
+    "name": "Press cerrado declinado con rompecráneos",
+    "steps": [
+      "Sujeta las piernas en el banco declinado, túmbate y saca la barra con agarre algo más estrecho que los hombros y los codos cerrados.",
+      "Baja la barra a la parte baja del pecho y empújala de vuelta con los tríceps.",
+      "Sin mover los brazos, baja la barra en semicírculo hasta rozar la frente.",
+      "Extiende los codos para volver arriba. Repite el ciclo completo."
+    ]
+  },
+  "Decline_Crunch": {
+    "name": "Crunch en banco declinado",
+    "steps": [
+      "Sujeta las piernas en el extremo del banco declinado y túmbate.",
+      "Coloca las manos suavemente a los lados de la cabeza, sin entrelazar los dedos.",
+      "Despega los hombros del banco unos 10 cm contrayendo el abdomen mientras espiras, con la zona lumbar apoyada.",
+      "Mantén un segundo y baja despacio."
+    ]
+  },
+  "Decline_Dumbbell_Bench_Press": {
+    "name": "Press declinado con mancuernas",
+    "steps": [
+      "Sujeta las piernas en el banco declinado y túmbate con una mancuerna en cada mano apoyada sobre los muslos.",
+      "Lleva las mancuernas sobre el pecho a la anchura de los hombros con las palmas hacia los pies.",
+      "Bájalas despacio hacia los lados del pecho, con los antebrazos verticales.",
+      "Empuja hacia arriba mientras espiras y aprieta un segundo."
+    ]
+  },
+  "Decline_Dumbbell_Flyes": {
+    "name": "Aperturas declinadas con mancuernas",
+    "steps": [
+      "Sujeta las piernas en el banco declinado y túmbate con las mancuernas sobre el pecho, brazos estirados y palmas enfrentadas.",
+      "Con los codos ligeramente flexionados, abre los brazos en un arco amplio hasta notar estiramiento en el pecho mientras inspiras.",
+      "Vuelve por el mismo arco apretando el pecho mientras espiras.",
+      "Mantén un segundo arriba y repite."
+    ]
+  },
+  "Decline_Dumbbell_Triceps_Extension": {
+    "name": "Extensión de tríceps con mancuernas en banco declinado",
+    "steps": [
+      "Sujeta las piernas en el banco declinado y túmbate con las mancuernas sobre el pecho, brazos estirados y palmas enfrentadas.",
+      "Sin mover los brazos y con los codos cerrados, baja las mancuernas en semicírculo hasta que los pulgares queden junto a las orejas.",
+      "Extiende los codos contrayendo los tríceps mientras espiras.",
+      "Repite con control."
+    ]
+  }
+}
