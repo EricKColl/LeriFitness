@@ -30,7 +30,29 @@ npm run preview      # sirve dist/ para probar la PWA
 npm run check        # tipos + lint + formato + tests
 npm run data:exercises  # regenera la base de ejercicios desde el origen
 npm run icons        # regenera favicon e iconos PWA desde el logotipo
+npm run plan:preview -- 3 60 hypertrophy intermediate fullGym knee:mild  # plan de ejemplo en consola
 ```
+
+En desarrollo, `window.forjaDev.seed()` (consola del navegador) crea un perfil con varias semanas de
+historial para probar las pantallas. No existe en la build de producción.
+
+## Despliegue (gratis, en Cloudflare Pages)
+
+Cada push a `main` publica la app en `https://forja.pages.dev` (o el subdominio libre que
+asigne Cloudflare) y cada pull request obtiene una URL de vista previa. Lo hace
+`.github/workflows/deploy.yml`, que necesita dos secretos del repositorio:
+
+1. Crea una cuenta gratuita en <https://dash.cloudflare.com/sign-up> (no pide tarjeta).
+2. Copia tu **Account ID**: en el panel, menú _Workers & Pages_ › columna derecha, o en la URL
+   (`dash.cloudflare.com/<ACCOUNT_ID>/…`).
+3. Crea un token en <https://dash.cloudflare.com/profile/api-tokens> › _Create Token_ ›
+   _Create Custom Token_ con el permiso **Account › Cloudflare Pages › Edit** y guárdalo.
+4. En GitHub: _Settings › Secrets and variables › Actions › New repository secret_ y crea
+   `CLOUDFLARE_API_TOKEN` y `CLOUDFLARE_ACCOUNT_ID` con esos valores.
+5. Vuelve a lanzar el workflow _Despliegue_ (pestaña _Actions_) o haz un push a `main`.
+
+Sin los secretos, el workflow termina sin error y sin publicar. Las cabeceras de seguridad y caché
+están en `public/_headers`.
 
 ## Estructura
 
