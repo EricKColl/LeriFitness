@@ -14,6 +14,8 @@ interface PrefsState {
   assistantModel: 'quality' | 'light' | null
   /** Consentimiento para usar el asistente en la nube (sin datos personales ni de salud). */
   assistantCloud: boolean
+  /** El modelo local no cargó o se colgó en este dispositivo: no se vuelve a cargar solo. */
+  assistantLocalFailed: boolean
   /** Modelo anatómico 3D: `null` = automático (según el dispositivo). */
   anatomy3d: boolean | null
   /** Lunes de la semana cuyo check-in se pospuso (no se vuelve a sugerir). */
@@ -33,6 +35,7 @@ export const usePrefs = create<PrefsState>()(
       anatomy3d: null,
       assistantModel: null,
       assistantCloud: false,
+      assistantLocalFailed: false,
       set: (patch) => set(patch),
     }),
     { name: 'forja-prefs' },

@@ -75,6 +75,22 @@
       y a mano prueba la web, Gemini, la configuración de Auth y la nube con un usuario temporal.
       20/20 en verde el 26/09/2026 (asistente con `gemini-3.5-flash-lite`)
 
+## MagicErick ✅ (26/09/2026)
+
+- [x] El asistente se llama **MagicErick** (nombre en la interfaz, en el glosario y en el
+      prompt del modelo local y de la nube)
+- [x] Ventana de chat flotante siempre a mano: botón en todas las pantallas con barra inferior
+      y en la cabecera de la sesión en curso; hoja casi a pantalla completa en el móvil
+      (ajustada al teclado) y ventana abajo a la derecha en el ordenador; la conversación se
+      conserva al navegar. Desde un ejercicio se abre con ese ejercicio como tema
+- [x] Arreglado el cuelgue en el móvil: los modelos locales necesitan 1-1,6 GB de memoria
+      gráfica y el navegador perdía la GPU sin avisar. Ahora: en móviles y tabletas no se
+      ofrecen (se usa la nube o el glosario y se pueden borrar los modelos ya descargados);
+      en el ordenador hay prueba de arranque, límites de tiempo (45 s hasta la primera palabra,
+      20 s entre palabras), detección de caída del worker y respaldo automático
+- [x] La IA en la nube se ofrece siempre que esté configurada (antes solo sin WebGPU), con
+      avisos en el chat para iniciar sesión o activarla
+
 ### Ideas para después
 
 - [ ] Motor: con poco tiempo por sesión, cambiar series de accesorios por series de músculos

@@ -9,6 +9,7 @@ import { createFirstPlan, ensureCurrentPlan, stripProfile } from '@/data/plans'
 import type { PlanRow } from '@/data/db'
 import { AchievementCelebration } from '@/features/achievements/celebration'
 import { syncAchievements } from '@/features/achievements/sync'
+import { MagicErickButton, MagicErickHost } from '@/features/assistant/launcher'
 import { cacheImages } from '@/shared/lib/image-cache'
 
 import { BottomNav } from './bottom-nav'
@@ -28,13 +29,14 @@ async function precachePlanImages(plan: PlanRow, catalog: Catalog) {
   await cacheImages(urls)
 }
 
-/** Pantallas con barra inferior. */
+/** Pantallas con barra inferior y el botón de MagicErick (con hueco para no tapar el final). */
 export function AppLayout() {
   return (
-    <div className="min-h-dvh pb-[calc(max(env(safe-area-inset-bottom),0.75rem)+5.5rem)]">
+    <div className="min-h-dvh pb-[calc(max(env(safe-area-inset-bottom),0.75rem)+9.5rem)]">
       <Suspense fallback={<Splash />}>
         <Outlet />
       </Suspense>
+      <MagicErickButton />
       <BottomNav />
     </div>
   )
@@ -81,6 +83,7 @@ export function RequireProfile() {
   return (
     <>
       <Outlet />
+      <MagicErickHost />
       <AchievementCelebration />
     </>
   )

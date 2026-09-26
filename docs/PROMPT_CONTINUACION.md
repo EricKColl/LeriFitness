@@ -218,6 +218,24 @@ como referencia del diseño. Estado real ahora (ver `docs/ROADMAP.md`, que es la
 - Seguridad: los tokens de Cloudflare y Supabase que se pegaron en el chat deben estar
   revocados y sustituidos; los secretos solo se guardan en GitHub.
 
+## ACTUALIZACIÓN: MAGICERICK (26/09/2026)
+
+- El asistente es **MagicErick**, una ventana flotante (ya no hay página `/asistente`; la ruta
+  abre la ventana). Entradas en `src/features/assistant/launcher.tsx` (botón flotante en
+  `AppLayout`, contenedor en `RequireProfile`, botón compacto en la cabecera de la sesión) y
+  ventana perezosa en `MagicErickPanel.tsx`. Para abrirla desde cualquier sitio:
+  `openMagicErick(exerciseId?)` de `store.ts`.
+- Quién responde (`engine.ts`, función pura `pickEngine` testada): modelo del dispositivo si
+  está listo → nube si hay sesión y está activada → glosario. `use-chat.ts` cae a la siguiente
+  vía si una falla.
+- Móviles y tabletas (`device.ts`): no se usan modelos locales (necesitan 1-1,6 GB de memoria
+  gráfica y se colgaban). En el ordenador, `local-llm.ts` hace una prueba de arranque y
+  `watchdog.ts` pone límites de tiempo; si el modelo se cuelga se destruye el worker y se marca
+  `assistantLocalFailed` en las preferencias para no volver a cargarlo solo.
+- Cambiar el nombre o el prompt: `SYSTEM_PROMPT` en `context.ts` y su copia en
+  `supabase/functions/_shared/prompt.ts` (un test exige que coincidan; el workflow «Supabase»
+  republica la función al fusionar).
+
 ## ESTADO ACTUAL DEL PROYECTO (26/09/2026, inicio de la Fase 1)
 
 Hay 2 commits previos en `main` más el de este traspaso. Todo `npm run check` pasa (tipos, lint,

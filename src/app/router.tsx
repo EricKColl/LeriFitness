@@ -1,5 +1,7 @@
 import { createBrowserRouter, Navigate } from 'react-router'
 
+import { AssistantRoute } from '@/features/assistant/launcher'
+
 import { AppLayout, RequireNoProfile, RequireProfile } from './layout/app-layout'
 import { ErrorPage, NotFoundPage } from './error-page'
 
@@ -49,12 +51,8 @@ export const router = createBrowserRouter([
                   Component: (await import('@/features/premium/PremiumPage')).PremiumPage,
                 }),
               },
-              {
-                path: '/asistente',
-                lazy: async () => ({
-                  Component: (await import('@/features/assistant/AssistantPage')).AssistantPage,
-                }),
-              },
+              // MagicErick es una ventana flotante; la ruta antigua la abre.
+              { path: '/asistente', element: <AssistantRoute /> },
               {
                 path: '/ejercicios',
                 lazy: async () => ({

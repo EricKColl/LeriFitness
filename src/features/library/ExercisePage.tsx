@@ -1,10 +1,4 @@
-import {
-  ChevronRight,
-  CircleAlert,
-  Lightbulb,
-  MessageCircleQuestion,
-  TriangleAlert,
-} from 'lucide-react'
+import { ChevronRight, CircleAlert, Lightbulb, TriangleAlert } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Link, useParams } from 'react-router'
 
@@ -18,6 +12,8 @@ import {
 import { exerciseName, useCatalog, type Catalog } from '@/data/catalog'
 import { useProfile } from '@/data/hooks'
 import { AnatomyView } from '@/features/anatomy/anatomy-view'
+import { MagicErickAvatar } from '@/features/assistant/launcher'
+import { openMagicErick } from '@/features/assistant/store'
 import { ExerciseMuscleMap } from '@/features/anatomy/body-map'
 import { dominantView, exerciseHeat } from '@/features/anatomy/views'
 import { useDynamicT } from '@/i18n/reason'
@@ -225,13 +221,14 @@ function ExerciseView({
         </Section>
       )}
 
-      <Link
-        to={`/asistente?ejercicio=${e.id}`}
-        className="mt-7 flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-steel-soft px-4 text-sm font-semibold text-steel"
+      <button
+        type="button"
+        onClick={() => openMagicErick(e.id)}
+        className="mt-7 flex min-h-12 w-full items-center justify-center gap-2 rounded-2xl bg-steel-soft px-4 text-sm font-semibold text-steel transition-[filter] hover:brightness-110"
       >
-        <MessageCircleQuestion className="size-5" />
+        <MagicErickAvatar className="size-7" />
         {t('exercise.ask')}
-      </Link>
+      </button>
 
       {alternatives.length > 0 && (
         <Section title={t('exercise.alternatives')}>

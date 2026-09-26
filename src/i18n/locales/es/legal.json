@@ -56,10 +56,10 @@
           ]
         },
         {
-          "title": "Asistente",
+          "title": "Asistente (MagicErick)",
           "body": [
-            "El asistente solo explica el plan y conceptos de entrenamiento; no decide tu plan. Tiene tres modos: el glosario de Forja y el modelo que puedes descargar a tu dispositivo funcionan sin enviar nada fuera del móvil (el modelo se descarga una vez desde Hugging Face).",
-            "El asistente en la nube es opcional y requiere cuenta. Solo envía tu pregunta y un resumen de tu plan sin datos personales ni de salud (sin lesiones, molestias, edad, sexo, peso ni trabajo) a Google Gemini a través de nuestro servidor, que cuenta cuántas preguntas haces al día para aplicar un límite y no guarda su contenido. Google trata esas preguntas según las condiciones de su servicio gratuito, que le permiten usarlas para mejorar sus productos: no escribas en ellas datos personales ni de salud."
+            "MagicErick, el asistente, solo explica el plan y conceptos de entrenamiento; no decide tu plan. Tiene tres modos: el glosario de Forja y el modelo que puedes descargar a tu dispositivo (solo en ordenadores) funcionan sin enviar nada fuera del dispositivo (el modelo se descarga una vez desde Hugging Face).",
+            "La IA en la nube es opcional y requiere cuenta. Solo envía tu pregunta y un resumen de tu plan sin datos personales ni de salud (sin lesiones, molestias, edad, sexo, peso ni trabajo) a Google Gemini a través de nuestro servidor, que cuenta cuántas preguntas haces al día para aplicar un límite y no guarda su contenido. Google trata esas preguntas según las condiciones de su servicio gratuito, que le permiten usarlas para mejorar sus productos: no escribas en ellas datos personales ni de salud."
           ]
         },
         {
