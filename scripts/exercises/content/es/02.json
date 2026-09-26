@@ -22,7 +22,9 @@
       "Echar la cabeza atrás al subir.",
       "No completar la extensión de cadera arriba."
     ],
-    "tips": ["Arriba, las espinillas deberían quedar aproximadamente verticales."]
+    "tips": [
+      "Arriba, las espinillas deberían quedar aproximadamente verticales."
+    ]
   },
   "Barbell_Incline_Bench_Press_-_Medium_Grip": {
     "name": "Press inclinado con barra",
@@ -406,7 +408,14 @@
       "Calienta unos minutos con resistencia baja.",
       "Ajusta la resistencia a la intensidad indicada y mantén una cadencia constante."
     ],
-    "tips": ["Una intensidad moderada es aquella en la que puedes hablar, pero no cantar."]
+    "tips": [
+      "Una intensidad moderada es aquella en la que puedes hablar, pero no cantar."
+    ],
+    "mistakes": [
+      "Llevar el sillín demasiado bajo: la rodilla se flexiona en exceso y se sobrecarga.",
+      "Pedalear sin resistencia a una cadencia altísima, rebotando en el sillín.",
+      "Cargar el peso en el manillar y encorvar la espalda."
+    ]
   },
   "Board_Press": {
     "name": "Press con tablas",

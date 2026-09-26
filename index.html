@@ -10,6 +10,7 @@
     />
     <meta name="theme-color" content="#0f0d0c" />
     <meta name="color-scheme" content="dark light" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Forja" />
@@ -22,6 +23,8 @@
         var dark =
           p === 'dark' || (p === 'system' && matchMedia('(prefers-color-scheme: dark)').matches)
         document.documentElement.classList.toggle('dark', dark)
+        if (!dark)
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f3ee')
       } catch (e) {}
     </script>
   </head>
