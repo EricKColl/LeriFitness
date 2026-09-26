@@ -1,0 +1,340 @@
+{
+  "muscles": {
+    "chest": "Pecho",
+    "frontDelts": "Deltoides anterior",
+    "sideDelts": "Deltoides lateral",
+    "rearDelts": "Deltoides posterior",
+    "biceps": "Bíceps",
+    "triceps": "Tríceps",
+    "forearms": "Antebrazos",
+    "abs": "Abdomen",
+    "obliques": "Oblicuos",
+    "quads": "Cuádriceps",
+    "hamstrings": "Isquiotibiales",
+    "glutes": "Glúteos",
+    "adductors": "Aductores",
+    "abductors": "Abductores",
+    "calves": "Gemelos",
+    "lats": "Dorsales",
+    "upperBack": "Espalda alta",
+    "traps": "Trapecios",
+    "lowerBack": "Zona lumbar",
+    "neck": "Cuello"
+  },
+  "regions": {
+    "upper": "Tren superior",
+    "lower": "Tren inferior",
+    "core": "Core"
+  },
+  "equipment": {
+    "bodyweight": "Peso corporal",
+    "barbell": "Barra",
+    "rack": "Rack o soporte",
+    "ezBar": "Barra Z",
+    "dumbbell": "Mancuernas",
+    "kettlebell": "Kettlebell",
+    "cable": "Poleas",
+    "machine": "Máquinas",
+    "bench": "Banco",
+    "pullupBar": "Barra de dominadas",
+    "dipStation": "Paralelas",
+    "bands": "Bandas elásticas",
+    "medicineBall": "Balón medicinal",
+    "stabilityBall": "Fitball",
+    "foamRoller": "Rodillo de espuma",
+    "box": "Cajón",
+    "other": "Otro material"
+  },
+  "equipmentPresets": {
+    "fullGym": "Gimnasio completo",
+    "homeDumbbells": "Casa con mancuernas",
+    "homeBasic": "Casa básica",
+    "bodyweight": "Solo peso corporal"
+  },
+  "equipmentPresetHints": {
+    "fullGym": "Barras, máquinas, poleas y mancuernas",
+    "homeDumbbells": "Mancuernas, banco, bandas y barra de dominadas",
+    "homeBasic": "Bandas elásticas y barra de dominadas",
+    "bodyweight": "Sin material"
+  },
+  "patterns": {
+    "squat": "Sentadilla",
+    "hinge": "Bisagra de cadera",
+    "lunge": "Zancada",
+    "hipExtension": "Extensión de cadera",
+    "kneeExtension": "Extensión de rodilla",
+    "kneeFlexion": "Flexión de rodilla",
+    "calfRaise": "Gemelos",
+    "hipAbduction": "Abducción de cadera",
+    "hipAdduction": "Aducción de cadera",
+    "horizontalPush": "Empuje horizontal",
+    "verticalPush": "Empuje vertical",
+    "chestFly": "Aperturas",
+    "dip": "Fondos",
+    "horizontalPull": "Tracción horizontal",
+    "verticalPull": "Tracción vertical",
+    "pullover": "Pullover",
+    "shrug": "Encogimientos",
+    "lateralRaise": "Elevación lateral",
+    "frontRaise": "Elevación frontal",
+    "rearDelt": "Deltoides posterior",
+    "elbowFlexion": "Curl de bíceps",
+    "elbowExtension": "Extensión de tríceps",
+    "wrist": "Muñeca y agarre",
+    "coreFlexion": "Flexión de tronco",
+    "coreAntiExtension": "Antiextensión",
+    "coreRotation": "Rotación y antirrotación",
+    "coreLateral": "Flexión lateral",
+    "carry": "Transporte de cargas",
+    "neck": "Cuello",
+    "olympic": "Halterofilia",
+    "plyometric": "Pliometría",
+    "cardio": "Cardio",
+    "mobility": "Movilidad y estiramientos",
+    "other": "Otros"
+  },
+  "patternMistakes": {
+    "squat": [
+      "Dejar que las rodillas se cierren hacia dentro.",
+      "Despegar los talones del suelo.",
+      "Redondear la zona lumbar en la parte baja."
+    ],
+    "hinge": [
+      "Redondear la espalda.",
+      "Flexionar demasiado las rodillas y convertirlo en una sentadilla.",
+      "Separar la carga del cuerpo."
+    ],
+    "lunge": [
+      "Dejar que la rodilla delantera se cierre hacia dentro.",
+      "Dar un paso demasiado corto y cargar la rodilla en exceso.",
+      "Perder el equilibrio por colocar los pies en la misma línea."
+    ],
+    "hipExtension": [
+      "Arquear la zona lumbar en lugar de apretar los glúteos.",
+      "Empujar con las puntas de los pies en lugar de con los talones.",
+      "Subir con impulso y sin pausa arriba."
+    ],
+    "kneeExtension": [
+      "Dar patadas con impulso.",
+      "Levantar la cadera del asiento.",
+      "Dejar caer la carga de golpe."
+    ],
+    "kneeFlexion": [
+      "Levantar la cadera para ayudarte.",
+      "Subir con impulso y dejar caer el peso.",
+      "Acortar el recorrido."
+    ],
+    "calfRaise": [
+      "Rebotar en la parte baja.",
+      "Hacer medio recorrido.",
+      "Flexionar las rodillas para ayudarte."
+    ],
+    "hipAbduction": [
+      "Balancear el tronco.",
+      "Dejar volver las piernas de golpe.",
+      "Hacer medio recorrido."
+    ],
+    "hipAdduction": [
+      "Empezar con más apertura de la que tolera tu cadera.",
+      "Juntar las piernas a tirones.",
+      "Dejar que la carga abra las piernas de golpe."
+    ],
+    "horizontalPush": [
+      "Abrir los codos a 90 grados del tronco.",
+      "Despegar los glúteos o la espalda del apoyo.",
+      "Hacer medio recorrido o rebotar la carga."
+    ],
+    "verticalPush": [
+      "Arquear la zona lumbar al empujar.",
+      "Empujar la carga hacia delante en lugar de en vertical.",
+      "Bajar poco y acortar el recorrido."
+    ],
+    "chestFly": [
+      "Flexionar y estirar los codos como en un press.",
+      "Bajar más de lo que tolera el hombro.",
+      "Perder la tensión al juntar las manos."
+    ],
+    "dip": [
+      "Bajar demasiado y forzar el hombro.",
+      "Encoger los hombros hacia las orejas.",
+      "Balancear el cuerpo."
+    ],
+    "horizontalPull": [
+      "Tirar solo con los brazos sin juntar las escápulas.",
+      "Balancear el tronco para mover el peso.",
+      "Redondear la espalda."
+    ],
+    "verticalPull": [
+      "Balancearse o echarse atrás en exceso.",
+      "No estirar los brazos del todo.",
+      "Encoger los hombros hacia las orejas."
+    ],
+    "pullover": [
+      "Flexionar y estirar los codos durante el recorrido.",
+      "Bajar más de lo que permite la movilidad del hombro.",
+      "Arquear la zona lumbar."
+    ],
+    "shrug": [
+      "Girar los hombros en círculos.",
+      "Flexionar los codos para subir más.",
+      "Hacer el recorrido a tirones."
+    ],
+    "lateralRaise": [
+      "Encoger los trapecios al subir.",
+      "Balancear el tronco.",
+      "Subir por encima de la altura de los hombros."
+    ],
+    "frontRaise": [
+      "Balancear el tronco para subir la carga.",
+      "Arquear la zona lumbar.",
+      "Dejar caer la carga sin control."
+    ],
+    "rearDelt": [
+      "Tirar con los trapecios en lugar de con los hombros.",
+      "Usar demasiado peso y convertirlo en un remo.",
+      "Balancear el tronco."
+    ],
+    "elbowFlexion": [
+      "Balancear el tronco para subir el peso.",
+      "Adelantar los codos.",
+      "Bajar sin control o sin estirar los brazos."
+    ],
+    "elbowExtension": [
+      "Mover los codos en lugar de solo los antebrazos.",
+      "Abrir los codos hacia los lados.",
+      "Dejar que la carga vuelva de golpe."
+    ],
+    "wrist": [
+      "Mover los antebrazos en lugar de solo las muñecas.",
+      "Usar demasiado peso y hacer medio recorrido.",
+      "Hacer el movimiento a tirones."
+    ],
+    "coreFlexion": [
+      "Tirar del cuello con las manos.",
+      "Subir con impulso.",
+      "Despegar la zona lumbar al bajar."
+    ],
+    "coreAntiExtension": [
+      "Dejar que la zona lumbar se hunda.",
+      "Aguantar la respiración.",
+      "Ir más lejos de lo que puedes controlar."
+    ],
+    "coreRotation": [
+      "Girar solo con los brazos.",
+      "Hacer el movimiento a tirones.",
+      "Redondear la espalda."
+    ],
+    "coreLateral": [
+      "Inclinarse hacia delante o hacia atrás.",
+      "Dejar caer la cadera.",
+      "Usar impulso."
+    ],
+    "carry": [
+      "Inclinar el tronco hacia un lado.",
+      "Redondear la espalda al coger o dejar la carga.",
+      "Dar pasos largos y descontrolados."
+    ],
+    "neck": ["Hacer movimientos bruscos.", "Usar demasiada carga.", "Encoger los hombros."],
+    "olympic": [
+      "Tirar con los brazos antes de extender la cadera.",
+      "Separar la barra del cuerpo.",
+      "Usar más peso del que permite una técnica limpia."
+    ],
+    "plyometric": [
+      "Aterrizar con las piernas rígidas.",
+      "Dejar que las rodillas se cierren al aterrizar.",
+      "Seguir saltando con fatiga y perder la técnica."
+    ],
+    "cardio": [
+      "Empezar sin calentar.",
+      "Apoyarse en exceso en las asas de la máquina.",
+      "Mantener una intensidad que no te deja respirar."
+    ],
+    "mobility": [
+      "Forzar hasta sentir dolor.",
+      "Rebotar en lugar de mantener la posición.",
+      "Aguantar la respiración."
+    ],
+    "other": [
+      "Perder la postura por usar demasiado peso.",
+      "Hacer el movimiento a tirones.",
+      "Aguantar la respiración."
+    ]
+  },
+  "injuryZones": {
+    "neck": "Cuello",
+    "shoulder": "Hombro",
+    "elbow": "Codo",
+    "wrist": "Muñeca",
+    "lowerBack": "Zona lumbar",
+    "hip": "Cadera",
+    "knee": "Rodilla",
+    "ankle": "Tobillo"
+  },
+  "severities": {
+    "mild": "Leve",
+    "moderate": "Moderada",
+    "severe": "Fuerte"
+  },
+  "severityHints": {
+    "mild": "Molesta a veces, sobre todo con cargas altas",
+    "moderate": "Molesta a menudo o limita algunos movimientos",
+    "severe": "Molesta casi siempre o estás en recuperación"
+  },
+  "stress": {
+    "low": "Carga baja",
+    "moderate": "Carga moderada",
+    "high": "Carga alta"
+  },
+  "levels": {
+    "beginner": "Principiante",
+    "intermediate": "Intermedio",
+    "advanced": "Avanzado"
+  },
+  "levelHints": {
+    "beginner": "Menos de 6 meses entrenando fuerza con constancia",
+    "intermediate": "Entre 6 meses y 3 años entrenando con constancia",
+    "advanced": "Más de 3 años y dominas los básicos con buena técnica"
+  },
+  "categories": {
+    "strength": "Fuerza",
+    "powerlifting": "Powerlifting",
+    "olympic": "Halterofilia",
+    "strongman": "Strongman",
+    "plyometrics": "Pliometría",
+    "cardio": "Cardio",
+    "stretching": "Estiramientos"
+  },
+  "mechanics": {
+    "compound": "Multiarticular",
+    "isolation": "Aislamiento"
+  },
+  "goals": {
+    "strength": "Fuerza",
+    "hypertrophy": "Ganar músculo",
+    "fatLoss": "Perder grasa",
+    "health": "Salud general",
+    "endurance": "Resistencia"
+  },
+  "goalHints": {
+    "strength": "Mover más peso en los básicos",
+    "hypertrophy": "Aumentar la masa muscular",
+    "fatLoss": "Mantener el músculo mientras bajas grasa",
+    "health": "Sentirte mejor, moverte mejor y cuidar tu salud",
+    "endurance": "Aguantar más con menos fatiga"
+  },
+  "jobs": {
+    "sedentary": "Sedentario",
+    "active": "Activo",
+    "physical": "Físico"
+  },
+  "jobHints": {
+    "sedentary": "Pasas casi toda la jornada sentado",
+    "active": "Estás de pie o caminas buena parte del día",
+    "physical": "Cargas peso o haces esfuerzo físico a diario"
+  },
+  "sex": {
+    "female": "Mujer",
+    "male": "Hombre"
+  }
+}

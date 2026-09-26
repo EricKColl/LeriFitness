@@ -1,0 +1,82 @@
+{
+  "title": "Hoy",
+  "streak_one": "{{count}} semana de racha",
+  "streak_other": "{{count}} semanas de racha",
+  "noStreak": "Empieza tu racha",
+  "weekProgress": "{{done}}/{{total}} esta semana",
+  "next": {
+    "today": "Hoy toca",
+    "later": "Próxima sesión · {{day}}",
+    "rest": "Hoy ya has entrenado",
+    "resume": "Sesión a medias",
+    "start": "Empezar sesión",
+    "startEarly": "Adelantarla",
+    "resume_action": "Continuar sesión",
+    "detail": "Detalle",
+    "minutes": "~{{count}} min",
+    "moreExercises": "+{{count}}"
+  },
+  "weekDone": {
+    "title": "¡Semana completada!",
+    "body": "Has hecho todas las sesiones del plan. El lunes llega la siguiente semana, ajustada a cómo te ha ido.",
+    "cardio": "Si te apetece moverte, {{minutes}} min de cardio suave a la semana completan tu plan."
+  },
+  "week": {
+    "title": "Tu semana",
+    "done": "Entrenado",
+    "planned": "Previsto",
+    "missed": "Pendiente",
+    "today": "Hoy",
+    "rest": "Descanso",
+    "day": "{{weekday}} {{date}}: {{status}}"
+  },
+  "banners": {
+    "calibration": {
+      "title": "Semana de calibración",
+      "body": "Elige pesos con los que te sobren unas 2-3 repeticiones. Con lo que registres, Forja calculará tus cargas."
+    },
+    "deload": {
+      "title": "Semana de descarga",
+      "body": "Menos series y más margen para recuperar. Es parte del plan, no un paso atrás."
+    },
+    "checkIn": {
+      "title": "¿Qué tal fue la semana pasada?",
+      "body": "Cuatro preguntas rápidas para ajustar esta semana a cómo llegas.",
+      "action": "Responder",
+      "dismiss": "Ahora no"
+    },
+    "adapted": "Plan ajustado esta semana"
+  },
+  "stats": {
+    "title": "Esta semana",
+    "sessions": "Sesiones",
+    "minutes": "Minutos",
+    "volume": "Volumen",
+    "volumeValue": "{{value}} kg"
+  },
+  "achievements": {
+    "title": "Logros",
+    "body_one": "{{count}} desbloqueado de {{total}}",
+    "body_other": "{{count}} desbloqueados de {{total}}"
+  },
+  "checkIn": {
+    "title": "Check-in semanal",
+    "subtitle": "Semana del {{date}}. Es opcional y solo ajusta el volumen de esta semana.",
+    "energy": "Energía",
+    "energyLow": "Agotado",
+    "energyHigh": "A tope",
+    "sleep": "Sueño",
+    "sleepLow": "Muy mal",
+    "sleepHigh": "Genial",
+    "soreness": "Agujetas y fatiga",
+    "sorenessLow": "Nada",
+    "sorenessHigh": "Mucha",
+    "pain": "¿Alguna molestia?",
+    "painHint": "Si marcas una zona, esta semana se evitarán los ejercicios que más la cargan.",
+    "painNoConsent": "Para tener en cuenta molestias necesitas activar el consentimiento de datos de salud en Perfil.",
+    "save": "Guardar y ajustar",
+    "saved": "Check-in guardado",
+    "savedAdjusted": "Check-in guardado: tu plan de esta semana se ha ajustado",
+    "savedLate": "Check-in guardado: se tendrá en cuenta la próxima semana, porque esta ya has entrenado"
+  }
+}

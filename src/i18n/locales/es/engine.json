@@ -1,0 +1,132 @@
+{
+  "splitNames": {
+    "fullBody1": "Cuerpo completo",
+    "fullBody2": "Cuerpo completo A/B",
+    "fullBody3": "Cuerpo completo A/B/C",
+    "upperLowerFull": "Torso · Pierna · Completo",
+    "upperLower": "Torso / Pierna ×2",
+    "upperLowerPushPull": "Torso · Pierna · Empuje · Tirón · Pierna",
+    "pushPullLegs": "Empuje · Tirón · Pierna ×2"
+  },
+  "days": {
+    "fullBody": "Cuerpo completo",
+    "fullBodyA": "Cuerpo completo A",
+    "fullBodyB": "Cuerpo completo B",
+    "fullBodyC": "Cuerpo completo C",
+    "upperA": "Torso A",
+    "upperB": "Torso B",
+    "lowerA": "Pierna A",
+    "lowerB": "Pierna B",
+    "push": "Empuje",
+    "pull": "Tirón",
+    "pushB": "Empuje B",
+    "pullB": "Tirón B"
+  },
+  "dayFocus": {
+    "fullBody": "Sentadilla, empujes, tracciones y bisagra en una sesión",
+    "fullBodyA": "Sentadilla, press horizontal y remo",
+    "fullBodyB": "Bisagra de cadera, press vertical y dominadas o jalón",
+    "fullBodyC": "Variantes: prensa, press inclinado y hip thrust",
+    "upperA": "Press horizontal y remo pesados",
+    "upperB": "Tracción vertical y press inclinado",
+    "lowerA": "Sentadilla y trabajo de cuádriceps",
+    "lowerB": "Bisagra de cadera y cadena posterior",
+    "push": "Pecho, hombro y tríceps",
+    "pull": "Espalda, deltoides posterior y bíceps",
+    "pushB": "Hombro, pecho superior y tríceps",
+    "pullB": "Espalda media, dorsal y bíceps"
+  },
+  "roles": {
+    "main": "Principal",
+    "secondary": "Secundario",
+    "accessory": "Accesorio"
+  },
+  "weekKind": {
+    "calibration": "Semana de calibración",
+    "accumulation": "Semana de carga",
+    "deload": "Semana de descarga"
+  },
+  "cardioIntensity": {
+    "easy": "Suave",
+    "moderate": "Moderado",
+    "intervals": "Intervalos"
+  },
+  "reasons": {
+    "split": {
+      "fullBody1": "Con {{days}} día a la semana, cada sesión trabaja todo el cuerpo para no dejar ningún grupo sin estímulo.",
+      "fullBody2": "Con {{days}} días, dos rutinas de cuerpo completo alternas: cada músculo se entrena 2 veces por semana, la frecuencia con más respaldo.",
+      "fullBody3": "Con {{days}} días y poca experiencia, tres rutinas de cuerpo completo: repetir los básicos a menudo acelera el aprendizaje técnico.",
+      "upperLowerFull": "Con {{days}} días y experiencia, torso, pierna y un día completo: frecuencia 2 para cada grupo y más volumen por sesión.",
+      "upperLower": "Con {{days}} días, torso y pierna dos veces: frecuencia 2 por músculo y sesiones de duración razonable.",
+      "upperLowerPushPull": "Con {{days}} días, torso y pierna más un bloque de empuje, tirón y pierna para repartir mejor el volumen.",
+      "pushPullLegs": "Con {{days}} días, empuje, tirón y pierna dos veces por semana. El descanso también construye: 6 días es el máximo.",
+      "beginnerManyDays": "Al empezar, 3-4 días suelen bastar. Si notas fatiga, reduce días: el plan se adapta."
+    },
+    "volume": {
+      "level": "Volumen ajustado a tu nivel ({{level}}): más experiencia tolera y necesita más series.",
+      "goal": "Volumen ajustado a tu objetivo ({{goal}}).",
+      "age": "A partir de los 60 años se reduce algo el volumen para favorecer la recuperación.",
+      "physicalJob": "Tu trabajo ya carga piernas y espalda: menos volumen en esas zonas.",
+      "sedentaryJob": "Pasas muchas horas sentado: más trabajo de espalda alta, deltoides posterior y glúteos.",
+      "slotDropped": "{{day}}: se quita {{pattern}} porque esos músculos ya tienen suficiente volumen esta semana."
+    },
+    "scheme": {
+      "strength": "Fuerza: básicos a 3-6 repeticiones con descansos de 3-4 minutos y 1-3 repeticiones en reserva.",
+      "hypertrophy": "Ganar músculo: 6-10 repeticiones en básicos y 10-15 en aislamiento, cerca del fallo (1-2 en reserva).",
+      "fatLoss": "Perder grasa: 8-15 repeticiones con descansos cortos para mantener el músculo y gastar más.",
+      "health": "Salud: 8-15 repeticiones con margen (2-3 en reserva) y técnica cómoda.",
+      "endurance": "Resistencia: 12-25 repeticiones con descansos cortos."
+    },
+    "injury": {
+      "filtered": "{{zone}} ({{severity}}): se evitan los ejercicios que la cargan demasiado."
+    },
+    "selection": {
+      "dropped": "{{day}}: no hay ningún ejercicio de {{pattern}} válido con tu material y tus molestias, así que se omite.",
+      "substituted": "{{day}}: {{from}} se sustituye por {{to}} por tu material o tus molestias.",
+      "aboveLevel": "{{exercise}} es algo más exigente que tu nivel: empieza con poco peso o con la versión asistida."
+    },
+    "cardio": {
+      "included": "Se añaden {{minutes}} minutos de cardio al final de cada sesión.",
+      "restDays": "Tus sesiones son cortas para añadir cardio: repártelo en los días de descanso hasta sumar {{minutes}} minutos a la semana.",
+      "who": "La OMS recomienda 150-300 minutos semanales de actividad aeróbica moderada; tu referencia: {{minutes}} minutos."
+    },
+    "time": {
+      "trimmed": "{{day}}: se ajustan series y accesorios para que la sesión quepa en tu tiempo.",
+      "superset": "{{day}}: algunos accesorios van en superserie (sin descanso entre ellos) para ahorrar tiempo."
+    },
+    "plan": {
+      "calibration": "Semana de calibración: elige en cada ejercicio un peso que te deje 2-3 repeticiones en reserva. A partir de ahí, Forja calcula tus cargas.",
+      "mesocycle": "Semana {{week}} de {{length}} del bloque actual. El volumen sube poco a poco y la última semana es de descarga.",
+      "deload": "Semana de descarga ({{week}} de {{length}}): la mitad de series y más margen. Así llegas con energía al siguiente bloque.",
+      "progression": "Doble progresión: cuando completes todas las series en el tope del rango, sube el peso y vuelve al mínimo de repeticiones."
+    },
+    "adapt": {
+      "increase": "Completaste el {{percent}} % de las sesiones y te recuperas bien: +1 serie por músculo esta semana.",
+      "holdAdherence": "Completaste el {{percent}} % de las sesiones: mantenemos el volumen.",
+      "holdFatigue": "Hay señales de fatiga: mantenemos el volumen para consolidar.",
+      "lowAdherence": "Completaste el {{percent}} % de las sesiones: bajamos un poco el volumen para que sea más llevadero.",
+      "plannedDeload": "Toca descarga: menos series y más margen para recuperar.",
+      "earlyDeload": "Rendimiento a la baja o mucha fatiga: adelantamos la descarga.",
+      "newMesocycle": "Empieza el bloque {{index}}: volvemos a la base de volumen con cargas renovadas.",
+      "temporaryPain": "Molestia en {{zone}} esta semana: se trata como una lesión leve temporal.",
+      "comeback": "¡Qué bien verte de nuevo! Tras {{weeks}} semanas sin entrenar, empezamos un bloque nuevo desde la base.",
+      "profileChanged": "Has actualizado tu perfil: el plan de esta semana se ha recalculado."
+    }
+  },
+  "warnings": {
+    "consultProfessional": "Tienes molestias en {{zone}}. Forja es una app de fitness, no de rehabilitación: consulta con un profesional sanitario antes de entrenar esa zona.",
+    "noPulling": "Con tu material no hay ejercicios de tracción. Una barra de dominadas o unas bandas elásticas (desde unos 15 €) equilibran mucho el plan.",
+    "lowVolume": "Con tu tiempo y material no se llega al volumen mínimo recomendado en: {{muscles}}. Más minutos por sesión o más material lo mejorarían."
+  },
+  "load": {
+    "calibrate": "Primera vez: elige un peso que te deje 2-3 repeticiones en reserva.",
+    "bodyweightStart": "Haz las repeticiones que puedas con buena técnica dejando 2-3 en reserva.",
+    "increase": "¡Toca subir! De {{from}} a {{to}} kg y vuelve al mínimo del rango.",
+    "decrease": "La última vez costó: baja de {{from}} a {{to}} kg y céntrate en la técnica.",
+    "repeat": "Repite {{kg}} kg e intenta sumar alguna repetición.",
+    "fromE1rm": "Carga estimada a partir de tu mejor serie reciente: {{kg}} kg.",
+    "addReps": "Intenta sumar una repetición por serie respecto a la última vez.",
+    "harderVariant": "Ya dominas este rango: prueba una variante más difícil o añade lastre.",
+    "deload": "Descarga: usa {{kg}} kg con más margen que de costumbre."
+  }
+}

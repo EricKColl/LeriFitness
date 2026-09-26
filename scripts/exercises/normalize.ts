@@ -326,7 +326,7 @@ export function mapEquipment(src: SourceExercise, pattern: Pattern): Equipment[]
       if (has(n, /smith/)) items.add('machine')
       else if (has(n, /landmine|plate|trap bar/)) items.add('barbell')
       else if (has(n, /\bbox\b|platform/)) items.add('box')
-      else if (has(n, /band/)) items.add('bands')
+      else if (has(n, /\bbands?\b/) && !has(n, /\bit band/)) items.add('bands')
       else items.add('other')
       if (has(n, /bench|incline|decline/)) items.add('bench')
       break
@@ -349,6 +349,10 @@ export function mapEquipment(src: SourceExercise, pattern: Pattern): Equipment[]
     items.add('dipStation')
   if (pattern === 'dip' && has(n, /bench dip|between benches/)) items.add('bench')
   if (has(n, /box jump|box squat|step[- ]?up|depth jump/)) items.add('box')
+  // Resistencia acomodada del powerlifting: bandas o cadenas sobre la barra.
+  if (has(n, /\bbands?\b/) && (items.has('barbell') || items.has('ezBar'))) items.add('bands')
+  if (has(n, /\bchains?\b/)) items.add('other')
+  if (src.equipment === 'bands' && has(n, /bench press/)) items.add('bench')
 
   // Si solo queda «bodyweight» pero hay otro material, sobra.
   if (items.size > 1) items.delete('bodyweight')
@@ -416,6 +420,9 @@ const BASE_STRESS: Partial<Record<Pattern, Stress>> = {
   other: { lowerBack: 'moderate' },
 }
 
+/** Saltos y rebotes. Con límites de palabra: «wood chop» no es un salto. */
+const JUMP = /\b(jumps?|jumping|hops?|hopping|bounds?|bounding)\b/
+
 export function inferJointStress(src: SourceExercise, pattern: Pattern, primary: Muscle[]): Stress {
   const n = src.name.toLowerCase()
   const stress: Stress = { ...BASE_STRESS[pattern] }
@@ -424,7 +431,7 @@ export function inferJointStress(src: SourceExercise, pattern: Pattern, primary:
   )
 
   if (pattern === 'plyometric') {
-    if (lowerBody || has(n, /jump|hop|bound|skip|lunge|squat|box/)) {
+    if (lowerBody || JUMP.test(n) || has(n, /skip|lunge|squat|box/)) {
       Object.assign(stress, { knee: 'high', ankle: 'high', hip: 'moderate', lowerBack: 'moderate' })
     } else {
       Object.assign(stress, {
@@ -450,7 +457,7 @@ export function inferJointStress(src: SourceExercise, pattern: Pattern, primary:
     raise(stress, 'shoulder', 'high')
     raise(stress, 'neck', 'moderate')
   }
-  if (has(n, /jump|jumping|hop|bound/) && pattern !== 'mobility') {
+  if (JUMP.test(n) && pattern !== 'mobility') {
     raise(stress, 'knee', 'high')
     raise(stress, 'ankle', 'high')
   }
@@ -534,7 +541,7 @@ export function inferJointStress(src: SourceExercise, pattern: Pattern, primary:
     stress.lowerBack = 'moderate'
   }
   if (has(n, /step[- ]?up/)) stress.ankle = 'low'
-  if (has(n, /walking lunge|jumping lunge|lunge jump/)) raise(stress, 'knee', 'high')
+  if (has(n, /jumping lunge|lunge jump|lunge sprint/)) raise(stress, 'knee', 'high')
   if (has(n, /atlas|tire|log lift|keg|stone|axle|car deadlift|conan/))
     raise(stress, 'lowerBack', 'high')
   if (has(n, /sprint|sled|prowler/)) {

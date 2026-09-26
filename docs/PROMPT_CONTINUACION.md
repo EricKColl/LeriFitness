@@ -145,7 +145,30 @@ tipado y validado (Zod). La base se genera mediante scripts reproducibles, no a 
 
 ---
 
-## ESTADO ACTUAL DEL PROYECTO (26/09/2026)
+## ACTUALIZACIÓN: FASE 1 TERMINADA (26/09/2026)
+
+La sección «Estado actual» de más abajo describe el punto de partida de la Fase 1; se conserva
+como referencia del diseño. Estado real ahora (ver `docs/ROADMAP.md`, que es la lista viva):
+
+- Contenido en español completo (873/873), motor de planes (`src/engine`), datos locales
+  (`src/data`), toda la interfaz de la Fase 1, CI/CD y `_headers`. `npm run check` pasa
+  (126 tests) y la build se ha verificado con Playwright a 375×812.
+- Decisiones tomadas durante la fase:
+  - Despliegue con GitHub Actions + `wrangler pages deploy` (proyecto `forja`); si faltan los
+    secretos, el workflow se omite sin fallar. Pasos para la persona titular en el README.
+  - Sin `_redirects`: Cloudflare Pages ya sirve `index.html` como SPA si no hay `404.html`.
+  - CSP estricta sin scripts en línea; el script anti-parpadeo del tema está en
+    `public/theme-init.js`. En la Fase 3 habrá que ampliar `connect-src` (Supabase, modelos
+    WebLLM) en `public/_headers`.
+  - Gráficas SVG propias (`src/shared/ui/charts.tsx`) en lugar de una librería, por peso.
+  - Mapa muscular 2D propio (`src/features/anatomy/body-map.tsx`) con `data-muscle` igual al
+    vocabulario de `src/domain`: los nodos del modelo 3D deben usar esos mismos ids.
+  - Datos del responsable del tratamiento en `src/config/legal.ts`; **se piden a la persona
+    titular** (no inventarlos). Mientras falten, los textos legales muestran un aviso.
+  - `window.forjaDev.seed()` (solo en desarrollo) genera historial realista para probar.
+- Siguiente paso: Fase 2 (anatomía 3D).
+
+## ESTADO ACTUAL DEL PROYECTO (26/09/2026, inicio de la Fase 1)
 
 Hay 2 commits previos en `main` más el de este traspaso. Todo `npm run check` pasa (tipos, lint,
 formato y 8 tests).
@@ -522,5 +545,5 @@ check-ins. Carga perezosa del catálogo (import dinámico del JSON, con hash y p
   `scripts/exercises/vendor` están excluidos de Prettier.
 - Los commits deben terminar con la línea de coautoría que indique el entorno.
 
-Empieza ahora: ponte al día, revisa y mejora lo existente, termina el contenido en español y
-continúa con el motor de planes y el resto de la Fase 1.
+Empieza ahora: ponte al día, revisa y mejora lo existente y continúa por la primera fase sin
+terminar de `docs/ROADMAP.md`.

@@ -34,7 +34,7 @@ import {
   mapMuscles,
   slugify,
 } from './normalize'
-import { OVERRIDES, STAPLES } from './overrides'
+import { NOT_PROGRAMMABLE, OVERRIDES, STAPLES } from './overrides'
 import { CACHE_DIR, ensureSource, loadSourceExercises, SOURCE, type SourceExercise } from './source'
 
 const ROOT = resolve(import.meta.dirname, '../..')
@@ -57,14 +57,17 @@ function toExercise(src: SourceExercise): Omit<Exercise, 'alternatives'> {
   const secondaryMuscles = (override.secondaryMuscles ?? muscles.secondaryMuscles).filter(
     (m) => !primaryMuscles.includes(m),
   )
+  const level = override.level ?? mapLevel(src.level)
   const programmable =
-    (category === 'strength' || category === 'powerlifting') && STRENGTH_PATTERNS.has(pattern)
+    (category === 'strength' || category === 'powerlifting') &&
+    STRENGTH_PATTERNS.has(pattern) &&
+    !NOT_PROGRAMMABLE.test(src.name)
 
   return {
     id,
     sourceId: src.id,
     category,
-    level: mapLevel(src.level),
+    level,
     mechanic: src.mechanic,
     force: src.force,
     pattern,
@@ -73,7 +76,7 @@ function toExercise(src: SourceExercise): Omit<Exercise, 'alternatives'> {
     secondaryMuscles,
     jointStress: { ...inferJointStress(src, pattern, primaryMuscles), ...override.jointStress },
     unilateral: override.unilateral ?? inferUnilateral(src, pattern),
-    staple: STAPLES[id] ?? (programmable && src.level !== 'expert' ? 1 : 0),
+    staple: STAPLES[id] ?? (programmable && level !== 'advanced' ? 1 : 0),
     images: src.images.map((_, i) => `${id}/${i}.webp`),
   }
 }

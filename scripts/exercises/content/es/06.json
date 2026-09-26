@@ -66,7 +66,14 @@
       "Ajusta la resistencia o la inclinación hasta la intensidad indicada, con el tronco erguido.",
       "Puedes usar los sensores de las asas para controlar la frecuencia cardiaca."
     ],
-    "tips": ["Es una buena opción de cardio de bajo impacto para rodillas y tobillos."]
+    "tips": [
+      "Es una buena opción de cardio de bajo impacto para rodillas y tobillos."
+    ],
+    "mistakes": [
+      "Apoyarse en las asas y cargar el peso en los brazos.",
+      "Ir de puntillas: apoya toda la planta en los pedales.",
+      "Encorvar el tronco en lugar de mantenerlo erguido."
+    ]
   },
   "Exercise_Ball_Crunch": {
     "name": "Crunch en fitball",
@@ -135,7 +142,9 @@
       "Adelantar los codos al subir.",
       "Recortar la bajada."
     ],
-    "tips": ["La barra Z reduce la tensión en las muñecas respecto a la barra recta."]
+    "tips": [
+      "La barra Z reduce la tensión en las muñecas respecto a la barra recta."
+    ]
   },
   "EZ-Bar_Skullcrusher": {
     "name": "Press francés con barra Z",
@@ -164,7 +173,9 @@
       "Echarse hacia atrás para mover más peso.",
       "Encoger los hombros."
     ],
-    "tips": ["Es uno de los mejores ejercicios para equilibrar tanto trabajo de empuje y cuidar la postura."]
+    "tips": [
+      "Es uno de los mejores ejercicios para equilibrar tanto trabajo de empuje y cuidar la postura."
+    ]
   },
   "Farmers_Walk": {
     "name": "Paseo del granjero",

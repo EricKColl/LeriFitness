@@ -1,0 +1,500 @@
+{
+  "Landmine_180s": {
+    "name": "Giros de 180 grados con barra landmine",
+    "steps": [
+      "Ancla un extremo de la barra en un soporte landmine o en una esquina y carga el otro.",
+      "Sube el extremo cargado a la altura de los hombros con ambas manos y los brazos estirados, con los pies bien separados.",
+      "Gira tronco y cadera para llevar la barra en arco hasta un lado, sin flexionar los brazos.",
+      "Invierte el giro para llevarla hasta el otro lado y alterna hasta completar la serie."
+    ]
+  },
+  "Landmine_Linear_Jammer": {
+    "name": "Empuje explosivo con barra landmine",
+    "steps": [
+      "Ancla un extremo de la barra en un soporte landmine o en una esquina, carga el otro y coloca un asa en él.",
+      "Sube las asas a la altura de los hombros y adopta una posición atlética.",
+      "Baja a una media sentadilla llevando la cadera atrás, con los codos flexionados.",
+      "Extiende con fuerza cadera, rodillas y tobillos a la vez que estiras los brazos, de forma explosiva, y vuelve a la posición inicial."
+    ]
+  },
+  "Lateral_Bound": {
+    "name": "Saltos laterales amplios",
+    "steps": [
+      "Colócate en media sentadilla, de lado respecto a la dirección del salto.",
+      "Carga el peso sobre la pierna exterior con un pequeño contramovimiento de la otra.",
+      "Impúlsate y salta hacia el lado lo más lejos posible.",
+      "Al aterrizar, impúlsate de inmediato hacia el lado contrario y continúa de un lado a otro."
+    ]
+  },
+  "Lateral_Box_Jump": {
+    "name": "Salto lateral al cajón",
+    "steps": [
+      "De pie, con un cajón bajo a tu lado.",
+      "Baja rápido a un cuarto de sentadilla e invierte el movimiento para saltar hacia arriba y hacia el lado.",
+      "Sube las rodillas lo suficiente para pasar el borde y aterriza en el centro del cajón amortiguando con las piernas.",
+      "Baja con cuidado por el otro lado y continúa de un lado a otro."
+    ]
+  },
+  "Lateral_Cone_Hops": {
+    "name": "Saltos laterales sobre conos",
+    "steps": [
+      "Coloca varios conos en fila, separados alrededor de un metro.",
+      "Colócate junto al primero, de lado respecto a la dirección de avance.",
+      "Flexiona un poco las rodillas y salta hacia arriba y hacia el lado por encima del cono.",
+      "Amortigua al aterrizar y enlaza con el siguiente salto hasta terminar la fila."
+    ]
+  },
+  "Lateral_Raise_-_With_Bands": {
+    "name": "Elevación lateral con banda",
+    "steps": [
+      "Pisa la banda de forma que tenga algo de tensión con los brazos estirados y agarra los extremos con las palmas hacia los muslos.",
+      "Con los codos ligeramente flexionados y la espalda recta, eleva los brazos hacia los lados mientras espiras.",
+      "Sube hasta algo por encima de la paralela, con los codos guiando el movimiento, y mantén un segundo.",
+      "Baja despacio mientras inspiras."
+    ],
+    "mistakes": [
+      "Encoger los hombros hacia las orejas al subir.",
+      "Balancear el tronco para ayudarte.",
+      "Soltar la tensión de golpe al bajar."
+    ],
+    "tips": ["Si pisas la banda con los pies más separados, aumentas la resistencia."]
+  },
+  "Latissimus_Dorsi-SMR": {
+    "name": "Liberación del dorsal con rodillo",
+    "steps": [
+      "Túmbate de lado con el rodillo bajo la espalda, justo por detrás de la axila.",
+      "Estira el brazo de ese lado por encima de la cabeza y carga el peso sobre el dorsal, con el tronco despegado del suelo.",
+      "Rueda despacio y detente 10-30 segundos en los puntos de tensión.",
+      "Cambia de lado."
+    ]
+  },
+  "Leg_Extensions": {
+    "name": "Extensión de cuádriceps en máquina",
+    "steps": [
+      "Ajusta la máquina para que la rodilla quede alineada con el eje y el rodillo apoye justo encima de los tobillos; siéntate con la espalda apoyada y agarra las asas.",
+      "Estira las piernas por completo con el cuádriceps mientras espiras, sin despegar la cadera del asiento.",
+      "Mantén un segundo arriba.",
+      "Baja despacio hasta que las rodillas formen unos 90 grados mientras inspiras."
+    ],
+    "mistakes": [
+      "Dar patadas con impulso en lugar de subir con control.",
+      "Levantar la cadera del asiento para mover más peso.",
+      "Dejar caer la carga de golpe."
+    ]
+  },
+  "Leg_Lift": {
+    "name": "Elevación de pierna atrás de pie",
+    "steps": [
+      "De pie, con los pies a la anchura de los hombros, sujétate a un rack o al respaldo de una silla.",
+      "Con o sin tobillera lastrada, flexiona una rodilla y lleva ese pie hacia atrás y arriba, como en un curl femoral de pie, mientras espiras.",
+      "Mantén la otra pierna estirada y el tronco quieto.",
+      "Baja despacio mientras inspiras y cambia de pierna al terminar."
+    ]
+  },
+  "Leg-Over_Floor_Press": {
+    "name": "Press en el suelo con kettlebell y pierna cruzada",
+    "steps": [
+      "Túmbate en el suelo con una kettlebell sobre el pecho, sujeta por el asa, y cruza la pierna del lado que trabaja sobre la otra; estira el brazo libre a un lado.",
+      "Empuja la kettlebell hasta bloquear el brazo.",
+      "Baja hasta que el codo toque el suelo, con la kettlebell siempre por encima del codo.",
+      "Completa las repeticiones y cambia de lado."
+    ]
+  },
+  "Leg_Press": {
+    "name": "Prensa de piernas",
+    "steps": [
+      "Siéntate en la prensa con la espalda y la cadera bien apoyadas y coloca los pies en el centro de la plataforma, a la anchura de los hombros.",
+      "Empuja la plataforma, quita los seguros y estira las piernas sin bloquear las rodillas.",
+      "Baja despacio mientras inspiras hasta que las rodillas formen unos 90 grados, o más abajo si la cadera no se despega.",
+      "Empuja con todo el pie hasta volver arriba mientras espiras y pon los seguros al terminar."
+    ],
+    "mistakes": [
+      "Bajar tanto que la zona lumbar se despega del respaldo.",
+      "Bloquear las rodillas de golpe arriba.",
+      "Dejar que las rodillas se cierren hacia dentro.",
+      "Levantar los talones de la plataforma."
+    ]
+  },
+  "Leg_Pull-In": {
+    "name": "Recogida de piernas en el suelo",
+    "steps": [
+      "Túmbate boca arriba con las piernas estiradas y las manos junto al cuerpo o bajo los glúteos.",
+      "Flexiona las rodillas y lleva los muslos hacia el abdomen mientras espiras, con las piernas paralelas al suelo.",
+      "Sube hasta que las rodillas lleguen a la altura del pecho y aprieta un segundo.",
+      "Vuelve a estirar las piernas sin apoyarlas mientras inspiras."
+    ]
+  },
+  "Leg-Up_Hamstring_Stretch": {
+    "name": "Estiramiento de isquiotibiales con pierna arriba",
+    "steps": [
+      "Túmbate boca arriba, flexiona una rodilla y apoya ese pie en el suelo para estabilizar la espalda.",
+      "Eleva la otra pierna con la planta del pie mirando al techo; no pasa nada si no la puedes estirar del todo.",
+      "Estírala todo lo que puedas y acércala suavemente hacia la cara, sujetándola con las manos.",
+      "Mantén 20-30 segundos y cambia de lado."
+    ]
+  },
+  "Leverage_Chest_Press": {
+    "name": "Press de pecho en máquina de palanca",
+    "steps": [
+      "Carga la máquina y ajusta el asiento para que las asas queden a la altura de la parte media o baja del pecho.",
+      "Siéntate con el pecho y la cabeza altos y las escápulas juntas.",
+      "Empuja las asas hacia delante hasta estirar los brazos mientras espiras.",
+      "Tras una breve pausa, vuelve despacio sin llegar a apoyar la carga, para mantener la tensión."
+    ],
+    "mistakes": [
+      "Colocar el asiento demasiado bajo o alto y empujar con los hombros.",
+      "Despegar la espalda del respaldo.",
+      "Dejar que la carga golpee al final de cada repetición."
+    ]
+  },
+  "Leverage_Deadlift": {
+    "name": "Peso muerto en máquina de palanca",
+    "steps": [
+      "Carga la máquina y colócate entre las asas.",
+      "Agarra las asas inferiores, baja la cadera, coge aire y mantén el pecho alto y la mirada al frente.",
+      "Empuja el suelo con los talones y extiende cadera y rodillas hasta quedar de pie, con los brazos estirados.",
+      "Baja con control llevando la cadera atrás y sin redondear la espalda."
+    ]
+  },
+  "Leverage_Decline_Chest_Press": {
+    "name": "Press declinado en máquina de palanca",
+    "steps": [
+      "Carga la máquina y ajusta el asiento para que las asas queden a la altura de la parte baja del pecho.",
+      "Siéntate con el pecho y la cabeza altos y las escápulas juntas.",
+      "Empuja las asas hasta estirar los brazos.",
+      "Tras una breve pausa, vuelve despacio sin llegar a apoyar la carga."
+    ]
+  },
+  "Leverage_High_Row": {
+    "name": "Remo alto en máquina de palanca",
+    "steps": [
+      "Carga la máquina y ajusta el asiento para llegar justo a las asas; fija las piernas bajo el rodillo.",
+      "Agarra las asas con agarre prono.",
+      "Tira de ellas hacia el tronco flexionando los codos y juntando las escápulas.",
+      "Haz una pausa abajo y vuelve despacio sin llegar a apoyar la carga."
+    ]
+  },
+  "Leverage_Incline_Chest_Press": {
+    "name": "Press inclinado en máquina de palanca",
+    "steps": [
+      "Carga la máquina y ajusta el asiento para que las asas queden a la altura de la parte alta del pecho.",
+      "Siéntate con el pecho y la cabeza altos y las escápulas juntas.",
+      "Empuja las asas hasta estirar los brazos mientras espiras.",
+      "Tras una breve pausa, vuelve despacio sin llegar a apoyar la carga."
+    ],
+    "mistakes": [
+      "Despegar las escápulas del respaldo y adelantar los hombros.",
+      "Arquear en exceso la zona lumbar.",
+      "Hacer medio recorrido."
+    ]
+  },
+  "Leverage_Iso_Row": {
+    "name": "Remo en máquina de palanca",
+    "steps": [
+      "Carga la máquina y ajusta el asiento para que las asas queden a la altura del pecho.",
+      "Agarra las asas con agarre neutro o prono, con el pecho apoyado.",
+      "Tira de ellas hacia el tronco flexionando los codos y juntando las escápulas.",
+      "Haz una pausa y vuelve despacio sin llegar a apoyar la carga."
+    ],
+    "mistakes": [
+      "Separar el pecho del apoyo y ayudarse con el tronco.",
+      "Tirar solo con los brazos, sin juntar las escápulas.",
+      "Encoger los hombros hacia las orejas."
+    ]
+  },
+  "Leverage_Shoulder_Press": {
+    "name": "Press de hombro en máquina de palanca",
+    "steps": [
+      "Carga la máquina y ajusta el asiento para que las asas queden a la altura de los hombros.",
+      "Siéntate con el pecho y la cabeza altos y agarra las asas con agarre prono.",
+      "Empuja hacia arriba hasta estirar los brazos mientras espiras.",
+      "Tras una breve pausa, baja despacio sin llegar a apoyar la carga."
+    ],
+    "mistakes": [
+      "Arquear la zona lumbar para empujar más.",
+      "Bloquear los codos de golpe arriba.",
+      "Bajar poco y acortar el recorrido."
+    ]
+  },
+  "Leverage_Shrug": {
+    "name": "Encogimiento de hombros en máquina de palanca",
+    "steps": [
+      "Carga la máquina, colócate entre las asas y agarra las superiores.",
+      "Ponte de pie extendiendo cadera y rodillas, con los brazos estirados y los hombros atrás.",
+      "Eleva los hombros hacia las orejas en línea recta, sin flexionar los codos.",
+      "Haz una pausa arriba y baja despacio."
+    ]
+  },
+  "Linear_3-Part_Start_Technique": {
+    "name": "Salida de sprint en tres apoyos",
+    "steps": [
+      "Colócate tras una línea con la punta del pie izquierdo junto al tobillo derecho y retrasa el pie derecho unos 10-15 cm.",
+      "Apoya la mano derecha en la línea y acerca la nariz a la rodilla izquierda.",
+      "Inclínate con la cabeza más baja que la cadera y el peso sobre la pierna izquierda; lleva la mano izquierda atrás, paralela al suelo.",
+      "Sal disparado hacia delante cuando estés listo."
+    ],
+    "tips": ["Es un ejercicio técnico para acelerar al máximo desde parado."]
+  },
+  "Linear_Acceleration_Wall_Drill": {
+    "name": "Técnica de aceleración contra la pared",
+    "steps": [
+      "Inclínate unos 45 grados contra una pared con las manos apoyadas, los pies juntos y los glúteos activos.",
+      "Sube rápido la rodilla derecha, haz una pausa y clávala recta contra el suelo.",
+      "Repite con la izquierda y otra vez con la derecha.",
+      "En cuanto el pie derecho toque el suelo, alterna las piernas lo más rápido que puedas."
+    ]
+  },
+  "Linear_Depth_Jump": {
+    "name": "Salto en profundidad entre cajones",
+    "steps": [
+      "Coloca dos cajones o bancos separados alrededor de un metro y súbete a uno, mirando al otro.",
+      "Déjate caer al suelo entre ambos, flexionando rodillas y cadera para amortiguar.",
+      "Invierte el movimiento de forma explosiva y salta sobre el otro cajón.",
+      "Aterriza con suavidad, absorbiendo el impacto con las piernas."
+    ]
+  },
+  "Log_Lift": {
+    "name": "Levantamiento de tronco (log)",
+    "steps": [
+      "Colócate con el tronco delante, agarra las asas y súbelo al pecho con una cargada, pegándolo al cuerpo y extendiendo cadera y rodillas.",
+      "Echa la cabeza atrás para apoyarlo sobre el pecho.",
+      "Flexiona un poco las rodillas y empuja de forma explosiva para lanzarlo hacia arriba, terminando de estirar los codos por encima de la cabeza.",
+      "Baja el tronco al suelo con control y repite."
+    ]
+  },
+  "London_Bridges": {
+    "name": "Puentes de Londres con cuerda",
+    "steps": [
+      "Cuelga una cuerda de una viga alta y colócate de pie sobre la barra del multipower bloqueada (o un cajón firme), agarrando la cuerda.",
+      "Con el cuerpo recto, inclínate hacia atrás bajando mano sobre mano por la cuerda.",
+      "Continúa hasta quedar perpendicular al suelo.",
+      "Invierte el movimiento subiendo mano sobre mano hasta la posición inicial."
+    ]
+  },
+  "Looking_At_Ceiling": {
+    "name": "Arco de rodillas mirando al techo",
+    "steps": [
+      "Arrodíllate en el suelo y sujeta los talones con ambas manos.",
+      "Empuja la cadera hacia arriba y hacia delante mientras llevas la cabeza atrás para mirar al techo.",
+      "Arquea la espalda solo hasta donde sea cómodo y mantén unos segundos.",
+      "Vuelve despacio a la posición inicial."
+    ]
+  },
+  "Low_Cable_Crossover": {
+    "name": "Cruce de poleas desde abajo",
+    "steps": [
+      "Coloca ambas poleas en la posición más baja y agarra un estribo con cada mano.",
+      "Da un paso al frente para tensar los cables, con los brazos estirados, las manos por debajo de la cintura y las palmas hacia delante.",
+      "Con los codos ligeramente flexionados, lleva las manos hacia arriba y hacia el centro hasta juntarlas delante del pecho, con las palmas hacia arriba.",
+      "Tras una breve pausa, vuelve despacio a la posición inicial."
+    ],
+    "mistakes": [
+      "Flexionar los codos y convertirlo en un curl.",
+      "Subir las manos por encima de la cara.",
+      "Arquear la zona lumbar al subir."
+    ]
+  },
+  "Low_Cable_Triceps_Extension": {
+    "name": "Extensión de tríceps tumbado en polea baja con cuerda",
+    "steps": [
+      "Túmbate boca arriba en el banco de la máquina de remo en polea baja, con la cabeza hacia la polea y una cuerda enganchada.",
+      "Agarra los extremos de la cuerda con agarre neutro, con los brazos verticales y los codos cerrados y flexionados a 90 grados.",
+      "Estira los antebrazos hasta que los brazos queden rectos y verticales, sin mover los codos, y aprieta un segundo.",
+      "Vuelve despacio a la posición inicial."
+    ]
+  },
+  "Low_Pulley_Row_To_Neck": {
+    "name": "Remo al cuello en polea baja",
+    "steps": [
+      "Siéntate en la máquina de remo en polea baja con una cuerda y agárrala con agarre prono, con la espalda recta y casi vertical, los brazos estirados y las rodillas algo flexionadas.",
+      "Sin mover el tronco, eleva los codos y tira de la cuerda hacia el cuello mientras espiras, con los brazos paralelos al suelo.",
+      "Continúa hasta que las manos queden casi junto a las orejas, con los codos abiertos, y mantén un segundo.",
+      "Vuelve despacio a la posición inicial mientras inspiras."
+    ]
+  },
+  "Lower_Back_Curl": {
+    "name": "Extensión lumbar en el suelo",
+    "steps": [
+      "Túmbate boca abajo con los brazos abiertos a los lados.",
+      "Con la musculatura lumbar, extiende la columna y despega el pecho del suelo, sin empujar con los brazos.",
+      "Mantén la cabeza alineada con el tronco y baja con control.",
+      "Haz 10-20 repeticiones."
+    ]
+  },
+  "Lower_Back-SMR": {
+    "name": "Liberación lumbar con rodillo",
+    "steps": [
+      "Siéntate con el rodillo bajo la zona lumbar, cruza los brazos delante del pecho y adelanta los hombros.",
+      "Eleva la cadera y échate atrás cargando el peso en la zona lumbar.",
+      "Desplaza el peso ligeramente a un lado para apoyar la musculatura y no la columna, y rueda despacio.",
+      "Detente 10-30 segundos en los puntos de tensión y repite en el otro lado."
+    ]
+  },
+  "Lunge_Pass_Through": {
+    "name": "Zancada con pase de kettlebell",
+    "steps": [
+      "De pie, con el tronco erguido y una kettlebell en la mano derecha.",
+      "Da un paso adelante con el pie izquierdo y baja hasta que la rodilla de atrás casi toque el suelo.",
+      "Abajo, pasa la kettlebell por debajo de la pierna delantera a la otra mano.",
+      "Vuelve a la posición inicial empujando con el talón y alterna de pierna."
+    ]
+  },
+  "Lunge_Sprint": {
+    "name": "Zancada con salto en multipower",
+    "steps": [
+      "Coloca la barra del multipower a la altura adecuada, apóyala sobre la espalda, desbloquéala y adelanta un pie y retrasa el otro.",
+      "Baja hasta que la rodilla de atrás casi toque el suelo.",
+      "Invierte el movimiento de forma explosiva empujando con el talón delantero y salta, cambiando la posición de las piernas en el aire.",
+      "Aterriza amortiguando y enlaza la siguiente repetición."
+    ]
+  },
+  "Lying_Bent_Leg_Groin": {
+    "name": "Estiramiento de aductores en mariposa con compañero",
+    "steps": [
+      "Túmbate boca arriba con las rodillas flexionadas y las plantas de los pies juntas; tu compañero te sujeta las rodillas.",
+      "Intenta juntar las rodillas mientras tu compañero lo impide, durante 10-20 segundos.",
+      "Relaja las piernas y deja que tu compañero lleve las rodillas suavemente hacia el suelo.",
+      "Avísale cuando el estiramiento sea suficiente."
+    ]
+  },
+  "Lying_Cable_Curl": {
+    "name": "Curl tumbado en polea baja",
+    "steps": [
+      "Engancha una barra recta o Z a la polea baja y agárrala con las palmas hacia arriba a la anchura de los hombros.",
+      "Túmbate boca arriba en una esterilla frente a la máquina, con los pies apoyados en el bastidor y las piernas estiradas.",
+      "Con los codos pegados al cuerpo, sube la barra hacia el pecho mientras espiras, sin mover la parte superior del brazo.",
+      "Aprieta un segundo y vuelve despacio."
+    ]
+  },
+  "Lying_Cambered_Barbell_Row": {
+    "name": "Remo tumbado con barra curva",
+    "steps": [
+      "Coloca una barra curva bajo un banco plano y túmbate boca abajo sobre él.",
+      "Agarra la barra con agarre prono más abierto que los hombros.",
+      "Tira de la barra con los codos cerca del cuerpo: hacia el pecho para la espalda alta o hacia el abdomen para el dorsal.",
+      "Mantén un segundo arriba y baja despacio."
+    ]
+  },
+  "Lying_Close-Grip_Bar_Curl_On_High_Pulley": {
+    "name": "Curl tumbado en polea alta con barra",
+    "steps": [
+      "Coloca un banco plano delante de una polea alta y agarra la barra recta con las palmas hacia arriba a la anchura de los hombros.",
+      "Túmbate boca arriba con la cabeza en el extremo del banco y los brazos estirados verticalmente, con los codos cerrados.",
+      "Flexiona los codos y lleva la barra en semicírculo hasta la barbilla, sin mover los brazos, y aprieta un segundo.",
+      "Vuelve despacio a estirar los brazos."
+    ]
+  },
+  "Lying_Close-Grip_Barbell_Triceps_Extension_Behind_The_Head": {
+    "name": "Extensión de tríceps tumbado con barra por detrás de la cabeza",
+    "steps": [
+      "Túmbate en un banco plano con la cabeza cerca del extremo y sujeta una barra recta o Z con agarre prono cerrado.",
+      "Lleva la barra con los brazos estirados en semicírculo hasta por encima de la cabeza, con los brazos paralelos al suelo y los codos cerrados.",
+      "Baja la barra flexionando los codos hasta que los antebrazos queden verticales, sin mover los brazos.",
+      "Súbela de nuevo estirando los codos y aprieta el tríceps un segundo."
+    ]
+  },
+  "Lying_Close-Grip_Barbell_Triceps_Press_To_Chin": {
+    "name": "Extensión de tríceps tumbado con barra a la barbilla",
+    "steps": [
+      "Túmbate en un banco plano con la cabeza fuera del extremo y sujeta una barra recta o Z con agarre prono sobre el pecho, con los brazos verticales.",
+      "Baja la barra en semicírculo flexionando los codos, sin mover los brazos y con los codos cerrados, hasta rozar la barbilla.",
+      "Súbela por el mismo recorrido estirando los codos mientras espiras.",
+      "Aprieta el tríceps un segundo arriba."
+    ]
+  },
+  "Lying_Crossover": {
+    "name": "Estiramiento de cadera cruzada con compañero",
+    "steps": [
+      "Túmbate boca arriba con las piernas estiradas y cruza una pierna flexionada por encima del cuerpo, intentando acercar la rodilla al suelo.",
+      "Tu compañero, arrodillado a tu lado, te sujeta el hombro contra el suelo y controla la pierna cruzada.",
+      "Intenta levantar la rodilla mientras tu compañero lo impide, durante 10-20 segundos.",
+      "Relaja y deja que acerque la rodilla suavemente al suelo; avísale cuando sea suficiente y cambia de lado."
+    ]
+  },
+  "Lying_Dumbbell_Tricep_Extension": {
+    "name": "Extensión de tríceps tumbado con mancuernas",
+    "steps": [
+      "Túmbate en un banco plano con una mancuerna en cada mano, los brazos estirados en vertical, las palmas enfrentadas y los codos cerrados.",
+      "Sin mover los brazos, baja las mancuernas despacio hasta la altura de las orejas mientras inspiras.",
+      "Estira los codos para volver arriba con el tríceps mientras espiras.",
+      "Mantén los codos cerrados durante todo el recorrido."
+    ]
+  },
+  "Lying_Face_Down_Plate_Neck_Resistance": {
+    "name": "Extensión de cuello boca abajo con disco",
+    "steps": [
+      "Túmbate boca abajo en un banco plano con los hombros justo en el borde, de modo que el cuello y la cabeza queden fuera, y sujeta un disco detrás de la cabeza.",
+      "Baja la cabeza despacio, como al asentir, mientras inspiras.",
+      "Súbela en semicírculo hasta la posición inicial mientras espiras y mantén un segundo.",
+      "Usa un peso ligero y muévete sin tirones."
+    ]
+  },
+  "Lying_Face_Up_Plate_Neck_Resistance": {
+    "name": "Flexión de cuello boca arriba con disco",
+    "steps": [
+      "Túmbate boca arriba en un banco plano con los hombros justo en el borde, de modo que el cuello y la cabeza queden fuera, y sujeta un disco sobre la frente.",
+      "Baja la cabeza hacia atrás en semicírculo despacio mientras inspiras.",
+      "Súbela hasta la posición inicial mientras espiras y mantén un segundo.",
+      "Usa un peso ligero y muévete sin tirones."
+    ]
+  },
+  "Lying_Glute": {
+    "name": "Estiramiento de glúteo tumbado con compañero",
+    "steps": [
+      "Túmbate boca arriba con tu compañero arrodillado a tu lado.",
+      "Flexiona una cadera y gira la pierna para que el pie quede sobre la cadera contraria y la pierna perpendicular al cuerpo; tu compañero te sujeta rodilla y tobillo.",
+      "Empuja la pierna contra tu compañero, que impide el movimiento, durante 10-20 segundos.",
+      "Relaja por completo mientras lleva la pierna suavemente hacia tu pecho; avísale cuando sea suficiente."
+    ]
+  },
+  "Lying_Hamstring": {
+    "name": "Estiramiento de isquiotibiales tumbado con compañero",
+    "steps": [
+      "Túmbate boca arriba con las piernas estiradas y eleva una hacia el techo; tu compañero te sujeta el tobillo.",
+      "Intenta flexionar la rodilla contra su resistencia durante 10-20 segundos.",
+      "Relaja la pierna y deja que la acerque suavemente hacia tu cabeza.",
+      "Avísale cuando el estiramiento sea suficiente y cambia de pierna."
+    ]
+  },
+  "Lying_High_Bench_Barbell_Curl": {
+    "name": "Curl con barra tumbado en banco alto",
+    "steps": [
+      "Túmbate boca abajo en un banco plano alto, con la parte alta del pecho sobre el borde, y sujeta una barra con agarre supino colgando con los brazos verticales.",
+      "Sin mover los brazos y con los codos cerrados, sube la barra en semicírculo mientras espiras.",
+      "Mantén un segundo arriba.",
+      "Baja despacio sin balanceos."
+    ]
+  },
+  "Lying_Leg_Curls": {
+    "name": "Curl femoral tumbado",
+    "steps": [
+      "Ajusta la máquina y túmbate boca abajo con el rodillo justo por encima de los talones y las rodillas algo por fuera del borde del banco.",
+      "Agarra las asas y mantén la cadera pegada al banco con las piernas estiradas.",
+      "Flexiona las rodillas todo lo que puedas mientras espiras, sin despegar los muslos, y mantén un segundo.",
+      "Baja despacio hasta estirar casi del todo mientras inspiras."
+    ],
+    "mistakes": [
+      "Levantar la cadera del banco para ayudarse.",
+      "Subir con impulso y dejar caer el peso.",
+      "Acortar el recorrido abajo."
+    ]
+  },
+  "Lying_Machine_Squat": {
+    "name": "Sentadilla tumbado en máquina",
+    "steps": [
+      "Ajusta la máquina, colócate boca arriba con la espalda y la cabeza apoyadas y los hombros bajo las almohadillas; pies en la plataforma a la anchura de los hombros.",
+      "Empieza con las rodillas flexionadas algo por debajo de la paralela.",
+      "Estira las piernas empujando la plataforma mientras espiras y aprieta el cuádriceps un segundo.",
+      "Baja despacio solo hasta que los muslos queden paralelos a la plataforma."
+    ]
+  },
+  "Lying_One-Arm_Lateral_Raise": {
+    "name": "Pájaro a una mano tumbado boca abajo en banco plano",
+    "steps": [
+      "Túmbate boca abajo en un banco plano con una mancuerna en una mano; sujétate a la pata del banco con la otra.",
+      "Deja colgar el brazo estirado, con el codo algo flexionado y la palma mirando hacia el cuerpo.",
+      "Eleva el brazo hacia el lado hasta que el codo llegue a la altura del hombro mientras espiras, y mantén un segundo.",
+      "Baja despacio y cambia de brazo al terminar."
+    ]
+  }
+}

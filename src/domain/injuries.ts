@@ -30,8 +30,12 @@ export interface Injury {
 
 const STRESS_RANK: Record<StressLevel, number> = { low: 1, moderate: 2, high: 3 }
 
-/** Máximo estrés tolerado para cada severidad. `mild` evita lo muy exigente; `severe` solo permite carga baja. */
-const MAX_STRESS: Record<InjurySeverity, number> = { mild: 2, moderate: 1, severe: 0 }
+/**
+ * Máximo estrés tolerado para cada severidad: `mild` evita la carga alta; `moderate` y `severe`
+ * solo permiten carga baja. Con `severe`, además, el motor prefiere ejercicios que no carguen la
+ * zona en absoluto (ver `scoreExercise`) y la interfaz insiste en consultar a un profesional.
+ */
+const MAX_STRESS: Record<InjurySeverity, number> = { mild: 2, moderate: 1, severe: 1 }
 
 /** ¿Está contraindicado un ejercicio con este estrés articular para esta molestia? */
 export function isContraindicated(stress: StressLevel | undefined, severity: InjurySeverity) {

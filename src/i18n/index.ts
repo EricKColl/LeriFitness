@@ -13,6 +13,7 @@ void i18n.use(initReactI18next).init({
   resources,
   lng: DEFAULT_LANGUAGE,
   fallbackLng: DEFAULT_LANGUAGE,
+  ns: Object.keys(es),
   defaultNS: 'common',
   interpolation: { escapeValue: false },
   returnNull: false,

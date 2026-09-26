@@ -1,0 +1,54 @@
+{
+  "title": "Tu plan",
+  "mesocycle": "Bloque {{index}} · semana {{week}} de {{length}}",
+  "days": "Sesiones de la semana",
+  "unscheduled": "Cuando puedas",
+  "done": "Hecha",
+  "why": {
+    "title": "Por qué este plan",
+    "subtitle": "Cada decisión sale de reglas deterministas basadas en la evidencia. Así se decidió:",
+    "adaptation": "Cambios de esta semana",
+    "decisions": "Decisiones del plan"
+  },
+  "warnings": "Avisos",
+  "volume": {
+    "title": "Series por músculo esta semana",
+    "hint": "Conteo fraccional: 1 serie si el músculo es el principal, 0,5 si ayuda. La franja marca el rango recomendado.",
+    "planned": "{{value}} series previstas; recomendado {{min}}-{{max}}"
+  },
+  "cardio": {
+    "title": "Cardio semanal",
+    "body": "Referencia: {{minutes}} minutos de actividad aeróbica a la semana, sumando lo que hagas al final de las sesiones, caminar y otros deportes."
+  },
+  "energy": {
+    "title": "Gasto energético estimado",
+    "bmr": "Metabolismo basal",
+    "tdee": "Gasto diario total",
+    "value": "{{value}} kcal",
+    "note": "Estimación orientativa (Mifflin-St Jeor y tu nivel de actividad). No es una pauta nutricional: si quieres ajustar tu alimentación, consulta a un dietista-nutricionista."
+  },
+  "edit": "Cambiar días, tiempo o material",
+  "day": {
+    "notFound": "Esta sesión no está en el plan de esta semana.",
+    "warmup": "Calentamiento",
+    "general": "{{minutes}} min de movilidad y cardio suave",
+    "ramp": "Series de aproximación en {{exercise}}",
+    "rampSet": "{{reps}} × {{kg}} kg",
+    "rampSetPercent": "{{reps}} rep. al {{percent}} %",
+    "exercises": "Ejercicios",
+    "sets": "{{sets}} × {{min}}-{{max}}",
+    "setsSeconds": "{{sets}} × {{min}}-{{max}} s",
+    "rir": "Deja {{min}}-{{max}} en reserva",
+    "rirOne": "Deja {{min}} en reserva",
+    "rest": "Descanso {{time}}",
+    "load": "{{kg}} kg",
+    "superset": "Superserie",
+    "supersetWith": "En superserie con {{exercise}}",
+    "substituted": "Sustituye a {{pattern}}",
+    "conditioning": "Cardio final",
+    "conditioningBody": "{{minutes}} min · {{intensity}}",
+    "outdoorWalk": "Camina a paso vivo (al aire libre o en cinta)",
+    "start": "Empezar esta sesión",
+    "injuryNote": "Si notas dolor (no solo esfuerzo) en una zona con molestias, para ese ejercicio y cámbialo por una alternativa."
+  }
+}

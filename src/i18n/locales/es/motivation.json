@@ -1,0 +1,54 @@
+{
+  "greeting": {
+    "morning": "Buenos días",
+    "afternoon": "Buenas tardes",
+    "evening": "Buenas noches",
+    "night": "Qué tarde se ha hecho"
+  },
+  "messages": {
+    "firstWeek": [
+      "Primera semana: aprende los movimientos y encuentra tus pesos. El resto viene solo.",
+      "Hoy no se trata de batir récords, sino de empezar bien.",
+      "Técnica primero, peso después. Así se forja algo que dura.",
+      "Cada experto empezó con una primera serie. Hoy es la tuya."
+    ],
+    "streak": [
+      "{{weeks}} semanas seguidas. La llama sigue viva: protégela.",
+      "La constancia gana a la intensidad. Llevas {{weeks}} semanas demostrándolo.",
+      "{{weeks}} semanas de racha. Lo difícil ya lo estás haciendo.",
+      "Semana a semana, golpe a golpe. Llevas {{weeks}} sin fallar."
+    ],
+    "comeback": [
+      "Volver es lo que cuenta. Empezamos suave y retomamos el ritmo.",
+      "Un parón no borra lo que has construido. Hoy vuelves a encender la fragua.",
+      "Sin culpas: hoy toca retomar, con calma y buena técnica."
+    ],
+    "pr": [
+      "Tu último entreno trajo un récord. El trabajo está dando fruto.",
+      "Nuevo récord en la última sesión. Eso no es suerte, es progreso.",
+      "Has movido más que nunca. Sigue así, sin prisas."
+    ],
+    "deload": [
+      "Semana de descarga: menos volumen para que tu cuerpo asimile todo lo trabajado.",
+      "Descargar también es entrenar. Esta semana, calidad y margen.",
+      "El metal se templa en reposo. Aprovecha la descarga."
+    ],
+    "weekDone": [
+      "Semana completada. Ahora toca descansar, comer bien y dormir: ahí se construye.",
+      "Todas las sesiones hechas. El descanso es parte del plan.",
+      "Objetivo semanal cumplido. Disfruta de tus días libres."
+    ],
+    "restDay": [
+      "Hoy toca descanso. Caminar un rato también suma.",
+      "Día libre: recuperar también construye músculo.",
+      "Descansa hoy para rendir mañana. Un paseo o unos estiramientos, y listo."
+    ],
+    "trainingDay": [
+      "Hoy toca entrenar. Un paso cada vez: primero el calentamiento.",
+      "Tu plan te espera. Céntrate en cada serie, no en toda la sesión.",
+      "Buen día para sumar repeticiones de calidad.",
+      "Entra, calienta y haz tu mejor serie. Con eso basta.",
+      "Lo importante no es la sesión perfecta, sino la sesión hecha."
+    ]
+  }
+}

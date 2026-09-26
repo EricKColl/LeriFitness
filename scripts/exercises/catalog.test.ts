@@ -56,6 +56,51 @@ describe('catálogo de ejercicios generado', () => {
     const es = ExerciseLocaleSchema.parse(esJson)
     for (const id of Object.keys(es)) expect(ids.has(id), id).toBe(true)
   })
+
+  it('los nombres en español son únicos', () => {
+    const es = ExerciseLocaleSchema.parse(esJson)
+    const byName = new Map<string, string[]>()
+    for (const [id, content] of Object.entries(es)) {
+      const key = content.name.toLocaleLowerCase('es')
+      byName.set(key, [...(byName.get(key) ?? []), id])
+    }
+    const duplicated = [...byName].filter(([, list]) => list.length > 1)
+    expect(duplicated).toEqual([])
+  })
+
+  it('el contenido en español sigue la guía de estilo', () => {
+    const es = ExerciseLocaleSchema.parse(esJson)
+    for (const [id, c] of Object.entries(es)) {
+      expect(c.steps.length, id).toBeGreaterThanOrEqual(2)
+      expect(c.steps.length, id).toBeLessThanOrEqual(6)
+      expect(c.name[0], id).toBe(c.name[0]!.toLocaleUpperCase('es'))
+      const texts = [c.name, ...c.steps, ...(c.tips ?? []), ...(c.mistakes ?? [])]
+      for (const text of texts) {
+        expect(text, id).not.toMatch(/"/)
+        expect(text, id).not.toMatch(/\b(pulgadas?|libras?|onzas?|yardas?|millas?)\b/i)
+      }
+    }
+  })
+
+  it('los básicos que programa el motor (★2-3) tienen errores comunes propios', () => {
+    const es = ExerciseLocaleSchema.parse(esJson)
+    const missing = catalog.exercises
+      .filter((e) => e.staple >= 2 && es[e.id] && !es[e.id]!.mistakes?.length)
+      .map((e) => e.id)
+    expect(missing).toEqual([])
+  })
+
+  it('las variantes no programables no son básicos del motor', () => {
+    for (const id of ['squat-with-chains', 'neck-press', 'barbell-guillotine-bench-press']) {
+      expect(catalog.exercises.find((e) => e.id === id)?.staple, id).toBe(0)
+    }
+  })
+
+  it('el leñador en polea no se clasifica como salto', () => {
+    const woodChop = catalog.exercises.find((e) => e.id === 'standing-cable-wood-chop')
+    expect(woodChop?.jointStress.knee).toBeUndefined()
+    expect(woodChop?.jointStress.ankle).toBeUndefined()
+  })
 })
 
 describe('normalización', () => {

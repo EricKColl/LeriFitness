@@ -11,6 +11,8 @@ import { initTheme } from './shared/stores/theme'
 
 initTheme()
 
+if (import.meta.env.DEV) void import('./app/dev-tools')
+
 const root = document.getElementById('root')
 if (!root) throw new Error('No se encontró el elemento #root')
 

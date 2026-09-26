@@ -6,7 +6,7 @@
  * El resto de ejercicios de fuerza reciben 1 por defecto y los demás 0 (no se programan
  * automáticamente, pero están en la biblioteca y como alternativas).
  */
-import type { Equipment, InjuryZone, Muscle, Pattern, StressLevel } from '../../src/domain'
+import type { Equipment, InjuryZone, Level, Muscle, Pattern, StressLevel } from '../../src/domain'
 
 export const STAPLES: Record<string, 1 | 2 | 3> = {
   // Sentadilla
@@ -230,10 +230,21 @@ export const STAPLES: Record<string, 1 | 2 | 3> = {
   'jogging-treadmill': 2,
   'running-treadmill': 1,
   'rope-jumping': 1,
+  // Cardio sin máquinas para quien entrena en casa.
+  'trail-running-walking': 2,
 }
+
+/**
+ * Variantes que nunca se programan por defecto (quedan en la biblioteca): resistencia acomodada
+ * con bandas o cadenas, técnicas de competición, trayectorias de riesgo para el hombro o el cuello
+ * y ejercicios con material que casi nadie tiene.
+ */
+export const NOT_PROGRAMMABLE =
+  /\bchains?\b|with bands|reverse band|guillotine|neck press|\bspeed\b|board press|pin press|behind (the )?neck|bradford|rocky|jefferson|zercher|kipping|partials|one arm chin|single-arm push-up|isometric|plyo|\bjump|clock push|side to side chins|gironda|london bridges|rope climb|\bsled\b|body-up|anti-gravity|see-?saw|suspended|renegade|wipers|muscle[- ]up|deficit|off pins|hanging bar|manual|towel|slam|gorilla/i
 
 export interface ExerciseOverride {
   pattern?: Pattern
+  level?: Level
   equipment?: Equipment[]
   primaryMuscles?: Muscle[]
   secondaryMuscles?: Muscle[]
@@ -249,7 +260,11 @@ export const OVERRIDES: Record<string, ExerciseOverride> = {
   plank: { jointStress: { lowerBack: 'low', shoulder: 'low' } },
   'dead-bug': { jointStress: { lowerBack: 'low' } },
   'side-bridge': { unilateral: true, jointStress: { lowerBack: 'low', shoulder: 'moderate' } },
-  'farmers-walk': { equipment: ['dumbbell'] },
+  'farmers-walk': {
+    equipment: ['dumbbell'],
+    level: 'beginner',
+    jointStress: { lowerBack: 'moderate' },
+  },
   'goblet-squat': { equipment: ['dumbbell'] },
   'pull-through': { equipment: ['cable'] },
   'inverted-row': {
@@ -257,18 +272,122 @@ export const OVERRIDES: Record<string, ExerciseOverride> = {
     jointStress: { lowerBack: 'low', shoulder: 'low', elbow: 'low' },
   },
   'band-assisted-pull-up': { equipment: ['bands', 'pullupBar'] },
-  'hanging-leg-raise': { equipment: ['pullupBar'] },
+  'hanging-leg-raise': { equipment: ['pullupBar'], level: 'intermediate' },
   'knee-hip-raise-on-parallel-bars': { equipment: ['dipStation'] },
   'butt-lift-bridge': { jointStress: { hip: 'low', lowerBack: 'low', knee: 'low' } },
   'leg-press': { jointStress: { knee: 'moderate', hip: 'moderate', lowerBack: 'moderate' } },
-  'barbell-hip-thrust': { equipment: ['barbell', 'bench'] },
-  'hyperextensions-back-extensions': { equipment: ['other'] },
+  'barbell-hip-thrust': { equipment: ['barbell', 'bench'], level: 'beginner' },
+  // El banco de hiperextensiones es material de gimnasio: se trata como máquina.
+  'hyperextensions-back-extensions': { equipment: ['machine'] },
   'walking-treadmill': { equipment: ['machine'], jointStress: { knee: 'low', ankle: 'low' } },
   'bicycling-stationary': { equipment: ['machine'] },
-  'elliptical-trainer': { equipment: ['machine'] },
+  'elliptical-trainer': { equipment: ['machine'], level: 'beginner' },
   'recumbent-bike': { equipment: ['machine'] },
-  'rowing-stationary': { equipment: ['machine'] },
-  stairmaster: { equipment: ['machine'] },
+  'rowing-stationary': { equipment: ['machine'], level: 'beginner' },
+  stairmaster: { equipment: ['machine'], level: 'beginner' },
   'jogging-treadmill': { equipment: ['machine'] },
   'running-treadmill': { equipment: ['machine'] },
+
+  // Clasificación: casos que las reglas por nombre no resuelven bien.
+  'balance-board': { pattern: 'other', jointStress: { ankle: 'moderate', knee: 'low' } },
+  'car-drivers': {
+    pattern: 'frontRaise',
+    primaryMuscles: ['frontDelts'],
+    secondaryMuscles: ['sideDelts', 'forearms'],
+  },
+  'single-dumbbell-raise': {
+    pattern: 'frontRaise',
+    primaryMuscles: ['frontDelts'],
+    secondaryMuscles: ['sideDelts', 'traps'],
+  },
+  'alternating-deltoid-raise': { secondaryMuscles: ['frontDelts'] },
+  // Es un remo al mentón abierto con mancuernas.
+  'dumbbell-raise': {
+    pattern: 'lateralRaise',
+    primaryMuscles: ['sideDelts'],
+    secondaryMuscles: ['traps'],
+    jointStress: { shoulder: 'high' },
+  },
+  'bent-over-low-pulley-side-lateral': {
+    pattern: 'rearDelt',
+    primaryMuscles: ['rearDelts'],
+    secondaryMuscles: ['upperBack', 'traps'],
+    jointStress: { shoulder: 'low', lowerBack: 'moderate' },
+  },
+  'cuban-press': {
+    pattern: 'rearDelt',
+    primaryMuscles: ['rearDelts'],
+    secondaryMuscles: ['sideDelts', 'traps'],
+    jointStress: { shoulder: 'moderate', elbow: 'low' },
+  },
+  'kettlebell-thruster': {
+    pattern: 'other',
+    primaryMuscles: ['quads', 'frontDelts'],
+    secondaryMuscles: ['glutes', 'triceps', 'sideDelts'],
+    jointStress: { knee: 'moderate', hip: 'moderate', shoulder: 'high', lowerBack: 'moderate' },
+  },
+  // Tumbado boca abajo, la elevación «lateral» trabaja el deltoides posterior.
+  'lying-one-arm-lateral-raise': {
+    pattern: 'rearDelt',
+    primaryMuscles: ['rearDelts'],
+    secondaryMuscles: ['upperBack'],
+    jointStress: { shoulder: 'low' },
+  },
+  'cable-hip-adduction': { primaryMuscles: ['adductors'], secondaryMuscles: [] },
+  // Jalones con brazos rectos: extensión de hombro (patrón de pullover), no tracción vertical.
+  'straight-arm-pulldown': { pattern: 'pullover', jointStress: { elbow: 'low' } },
+  'rope-straight-arm-pulldown': { pattern: 'pullover', jointStress: { elbow: 'low' } },
+  'cable-incline-pushdown': { pattern: 'pullover', jointStress: { elbow: 'low' } },
+  'snatch-pull': { pattern: 'olympic' },
+  'squat-jerk': { pattern: 'olympic' },
+  'freehand-jump-squat': { pattern: 'plyometric' },
+  'weighted-jump-squat': { pattern: 'plyometric' },
+  'kneeling-jump-squat': { pattern: 'plyometric' },
+  'lunge-sprint': { pattern: 'plyometric' },
+  'plyo-kettlebell-pushups': { pattern: 'plyometric' },
+  'downward-facing-balance': {
+    pattern: 'other',
+    jointStress: { lowerBack: 'low', wrist: 'moderate' },
+  },
+  'wind-sprints': {
+    equipment: ['pullupBar'],
+    jointStress: { shoulder: 'moderate', lowerBack: 'moderate' },
+  },
+  'dips-chest-version': { equipment: ['dipStation'] },
+  'parallel-bar-dip': { equipment: ['dipStation'] },
+  'ring-dips': { equipment: ['other'] },
+  'close-grip-push-up-off-of-a-dumbbell': { equipment: ['dumbbell'] },
+  // Se hace con una barra a la altura de la cintura (rack o multipower).
+  'body-tricep-press': { equipment: ['barbell', 'rack'] },
+  'smith-incline-shoulder-raise': { equipment: ['bench', 'machine'] },
+  'speed-box-squat': { equipment: ['bands', 'barbell', 'box', 'rack'] },
+  // Tumbado boca abajo, la elevación con barra al frente es una elevación frontal.
+  'straight-raises-on-incline-bench': {
+    pattern: 'frontRaise',
+    primaryMuscles: ['frontDelts'],
+    secondaryMuscles: ['upperBack', 'traps'],
+  },
+  'neck-press': { jointStress: { shoulder: 'high', neck: 'moderate' } },
+  'barbell-guillotine-bench-press': { jointStress: { shoulder: 'high', neck: 'moderate' } },
+  // El press con mina (landmine) es de los empujes verticales más amables con el hombro.
+  'landmine-linear-jammer': { jointStress: { shoulder: 'moderate' } },
+  'single-arm-linear-jammer': { jointStress: { shoulder: 'moderate' } },
+  // Estrés articular de básicos (★2-3), que es lo que más pesa en la seguridad de los planes.
+  'trap-bar-deadlift': { jointStress: { lowerBack: 'moderate', knee: 'moderate' } },
+  'kettlebell-one-legged-deadlift': { jointStress: { lowerBack: 'moderate', ankle: 'moderate' } },
+  'bodyweight-walking-lunge': { jointStress: { knee: 'moderate' } },
+  // Nivel: el origen etiqueta algunos básicos con más dificultad de la real (o menos).
+  'front-barbell-squat': { level: 'intermediate' },
+  pullups: { level: 'intermediate' },
+  'chin-up': { level: 'intermediate' },
+  'dumbbell-shoulder-press': { level: 'beginner' },
+  'face-pull': { level: 'beginner' },
+  'standing-dumbbell-calf-raise': { level: 'beginner' },
+  'dumbbell-rear-lunge': { level: 'beginner' },
+  'dumbbell-step-ups': { level: 'beginner' },
+  'barbell-glute-bridge': { level: 'beginner' },
+  'one-legged-cable-kickback': { level: 'beginner' },
+  'seated-one-arm-cable-pulley-rows': { level: 'beginner' },
+  'v-bar-pulldown': { level: 'beginner' },
+  'seated-bent-over-rear-delt-raise': { level: 'beginner' },
 }

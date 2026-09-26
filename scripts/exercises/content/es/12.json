@@ -1,0 +1,503 @@
+{
+  "Power_Snatch": {
+    "name": "Arrancada de potencia",
+    "steps": [
+      "Colócate con la barra pegada a las espinillas, agarre ancho, pies bajo la cadera y algo abiertos, cadera baja, pecho alto y hombros justo por delante de la barra.",
+      "Despega la barra empujando con los talones sin cambiar el ángulo de la espalda hasta pasar las rodillas.",
+      "Extiende con fuerza cadera, rodillas y tobillos con la barra pegada al cuerpo; en la extensión máxima encoge los hombros y deja que los codos se flexionen hacia los lados.",
+      "Métete bajo la barra separando un poco los pies y recíbela en media sentadilla con los brazos bloqueados; ponte de pie con la barra arriba."
+    ]
+  },
+  "Power_Snatch_from_Blocks": {
+    "name": "Arrancada de potencia desde bloques",
+    "steps": [
+      "Coloca la barra sobre bloques a la altura elegida y agárrala con agarre ancho, pies bajo la cadera, cadera baja, pecho alto y codos hacia fuera.",
+      "Despega la barra de los bloques empujando con los talones.",
+      "Extiende con fuerza cadera, rodillas y tobillos; en la extensión máxima encoge los hombros y deja que los codos se flexionen hacia los lados.",
+      "Métete bajo la barra, recíbela con los brazos bloqueados por encima de una sentadilla completa, ponte de pie y devuélvela a los bloques con cuidado."
+    ]
+  },
+  "Power_Stairs": {
+    "name": "Escaleras de fuerza",
+    "steps": [
+      "Agarra el implemento (o una rueda o una caja para entrenar) con ambas manos, con los pies separados y la cabeza y el pecho altos.",
+      "Empuja el suelo con los talones y extiende rodillas y cadera para despegarlo.",
+      "Échate atrás y balancéalo hasta subirlo al escalón, de unos 40-45 cm; puedes ayudarte con las piernas.",
+      "Repite 3-5 veces y continúa con más peso, lo más rápido que puedas."
+    ]
+  },
+  "Preacher_Curl": {
+    "name": "Curl predicador con barra Z",
+    "steps": [
+      "Siéntate en el banco predicador y agarra una barra Z por el agarre interior, con las palmas hacia delante.",
+      "Apoya la parte trasera de los brazos y el pecho en el cojín, con la barra a la altura de los hombros.",
+      "Baja despacio mientras inspiras hasta estirar los brazos casi del todo.",
+      "Sube con el bíceps mientras espiras hasta la altura de los hombros y aprieta un segundo."
+    ],
+    "mistakes": [
+      "Bloquear los codos de golpe abajo: estira casi del todo y con control.",
+      "Despegar los brazos del cojín para subir con los hombros.",
+      "Usar demasiado peso y rebotar abajo."
+    ]
+  },
+  "Preacher_Hammer_Dumbbell_Curl": {
+    "name": "Curl martillo en banco predicador",
+    "steps": [
+      "Apoya la parte trasera de ambos brazos en el banco predicador con una mancuerna en cada mano y las palmas enfrentadas.",
+      "Baja despacio mientras inspiras hasta estirar los brazos.",
+      "Sube con el bíceps mientras espiras hasta la altura de los hombros.",
+      "Aprieta un segundo arriba y repite."
+    ]
+  },
+  "Press_Sit-Up": {
+    "name": "Abdominal con press de barra",
+    "steps": [
+      "Túmbate en un banco de abdominales con los pies sujetos y una barra apoyada en el pecho.",
+      "Tensa abdomen y glúteos y sube el tronco a la vez que empujas la barra por encima de la cabeza mientras espiras.",
+      "Concéntrate en el abdomen; los brazos solo acompañan.",
+      "Baja el tronco y la barra al pecho con control mientras inspiras."
+    ]
+  },
+  "Prone_Manual_Hamstring": {
+    "name": "Curl femoral con resistencia de un compañero",
+    "steps": [
+      "Túmbate boca abajo con las piernas estiradas; tu compañero coloca la mano sobre tu talón.",
+      "Flexiona la rodilla mientras tu compañero opone resistencia, suave al principio y mayor al final.",
+      "Haz una pausa arriba.",
+      "Vuelve a estirar la pierna mientras él sigue resistiendo en sentido contrario. Comunicaos para ajustar la fuerza."
+    ]
+  },
+  "Prowler_Sprint": {
+    "name": "Sprint empujando trineo",
+    "steps": [
+      "Carga el trineo con un peso que exija esfuerzo sin frenarte demasiado.",
+      "Agarra las asas altas o bajas con los brazos estirados e inclínate hacia el trineo.",
+      "Con buena postura, empuja el suelo con pasos cortos y alternos.",
+      "Avanza lo más rápido que puedas durante una distancia corta."
+    ]
+  },
+  "Pull_Through": {
+    "name": "Pull-through en polea",
+    "steps": [
+      "Coloca una cuerda en la polea baja y ponte de espaldas a ella, a horcajadas sobre el cable, con los pies bien separados.",
+      "Agarra la cuerda entre las piernas y da un par de pasos adelante.",
+      "Con las rodillas ligeramente flexionadas y la espalda recta, lleva la cadera atrás dejando que la cuerda pase entre las piernas.",
+      "Extiende la cadera apretando los glúteos hasta quedar de pie, con los brazos estirados; el movimiento sale de la cadera, no de los hombros."
+    ],
+    "mistakes": [
+      "Tirar de la cuerda con los brazos o los hombros.",
+      "Flexionar demasiado las rodillas y convertirlo en una sentadilla.",
+      "Hiperextender la zona lumbar al final en lugar de apretar los glúteos."
+    ]
+  },
+  "Pullups": {
+    "name": "Dominadas",
+    "steps": [
+      "Agarra la barra con las palmas hacia delante, algo más abierta que los hombros, y cuélgate con los brazos estirados.",
+      "Saca pecho y lleva los hombros abajo y atrás antes de tirar.",
+      "Sube llevando los codos hacia los costados hasta que la barbilla pase la barra, mientras espiras.",
+      "Baja despacio hasta estirar los brazos del todo."
+    ],
+    "mistakes": [
+      "Balancearse o patalear para subir.",
+      "Hacer medio recorrido sin estirar los brazos abajo.",
+      "Adelantar la barbilla para pasar la barra.",
+      "Encoger los hombros hacia las orejas."
+    ],
+    "tips": [
+      "Si aún no puedes con tu peso, usa una banda elástica, la máquina asistida o haz solo la bajada lenta."
+    ]
+  },
+  "Push_Press": {
+    "name": "Push press con barra",
+    "steps": [
+      "De pie, con la barra apoyada en la parte delantera de los hombros, agarre algo más abierto que los hombros y los pies bajo la cadera.",
+      "Flexiona ligeramente las rodillas con el tronco vertical, sin llevar la cadera atrás.",
+      "Invierte el movimiento con fuerza empujando con los talones y aprovecha el impulso para llevar la barra por encima de la cabeza, apartando la cabeza a su paso.",
+      "Termina con los brazos bloqueados y baja la barra a los hombros amortiguando con las piernas."
+    ]
+  },
+  "Push_Press_-_Behind_the_Neck": {
+    "name": "Push press tras nuca",
+    "steps": [
+      "De pie, con la barra apoyada en la parte alta de la espalda y los pies bajo la cadera.",
+      "Flexiona ligeramente las rodillas sin llevar la cadera atrás e invierte el movimiento con la máxima potencia, con la barra en trayectoria vertical.",
+      "Aprovecha el impulso para terminar de empujar la barra por encima de la cabeza.",
+      "Bájala a la posición inicial amortiguando con las piernas."
+    ],
+    "tips": ["Exige mucha movilidad de hombro y supone más riesgo que la versión por delante."]
+  },
+  "Push_Up_to_Side_Plank": {
+    "name": "Flexión con plancha lateral",
+    "steps": [
+      "Colócate en posición de flexión con las manos algo más abiertas que los hombros.",
+      "Haz una flexión con el cuerpo recto.",
+      "Al subir, carga el peso sobre el lado izquierdo, gira el cuerpo y lleva el brazo derecho hacia el techo en plancha lateral.",
+      "Vuelve a apoyar la mano, haz otra flexión y gira hacia el otro lado."
+    ]
+  },
+  "Push-Up_Wide": {
+    "name": "Flexión con manos abiertas",
+    "steps": [
+      "Colócate en plancha sobre las manos y las puntas de los pies, con las manos bien abiertas, los brazos estirados y el cuerpo recto.",
+      "Baja el pecho hacia el suelo flexionando los codos mientras inspiras, sin hundir la cadera.",
+      "Empuja con el pecho hasta estirar los brazos mientras espiras.",
+      "Haz una breve pausa arriba y repite."
+    ]
+  },
+  "Push-Ups_-_Close_Triceps_Position": {
+    "name": "Flexión cerrada para tríceps",
+    "steps": [
+      "Colócate en posición de flexión con las manos más juntas que los hombros y los brazos estirados.",
+      "Baja hasta que el pecho casi toque el suelo, con los codos pegados al cuerpo, mientras inspiras.",
+      "Empuja con el tríceps y el pecho hasta estirar los brazos mientras espiras.",
+      "Haz una pausa arriba y repite."
+    ]
+  },
+  "Push-Ups_With_Feet_Elevated": {
+    "name": "Flexión con pies elevados en banco",
+    "steps": [
+      "Colócate en posición de flexión con las manos algo más abiertas que los hombros y las puntas de los pies sobre un banco plano.",
+      "Baja hasta que el pecho casi toque el suelo mientras inspiras.",
+      "Empuja hasta estirar los brazos mientras espiras, apretando el pecho.",
+      "Cuanto más alto el apoyo de los pies, más difícil el ejercicio."
+    ]
+  },
+  "Push-Ups_With_Feet_On_An_Exercise_Ball": {
+    "name": "Flexión con pies sobre fitball",
+    "steps": [
+      "Colócate en posición de flexión con las manos algo más abiertas que los hombros y las puntas de los pies sobre un fitball.",
+      "Aprieta el abdomen para que el balón no se mueva.",
+      "Baja hasta que el pecho casi toque el suelo mientras inspiras.",
+      "Empuja hasta estirar los brazos mientras espiras."
+    ]
+  },
+  "Pushups": {
+    "name": "Flexiones",
+    "steps": [
+      "Apoya las manos en el suelo algo más abiertas que los hombros y los pies juntos, con el cuerpo en línea recta de la cabeza a los talones.",
+      "Baja el pecho hacia el suelo flexionando los codos, a unos 45 grados del tronco, mientras inspiras.",
+      "Cuando el pecho casi toque el suelo, empuja hasta estirar los brazos mientras espiras.",
+      "Mantén el abdomen y los glúteos firmes durante toda la serie."
+    ],
+    "mistakes": [
+      "Hundir la cadera o subirla hacia el techo.",
+      "Abrir los codos a 90 grados del tronco.",
+      "Bajar solo unos centímetros.",
+      "Adelantar la cabeza hacia el suelo."
+    ],
+    "tips": ["Si todavía no puedes hacerlas bien, apoya las manos en un banco o las rodillas en el suelo."]
+  },
+  "Pushups_Close_and_Wide_Hand_Positions": {
+    "name": "Flexiones alternando manos juntas y abiertas",
+    "steps": [
+      "Colócate en posición de flexión con el cuerpo recto.",
+      "Haz una serie con las manos más abiertas que los hombros y otra con las manos más juntas.",
+      "En cada repetición, baja hasta que el pecho casi toque el suelo mientras inspiras.",
+      "Empuja hasta estirar los brazos mientras espiras y haz una pausa arriba."
+    ]
+  },
+  "Pyramid": {
+    "name": "Pirámide sobre fitball",
+    "steps": [
+      "Rueda boca abajo sobre un fitball hasta que la cadera quede encima, como punto más alto del cuerpo.",
+      "Apoya las manos y los pies en el suelo, con brazos y piernas estirados o algo flexionados según el tamaño del balón.",
+      "Relaja la espalda sobre el balón y respira con calma.",
+      "Mantén 20-30 segundos; también trabaja la estabilidad de tronco y hombros."
+    ]
+  },
+  "Quad_Stretch": {
+    "name": "Estiramiento de cuádriceps de lado con cinta",
+    "steps": [
+      "Túmbate de lado y pasa un cinturón, una cuerda o una banda por el pie de arriba.",
+      "Flexiona la rodilla y lleva la cadera atrás intentando acercar el pie al glúteo, sujetando la cinta con las manos.",
+      "Con la cinta sobre el hombro o por encima de la cabeza, tira suavemente para aumentar el estiramiento.",
+      "Mantén 10-20 segundos y cambia de lado."
+    ]
+  },
+  "Quadriceps-SMR": {
+    "name": "Liberación de cuádriceps con rodillo",
+    "steps": [
+      "Túmbate boca abajo apoyado en las manos o los antebrazos, con el rodillo bajo el cuádriceps de una pierna y el pie sin tocar el suelo.",
+      "Relaja la pierna y carga sobre ella tanto peso como toleres.",
+      "Rueda desde encima de la rodilla hasta debajo de la cadera, deteniéndote 10-30 segundos en los puntos de tensión.",
+      "Cambia de pierna."
+    ]
+  },
+  "Quick_Leap": {
+    "name": "Salto rápido desde el cajón",
+    "steps": [
+      "Colócate frente a un cajón, a 30-60 cm de su borde.",
+      "Salta al cajón impulsándote con la cadera y aterriza con ambas piernas flexionadas y los pies apoyados.",
+      "Nada más aterrizar, extiende todo el cuerpo y lleva los brazos arriba para saltar desde el cajón.",
+      "Amortigua la caída con las piernas."
+    ]
+  },
+  "Rack_Delivery": {
+    "name": "Colocación de la barra en los hombros",
+    "steps": [
+      "Sujeta la barra en posición de espantapájaros: brazos paralelos al suelo, antebrazos colgando y agarre de gancho.",
+      "Gira los codos alrededor de la barra para dejarla sobre los hombros, relajando el agarre al adelantar los codos.",
+      "Adelanta los hombros para que la barra repose sobre ellos rozando la garganta.",
+      "Mantén la barra siempre pegada al cuerpo; aumenta velocidad y carga solo cuando el gesto salga fluido."
+    ],
+    "tips": ["Es un ejercicio técnico para aprender la recepción de la cargada."]
+  },
+  "Rack_Pull_with_Bands": {
+    "name": "Peso muerto desde pines con bandas",
+    "steps": [
+      "Coloca la barra sobre los pines del rack a la altura elegida y engancha bandas desde la base del rack a la barra.",
+      "Colócate como en un peso muerto: pies bajo la cadera, agarre a la anchura de los hombros, espalda firme y cadera atrás.",
+      "Con la mirada al frente, extiende cadera y rodillas hasta el bloqueo, llevando los hombros atrás.",
+      "Devuelve la barra a los pines con control y repite."
+    ]
+  },
+  "Rack_Pulls": {
+    "name": "Peso muerto desde pines",
+    "steps": [
+      "Coloca la barra sobre los pines del rack: justo por debajo de las rodillas, por encima o a medio muslo.",
+      "Colócate como en un peso muerto: pies bajo la cadera, agarre a la anchura de los hombros, espalda firme y cadera atrás.",
+      "Con la mirada al frente, extiende cadera y rodillas hasta el bloqueo, llevando los hombros atrás.",
+      "Devuelve la barra a los pines con control y repite."
+    ]
+  },
+  "Rear_Leg_Raises": {
+    "name": "Elevación de pierna atrás a cuatro patas",
+    "steps": [
+      "Colócate a cuatro patas sobre una esterilla con la mirada al frente y las rodillas a 90 grados.",
+      "Estira una pierna hacia atrás y arriba, extendiendo cadera y rodilla.",
+      "Vuelve a la posición inicial.",
+      "Haz 5-10 repeticiones y cambia de lado."
+    ]
+  },
+  "Recumbent_Bike": {
+    "name": "Bicicleta reclinada",
+    "steps": [
+      "Siéntate en la bicicleta y ajusta el asiento para que la rodilla quede ligeramente flexionada con el pedal más alejado.",
+      "Elige un programa o el modo manual; puede que tengas que pedalear para encender la máquina.",
+      "Calienta unos minutos con resistencia baja.",
+      "Ajusta la resistencia a la intensidad indicada y mantén una cadencia constante con la espalda apoyada."
+    ],
+    "mistakes": [
+      "Colocar el asiento tan cerca que las rodillas se flexionan demasiado.",
+      "Pedalear sin resistencia a una cadencia altísima.",
+      "Despegar la espalda del respaldo."
+    ],
+    "tips": ["Es de las opciones de cardio más cómodas para la espalda y las rodillas."]
+  },
+  "Return_Push_from_Stance": {
+    "name": "Recepción y pase de balón medicinal desde posición atlética",
+    "steps": [
+      "Colócate en posición atlética de dos o tres apoyos, con un compañero frente a ti.",
+      "A la señal, desplázate para recibir el pase.",
+      "Atrapa el balón medicinal con ambas manos y devuélveselo de inmediato.",
+      "Puedes variar el ejercicio corriendo diferentes recorridos."
+    ]
+  },
+  "Reverse_Band_Bench_Press": {
+    "name": "Press de banca con bandas invertidas",
+    "steps": [
+      "Coloca el banco en el rack y engancha bandas desde la parte alta del rack a la barra, de modo que queden sobre ella.",
+      "Túmbate, arquea la espalda, junta las escápulas y fija los pies.",
+      "Saca la barra, apriétala como si quisieras separarla y bájala a la parte baja del pecho, con barra, muñeca y codo alineados.",
+      "Haz una pausa al tocar y empuja con toda la fuerza posible, con los codos cerrados hasta el bloqueo."
+    ],
+    "tips": ["Las bandas ayudan abajo y dejan de hacerlo arriba: permiten sobrecargar el bloqueo."]
+  },
+  "Reverse_Band_Box_Squat": {
+    "name": "Sentadilla al cajón con bandas invertidas",
+    "steps": [
+      "Coloca un cajón detrás de ti en el rack y engancha bandas desde la parte alta del rack a la barra.",
+      "Apoya la barra en la parte alta de la espalda, junta las escápulas, sácala y colócate con la anchura de pies elegida.",
+      "Con todo el cuerpo firme, lleva la cadera atrás y siéntate en el cajón con las espinillas verticales; haz una pausa sin rebotar.",
+      "Empuja con los talones abriendo rodillas y pies para levantarte del cajón y devuelve la barra al rack con cuidado."
+    ]
+  },
+  "Reverse_Band_Deadlift": {
+    "name": "Peso muerto con bandas invertidas",
+    "steps": [
+      "Coloca la barra en el rack y engancha bandas desde la parte alta del rack a la barra.",
+      "Colócate con la barra sobre la mitad del pie, los pies a la anchura de la cadera, y agárrala a la anchura de los hombros.",
+      "Coge aire, baja la cadera hasta que las espinillas toquen la barra y, con el pecho alto, empuja con los talones.",
+      "Al pasar las rodillas, lleva la cadera hacia la barra y junta las escápulas; baja guiándola al suelo."
+    ]
+  },
+  "Reverse_Band_Power_Squat": {
+    "name": "Sentadilla con bandas invertidas",
+    "steps": [
+      "Coloca la barra en el rack y engancha bandas desde la parte alta del rack a la barra.",
+      "Apoya la barra en la parte alta de la espalda, junta las escápulas, sácala y separa bien los pies.",
+      "Con todo el cuerpo firme, lleva la cadera atrás y baja hasta que el pliegue de la cadera quede a la altura de la parte alta de la rodilla.",
+      "Empuja con los talones abriendo rodillas y pies hasta volver arriba."
+    ]
+  },
+  "Reverse_Band_Sumo_Deadlift": {
+    "name": "Peso muerto sumo con bandas invertidas",
+    "steps": [
+      "Coloca la barra en el suelo dentro del rack y engancha bandas desde la parte alta del rack a la barra.",
+      "Colócate con los pies muy abiertos, cerca de los discos, y agarra la barra con los brazos por dentro de las piernas.",
+      "Coge aire, baja la cadera con el pecho alto y empuja el suelo separando los pies.",
+      "Al pasar las rodillas, lleva la cadera hacia la barra y junta las escápulas; baja con control."
+    ]
+  },
+  "Reverse_Barbell_Curl": {
+    "name": "Curl inverso con barra",
+    "steps": [
+      "De pie, sujeta una barra con agarre prono a la anchura de los hombros y los codos pegados al cuerpo.",
+      "Sin mover los brazos, sube la barra hasta los hombros mientras espiras.",
+      "Aprieta un segundo arriba.",
+      "Baja despacio mientras inspiras."
+    ]
+  },
+  "Reverse_Barbell_Preacher_Curls": {
+    "name": "Curl predicador inverso con barra Z",
+    "steps": [
+      "Agarra una barra Z con agarre prono a la anchura de los hombros.",
+      "Apoya la parte trasera de los brazos en el banco predicador con los brazos estirados.",
+      "Sube la barra hasta la altura de los hombros mientras espiras y aprieta un segundo.",
+      "Baja despacio hasta estirar los brazos mientras inspiras."
+    ]
+  },
+  "Reverse_Cable_Curl": {
+    "name": "Curl inverso en polea baja",
+    "steps": [
+      "De pie, frente a una polea baja, agarra la barra con agarre prono a la anchura de los hombros y los codos pegados al cuerpo.",
+      "Sin mover los brazos, sube la barra hasta los hombros mientras espiras.",
+      "Aprieta un segundo arriba.",
+      "Baja despacio mientras inspiras."
+    ]
+  },
+  "Reverse_Crunch": {
+    "name": "Crunch inverso",
+    "steps": [
+      "Túmbate boca arriba con los brazos junto al cuerpo y las palmas en el suelo.",
+      "Sube las piernas hasta que los muslos queden verticales, con las rodillas a 90 grados.",
+      "Enrolla la pelvis hacia atrás y despega la cadera del suelo llevando las rodillas al pecho mientras espiras.",
+      "Mantén un segundo y baja la cadera despacio hasta la posición inicial."
+    ],
+    "mistakes": [
+      "Balancear las piernas en lugar de enrollar la pelvis.",
+      "Empujar con los brazos contra el suelo.",
+      "Dejar caer la cadera de golpe."
+    ]
+  },
+  "Reverse_Flyes": {
+    "name": "Pájaros en banco inclinado",
+    "steps": [
+      "Túmbate boca abajo en un banco inclinado con el pecho apoyado y una mancuerna en cada mano, con las palmas enfrentadas.",
+      "Deja los brazos colgando perpendiculares al banco, con los codos algo flexionados y las puntas de los pies apoyadas.",
+      "Abre los brazos hacia los lados en arco hasta que queden paralelos al suelo, juntando las escápulas, mientras espiras.",
+      "Baja despacio a la posición inicial mientras inspiras."
+    ],
+    "mistakes": [
+      "Usar demasiado peso y tirar con los trapecios.",
+      "Flexionar mucho los codos y convertirlo en un remo.",
+      "Despegar el pecho del banco."
+    ]
+  },
+  "Reverse_Flyes_With_External_Rotation": {
+    "name": "Pájaros en banco inclinado con rotación externa",
+    "steps": [
+      "Túmbate boca abajo en un banco inclinado a 30 grados con una mancuerna en cada mano, las palmas hacia el suelo y los codos algo flexionados.",
+      "Abre los brazos hacia los lados en arco mientras espiras.",
+      "A la vez, gira las muñecas hasta que las palmas queden enfrentadas y sube hasta que los brazos queden a la altura de la cabeza, juntando las escápulas.",
+      "Baja despacio a la posición inicial."
+    ]
+  },
+  "Reverse_Grip_Bent-Over_Rows": {
+    "name": "Remo inclinado con barra en agarre supino",
+    "steps": [
+      "De pie, sujeta una barra con agarre supino.",
+      "Flexiona un poco las rodillas e inclina el tronco desde la cadera, con la espalda recta, hasta casi quedar paralelo al suelo; la barra cuelga con los brazos estirados.",
+      "Sin mover el tronco, tira de la barra hacia el abdomen con los codos pegados al cuerpo y aprieta la espalda un segundo.",
+      "Baja despacio mientras inspiras."
+    ]
+  },
+  "Reverse_Grip_Triceps_Pushdown": {
+    "name": "Extensión de tríceps en polea con agarre supino",
+    "steps": [
+      "Coloca una barra recta o Z en la polea alta y agárrala con las palmas hacia arriba, a la anchura de los hombros.",
+      "Con los codos pegados al costado, empuja la barra hasta estirar los brazos.",
+      "Deja subir la barra hasta la altura del pecho sin mover los codos mientras inspiras.",
+      "Vuelve a empujarla hacia abajo contrayendo el tríceps mientras espiras."
+    ]
+  },
+  "Reverse_Hyperextension": {
+    "name": "Hiperextensión inversa en máquina",
+    "steps": [
+      "Carga la máquina, coloca los pies entre los rodillos y túmbate boca abajo con la cadera fuera del apoyo, agarrando las asas.",
+      "Flexiona la cadera llevando las piernas hacia delante.",
+      "Extiende la cadera llevando las piernas atrás sin llegar a hiperextender la zona lumbar.",
+      "Vuelve a flexionar la cadera con control y repite."
+    ]
+  },
+  "Reverse_Machine_Flyes": {
+    "name": "Pájaros en máquina",
+    "steps": [
+      "Coloca las asas en la posición más trasera, elige la carga y ajusta el asiento para que queden a la altura de los hombros.",
+      "Siéntate de cara al respaldo y agarra las asas con las palmas enfrentadas o hacia abajo.",
+      "Con los codos ligeramente flexionados, abre los brazos en semicírculo hacia los lados y atrás, contrayendo el deltoides posterior.",
+      "Haz una pausa atrás y vuelve despacio."
+    ],
+    "mistakes": [
+      "Encoger los hombros y tirar con los trapecios.",
+      "Llevar los brazos tan atrás que el pecho se despega del respaldo.",
+      "Dejar volver la carga de golpe."
+    ]
+  },
+  "Reverse_Plate_Curls": {
+    "name": "Curl inverso con disco",
+    "steps": [
+      "De pie, sujeta un disco con ambas manos en agarre prono, con los dedos en la cara rugosa y los pulgares en la lisa, a las 11 y a la 1.",
+      "Deja el disco a la altura de la ingle con los brazos estirados y los pies a la anchura de los hombros.",
+      "Sin mover los brazos, sube el disco hasta que los antebrazos toquen los bíceps mientras espiras.",
+      "Aprieta un segundo y baja despacio mientras inspiras."
+    ]
+  },
+  "Reverse_Triceps_Bench_Press": {
+    "name": "Press de banca con agarre supino para tríceps",
+    "steps": [
+      "Túmbate en un banco plano y saca la barra con agarre supino a la anchura de los hombros, con los brazos estirados.",
+      "Baja despacio hasta la mitad del pecho mientras inspiras, con los codos pegados al cuerpo.",
+      "Tras una breve pausa, empuja con el tríceps hasta estirar los brazos mientras espiras.",
+      "Tarda el doble en bajar que en subir y usa siempre ayudante: el agarre supino es inestable."
+    ]
+  },
+  "Rhomboids-SMR": {
+    "name": "Liberación de romboides con rodillo",
+    "steps": [
+      "Túmbate boca arriba con el rodillo bajo la parte alta de la espalda y los brazos cruzados delante del pecho, con los hombros adelantados.",
+      "Eleva la cadera para cargar el peso sobre el rodillo.",
+      "Desplaza el peso hacia un lado y rueda por la parte media y alta de la espalda.",
+      "Detente 10-30 segundos en los puntos de tensión y repite en el otro lado."
+    ]
+  },
+  "Rickshaw_Carry": {
+    "name": "Transporte de rickshaw",
+    "steps": [
+      "Coloca el bastidor en el punto de salida con el peso elegido y ponte en el centro.",
+      "Agarra las asas y empuja con los talones para levantarlo, con el pecho y la cabeza altos y la espalda recta.",
+      "Camina rápido con pasos cortos y controlados, sin dejar de respirar.",
+      "Deja el bastidor en el suelo al llegar a la meta."
+    ]
+  },
+  "Rickshaw_Deadlift": {
+    "name": "Peso muerto con rickshaw",
+    "steps": [
+      "Carga el bastidor y colócate en el centro con los pies a la anchura de la cadera.",
+      "Flexiona la cadera para agarrar las asas, coge aire y baja la cadera con el pecho alto y la espalda firme.",
+      "Empuja con los talones y, al subir, lleva la cadera adelante juntando las escápulas.",
+      "Baja flexionando la cadera y guiando el peso al suelo."
+    ]
+  },
+  "Ring_Dips": {
+    "name": "Fondos en anillas",
+    "steps": [
+      "Agarra una anilla con cada mano y da un pequeño salto para quedar con los brazos bloqueados y las anillas pegadas al cuerpo.",
+      "Baja flexionando los codos hasta que formen algo menos de 90 grados, sin balancearte.",
+      "Empuja hasta estirar de nuevo los brazos.",
+      "Mantén las anillas cerca del cuerpo durante todo el recorrido."
+    ],
+    "tips": ["Las anillas son inestables: domina antes los fondos en paralelas."]
+  }
+}

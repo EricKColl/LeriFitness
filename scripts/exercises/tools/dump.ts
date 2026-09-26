@@ -5,14 +5,20 @@
  *   npm run data:dump -- <inicio> <cantidad>       p. ej. npm run data:dump -- 300 50
  *   npm run data:dump -- --missing es 50           los 50 primeros aún sin contenido en «es»
  *
- * Formato: `sourceId | nombre [★n si es básico] | patrón/material` y debajo las instrucciones.
+ * Formato: `sourceId | nombre [★n si es básico] | patrón/material` (clasificación final del
+ * catálogo generado) y debajo las instrucciones.
  */
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 
-import { inferPattern, slugify } from '../normalize'
-import { STAPLES } from '../overrides'
+import catalogJson from '../../../src/data/generated/exercises.json'
+import { ExerciseCatalogSchema } from '../../../src/domain'
+import { slugify } from '../normalize'
 import { loadSourceExercises } from '../source'
+
+const catalog = new Map(
+  ExerciseCatalogSchema.parse(catalogJson).exercises.map((e) => [e.sourceId, e]),
+)
 
 const args = process.argv.slice(2)
 const all = (await loadSourceExercises())
@@ -38,8 +44,9 @@ if (args[0] === '--missing') {
 }
 
 for (const e of selection) {
-  const staple = STAPLES[slugify(e.id)] ?? 0
+  const exercise = catalog.get(e.id)
+  const staple = exercise?.staple ?? 0
   const star = staple >= 2 ? ` ★${staple}` : ''
-  console.log(`${e.id} | ${e.name}${star} | ${inferPattern(e)}/${e.equipment}`)
+  console.log(`${e.id} | ${e.name}${star} | ${exercise?.pattern}/${exercise?.equipment.join('+')}`)
   console.log(`  ${e.instructions.join(' / ').replace(/\s+/g, ' ')}`)
 }

@@ -1,0 +1,481 @@
+{
+  "Incline_Push-Up_Wide": {
+    "name": "Flexión inclinada en barra con agarre abierto",
+    "steps": [
+      "Colócate frente a la barra del multipower o a una superficie estable a una altura adecuada.",
+      "Apoya las manos en la barra más abiertas que los hombros y lleva los pies atrás con el cuerpo recto.",
+      "Baja el pecho hacia la barra flexionando los brazos.",
+      "Empuja hasta estirar los brazos sin perder la línea del cuerpo."
+    ]
+  },
+  "Intermediate_Groin_Stretch": {
+    "name": "Estiramiento de aductores con cinta",
+    "steps": [
+      "Túmbate boca arriba con las piernas estiradas y pasa un cinturón, una cuerda o una banda por un pie.",
+      "Lleva esa pierna estirada hacia el lado tanto como puedas.",
+      "Tira suavemente de la cinta para notar tensión en la ingle y el isquiotibial.",
+      "Mantén 10-20 segundos y cambia de lado."
+    ]
+  },
+  "Intermediate_Hip_Flexor_and_Quad_Stretch": {
+    "name": "Estiramiento de psoas y cuádriceps boca abajo con cinta",
+    "steps": [
+      "Túmbate boca abajo con un cinturón, una cuerda o una banda alrededor de un pie.",
+      "Flexiona la rodilla y tira de la cinta con ambas manos para extender la cadera, despegando la rodilla del suelo.",
+      "Nota el estiramiento en la parte delantera de la cadera y del muslo.",
+      "Mantén 10-20 segundos y cambia de pierna."
+    ]
+  },
+  "Internal_Rotation_with_Band": {
+    "name": "Rotación interna de hombro con banda",
+    "steps": [
+      "Ata la banda a un poste a la altura del codo y colócate de lado, con el brazo que trabaja más cerca del anclaje.",
+      "Agarra la banda con el codo pegado al costado y flexionado a 90 grados; puedes sujetar una toalla entre el codo y el cuerpo.",
+      "Gira el antebrazo hacia el abdomen, sin despegar el codo, tanto como puedas.",
+      "Haz una pausa y vuelve despacio a la posición inicial."
+    ]
+  },
+  "Inverted_Row": {
+    "name": "Remo invertido",
+    "steps": [
+      "Coloca una barra en el rack (o en el multipower) a la altura de la cintura y agárrala algo más abierta que los hombros.",
+      "Cuélgate por debajo con el cuerpo recto, los talones en el suelo y los brazos estirados.",
+      "Tira del pecho hacia la barra flexionando los codos y juntando las escápulas.",
+      "Haz una pausa arriba y baja despacio hasta estirar los brazos."
+    ],
+    "mistakes": [
+      "Dejar caer la cadera y perder la línea del cuerpo.",
+      "Tirar solo con los brazos sin juntar las escápulas.",
+      "Adelantar la cabeza hacia la barra en lugar del pecho."
+    ],
+    "tips": [
+      "Para hacerlo más fácil, flexiona las rodillas o sube la barra; para hacerlo más difícil, eleva los pies."
+    ]
+  },
+  "Inverted_Row_with_Straps": {
+    "name": "Remo invertido con correas de suspensión",
+    "steps": [
+      "Cuelga unas correas de suspensión o una cuerda de un rack u otro punto firme y agarra los extremos.",
+      "Inclínate hacia atrás con el cuerpo recto, los talones en el suelo y los brazos estirados.",
+      "Tira del pecho hacia las manos flexionando los codos y juntando las escápulas.",
+      "Haz una pausa arriba y baja despacio."
+    ]
+  },
+  "Iron_Cross": {
+    "name": "Cruz de hierro con mancuernas",
+    "steps": [
+      "De pie, con una mancuerna en cada mano y los pies a la anchura de los hombros, baja a una sentadilla mientras elevas los brazos estirados al frente, a la altura de los hombros.",
+      "Sube de la sentadilla manteniendo los brazos al frente.",
+      "Ya de pie, abre los brazos estirados hacia los lados hasta formar una cruz.",
+      "Vuelve a juntarlos al frente y baja las mancuernas con control."
+    ]
+  },
+  "Iron_Crosses_stretch": {
+    "name": "Cruces de pierna boca abajo",
+    "steps": [
+      "Túmbate boca abajo con los brazos en cruz y las palmas apoyadas en el suelo.",
+      "Flexiona una rodilla y cruza esa pierna por detrás del cuerpo, intentando llevar el pie cerca de la mano contraria.",
+      "Vuelve enseguida a la posición inicial y repite con la otra pierna.",
+      "Alterna durante 10-20 repeticiones."
+    ]
+  },
+  "Isometric_Chest_Squeezes": {
+    "name": "Presión isométrica de pecho",
+    "steps": [
+      "Sentado o de pie, flexiona los brazos a 90 grados y junta las palmas delante del pecho, con los dedos hacia delante.",
+      "Empuja una mano contra la otra contrayendo el pecho, aumentando la tensión poco a poco sin dejar de respirar.",
+      "Mantén la presión los segundos indicados.",
+      "Suelta la tensión poco a poco, descansa y repite."
+    ]
+  },
+  "Isometric_Neck_Exercise_-_Front_And_Back": {
+    "name": "Isométrico de cuello delante y detrás",
+    "steps": [
+      "Con la cabeza erguida y la mirada al frente, coloca ambas manos en la frente.",
+      "Empuja suavemente la cabeza hacia delante mientras las manos impiden el movimiento; aumenta la tensión poco a poco sin dejar de respirar.",
+      "Mantén los segundos indicados y suelta despacio.",
+      "Descansa y repite con las manos en la nuca, empujando hacia atrás."
+    ]
+  },
+  "Isometric_Neck_Exercise_-_Sides": {
+    "name": "Isométrico de cuello lateral",
+    "steps": [
+      "Con la cabeza erguida y la mirada al frente, coloca la mano izquierda en el lado izquierdo de la cabeza.",
+      "Empuja suavemente la cabeza hacia la mano mientras esta impide el movimiento; aumenta la tensión poco a poco sin dejar de respirar.",
+      "Mantén los segundos indicados y suelta despacio.",
+      "Descansa y repite hacia el lado derecho."
+    ]
+  },
+  "Isometric_Wipers": {
+    "name": "Limpiaparabrisas en plancha",
+    "steps": [
+      "Colócate en posición de flexión con las manos algo más abiertas que los hombros y el cuerpo recto.",
+      "Desplaza el peso hacia un lado todo lo que puedas, flexionando el codo de ese lado para bajar el cuerpo.",
+      "Empuja con ese brazo para volver al centro y baja hacia el otro lado.",
+      "Alterna sin perder la línea del cuerpo."
+    ]
+  },
+  "IT_Band_and_Glute_Stretch": {
+    "name": "Estiramiento de glúteo y cintilla iliotibial con cinta",
+    "steps": [
+      "Túmbate boca arriba y pasa un cinturón, una cuerda o una banda por un pie.",
+      "Cruza esa pierna estirada por delante del cuerpo hacia el lado contrario, sin apoyar el pie en el suelo.",
+      "Tira de la cinta para llevar las puntas del pie hacia ti y notar el estiramiento en la cara externa de la cadera.",
+      "Mantén 10-20 segundos y cambia de lado."
+    ]
+  },
+  "Jackknife_Sit-Up": {
+    "name": "Abdominal en navaja",
+    "steps": [
+      "Túmbate boca arriba con las piernas estiradas y los brazos estirados por detrás de la cabeza.",
+      "Mientras espiras, flexiona la cintura y eleva a la vez piernas y brazos hasta que se encuentren; las piernas quedan a unos 35-45 grados del suelo.",
+      "Despega la parte alta del tronco con los brazos paralelos a las piernas.",
+      "Baja brazos y piernas con control mientras inspiras."
+    ]
+  },
+  "Janda_Sit-Up": {
+    "name": "Abdominal Janda",
+    "steps": [
+      "Túmbate boca arriba con las rodillas a 90 grados, los pies apoyados y los brazos cruzados sobre el pecho o a los lados.",
+      "Aprieta con fuerza glúteos e isquiotibiales para inhibir los flexores de la cadera.",
+      "Sube el tronco muy despacio, en 3-6 segundos, mientras espiras.",
+      "Vuelve a bajar con control mientras inspiras."
+    ]
+  },
+  "Jefferson_Squats": {
+    "name": "Sentadilla Jefferson",
+    "steps": [
+      "Colócate a horcajadas sobre una barra en el suelo, en el centro de su longitud.",
+      "Agáchate con la espalda recta y agárrala con una mano por delante y la otra por detrás del cuerpo, ambas en agarre neutro y a la misma distancia.",
+      "Ponte de pie con los pies a la anchura de los hombros y las puntas algo abiertas.",
+      "Baja con la espalda lo más vertical posible hasta que los muslos queden paralelos al suelo y sube empujando con los pies; los brazos solo sujetan la barra."
+    ]
+  },
+  "Jerk_Balance": {
+    "name": "Equilibrio de envión",
+    "steps": [
+      "Coloca la barra sobre los hombros en posición de envión, con el tronco erguido y los pies ligeramente en tijera.",
+      "Flexiona las rodillas con el tronco vertical e impúlsate hacia arriba con fuerza, usando el impulso de las piernas y no los brazos.",
+      "Sin mover el pie trasero, adelanta el cuerpo a una tijera completa mientras llevas la barra por encima de la cabeza.",
+      "Recupera la posición de pie con la barra arriba."
+    ],
+    "tips": ["Enseña a meterse bajo la barra y corrige la tendencia a irse hacia atrás en el envión."]
+  },
+  "Jerk_Dip_Squat": {
+    "name": "Flexión de envión (dip)",
+    "steps": [
+      "Coloca la barra sobre los hombros en posición de envión, con los hombros adelantados y la barra rozando la garganta. Pies bajo la cadera.",
+      "Con el tronco vertical, flexiona las rodillas dejando que avancen, sin llevar la cadera atrás.",
+      "La flexión debe ser corta.",
+      "Vuelve a subir empujando el suelo con fuerza."
+    ]
+  },
+  "JM_Press": {
+    "name": "Press JM",
+    "steps": [
+      "Túmbate en un banco plano con una barra en agarre cerrado, los brazos estirados sobre la parte alta del pecho y los codos cerrados.",
+      "Baja la barra como en una extensión de tríceps tumbado; a mitad de recorrido, lleva los brazos hacia las piernas hasta que queden perpendiculares al tronco, sin cambiar el ángulo de los codos.",
+      "Empuja la barra hacia arriba con el tríceps, como en un press cerrado, mientras espiras.",
+      "Vuelve a la posición inicial y repite."
+    ]
+  },
+  "Jogging_Treadmill": {
+    "name": "Trote en cinta",
+    "steps": [
+      "Súbete a la cinta y elige el modo manual o un programa.",
+      "Empieza caminando unos minutos para calentar y sube la velocidad hasta un trote cómodo.",
+      "Mantén el tronco erguido, los hombros relajados y una zancada corta y ligera.",
+      "Sujeta las barras solo para bajarte o para medir la frecuencia cardiaca. Ajusta la inclinación para variar la intensidad."
+    ],
+    "mistakes": [
+      "Agarrarse a las barras mientras se corre.",
+      "Dar zancadas demasiado largas y aterrizar con el talón muy por delante del cuerpo.",
+      "Empezar a la velocidad de trabajo sin calentar."
+    ],
+    "tips": [
+      "Una inclinación del 1 % compensa la falta de resistencia del aire y se parece más a correr al aire libre."
+    ]
+  },
+  "Keg_Load": {
+    "name": "Carga de barriles",
+    "steps": [
+      "Coloca los barriles a 10-15 m de la plataforma de carga.",
+      "Agarra el asa cercana del primero, inclínalo de lado y sujeta el borde opuesto de la base para subirlo al pecho.",
+      "Llévalo lo más alto que puedas y camina rápido hasta la plataforma.",
+      "Súbelo extendiendo cadera, rodillas y tobillos, y vuelve a por el siguiente."
+    ]
+  },
+  "Kettlebell_Arnold_Press": {
+    "name": "Press Arnold con kettlebell",
+    "steps": [
+      "Sube una kettlebell al hombro con una cargada, con la palma mirando hacia ti.",
+      "Con la mirada al frente, empuja la kettlebell por encima de la cabeza girando la muñeca para que la palma mire hacia delante arriba.",
+      "Bájala al hombro deshaciendo el giro.",
+      "Completa las repeticiones y cambia de brazo."
+    ]
+  },
+  "Kettlebell_Dead_Clean": {
+    "name": "Cargada desde el suelo con kettlebell",
+    "steps": [
+      "Coloca la kettlebell entre los pies, lleva la cadera atrás con la espalda recta y mira al frente.",
+      "Extiende piernas y cadera con fuerza para subir la kettlebell al hombro, girando la muñeca en el recorrido.",
+      "Bájala hasta el suelo manteniendo la espalda recta y la cadera atrás, con tensión en los isquiotibiales.",
+      "Repite desde el suelo, sin balanceo."
+    ]
+  },
+  "Kettlebell_Figure_8": {
+    "name": "Ochos con kettlebell",
+    "steps": [
+      "Separa los pies algo más que la anchura de los hombros e inclínate llevando la cadera atrás con la espalda plana.",
+      "Coge la kettlebell y pásala entre las piernas a la otra mano, que llega desde detrás de la pierna.",
+      "Rodea esa pierna y vuelve a pasarla entre las piernas a la primera mano, dibujando un ocho.",
+      "Continúa varias repeticiones sin redondear la espalda."
+    ]
+  },
+  "Kettlebell_Hang_Clean": {
+    "name": "Cargada colgante con kettlebell",
+    "steps": [
+      "Coloca la kettlebell entre los pies, lleva la cadera atrás con la espalda recta y mira al frente.",
+      "Extiende piernas y cadera con fuerza para subir la kettlebell al hombro, girando la muñeca en el recorrido.",
+      "Bájala colgando entre las piernas, manteniendo la cadera atrás y la cabeza alta.",
+      "Enlaza la siguiente repetición desde esa posición colgante."
+    ]
+  },
+  "Kettlebell_One-Legged_Deadlift": {
+    "name": "Peso muerto a una pierna con kettlebell",
+    "steps": [
+      "Sujeta una kettlebell con una mano y apóyate sobre la pierna del mismo lado, con la rodilla ligeramente flexionada.",
+      "Inclina el tronco llevando la cadera atrás mientras la pierna libre se eleva estirada por detrás para equilibrarte.",
+      "Baja hasta que el tronco quede casi paralelo al suelo, con la espalda recta y la cadera nivelada.",
+      "Vuelve a la posición erguida apretando el glúteo de la pierna de apoyo."
+    ],
+    "mistakes": [
+      "Abrir la cadera hacia el lado de la pierna que sube.",
+      "Redondear la espalda para llegar más abajo.",
+      "Bloquear del todo la rodilla de apoyo."
+    ],
+    "tips": ["Si pierdes el equilibrio, apoya un dedo de la mano libre en la pared o en un banco."]
+  },
+  "Kettlebell_Pass_Between_The_Legs": {
+    "name": "Pases de kettlebell entre las piernas",
+    "steps": [
+      "Colócate con los pies algo separados e inclínate llevando la cadera atrás con la espalda plana.",
+      "Coge la kettlebell y pásala a la otra mano entre las piernas.",
+      "Sigue pasándola de una mano a otra dibujando una W alrededor de las piernas.",
+      "Continúa varias repeticiones sin redondear la espalda."
+    ]
+  },
+  "Kettlebell_Pirate_Ships": {
+    "name": "Barcos pirata con kettlebell",
+    "steps": [
+      "Con los pies bien separados, sujeta una kettlebell con ambas manos colgando a la altura de la cintura.",
+      "Gira el tronco hacia un lado mientras balanceas la kettlebell hasta la altura de la cabeza, con los brazos estirados.",
+      "Haz una breve pausa y deja caer la kettlebell mientras giras hacia el otro lado, hasta la misma altura.",
+      "Alterna de lado a lado con control."
+    ]
+  },
+  "Kettlebell_Pistol_Squat": {
+    "name": "Sentadilla pistol con kettlebell",
+    "steps": [
+      "Sujeta una kettlebell por las asas delante del pecho y levanta un pie del suelo.",
+      "Baja flexionando la rodilla de apoyo y llevando la cadera atrás, con la kettlebell al frente como contrapeso y la pierna libre estirada.",
+      "Mantén un segundo abajo.",
+      "Sube empujando con el talón, con la cabeza y el pecho altos."
+    ]
+  },
+  "Kettlebell_Seated_Press": {
+    "name": "Press sentado en el suelo con kettlebell",
+    "steps": [
+      "Siéntate en el suelo con las piernas separadas y la espalda erguida.",
+      "Sube una kettlebell al hombro.",
+      "Empújala hacia arriba hasta bloquear el brazo por encima de la cabeza, sin inclinar el tronco.",
+      "Bájala al hombro con control y repite."
+    ]
+  },
+  "Kettlebell_Seesaw_Press": {
+    "name": "Press balancín con kettlebells",
+    "steps": [
+      "Sube dos kettlebells a los hombros con una cargada.",
+      "Empuja una por encima de la cabeza hasta estirar el brazo.",
+      "Mientras la bajas, empuja la otra hacia arriba, como un balancín.",
+      "Haz las mismas repeticiones con cada brazo."
+    ]
+  },
+  "Kettlebell_Sumo_High_Pull": {
+    "name": "Tirón alto sumo con kettlebell",
+    "steps": [
+      "Coloca la kettlebell en el suelo entre los pies, con una postura muy abierta, y agárrala con ambas manos llevando la cadera atrás, con el pecho y la cabeza altos.",
+      "Extiende cadera y rodillas mientras tiras de la kettlebell hacia los hombros, con los codos altos.",
+      "Invierte el movimiento para volver a la posición inicial.",
+      "Repite con ritmo y sin redondear la espalda."
+    ]
+  },
+  "Kettlebell_Thruster": {
+    "name": "Thruster con kettlebells",
+    "steps": [
+      "Sube dos kettlebells a los hombros con una cargada.",
+      "Baja a una sentadilla profunda llevando la cadera entre las piernas, con la espalda recta y el tronco erguido.",
+      "Sube empujando con los talones y, aprovechando el impulso, empuja ambas kettlebells por encima de la cabeza.",
+      "Devuélvelas a los hombros al iniciar la siguiente repetición."
+    ]
+  },
+  "Kettlebell_Turkish_Get-Up_Lunge_style": {
+    "name": "Levantamiento turco con kettlebell (con zancada)",
+    "steps": [
+      "Túmbate boca arriba y empuja una kettlebell hasta estirar el brazo; flexiona la rodilla del mismo lado.",
+      "Con la kettlebell siempre bloqueada, gira hacia el lado contrario y apóyate en el antebrazo y luego en la mano libre hasta quedar sentado.",
+      "Eleva la cadera, lleva la pierna estirada por debajo hasta apoyar la rodilla y quedar en zancada.",
+      "Ponte de pie mirando la kettlebell y deshaz los pasos hasta volver al suelo."
+    ],
+    "tips": ["Aprende la secuencia primero sin peso o con un zapato en equilibrio sobre el puño."]
+  },
+  "Kettlebell_Turkish_Get-Up_Squat_style": {
+    "name": "Levantamiento turco con kettlebell (con sentadilla)",
+    "steps": [
+      "Túmbate boca arriba y empuja una kettlebell hasta estirar el brazo; flexiona la rodilla del mismo lado.",
+      "Con la kettlebell siempre bloqueada, gira hacia el lado contrario y apóyate en la mano libre hasta quedar sentado.",
+      "Lleva los pies bajo la cadera hasta quedar en cuclillas y ponte de pie mirando la kettlebell.",
+      "Deshaz los pasos hasta volver a tumbarte."
+    ]
+  },
+  "Kettlebell_Windmill": {
+    "name": "Molino con kettlebell",
+    "steps": [
+      "Sube una kettlebell por encima de la cabeza con una cargada y un press, con el brazo bloqueado.",
+      "Gira los pies unos 45 grados hacia el lado contrario y empuja la cadera hacia el lado del brazo estirado.",
+      "Inclínate desde la cadera hacia el otro lado hasta tocar el suelo con la mano libre, sin dejar de mirar la kettlebell.",
+      "Haz una pausa y vuelve a la posición inicial."
+    ]
+  },
+  "Kipping_Muscle_Up": {
+    "name": "Muscle up con impulso (kipping)",
+    "steps": [
+      "Agarra las anillas con agarre falso, con la base de las palmas por encima de ellas.",
+      "Balancea ligeramente las piernas hacia atrás y luego hacia delante y arriba, echando la barbilla y el pecho atrás mientras tiras con ambos brazos.",
+      "Al llegar arriba de la dominada, lleva las anillas a las axilas y adelanta los hombros para pasar por encima.",
+      "Estira los codos para terminar como en un fondo y baja con cuidado."
+    ],
+    "tips": ["Es un movimiento avanzado con mucho estrés para hombros y codos."]
+  },
+  "Knee_Across_The_Body": {
+    "name": "Rodilla cruzada tumbado",
+    "steps": [
+      "Túmbate boca arriba con la pierna derecha estirada.",
+      "Flexiona la pierna izquierda y crúzala por encima del cuerpo, sujetando la rodilla hacia el suelo con la mano derecha, sin forzar.",
+      "Deja el brazo izquierdo estirado a un lado y gira la cabeza hacia la izquierda.",
+      "Relaja la zona lumbar mientras el pecho se abre hacia el lado contrario. Cambia de lado."
+    ]
+  },
+  "Knee_Circles": {
+    "name": "Círculos de rodillas",
+    "steps": [
+      "De pie, con las piernas juntas, flexiona un poco las rodillas y apoya las manos en ellas o en la cintura.",
+      "Dibuja círculos con las rodillas respirando con normalidad.",
+      "Haz varias repeticiones en un sentido y luego en el otro."
+    ]
+  },
+  "Knee_Hip_Raise_On_Parallel_Bars": {
+    "name": "Elevación de piernas en paralelas",
+    "steps": [
+      "Colócate en el aparato de elevación de piernas con los antebrazos sobre las almohadillas, agarrando las asas y con la espalda apoyada en el respaldo.",
+      "Deja las piernas estiradas hacia el suelo, con el tronco recto.",
+      "Eleva las piernas mientras espiras hasta que queden paralelas al suelo y mantén un segundo.",
+      "Baja despacio sin balancearte mientras inspiras."
+    ],
+    "mistakes": [
+      "Balancear las piernas y usar el impulso.",
+      "Despegar la espalda del respaldo.",
+      "Encoger los hombros hacia las orejas en lugar de empujar las almohadillas."
+    ],
+    "tips": ["Si te cuesta con las piernas estiradas, sube las rodillas flexionadas hacia el pecho."]
+  },
+  "Knee_Tuck_Jump": {
+    "name": "Salto con rodillas al pecho",
+    "steps": [
+      "De pie, con las rodillas algo flexionadas, coloca las manos delante del pecho con las palmas hacia abajo.",
+      "Baja rápido a un cuarto de sentadilla y salta de forma explosiva.",
+      "Lleva las rodillas hacia el pecho intentando tocar las palmas.",
+      "Estira las piernas para aterrizar y amortigua flexionando las rodillas."
+    ]
+  },
+  "Kneeling_Arm_Drill": {
+    "name": "Braceo de carrera de rodillas",
+    "steps": [
+      "Arrodíllate con el pie izquierdo delante y la rodilla derecha en el suelo, empujando con el talón delantero.",
+      "Balancea los brazos como péndulos largos y ve cerrando el ángulo del codo, como al trotar.",
+      "Aumenta el ritmo hasta el de carrera y luego al de sprint, acelerando las manos hacia delante al pasar la cadera.",
+      "Cambia de rodilla y repite."
+    ],
+    "tips": ["Es un ejercicio técnico para mejorar el braceo en la carrera."]
+  },
+  "Kneeling_Cable_Crunch_With_Alternating_Oblique_Twists": {
+    "name": "Crunch en polea alta de rodillas con giro alterno",
+    "steps": [
+      "Coloca una cuerda en la polea alta, agárrala con ambas manos y arrodíllate a unos 60 cm, con las manos junto a las orejas.",
+      "Contrae el abdomen y flexiona el tronco hacia abajo hasta que los codos lleguen a las rodillas; sube despacio.",
+      "En la siguiente repetición, a mitad de bajada, gira el tronco para llevar un codo hacia la rodilla contraria; sube despacio.",
+      "Alterna el recto y los dos giros sin mover las manos de la cabeza."
+    ]
+  },
+  "Kneeling_Cable_Triceps_Extension": {
+    "name": "Extensión de tríceps en polea alta de rodillas",
+    "steps": [
+      "Coloca un banco atravesado delante de una polea alta y agarra una barra recta con las manos a unos 15 cm y las palmas hacia abajo.",
+      "De espaldas a la polea, arrodíllate y apoya la cabeza y la parte trasera de los brazos en el banco, con los codos flexionados.",
+      "Estira los brazos en semicírculo hasta que queden paralelos al suelo, con los codos cerrados, mientras espiras.",
+      "Aprieta un segundo y vuelve despacio mientras inspiras."
+    ]
+  },
+  "Kneeling_Forearm_Stretch": {
+    "name": "Estiramiento de antebrazos de rodillas",
+    "steps": [
+      "Arrodíllate en una esterilla y apoya las palmas en el suelo con los dedos apuntando hacia las rodillas.",
+      "Echa el cuerpo atrás despacio, sin despegar las palmas, hasta notar el estiramiento en muñecas y antebrazos.",
+      "Mantén 20-30 segundos."
+    ]
+  },
+  "Kneeling_High_Pulley_Row": {
+    "name": "Remo en polea alta de rodillas",
+    "steps": [
+      "Coloca una cuerda en una polea alta y arrodíllate a unos 60 cm, sujetándola con los brazos estirados al frente.",
+      "Flexiona los codos hacia fuera y junta las escápulas mientras llevas la cuerda hacia la parte alta del pecho.",
+      "Haz una breve pausa.",
+      "Vuelve despacio hasta estirar los brazos."
+    ]
+  },
+  "Kneeling_Hip_Flexor": {
+    "name": "Estiramiento de psoas en zancada arrodillada",
+    "steps": [
+      "Arrodíllate en una esterilla y adelanta la pierna derecha con la planta apoyada; lleva la izquierda atrás con el empeine en el suelo.",
+      "Aprieta el glúteo de la pierna de atrás y desplaza el peso hacia delante hasta notar el estiramiento en la cadera.",
+      "Mantén 15-30 segundos y cambia de lado."
+    ]
+  },
+  "Kneeling_Jump_Squat": {
+    "name": "Salto desde rodillas a sentadilla",
+    "steps": [
+      "Arrodíllate en el suelo, con una barra sobre los hombros (en el rack) o solo con tu peso corporal.",
+      "Siéntate atrás hasta que los glúteos toquen los talones, con la cabeza y el pecho altos.",
+      "Impúlsate con la cadera de forma explosiva para aterrizar con los pies apoyados.",
+      "Termina poniéndote de pie empujando con los talones."
+    ]
+  },
+  "Kneeling_Single-Arm_High_Pulley_Row": {
+    "name": "Remo a una mano en polea alta de rodillas",
+    "steps": [
+      "Coloca un estribo en una polea alta y arrodíllate delante, agarrándolo con una mano y el brazo estirado, con la palma hacia delante.",
+      "Tira del estribo hacia el tronco flexionando el codo y juntando la escápula, girando la muñeca hasta que la palma mire hacia ti.",
+      "Haz una breve pausa.",
+      "Vuelve despacio a la posición inicial y cambia de brazo al terminar."
+    ]
+  },
+  "Kneeling_Squat": {
+    "name": "Sentadilla de rodillas con barra",
+    "steps": [
+      "Coloca la barra en el rack a la altura adecuada y arrodíllate detrás sobre una esterilla.",
+      "Apóyala en la parte alta de la espalda con las escápulas juntas y sácala del soporte.",
+      "Con la mirada al frente, siéntate atrás hasta tocar los gemelos con los glúteos.",
+      "Vuelve a erguir el tronco extendiendo la cadera y apretando los glúteos."
+    ]
+  }
+}
