@@ -352,6 +352,8 @@ export const OVERRIDES: Record<string, ExerciseOverride> = {
     jointStress: { shoulder: 'moderate', lowerBack: 'moderate' },
   },
   'dips-chest-version': { equipment: ['dipStation'] },
+  'parallel-bar-dip': { equipment: ['dipStation'] },
+  'ring-dips': { equipment: ['other'] },
   'neck-press': { jointStress: { shoulder: 'high', neck: 'moderate' } },
   'barbell-guillotine-bench-press': { jointStress: { shoulder: 'high', neck: 'moderate' } },
   // El press con mina (landmine) es de los empujes verticales más amables con el hombro.
