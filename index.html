@@ -16,17 +16,7 @@
     <meta name="apple-mobile-web-app-title" content="Forja" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <script>
-      // Aplica el tema antes del primer pintado para evitar parpadeos.
-      try {
-        var p = JSON.parse(localStorage.getItem('forja-theme') || '{}').state?.preference || 'dark'
-        var dark =
-          p === 'dark' || (p === 'system' && matchMedia('(prefers-color-scheme: dark)').matches)
-        document.documentElement.classList.toggle('dark', dark)
-        if (!dark)
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f3ee')
-      } catch (e) {}
-    </script>
+    <script src="/theme-init.js"></script>
   </head>
   <body>
     <div id="root"></div>

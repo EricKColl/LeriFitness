@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { WifiOff } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
@@ -40,12 +40,27 @@ export function UpdatePrompt() {
   return null
 }
 
+/**
+ * Aviso breve al quedarse sin conexión. Como todo funciona sin red, no hace falta dejarlo fijo:
+ * desaparece a los pocos segundos.
+ */
 export function OfflineBanner() {
   const online = useOnline()
   const { t } = useTranslation()
+  const [visible, setVisible] = useState(!online)
+  const [wasOnline, setWasOnline] = useState(online)
+  if (online !== wasOnline) {
+    setWasOnline(online)
+    setVisible(!online)
+  }
+  useEffect(() => {
+    if (!visible) return
+    const timer = setTimeout(() => setVisible(false), 4000)
+    return () => clearTimeout(timer)
+  }, [visible])
   return (
     <AnimatePresence>
-      {!online && (
+      {visible && (
         <motion.div
           role="status"
           initial={{ y: -40, opacity: 0 }}

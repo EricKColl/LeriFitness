@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from 'react'
+import { Suspense, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, useParams } from 'react-router'
 
@@ -35,15 +35,18 @@ function SessionLoader() {
   const [finished, setFinished] = useState<SessionLog | null>(null)
   const day = planRow?.plan.days.find((d) => d.id === dayId)
 
-  // Sin sesión en curso: se crea al entrar (y se guarda para poder retomarla).
-  const shouldStart = !finished && row === null && !!planRow && !!day
+  // Sin sesión en curso al entrar: se crea (y se guarda para poder retomarla). Solo se decide
+  // una vez: al terminar o descartar, la sesión activa se borra y no debe crearse otra.
+  const decided = useRef(false)
   useEffect(() => {
-    if (!shouldStart || !planRow || !day) return
+    if (decided.current || row === undefined || planRow === undefined) return
+    decided.current = true
+    if (row !== null || !planRow || !day) return
     const active = startSession(day, planRow.id, today(), Date.now())
     void db.activeSession.add({ id: 'current', ...active }).catch(() => {
-      // Otra pestaña (o el doble montaje de desarrollo) ya la ha creado.
+      // Otra pestaña ya la ha creado.
     })
-  }, [shouldStart, planRow, day])
+  }, [row, planRow, day])
 
   if (finished) return <SessionSummary session={finished} />
   if (planRow === undefined || row === undefined) return <Splash />
