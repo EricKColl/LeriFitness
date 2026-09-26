@@ -2,14 +2,30 @@ import { Suspense, useEffect, useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { Navigate, Outlet } from 'react-router'
 
-import { loadCatalog } from '@/data/catalog'
+import { exerciseImage, loadCatalog, type Catalog } from '@/data/catalog'
 import { db } from '@/data/db'
 import { createFirstPlan, ensureCurrentPlan, stripProfile } from '@/data/plans'
+import type { PlanRow } from '@/data/db'
 import { AchievementCelebration } from '@/features/achievements/celebration'
 import { syncAchievements } from '@/features/achievements/sync'
+import { cacheImages } from '@/shared/lib/image-cache'
 
 import { BottomNav } from './bottom-nav'
 import { Splash } from './splash'
+
+/**
+ * Guarda para uso sin conexión las imágenes de los ejercicios del plan y de sus primeras
+ * alternativas (en segundo plano; si falla, se reintenta la próxima vez).
+ */
+async function precachePlanImages(plan: PlanRow, catalog: Catalog) {
+  const ids = new Set(
+    plan.plan.days.flatMap((d) =>
+      d.prescriptions.flatMap((p) => [p.exerciseId, ...p.alternatives.slice(0, 3)]),
+    ),
+  )
+  const urls = [...ids].flatMap((id) => catalog.byId.get(id)?.images.map(exerciseImage) ?? [])
+  await cacheImages(urls)
+}
 
 /** Pantallas con barra inferior. */
 export function AppLayout() {
@@ -37,11 +53,12 @@ export function RequireProfile() {
     let cancelled = false
     const sync = async () => {
       const catalog = await loadCatalog()
-      const plan = await ensureCurrentPlan(catalog)
+      let plan = await ensureCurrentPlan(catalog)
       if (!plan) {
         const row = await db.profile.get('me')
-        if (row) await createFirstPlan(stripProfile(row), catalog)
+        if (row) plan = await createFirstPlan(stripProfile(row), catalog)
       }
+      if (plan) void precachePlanImages(plan, catalog)
       await syncAchievements()
       if (!cancelled) setReady(true)
     }

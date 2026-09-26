@@ -1,1 +1,90 @@
-{}
+{
+  "title": "Perfil",
+  "summary": "{{level}} · {{days}} días · {{minutes}} min",
+  "training": {
+    "title": "Tu entrenamiento",
+    "edit": "Editar perfil y disponibilidad",
+    "editHint": "Objetivo, nivel, días, tiempo, material y molestias"
+  },
+  "prefs": {
+    "title": "Preferencias",
+    "theme": "Tema",
+    "sound": "Pitido al acabar el descanso",
+    "vibration": "Vibración",
+    "keepAwake": "Mantener la pantalla encendida en la sesión",
+    "language": "Idioma",
+    "languageValue": "Español",
+    "languageHint": "Más idiomas próximamente."
+  },
+  "offline": {
+    "title": "Uso sin conexión",
+    "body": "La app y tus datos ya funcionan sin conexión. Las imágenes de tu plan se guardan solas; puedes descargar también todas las del catálogo.",
+    "status": "{{cached}} de {{total}} imágenes guardadas",
+    "download": "Descargar todas las imágenes (~34 MB)",
+    "downloading": "Descargando… {{done}}/{{total}}",
+    "done": "Imágenes guardadas para usar sin conexión",
+    "failed": "No se pudieron descargar {{count}} imágenes. Inténtalo con conexión estable.",
+    "cancel": "Cancelar"
+  },
+  "data": {
+    "title": "Tus datos",
+    "body": "Todo se guarda solo en este dispositivo. Nadie más (tampoco nosotros) tiene acceso.",
+    "export": "Exportar mis datos",
+    "exportHint": "Archivo JSON con todo: perfil, sesiones, medidas y ajustes.",
+    "exported": "Datos exportados",
+    "import": "Importar copia",
+    "importHint": "Sustituye los datos de este dispositivo por los de la copia.",
+    "importTitle": "¿Importar esta copia?",
+    "importBody": "Se reemplazarán todos los datos actuales de este dispositivo por los del archivo.",
+    "imported": "Copia importada",
+    "importError": "El archivo no es una copia válida de Forja.",
+    "wipe": "Borrar todos mis datos",
+    "wipeHint": "Elimina perfil, historial, medidas y ajustes de este dispositivo. No se puede deshacer.",
+    "wipeTitle": "¿Borrar todos tus datos?",
+    "wipeBody": "Se eliminará todo lo guardado en este dispositivo y volverás al inicio. Te recomendamos exportar antes una copia.",
+    "wipeConfirm": "Borrar todo",
+    "health": "Datos de salud (molestias y lesiones)",
+    "healthOn": "Consentimiento activo desde el {{date}}.",
+    "healthOff": "Sin consentimiento: el plan no tiene en cuenta lesiones ni molestias.",
+    "revoke": "Retirar consentimiento",
+    "revokeTitle": "¿Retirar el consentimiento?",
+    "revokeBody": "Se borrarán las lesiones de tu perfil y los check-ins con molestias, y el plan se recalculará sin ellas.",
+    "revoked": "Consentimiento retirado y datos de salud borrados",
+    "grant": "Dar consentimiento",
+    "grantBody": "Acepto que Forja trate, solo en este dispositivo, mis datos de salud (lesiones y molestias) para adaptar el entrenamiento.",
+    "granted": "Consentimiento registrado. Ya puedes añadir tus molestias en el perfil."
+  },
+  "legal": {
+    "title": "Información legal",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de uso",
+    "health": "Aviso de salud",
+    "licenses": "Licencias y atribuciones"
+  },
+  "about": {
+    "title": "Acerca de",
+    "version": "Versión {{version}}",
+    "catalog": "Catálogo de ejercicios {{version}}",
+    "tagline": "Hecha con cuidado para entrenar mejor, sin anuncios ni rastreo."
+  },
+  "edit": {
+    "title": "Editar perfil",
+    "subtitle": "Al guardar, el plan de esta semana se recalcula.",
+    "goal": "Objetivo",
+    "level": "Nivel",
+    "body": "Datos físicos",
+    "sex": "Sexo",
+    "age": "Edad",
+    "height": "Altura",
+    "weight": "Peso",
+    "job": "Actividad diaria",
+    "days": "Días de entrenamiento",
+    "minutes": "Minutos por sesión",
+    "equipment": "Material",
+    "injuries": "Molestias o lesiones",
+    "injuriesLocked": "Para indicar molestias necesitas dar tu consentimiento de datos de salud (en Perfil › Tus datos).",
+    "save": "Guardar y recalcular plan",
+    "saved": "Perfil guardado: tu plan se ha recalculado",
+    "noDays": "Elige al menos un día."
+  }
+}

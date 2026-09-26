@@ -1,1 +1,173 @@
-{}
+{
+  "updated": "Última actualización: {{date}}",
+  "pending": "Pendiente de completar",
+  "pendingNotice": "Faltan los datos de contacto del responsable. Se añadirán antes de publicar la app.",
+  "notFound": "Este documento no existe.",
+  "docs": {
+    "privacidad": {
+      "title": "Política de privacidad",
+      "intro": "Forja está diseñada para que tus datos no salgan de tu dispositivo. Esta política explica qué datos se tratan, para qué y cómo ejercer tus derechos, conforme al Reglamento General de Protección de Datos (RGPD) y a la Ley Orgánica 3/2018 (LOPDGDD).",
+      "sections": [
+        {
+          "title": "Responsable del tratamiento",
+          "body": ["Responsable: {{controller}}.", "Contacto para privacidad: {{email}}."]
+        },
+        {
+          "title": "Dónde se guardan tus datos",
+          "body": [
+            "Todo lo que introduces (perfil, sesiones, medidas, check-ins y ajustes) se guarda únicamente en el almacenamiento local de tu navegador (IndexedDB) en este dispositivo.",
+            "No hay cuentas ni servidores de Forja que reciban tus datos: el responsable no tiene acceso a ellos. Si borras los datos del navegador o desinstalas la app, se pierden salvo que hayas exportado una copia."
+          ]
+        },
+        {
+          "title": "Qué datos se tratan y para qué",
+          "body": [
+            "Datos de perfil (objetivo, nivel, sexo, edad, altura, peso, tipo de trabajo, días y tiempo disponibles, material): para generar y adaptar tu plan de entrenamiento con reglas deterministas.",
+            "Registro de entrenamiento (series, cargas, repeticiones, esfuerzo, notas) y medidas corporales: para calcular tu progreso y ajustar las cargas.",
+            "Datos de salud (lesiones y molestias que indiques y las del check-in semanal): solo si das tu consentimiento explícito, para evitar ejercicios que carguen esas zonas.",
+            "No se crean perfiles con fines publicitarios, no hay decisiones automatizadas con efectos jurídicos y no se usan cookies de seguimiento ni analítica."
+          ]
+        },
+        {
+          "title": "Base jurídica",
+          "body": [
+            "Datos de perfil y de entrenamiento: la ejecución del servicio que solicitas al usar la app (art. 6.1.b RGPD).",
+            "Datos de salud: tu consentimiento explícito (arts. 6.1.a y 9.2.a RGPD). Puedes retirarlo en cualquier momento en Perfil › Tus datos; al hacerlo se borran las lesiones y molestias guardadas y el plan se recalcula sin ellas. Retirarlo no afecta a la licitud del tratamiento anterior."
+          ]
+        },
+        {
+          "title": "Conservación",
+          "body": [
+            "Los datos se conservan en tu dispositivo hasta que los borres. Puedes eliminarlo todo con un solo botón en Perfil › Tus datos › Borrar todos mis datos."
+          ]
+        },
+        {
+          "title": "Alojamiento de la app",
+          "body": [
+            "Los archivos de la app se sirven desde Cloudflare Pages. Al descargarlos, Cloudflare trata datos técnicos de conexión (como la dirección IP) para entregar la web y protegerla frente a abusos, como encargado del tratamiento y con las garantías del Marco de Privacidad de Datos UE-EE. UU. y cláusulas contractuales tipo. Estos datos técnicos no incluyen nada de lo que introduces en la app."
+          ]
+        },
+        {
+          "title": "Tus derechos",
+          "body": [
+            "Como tus datos están solo en tu dispositivo, puedes ejercer directamente en la app el acceso y la portabilidad (Exportar mis datos, en formato JSON), la rectificación (editando tu perfil, sesiones y medidas) y la supresión (Borrar todos mis datos).",
+            "Para cualquier consulta puedes escribir a {{email}}. Si consideras que no se han respetado tus derechos, puedes reclamar ante la Agencia Española de Protección de Datos (www.aepd.es)."
+          ]
+        },
+        {
+          "title": "Edad mínima",
+          "body": [
+            "Forja está pensada para personas de 14 años o más (art. 7 LOPDGDD). Si tienes menos de 14 años, no la uses sin el consentimiento de tu madre, padre o tutor legal."
+          ]
+        },
+        {
+          "title": "Cambios",
+          "body": [
+            "Si esta política cambia de forma relevante (por ejemplo, si en el futuro se añaden cuentas opcionales), la app te lo indicará y te pedirá de nuevo el consentimiento cuando sea necesario."
+          ]
+        }
+      ]
+    },
+    "terminos": {
+      "title": "Términos de uso",
+      "intro": "Al usar Forja aceptas estos términos. Léelos con calma: son breves.",
+      "sections": [
+        {
+          "title": "Qué es Forja",
+          "body": [
+            "Forja es una aplicación gratuita de fitness que genera planes de entrenamiento de fuerza a partir de reglas basadas en principios con respaldo científico. Es una herramienta de bienestar general: no es un producto sanitario ni sustituye el consejo de profesionales de la salud o del deporte."
+          ]
+        },
+        {
+          "title": "Uso responsable",
+          "body": [
+            "Entrenas bajo tu propia responsabilidad. Antes de empezar un programa de ejercicio, especialmente si tienes una lesión, dolor, una enfermedad o estás embarazada, consulta con un profesional sanitario.",
+            "Usa cargas que puedas controlar con buena técnica, calienta, usa medidas de seguridad (topes, ayudante) en ejercicios pesados y para si notas dolor, mareo o falta de aire anormal."
+          ]
+        },
+        {
+          "title": "Servicio sin garantías",
+          "body": [
+            "La app se ofrece «tal cual», sin garantía de disponibilidad continua ni de resultados concretos. Dentro de lo permitido por la ley, el responsable no responde de lesiones derivadas de un uso inadecuado del ejercicio ni de la pérdida de datos guardados en tu dispositivo: te recomendamos exportar copias de vez en cuando.",
+            "Nada de lo anterior limita los derechos que te reconoce la normativa de consumidores y usuarios."
+          ]
+        },
+        {
+          "title": "Contenido y licencias",
+          "body": [
+            "Las imágenes y datos base de los ejercicios proceden de free-exercise-db (dominio público). Los textos en español, el diseño y el código de Forja pertenecen a su titular. Las licencias de terceros se detallan en «Licencias y atribuciones»."
+          ]
+        },
+        {
+          "title": "Cambios y ley aplicable",
+          "body": [
+            "Estos términos pueden actualizarse; la versión vigente estará siempre en la app. Se rigen por la legislación española.",
+            "Contacto: {{email}}."
+          ]
+        }
+      ]
+    },
+    "salud": {
+      "title": "Aviso de salud",
+      "intro": "Forja es una app de fitness y bienestar, no de rehabilitación ni tratamiento médico.",
+      "sections": [
+        {
+          "title": "Antes de empezar",
+          "body": [
+            "Consulta con un profesional sanitario antes de entrenar si tienes alguna enfermedad cardiovascular, metabólica o respiratoria, tensión arterial alta, dolor en el pecho al hacer esfuerzo, mareos o pérdidas de conocimiento, problemas en huesos o articulaciones, si estás embarazada o en el posparto, o si tomas medicación que pueda afectar al ejercicio."
+          ]
+        },
+        {
+          "title": "Lesiones y molestias",
+          "body": [
+            "Cuando indicas una lesión o molestia, Forja evita o limita los ejercicios que cargan esa zona según reglas generales. Eso no es un tratamiento: no diagnostica, no rehabilita y no sustituye a fisioterapeutas, médicos ni otros profesionales.",
+            "Si una zona te duele (dolor, no solo esfuerzo muscular), para ese ejercicio, cámbialo por una alternativa y, si el dolor persiste, consulta con un profesional."
+          ]
+        },
+        {
+          "title": "Durante el entrenamiento",
+          "body": [
+            "Para de inmediato y busca ayuda si notas dolor u opresión en el pecho, falta de aire desproporcionada, mareo intenso, palpitaciones o cualquier síntoma que te preocupe. En una emergencia, llama al 112."
+          ]
+        },
+        {
+          "title": "Nutrición y gasto energético",
+          "body": [
+            "Las cifras de gasto energético son estimaciones orientativas con fórmulas generales. No son una pauta nutricional; para ajustar tu alimentación, consulta con un dietista-nutricionista."
+          ]
+        }
+      ]
+    },
+    "licencias": {
+      "title": "Licencias y atribuciones",
+      "intro": "Forja se apoya en trabajo abierto de otras personas. Gracias.",
+      "sections": [
+        {
+          "title": "Ejercicios",
+          "body": [
+            "Datos e imágenes de ejercicios: free-exercise-db, de Yuhonas (github.com/yuhonas/free-exercise-db), publicados bajo The Unlicense (dominio público). Las imágenes proceden de ese proyecto y se han convertido a WebP. Los nombres, instrucciones, errores comunes y consejos en español, la clasificación por patrones y la carga articular son obra propia de Forja."
+          ]
+        },
+        {
+          "title": "Tipografías",
+          "body": [
+            "Inter, de Rasmus Andersson, bajo SIL Open Font License 1.1.",
+            "Bricolage Grotesque, de Mathieu Triay, bajo SIL Open Font License 1.1.",
+            "Ambas se distribuyen mediante los paquetes de Fontsource."
+          ]
+        },
+        {
+          "title": "Iconos",
+          "body": ["Lucide (lucide.dev), bajo licencia ISC."]
+        },
+        {
+          "title": "Software",
+          "body": [
+            "React, React Router, Radix UI, shadcn/ui, Tailwind CSS, Motion, Zustand, Zod, i18next, Sonner, Workbox y Vite, bajo licencia MIT. Dexie.js, bajo licencia Apache 2.0.",
+            "El listado completo de dependencias y sus licencias está en el repositorio del proyecto."
+          ]
+        }
+      ]
+    }
+  }
+}
