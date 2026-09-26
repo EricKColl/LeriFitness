@@ -6,3 +6,4 @@ public/exercises
 src/data/generated
 scripts/exercises/content
 package-lock.json
+scripts/exercises/vendor

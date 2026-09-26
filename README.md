@@ -11,14 +11,14 @@ basado en principios de entrenamiento con respaldo científico. Ninguna IA decid
 
 ## Stack
 
-| Área        | Elección                                                        |
-| ----------- | --------------------------------------------------------------- |
-| Frontend    | React 19 + TypeScript (estricto) + Vite                         |
-| UI          | Tailwind CSS 4 + shadcn/ui (Radix) + Motion                     |
-| Datos       | Dexie (IndexedDB) + Zustand, esquemas con Zod                   |
-| PWA         | vite-plugin-pwa (Workbox), offline completo                     |
-| Tests       | Vitest + Testing Library                                        |
-| Hosting     | Cloudflare Pages (`*.pages.dev`) con CI/CD en GitHub Actions    |
+| Área     | Elección                                                     |
+| -------- | ------------------------------------------------------------ |
+| Frontend | React 19 + TypeScript (estricto) + Vite                      |
+| UI       | Tailwind CSS 4 + shadcn/ui (Radix) + Motion                  |
+| Datos    | Dexie (IndexedDB) + Zustand, esquemas con Zod                |
+| PWA      | vite-plugin-pwa (Workbox), offline completo                  |
+| Tests    | Vitest + Testing Library                                     |
+| Hosting  | Cloudflare Pages (`*.pages.dev`) con CI/CD en GitHub Actions |
 
 ## Comandos
 

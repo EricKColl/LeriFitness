@@ -35,7 +35,7 @@ import {
   slugify,
 } from './normalize'
 import { OVERRIDES, STAPLES } from './overrides'
-import { CACHE_DIR, loadSourceExercises, SOURCE, type SourceExercise } from './source'
+import { CACHE_DIR, ensureSource, loadSourceExercises, SOURCE, type SourceExercise } from './source'
 
 const ROOT = resolve(import.meta.dirname, '../..')
 const OUT_DATA = resolve(ROOT, 'src/data/generated')
@@ -87,10 +87,16 @@ function computeAlternatives(all: Omit<Exercise, 'alternatives'>[]) {
         .filter((b) => b.id !== a.id && isTraining(a) === isTraining(b))
         .map((b) => {
           const primaryOverlap = b.primaryMuscles.filter((m) => a.primaryMuscles.includes(m)).length
-          const secondaryOverlap = b.secondaryMuscles.filter((m) => a.secondaryMuscles.includes(m)).length
+          const secondaryOverlap = b.secondaryMuscles.filter((m) =>
+            a.secondaryMuscles.includes(m),
+          ).length
           const samePattern = a.pattern === b.pattern
           if (!samePattern && primaryOverlap === 0) return null
-          if (!samePattern && a.pattern !== 'mobility' && ['mobility', 'other', 'olympic'].includes(b.pattern))
+          if (
+            !samePattern &&
+            a.pattern !== 'mobility' &&
+            ['mobility', 'other', 'olympic'].includes(b.pattern)
+          )
             return null
           const score =
             (samePattern ? 10 : 0) +
@@ -109,7 +115,11 @@ function computeAlternatives(all: Omit<Exercise, 'alternatives'>[]) {
 
 async function loadContent(locale: string) {
   const dir = resolve(CONTENT_DIR, locale)
-  const files = existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.json')).sort() : []
+  const files = existsSync(dir)
+    ? readdirSync(dir)
+        .filter((f) => f.endsWith('.json'))
+        .sort()
+    : []
   const content: Record<string, ExerciseContent> = {}
   for (const file of files) {
     const raw: unknown = JSON.parse(await readFile(resolve(dir, file), 'utf8'))
@@ -126,6 +136,8 @@ async function loadContent(locale: string) {
 async function convertImages(pairs: { from: string; to: string }[]) {
   let done = 0
   let skipped = 0
+  // Las imágenes ya generadas están versionadas: solo se descarga el origen si falta alguna.
+  if (pairs.some((p) => !existsSync(p.to))) await ensureSource()
   const queue = [...pairs]
   const worker = async () => {
     for (let job = queue.shift(); job; job = queue.shift()) {
@@ -155,7 +167,8 @@ async function main() {
     ids.add(e.id)
   }
   for (const key of [...Object.keys(STAPLES), ...Object.keys(OVERRIDES)]) {
-    if (!ids.has(key)) throw new Error(`overrides.ts hace referencia a un ejercicio inexistente: ${key}`)
+    if (!ids.has(key))
+      throw new Error(`overrides.ts hace referencia a un ejercicio inexistente: ${key}`)
   }
 
   const alternatives = computeAlternatives(partial)
@@ -163,7 +176,11 @@ async function main() {
     .map((e) => ExerciseSchema.parse({ ...e, alternatives: alternatives.get(e.id) ?? [] }))
     .sort((a, b) => a.id.localeCompare(b.id))
 
-  const catalog = ExerciseCatalogSchema.parse({ version: CATALOG_VERSION, source: SOURCE, exercises })
+  const catalog = ExerciseCatalogSchema.parse({
+    version: CATALOG_VERSION,
+    source: SOURCE,
+    exercises,
+  })
   await mkdir(OUT_DATA, { recursive: true })
   await writeFile(resolve(OUT_DATA, 'exercises.json'), JSON.stringify(catalog) + '\n')
   console.log(`✓ Catálogo: ${exercises.length} ejercicios`)
@@ -172,7 +189,8 @@ async function main() {
     const content = await loadContent(locale)
     const bySourceId = new Map(exercises.map((e) => [e.sourceId, e.id]))
     const unknown = Object.keys(content).filter((k) => !bySourceId.has(k))
-    if (unknown.length) throw new Error(`${locale}: contenido para ids desconocidos: ${unknown.join(', ')}`)
+    if (unknown.length)
+      throw new Error(`${locale}: contenido para ids desconocidos: ${unknown.join(', ')}`)
     const missing = exercises.filter((e) => !content[e.sourceId])
     if (missing.length) {
       const message = `${locale}: faltan ${missing.length} ejercicios sin traducir (p. ej. ${missing

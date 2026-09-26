@@ -5,13 +5,13 @@
 El gimnasio como **fragua**. El cuerpo se forja con calor (esfuerzo), golpes repetidos
 (constancia) y temple (descanso). La metáfora guía toda la interfaz:
 
-| Concepto de la app       | Metáfora visual                                 |
-| ------------------------ | ----------------------------------------------- |
-| Serie de trabajo         | Ascua — naranja incandescente                   |
-| Descanso entre series    | Temple — azul acero que «enfría»                |
-| Volumen semanal muscular | Mapa de calor: del metal frío al blanco vivo    |
-| Logros                   | Medallas forjadas: bronce, plata, oro, damasco  |
-| Racha                    | La llama que no se apaga                        |
+| Concepto de la app       | Metáfora visual                                |
+| ------------------------ | ---------------------------------------------- |
+| Serie de trabajo         | Ascua — naranja incandescente                  |
+| Descanso entre series    | Temple — azul acero que «enfría»               |
+| Volumen semanal muscular | Mapa de calor: del metal frío al blanco vivo   |
+| Logros                   | Medallas forjadas: bronce, plata, oro, damasco |
+| Racha                    | La llama que no se apaga                       |
 
 **Lema:** _Entrena con criterio. Progresa con calor._
 

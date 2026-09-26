@@ -58,8 +58,20 @@ export async function ensureSource() {
   return CACHE_DIR
 }
 
+/**
+ * Copia versionada del `dist/exercises.json` del commit fijado (dominio público). Permite
+ * regenerar datos y contenido sin red; la descarga solo hace falta para las imágenes.
+ */
+export const VENDORED_SOURCE = resolve(
+  import.meta.dirname,
+  'vendor',
+  `free-exercise-db-${SOURCE.commit.slice(0, 7)}.json`,
+)
+
 export async function loadSourceExercises(): Promise<SourceExercise[]> {
-  const dir = await ensureSource()
-  const raw: unknown = JSON.parse(await readFile(resolve(dir, 'dist', 'exercises.json'), 'utf8'))
+  const file = existsSync(VENDORED_SOURCE)
+    ? VENDORED_SOURCE
+    : resolve(await ensureSource(), 'dist', 'exercises.json')
+  const raw: unknown = JSON.parse(await readFile(file, 'utf8'))
   return z.array(SourceExerciseSchema).parse(raw)
 }

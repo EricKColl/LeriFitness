@@ -70,7 +70,9 @@ export function inferPattern(src: SourceExercise): Pattern {
 
   if (pm === 'neck' || has(n, /neck (exercise|resistance)|head harness/)) return 'neck'
   if (has(n, /farmer|carry|suitcase/)) return 'carry'
-  if (has(n, /turkish get-up|pirate ships|bent press|hip flexion|^iron cross|incline shoulder raise/))
+  if (
+    has(n, /turkish get-up|pirate ships|bent press|hip flexion|^iron cross|incline shoulder raise/)
+  )
     return 'other'
   if (has(n, /shrug/)) return 'shrug'
   if (pm === 'calves' || has(n, /calf|calves|heel raise|toe raise/)) return 'calfRaise'
@@ -81,7 +83,10 @@ export function inferPattern(src: SourceExercise): Pattern {
 
   if (
     pm === 'triceps' &&
-    !has(n, /bench press|push-?up|\bdips?\b|floor press|board press|pin press|close-grip (dumbbell|ez-bar) press/)
+    !has(
+      n,
+      /bench press|push-?up|\bdips?\b|floor press|board press|pin press|close-grip (dumbbell|ez-bar) press/,
+    )
   )
     return 'elbowExtension'
   if (pm === 'biceps' || (has(n, /curl/) && pm !== 'forearms' && pm !== 'hamstrings'))
@@ -90,39 +95,72 @@ export function inferPattern(src: SourceExercise): Pattern {
 
   if (
     (pm === 'glutes' || pm === 'hamstrings') &&
-    has(n, /hip thrust|bridge|kickback|kick back|donkey kick|hip extension|pull[- ]?through|reverse hyper|hip lift|butt lift|glute/)
+    has(
+      n,
+      /hip thrust|bridge|kickback|kick back|donkey kick|hip extension|pull[- ]?through|reverse hyper|hip lift|butt lift|glute/,
+    )
   )
     return 'hipExtension'
   if (has(n, /kneeling squat/)) return 'hipExtension'
   if (has(n, /floor glute-ham/)) return 'kneeFlexion'
-  if (has(n, /deadlift|good ?morning|\brdl\b|romanian|stiff[- ]leg|hyperextension|back extension|swing|rack pull|superman|pull[- ]?through/))
+  if (
+    has(
+      n,
+      /deadlift|good ?morning|\brdl\b|romanian|stiff[- ]leg|hyperextension|back extension|swing|rack pull|superman|pull[- ]?through/,
+    )
+  )
     return 'hinge'
-  if (has(n, /lunge|split squat|step[- ]?up|pistol|bulgarian|single[- ]leg squat|one[- ]leg squat|scissor/))
+  if (
+    has(
+      n,
+      /lunge|split squat|step[- ]?up|pistol|bulgarian|single[- ]leg squat|one[- ]leg squat|scissor/,
+    )
+  )
     return 'lunge'
   if (has(n, /squat|leg press|hack|wall sit|sissy/)) return 'squat'
 
   if (has(n, /pullover/)) return 'pullover'
   if (has(n, /internal rotation/)) return 'other'
   if (
-    has(n, /face pull|rear[- ]delt|reverse .*fl(y|ye)|back fl(y|ye)|reverse pec|rear lateral|bent[- ]over.*(raise|fly|flye)|reverse cable crossover|row to neck|external rotation|pull apart/)
+    has(
+      n,
+      /face pull|rear[- ]delt|reverse .*fl(y|ye)|back fl(y|ye)|reverse pec|rear lateral|bent[- ]over.*(raise|fly|flye)|reverse cable crossover|row to neck|external rotation|pull apart/,
+    )
   )
     return 'rearDelt'
   if (has(n, /front .*raise|front raise|front delt raise|front two/)) return 'frontRaise'
-  if (has(n, /lateral raise|side lateral|side raise|lateral delt|upright .*row|upright row|\blateral\b.*raise|y[- ]raise/))
+  if (
+    has(
+      n,
+      /lateral raise|side lateral|side raise|lateral delt|upright .*row|upright row|\blateral\b.*raise|y[- ]raise/,
+    )
+  )
     return 'lateralRaise'
   if (has(n, /\bfl(y|ye|yes)\b|cross ?over|pec deck|butterfly|around the worlds/)) return 'chestFly'
   if (has(n, /\bdips?\b/) && !has(n, /\bhip/)) return 'dip'
 
   if (pm === 'abdominals') {
-    if (has(n, /side bend|side plank|side bridge|side jack|windmill|side crunch/)) return 'coreLateral'
-    if (has(n, /plank|rollout|roll-out|ab roller|wheel|dead bug|hollow|body saw|l-sit|stir the pot|ab ball|bird dog|fallout|ball pull-in|spider crawl/))
+    if (has(n, /side bend|side plank|side bridge|side jack|windmill|side crunch/))
+      return 'coreLateral'
+    if (
+      has(
+        n,
+        /plank|rollout|roll-out|ab roller|wheel|dead bug|hollow|body saw|l-sit|stir the pot|ab ball|bird dog|fallout|ball pull-in|spider crawl/,
+      )
+    )
       return 'coreAntiExtension'
-    if (has(n, /twist|russian|woodchop|wood chop|chop|rotation|pallof|windshield|landmine 180|oblique|judo flip|cable lift|figure 8|pass between|spell caster/))
+    if (
+      has(
+        n,
+        /twist|russian|woodchop|wood chop|chop|rotation|pallof|windshield|landmine 180|oblique|judo flip|cable lift|figure 8|pass between|spell caster/,
+      )
+    )
       return 'coreRotation'
     return 'coreFlexion'
   }
 
-  if (has(n, /pull[- ]?up|chin[- ]?up|\bchins?\b|pulldown|pull[- ]?down|muscle[- ]?up/)) return 'verticalPull'
+  if (has(n, /pull[- ]?up|chin[- ]?up|\bchins?\b|pulldown|pull[- ]?down|muscle[- ]?up/))
+    return 'verticalPull'
   if (has(n, /\brow\b|rows\b|rowing/)) return 'horizontalPull'
 
   if (pm === 'shoulders') {
@@ -132,7 +170,9 @@ export function inferPattern(src: SourceExercise): Pattern {
     return 'verticalPush'
   }
   if (pm === 'chest') return src.mechanic === 'isolation' ? 'chestFly' : 'horizontalPush'
-  if (has(n, /bench press|push-?up|chest press|floor press|board press|pin press|close-grip .*press/))
+  if (
+    has(n, /bench press|push-?up|chest press|floor press|board press|pin press|close-grip .*press/)
+  )
     return 'horizontalPush'
   if (pm === 'lats') return has(n, /\brow/) ? 'horizontalPull' : 'verticalPull'
   if (pm === 'middle back') return 'horizontalPull'
@@ -171,7 +211,10 @@ function mapMuscle(muscle: string, src: SourceExercise, pattern: Pattern): Muscl
   const n = src.name.toLowerCase()
   switch (muscle) {
     case 'abdominals':
-      return has(n, /oblique|twist|side bend|russian|woodchop|wood chop|side plank|windmill|side jack|landmine 180/)
+      return has(
+        n,
+        /oblique|twist|side bend|russian|woodchop|wood chop|side plank|windmill|side jack|landmine 180/,
+      )
         ? ['obliques']
         : ['abs']
     case 'shoulders': {
@@ -206,10 +249,14 @@ function mapMuscle(muscle: string, src: SourceExercise, pattern: Pattern): Muscl
 export function mapMuscles(src: SourceExercise, pattern: Pattern) {
   const primary = [...new Set(src.primaryMuscles.flatMap((m) => mapMuscle(m, src, pattern)))]
   // En los presses verticales el deltoides lateral cuenta como secundario, no principal.
-  const primaryFinal = pattern === 'verticalPush' ? primary.filter((m) => m !== 'sideDelts') : primary
+  const primaryFinal =
+    pattern === 'verticalPush' ? primary.filter((m) => m !== 'sideDelts') : primary
   const extraSecondary: Muscle[] = pattern === 'verticalPush' ? ['sideDelts', 'triceps'] : []
   const secondary = [
-    ...new Set([...src.secondaryMuscles.flatMap((m) => mapMuscle(m, src, pattern)), ...extraSecondary]),
+    ...new Set([
+      ...src.secondaryMuscles.flatMap((m) => mapMuscle(m, src, pattern)),
+      ...extraSecondary,
+    ]),
   ].filter((m) => !primaryFinal.includes(m))
   return { primaryMuscles: primaryFinal, secondaryMuscles: secondary }
 }
@@ -221,12 +268,21 @@ export function mapMuscles(src: SourceExercise, pattern: Pattern) {
 export function mapEquipment(src: SourceExercise, pattern: Pattern): Equipment[] {
   const n = src.name.toLowerCase()
   const items = new Set<Equipment>()
-  const needsBench = has(n, /bench|incline|decline|lying|prone|preacher|seated.*(dumbbell|barbell)|(dumbbell|barbell).*seated|hip thrust|pullover|tate press|spider curl/)
+  const needsBench = has(
+    n,
+    /bench|incline|decline|lying|prone|preacher|seated.*(dumbbell|barbell)|(dumbbell|barbell).*seated|hip thrust|pullover|tate press|spider curl/,
+  )
 
   switch (src.equipment) {
     case 'barbell':
       items.add('barbell')
-      if (has(n, /squat|bench press|overhead press|military|shoulder press|push press|rack|good ?morning|lunge|split squat|floor press|pin press|board press/) && !has(n, /landmine|jefferson|zercher|hack/))
+      if (
+        has(
+          n,
+          /squat|bench press|overhead press|military|shoulder press|push press|rack|good ?morning|lunge|split squat|floor press|pin press|board press/,
+        ) &&
+        !has(n, /landmine|jefferson|zercher|hack/)
+      )
         items.add('rack')
       if (needsBench) items.add('bench')
       break
@@ -236,7 +292,8 @@ export function mapEquipment(src: SourceExercise, pattern: Pattern): Equipment[]
       break
     case 'dumbbell':
       items.add('dumbbell')
-      if (needsBench || has(n, /\bfly|flye|chest press|one[- ]arm dumbbell row|seated/)) items.add('bench')
+      if (needsBench || has(n, /\bfly|flye|chest press|one[- ]arm dumbbell row|seated/))
+        items.add('bench')
       break
     case 'kettlebells':
       items.add('kettlebell')
@@ -277,10 +334,18 @@ export function mapEquipment(src: SourceExercise, pattern: Pattern): Equipment[]
       throw new Error(`Material desconocido: ${src.equipment}`)
   }
 
-  if (pattern === 'verticalPull' && has(n, /pull[- ]?up|chin[- ]?up|muscle[- ]?up/) && !has(n, /band assisted|machine|assisted/))
+  if (
+    pattern === 'verticalPull' &&
+    has(n, /pull[- ]?up|chin[- ]?up|muscle[- ]?up/) &&
+    !has(n, /band assisted|machine|assisted/)
+  )
     items.add('pullupBar')
   if (has(n, /hanging|toes to bar|knees to/)) items.add('pullupBar')
-  if (pattern === 'dip' && !has(n, /bench dip|dip on bench|between benches/) && src.equipment !== 'machine')
+  if (
+    pattern === 'dip' &&
+    !has(n, /bench dip|dip on bench|between benches/) &&
+    src.equipment !== 'machine'
+  )
     items.add('dipStation')
   if (pattern === 'dip' && has(n, /bench dip|between benches/)) items.add('bench')
   if (has(n, /box jump|box squat|step[- ]?up|depth jump/)) items.add('box')
@@ -338,7 +403,14 @@ const BASE_STRESS: Partial<Record<Pattern, Stress>> = {
   coreLateral: { lowerBack: 'moderate' },
   carry: { lowerBack: 'moderate', wrist: 'low', shoulder: 'low', knee: 'low' },
   neck: { neck: 'high' },
-  olympic: { wrist: 'high', shoulder: 'high', lowerBack: 'high', knee: 'moderate', elbow: 'moderate', hip: 'moderate' },
+  olympic: {
+    wrist: 'high',
+    shoulder: 'high',
+    lowerBack: 'high',
+    knee: 'moderate',
+    elbow: 'moderate',
+    hip: 'moderate',
+  },
   cardio: { knee: 'low', ankle: 'low' },
   mobility: {},
   other: { lowerBack: 'moderate' },
@@ -347,13 +419,20 @@ const BASE_STRESS: Partial<Record<Pattern, Stress>> = {
 export function inferJointStress(src: SourceExercise, pattern: Pattern, primary: Muscle[]): Stress {
   const n = src.name.toLowerCase()
   const stress: Stress = { ...BASE_STRESS[pattern] }
-  const lowerBody = primary.some((m) => ['quads', 'hamstrings', 'glutes', 'calves', 'adductors', 'abductors'].includes(m))
+  const lowerBody = primary.some((m) =>
+    ['quads', 'hamstrings', 'glutes', 'calves', 'adductors', 'abductors'].includes(m),
+  )
 
   if (pattern === 'plyometric') {
     if (lowerBody || has(n, /jump|hop|bound|skip|lunge|squat|box/)) {
       Object.assign(stress, { knee: 'high', ankle: 'high', hip: 'moderate', lowerBack: 'moderate' })
     } else {
-      Object.assign(stress, { shoulder: 'high', wrist: 'high', elbow: 'moderate', lowerBack: 'moderate' })
+      Object.assign(stress, {
+        shoulder: 'high',
+        wrist: 'high',
+        elbow: 'moderate',
+        lowerBack: 'moderate',
+      })
     }
   }
 
@@ -362,7 +441,8 @@ export function inferJointStress(src: SourceExercise, pattern: Pattern, primary:
       Object.assign(stress, { knee: 'moderate', ankle: 'moderate', hip: 'low' })
     if (has(n, /jump rope|rope jump/)) raise(stress, 'ankle', 'high')
     if (has(n, /row/)) Object.assign(stress, { lowerBack: 'moderate', knee: 'low' })
-    if (has(n, /bicycl|bike|cycling|elliptical|recumbent/)) Object.assign(stress, { knee: 'low', ankle: 'low' })
+    if (has(n, /bicycl|bike|cycling|elliptical|recumbent/))
+      Object.assign(stress, { knee: 'low', ankle: 'low' })
   }
 
   // Modificadores por palabras clave
@@ -379,16 +459,29 @@ export function inferJointStress(src: SourceExercise, pattern: Pattern, primary:
     raise(stress, 'lowerBack', 'high')
   }
   if (has(n, /front squat|clean/)) raise(stress, 'wrist', 'moderate')
-  if (has(n, /deficit|good ?morning|stiff[- ]leg|jefferson|zercher/)) raise(stress, 'lowerBack', 'high')
-  if (pattern === 'squat' && has(n, /barbell|back squat/) && !has(n, /front/)) raise(stress, 'lowerBack', 'moderate')
-  if (pattern === 'squat' && has(n, /leg press|hack|machine|smith|goblet|wall sit|bodyweight|body weight|box squat|dumbbell/))
+  if (has(n, /deficit|good ?morning|stiff[- ]leg|jefferson|zercher/))
+    raise(stress, 'lowerBack', 'high')
+  if (pattern === 'squat' && has(n, /barbell|back squat/) && !has(n, /front/))
+    raise(stress, 'lowerBack', 'moderate')
+  if (
+    pattern === 'squat' &&
+    has(n, /leg press|hack|machine|smith|goblet|wall sit|bodyweight|body weight|box squat|dumbbell/)
+  )
     lower(stress, 'lowerBack', 'low')
-  if (has(n, /pistol|sissy|single[- ]leg squat|one[- ]leg squat|deep squat/)) raise(stress, 'knee', 'high')
+  if (has(n, /pistol|sissy|single[- ]leg squat|one[- ]leg squat|deep squat/))
+    raise(stress, 'knee', 'high')
   if (has(n, /hyperextension|back extension|superman|swing|pull[- ]?through|reverse hyper/))
     stress.lowerBack = has(n, /pull[- ]?through/) ? 'low' : 'moderate'
-  if (pattern === 'horizontalPull' && has(n, /bent[- ]over|bent over|pendlay|t-bar|yates|barbell row|upright/) && !has(n, /chest|supported|incline|seated|lying/))
+  if (
+    pattern === 'horizontalPull' &&
+    has(n, /bent[- ]over|bent over|pendlay|t-bar|yates|barbell row|upright/) &&
+    !has(n, /chest|supported|incline|seated|lying/)
+  )
     raise(stress, 'lowerBack', 'high')
-  if (pattern === 'horizontalPull' && has(n, /seated|chest|supported|lying|incline|machine|inverted/))
+  if (
+    pattern === 'horizontalPull' &&
+    has(n, /seated|chest|supported|lying|incline|machine|inverted/)
+  )
     lower(stress, 'lowerBack', 'low')
   if (has(n, /push-?up|press-?up/) && !has(n, /knuckle|dumbbell|handle/)) {
     raise(stress, 'wrist', 'moderate')
@@ -413,20 +506,24 @@ export function inferJointStress(src: SourceExercise, pattern: Pattern, primary:
   }
   if (has(n, /skull ?crusher|lying triceps|french press|lying.*extension|tate press|jm press/))
     raise(stress, 'elbow', 'high')
-  if (pattern === 'elbowExtension' && has(n, /overhead|french/)) raise(stress, 'shoulder', 'moderate')
+  if (pattern === 'elbowExtension' && has(n, /overhead|french/))
+    raise(stress, 'shoulder', 'moderate')
   if (has(n, /muscle[- ]?up|kipping/)) {
     raise(stress, 'shoulder', 'high')
     raise(stress, 'elbow', 'high')
   }
-  if (pattern === 'elbowFlexion' && has(n, /barbell/) && !has(n, /ez|e-z/)) raise(stress, 'wrist', 'moderate')
+  if (pattern === 'elbowFlexion' && has(n, /barbell/) && !has(n, /ez|e-z/))
+    raise(stress, 'wrist', 'moderate')
   if (has(n, /hanging/)) raise(stress, 'shoulder', 'moderate')
   if (has(n, /sit-?up|v-?up|jackknife/)) raise(stress, 'lowerBack', 'moderate')
-  if (pattern === 'coreFlexion' && has(n, /crunch/) && !has(n, /reverse|decline/)) lower(stress, 'lowerBack', 'low')
+  if (pattern === 'coreFlexion' && has(n, /crunch/) && !has(n, /reverse|decline/))
+    lower(stress, 'lowerBack', 'low')
   if (pattern === 'coreAntiExtension' && has(n, /rollout|roll-out|ab roller|wheel|body saw/)) {
     raise(stress, 'lowerBack', 'high')
     raise(stress, 'shoulder', 'moderate')
   }
-  if (pattern === 'coreAntiExtension' && has(n, /plank/) && has(n, /push|hand|arm/)) raise(stress, 'wrist', 'moderate')
+  if (pattern === 'coreAntiExtension' && has(n, /plank/) && has(n, /push|hand|arm/))
+    raise(stress, 'wrist', 'moderate')
   if (pattern === 'coreRotation' && has(n, /pallof|anti/)) lower(stress, 'lowerBack', 'low')
   if (pattern === 'coreLateral' && has(n, /side plank/)) {
     lower(stress, 'lowerBack', 'low')
@@ -438,14 +535,16 @@ export function inferJointStress(src: SourceExercise, pattern: Pattern, primary:
   }
   if (has(n, /step[- ]?up/)) stress.ankle = 'low'
   if (has(n, /walking lunge|jumping lunge|lunge jump/)) raise(stress, 'knee', 'high')
-  if (has(n, /atlas|tire|log lift|keg|stone|axle|car deadlift|conan/)) raise(stress, 'lowerBack', 'high')
+  if (has(n, /atlas|tire|log lift|keg|stone|axle|car deadlift|conan/))
+    raise(stress, 'lowerBack', 'high')
   if (has(n, /sprint|sled|prowler/)) {
     raise(stress, 'knee', 'moderate')
     raise(stress, 'hip', 'moderate')
     raise(stress, 'ankle', 'moderate')
   }
   if (has(n, /machine|smith/) && pattern === 'verticalPush') stress.lowerBack = 'low'
-  if (has(n, /standing/) && pattern === 'verticalPush' && has(n, /barbell|military/)) raise(stress, 'lowerBack', 'moderate')
+  if (has(n, /standing/) && pattern === 'verticalPush' && has(n, /barbell|military/))
+    raise(stress, 'lowerBack', 'moderate')
 
   if (src.category === 'strongman') raise(stress, 'lowerBack', 'high')
   if (pattern === 'mobility') {
@@ -453,13 +552,16 @@ export function inferJointStress(src: SourceExercise, pattern: Pattern, primary:
   }
 
   // Ordenar las claves para una salida estable.
-  return Object.fromEntries(Object.entries(stress).sort(([a], [b]) => a.localeCompare(b))) as Stress
+  return Object.fromEntries(Object.entries(stress).sort(([a], [b]) => a.localeCompare(b)))
 }
 
 export function inferUnilateral(src: SourceExercise, pattern: Pattern) {
   const n = src.name.toLowerCase()
   return (
     pattern === 'lunge' ||
-    has(n, /one[- ]arm|single[- ]arm|one[- ]leg|single[- ]leg|alternat|unilateral|one[- ]handed|single[- ]handed|kneeling one|side plank|suitcase/)
+    has(
+      n,
+      /one[- ]arm|single[- ]arm|one[- ]leg|single[- ]leg|alternat|unilateral|one[- ]handed|single[- ]handed|kneeling one|side plank|suitcase/,
+    )
   )
 }
