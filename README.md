@@ -29,6 +29,7 @@ npm run build        # compila la app a dist/
 npm run preview      # sirve dist/ para probar la PWA
 npm run check        # tipos + lint + formato + tests
 npm run data:exercises  # regenera la base de ejercicios desde el origen
+npm run anatomy:build   # regenera el modelo 3D (necesita Python 3.11 y uv; ver scripts/anatomy)
 npm run icons        # regenera favicon e iconos PWA desde el logotipo
 npm run plan:preview -- 3 60 hypertrophy intermediate fullGym knee:mild  # plan de ejemplo en consola
 ```
@@ -75,5 +76,6 @@ Más detalle en [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) y [docs/ROADMAP.md]
 
 - Código: todos los derechos reservados por el autor del proyecto (pendiente de decidir licencia).
 - Ejercicios e imágenes: [free-exercise-db](https://github.com/yuhonas/free-exercise-db) (Unlicense, dominio público), traducidos y enriquecidos por Forja.
+- Modelo anatómico 3D (`public/anatomy/body.glb`): derivado de [Z-Anatomy](https://github.com/Z-Anatomy/Models-of-human-anatomy) (CC BY-SA 4.0), basado en BodyParts3D (© DBCLS, CC BY-SA 2.1 JP). Se distribuye con la misma licencia CC BY-SA 4.0 (ver `public/anatomy/LICENSE.txt`).
 - Tipografías: Inter y Bricolage Grotesque (SIL Open Font License 1.1).
 - Iconos: Lucide (ISC).

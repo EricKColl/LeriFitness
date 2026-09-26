@@ -168,6 +168,16 @@ como referencia del diseño. Estado real ahora (ver `docs/ROADMAP.md`, que es la
   - `window.forjaDev.seed()` (solo en desarrollo) genera historial realista para probar.
 - Siguiente paso: Fase 2 (anatomía 3D).
 
+## ACTUALIZACIÓN: FASE 2 TERMINADA (26/09/2026)
+
+- Modelo 3D en `public/anatomy/body.glb`, generado por `scripts/anatomy/` (ver su README). Los
+  nodos llevan `extras` (`muscle`, `side`) porque three.js elimina los «:» de los nombres.
+- Visor en `src/features/anatomy/body-3d.tsx` (perezoso) y envoltorio con respaldo 2D en
+  `anatomy-view.tsx`. Preferencia `anatomy3d` en `usePrefs` (`null` = automático).
+- La CSP incluye `'wasm-unsafe-eval'` (decodificador Meshopt). El GLB está en el precache.
+- Datos del responsable ya puestos (Erick Coll Rodríguez, erickcollrodriguez@gmail.com).
+- Siguiente paso: Fase 3 (asistente que explica, cuentas opcionales, arquitectura premium).
+
 ## ESTADO ACTUAL DEL PROYECTO (26/09/2026, inicio de la Fase 1)
 
 Hay 2 commits previos en `main` más el de este traspaso. Todo `npm run check` pasa (tipos, lint,

@@ -13,7 +13,7 @@
 - [x] Iconos PWA generados por script (`npm run icons`)
 - [x] Configuración PWA (Workbox) — pendiente de conectar el registro y el aviso de actualización
 
-## Fase 1 — MVP ✅ (pendiente solo de datos del responsable y de publicar)
+## Fase 1 — MVP ✅ (publicada en Cloudflare Pages)
 
 - [x] Vocabulario de dominio: músculos, material, lesiones, patrones, niveles (`src/domain`)
 - [x] Esquemas Zod del catálogo y del contenido traducible
@@ -40,9 +40,8 @@
 - [x] CI (GitHub Actions), despliegue en Cloudflare Pages, `_headers` con CSP estricta
 - [x] Verificación: build, check, preview y E2E con Playwright a 375×812 (claro y oscuro,
       con CSP y sin conexión)
-- [ ] **Datos del responsable del tratamiento** en `src/config/legal.ts` (los aporta la persona
-      titular)
-- [ ] Crear la cuenta gratuita de Cloudflare y los secretos del repositorio para publicar
+- [x] Datos del responsable del tratamiento en `src/config/legal.ts`
+- [x] Cuenta gratuita de Cloudflare y secretos del repositorio: despliegue automático activo
 
 ### Mejoras detectadas para más adelante
 
@@ -51,11 +50,16 @@
 - [ ] Series de aproximación registrables en la sesión (hoy solo se muestran como guía)
 - [ ] Más idiomas (la estructura i18n ya lo permite)
 
-## Fase 2 — Anatomía 3D
+## Fase 2 — Anatomía 3D ✅
 
-- [ ] Pipeline del modelo (Z-Anatomy/BodyParts3D → músculos + esqueleto → glTF Draco/Meshopt)
-- [ ] Visor React Three Fiber: músculos por ejercicio, mapa de calor semanal, zonas lesionadas
-- [ ] Atribución CC BY-SA 4.0 y publicación del modelo derivado con la misma licencia
+- [x] Pipeline reproducible del modelo (`npm run anatomy:build`): Z-Anatomy (commit fijado y
+      sha256) → Blender (`bpy`) → músculos agrupados + esqueleto + anclas de lesión → glTF con
+      Meshopt (549 KB, ~117 000 triángulos, simetría para el lado derecho)
+- [x] Visor React Three Fiber + drei con carga perezosa: músculos por ejercicio con encuadre,
+      mapa de calor semanal interactivo, músculos de cada sesión, zonas con molestias
+- [x] Mapa 2D como respaldo (sin WebGL 2, dispositivos modestos, error o preferencia)
+- [x] Atribución CC BY-SA 4.0, licencia junto al modelo y crédito visible; sin piezas NC
+- [x] Verificación: check, build, E2E de producción con CSP (incluye `wasm-unsafe-eval`)
 
 ## Fase 3 — IA y cuentas
 
