@@ -13,6 +13,11 @@ initTheme()
 
 if (import.meta.env.DEV) void import('./app/dev-tools')
 
+// Si se abre la app desde el enlace de inicio de sesión del email, se recoge la sesión antes de
+// que el enrutador cambie la URL. Sin nube configurada, no se carga nada.
+if (/access_token=|error_description=/.test(location.hash))
+  await import('./data/cloud/account').then((m) => m.completeSignInFromUrl())
+
 const root = document.getElementById('root')
 if (!root) throw new Error('No se encontró el elemento #root')
 

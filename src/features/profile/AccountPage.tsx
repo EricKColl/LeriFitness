@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Check, Cloud, LogOut, RefreshCw, ShieldOff, Trash2 } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { Check, Cloud, LogOut, Mail, MailCheck, RefreshCw, ShieldOff, Trash2 } from 'lucide-react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { Trans, useTranslation } from 'react-i18next'
 import { Link } from 'react-router'
@@ -10,10 +10,12 @@ import {
   sendCode,
   signOut,
   syncNow,
+  takeLinkResult,
   useAccount,
   verifyCode,
 } from '@/data/cloud/account'
 import { getSyncState } from '@/data/cloud/sync'
+import { useProfile } from '@/data/hooks'
 import { Button } from '@/shared/ui/button'
 import { Checkbox } from '@/shared/ui/checkbox'
 import {
@@ -32,12 +34,23 @@ import { usePlan } from '../premium/entitlements'
 export function AccountPage() {
   const { t } = useTranslation('profile')
   const account = useAccount()
+  const profile = useProfile()
+  // Resultado del enlace del email (se recoge al abrir la app, antes de llegar aquí).
+  useEffect(() => {
+    const result = takeLinkResult()
+    if (result === 'signedIn') toast.success(t('account.linkOk'))
+    if (result === 'error') toast.error(t('account.linkError'))
+  }, [t])
   return (
-    <Page back="/perfil" title={t('account.title')} subtitle={t('account.subtitle')}>
+    <Page
+      back={profile ? '/perfil' : '/bienvenida'}
+      title={t('account.title')}
+      subtitle={t('account.subtitle')}
+    >
       {account.status === 'disabled' ? (
         <EmptyState icon={<Cloud className="size-7" />} title={t('account.unavailable')} />
       ) : account.status === 'loading' ? null : account.status === 'signedIn' ? (
-        <SignedIn email={account.email} />
+        <SignedIn email={account.email} hasProfile={!!profile} />
       ) : (
         <SignIn />
       )}
@@ -141,26 +154,36 @@ function SignIn() {
             </span>
           </label>
           <Button disabled={!consent || !email || busy} onClick={() => void send()}>
-            {t('account.sendCode')}
+            <Mail />
+            {t('account.sendLink')}
           </Button>
         </>
       ) : (
         <>
-          <p className="text-sm">{t('account.codeSent', { email })}</p>
-          <label className="flex flex-col gap-1.5 text-sm font-medium">
-            {t('account.code')}
-            <Input
-              inputMode="numeric"
-              autoComplete="one-time-code"
-              maxLength={8}
-              value={code}
-              onChange={(e) => setCode(e.target.value.replace(/\D/g, ''))}
-              className="text-center font-display text-2xl tracking-[0.4em]"
-            />
-          </label>
-          <Button disabled={code.length < 6 || busy} onClick={() => void verify()}>
-            {t('account.verify')}
-          </Button>
+          <div className="flex gap-3">
+            <MailCheck className="mt-0.5 size-5 shrink-0 text-success" />
+            <div className="text-sm">
+              <p className="font-semibold">{t('account.linkSent', { email })}</p>
+              <p className="mt-1 text-muted-foreground">{t('account.linkHint')}</p>
+            </div>
+          </div>
+          <details className="rounded-2xl bg-secondary/60 p-3 text-sm">
+            <summary className="cursor-pointer font-medium">{t('account.haveCode')}</summary>
+            <div className="mt-3 flex flex-col gap-2">
+              <Input
+                inputMode="numeric"
+                autoComplete="one-time-code"
+                maxLength={8}
+                value={code}
+                aria-label={t('account.code')}
+                onChange={(e) => setCode(e.target.value.replace(/\D/g, ''))}
+                className="text-center font-display text-2xl tracking-[0.4em]"
+              />
+              <Button disabled={code.length < 6 || busy} onClick={() => void verify()}>
+                {t('account.verify')}
+              </Button>
+            </div>
+          </details>
           <Button variant="ghost" onClick={() => setSent(false)}>
             {t('account.changeEmail')}
           </Button>
@@ -170,7 +193,7 @@ function SignIn() {
   )
 }
 
-function SignedIn({ email }: { email: string | null }) {
+function SignedIn({ email, hasProfile }: { email: string | null; hasProfile: boolean }) {
   const { t, i18n } = useTranslation(['profile', 'common', 'premium'])
   const state = useLiveQuery(getSyncState, [])
   const plan = usePlan()
@@ -214,6 +237,12 @@ function SignedIn({ email }: { email: string | null }) {
       <p className="text-sm text-muted-foreground">
         {t('account.plan', { plan: t(`premium:plans.${plan}`) })}
       </p>
+      {hasProfile && (
+        <Button asChild variant="secondary">
+          <Link to="/hoy">{t('account.goToday')}</Link>
+        </Button>
+      )}
+      {!hasProfile && <p className="text-sm text-muted-foreground">{t('account.noProfile')}</p>}
       <Button onClick={() => void run()} disabled={busy}>
         <RefreshCw className={busy ? 'animate-spin' : undefined} />
         {t('account.syncNow')}

@@ -110,8 +110,6 @@
     "email": "Correo electrónico",
     "emailPlaceholder": "tu@correo.com",
     "consent": "He leído la <privacy>política de privacidad</privacy> y quiero crear una cuenta para sincronizar estos datos.",
-    "sendCode": "Enviarme un código",
-    "codeSent": "Te hemos enviado un código a {{email}}. Revisa también la carpeta de spam.",
     "code": "Código de 6 dígitos",
     "verify": "Entrar",
     "changeEmail": "Usar otro correo",
@@ -132,6 +130,14 @@
     "deleted": "Cuenta y datos de la nube borrados",
     "deleteError": "No se pudo borrar la cuenta. Inténtalo de nuevo o escríbenos.",
     "plan": "Plan: {{plan}}",
-    "unavailable": "La sincronización en la nube no está disponible en esta instalación."
+    "unavailable": "La sincronización en la nube no está disponible en esta instalación.",
+    "sendLink": "Enviarme un enlace para entrar",
+    "linkSent": "Te hemos enviado un enlace a {{email}}.",
+    "linkHint": "Ábrelo desde este mismo dispositivo y navegador. Si no lo ves en unos minutos, revisa la carpeta de spam.",
+    "haveCode": "¿Tu correo trae un código de 6 dígitos?",
+    "linkOk": "Sesión iniciada. Tus datos se están sincronizando.",
+    "linkError": "El enlace no es válido o ha caducado. Pide uno nuevo.",
+    "goToday": "Ir a Hoy",
+    "noProfile": "En este dispositivo aún no hay perfil y en la nube tampoco se ha encontrado uno. Vuelve atrás para crear el tuyo; después se sincronizará solo."
   }
 }

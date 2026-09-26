@@ -10,6 +10,7 @@
     },
     "start": "Empezar",
     "import": "Tengo una copia de seguridad",
+    "account": "Ya tengo cuenta en la nube",
     "importDone": "Datos restaurados. ¡Qué bien verte de nuevo!",
     "importError": "No se ha podido importar el archivo: no es una copia de Forja válida."
   },
