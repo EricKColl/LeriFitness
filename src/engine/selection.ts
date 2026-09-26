@@ -86,6 +86,8 @@ export function scoreExercise({ exercise: e, role, prefer, ctx, usedInWeek }: Sc
   // Encaje con el objetivo: en fuerza, los principales con carga externa (mejor con barra).
   if (ctx.goal === 'strength' && isMain) score += !loadable ? -6 : barbell ? 6 : free ? 2 : -2
   if (ctx.goal === 'hypertrophy' && !isMain && machine) score += 2
+  // Fuera de fuerza, un principal sin carga externa progresa peor (salvo para quien empieza).
+  if (ctx.goal !== 'strength' && isMain && !loadable) score -= ctx.level === 'beginner' ? 2 : 5
   if ((ctx.goal === 'health' || ctx.goal === 'fatLoss' || ctx.goal === 'endurance') && !barbell)
     score += 2
 
