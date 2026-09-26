@@ -11,7 +11,9 @@ import {
 } from '@/domain'
 import { exerciseName, useCatalog, type Catalog } from '@/data/catalog'
 import { useProfile } from '@/data/hooks'
+import { AnatomyView } from '@/features/anatomy/anatomy-view'
 import { ExerciseMuscleMap } from '@/features/anatomy/body-map'
+import { dominantView, exerciseHeat } from '@/features/anatomy/views'
 import { useDynamicT } from '@/i18n/reason'
 import { cn } from '@/shared/lib/utils'
 import { Badge } from '@/shared/ui/badge'
@@ -147,9 +149,24 @@ function ExerciseView({
       )}
 
       <Section title={t('exercise.muscles')}>
-        <div className="surface grid grid-cols-[1fr_1.1fr] items-center gap-4 p-4">
-          <ExerciseMuscleMap primary={e.primaryMuscles} secondary={e.secondaryMuscles} />
-          <dl className="flex flex-col gap-3 text-sm">
+        <div className="surface flex flex-col gap-4 p-4">
+          <AnatomyView
+            className="h-80"
+            heat={exerciseHeat(e.primaryMuscles, e.secondaryMuscles)}
+            focus={e.primaryMuscles}
+            view={dominantView(e.primaryMuscles)}
+            label={t('exercise.mapLabel', {
+              muscles: e.primaryMuscles.map((m) => t(`domain:muscles.${m}`)).join(', '),
+            })}
+            fallback={
+              <ExerciseMuscleMap
+                className="mx-auto h-full max-w-64"
+                primary={e.primaryMuscles}
+                secondary={e.secondaryMuscles}
+              />
+            }
+          />
+          <dl className="grid grid-cols-2 gap-3 text-sm">
             <div>
               <dt className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground">
                 <span className="size-2.5 rounded-full bg-[var(--heat-4)]" />

@@ -19,6 +19,7 @@ import { toast } from 'sonner'
 import type { Profile } from '@/domain'
 import { downloadExport, importAll, wipeAll } from '@/data/backup'
 import { exerciseImage, useCatalog } from '@/data/catalog'
+import { supportsWebGL, useAnatomy3D } from '@/features/anatomy/support'
 import { db } from '@/data/db'
 import { useProfile } from '@/data/hooks'
 import { regeneratePlan } from '@/data/plans'
@@ -132,6 +133,7 @@ function Preferences() {
   const prefs = usePrefs()
   const { preference, setPreference } = useThemeStore()
   const toggles = ['sound', 'vibration', 'keepAwake'] as const
+  const anatomy3d = useAnatomy3D()
   return (
     <Section title={t('prefs.title')}>
       <div className="surface divide-y divide-border/70">
@@ -161,6 +163,19 @@ function Preferences() {
             }
           />
         ))}
+        {supportsWebGL() && (
+          <Row
+            label={<label htmlFor="pref-anatomy3d">{t('prefs.anatomy3d')}</label>}
+            hint={t('prefs.anatomy3dHint')}
+            control={
+              <Switch
+                id="pref-anatomy3d"
+                checked={anatomy3d}
+                onCheckedChange={(v) => prefs.set({ anatomy3d: v })}
+              />
+            }
+          />
+        )}
         <Row
           label={t('prefs.language')}
           hint={t('prefs.languageHint')}

@@ -7,6 +7,7 @@ import type { Muscle, SessionLog } from '@/domain'
 import { exerciseName, useCatalog } from '@/data/catalog'
 import type { PlanRow } from '@/data/db'
 import { useActivePlan, useMeasurements, useSessions } from '@/data/hooks'
+import { AnatomyView } from '@/features/anatomy/anatomy-view'
 import { BodyMap, HeatLegend, type HeatLevel, type View } from '@/features/anatomy/body-map'
 import { countRecords } from '@/features/achievements/definitions'
 import { useDynamicT } from '@/i18n/reason'
@@ -136,15 +137,25 @@ function Overview({ sessions, planRow }: { sessions: SessionLog[]; planRow: Plan
               { value: 'back', label: t('map.back') },
             ]}
           />
-          <div className="mx-auto mt-3 max-w-44">
-            <BodyMap
-              view={view}
-              heat={heat}
-              selected={selected}
-              onSelect={(m) => setSelected(m === selected ? null : m)}
-              label={t('map.label', { view: t(`map.${view}`) })}
-            />
-          </div>
+          <AnatomyView
+            className="mt-3 h-96"
+            view={view}
+            heat={heat}
+            selected={selected}
+            onSelect={(m) => setSelected(m === selected ? null : m)}
+            label={t('map.label', { view: t(`map.${view}`) })}
+            fallback={
+              <div className="mx-auto h-full max-w-44">
+                <BodyMap
+                  view={view}
+                  heat={heat}
+                  selected={selected}
+                  onSelect={(m) => setSelected(m === selected ? null : m)}
+                  label={t('map.label', { view: t(`map.${view}`) })}
+                />
+              </div>
+            }
+          />
           <p className="mt-3 min-h-10 text-center text-sm" aria-live="polite">
             {selected
               ? t('map.muscle', {

@@ -92,5 +92,10 @@
     "openMenu": "Abrir menú",
     "selected": "Seleccionado"
   },
-  "consultProfessional": "Forja es una app de fitness y bienestar, no de rehabilitación ni tratamiento. Si tienes una lesión, dolor o una condición médica, consulta con un profesional sanitario antes de entrenar."
+  "consultProfessional": "Forja es una app de fitness y bienestar, no de rehabilitación ni tratamiento. Si tienes una lesión, dolor o una condición médica, consulta con un profesional sanitario antes de entrenar.",
+  "anatomy": {
+    "toggle": "Cambiar entre vista 3D y 2D",
+    "hint3d": "Arrastra para girar y pellizca para acercar.",
+    "credit": "Modelo 3D: Z-Anatomy · CC BY-SA 4.0"
+  }
 }

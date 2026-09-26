@@ -16,6 +16,7 @@ export default defineConfig({
   build: {
     target: 'es2022',
     sourcemap: true,
-    chunkSizeWarningLimit: 900,
+    // El fragmento más grande es el visor 3D (three.js), que se carga de forma perezosa.
+    chunkSizeWarningLimit: 1100,
   },
 })

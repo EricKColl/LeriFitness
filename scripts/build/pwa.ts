@@ -36,7 +36,7 @@ export function pwaPlugin() {
       ],
     },
     workbox: {
-      globPatterns: ['**/*.{js,css,html,svg,png,webmanifest}', '**/*-latin-*.woff2'],
+      globPatterns: ['**/*.{js,css,html,svg,png,webmanifest,glb}', '**/*-latin-*.woff2'],
       globIgnores: ['exercises/**'],
       maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       navigateFallback: 'index.html',

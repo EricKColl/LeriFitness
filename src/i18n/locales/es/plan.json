@@ -30,6 +30,8 @@
   "edit": "Cambiar días, tiempo o material",
   "day": {
     "notFound": "Esta sesión no está en el plan de esta semana.",
+    "muscles": "Músculos de esta sesión",
+    "musclesLabel": "Modelo anatómico con los músculos que más trabaja esta sesión: {{muscles}}",
     "warmup": "Calentamiento",
     "general": "{{minutes}} min de movilidad y cardio suave",
     "ramp": "Series de aproximación en {{exercise}}",

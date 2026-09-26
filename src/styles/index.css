@@ -48,6 +48,10 @@
   --heat-4: oklch(0.72 0.18 55);
   --heat-5: oklch(0.8 0.16 80);
 
+  /* Modelo anatómico 3D: músculo sin resaltar y hueso */
+  --anatomy-muscle: oklch(0.8 0.035 30);
+  --anatomy-bone: oklch(0.94 0.02 85);
+
   --bronze: oklch(0.62 0.11 55);
   --silver: oklch(0.8 0.015 250);
   --gold: oklch(0.82 0.14 85);
@@ -90,6 +94,9 @@
   --heat-3: oklch(0.66 0.2 40);
   --heat-4: oklch(0.78 0.17 60);
   --heat-5: oklch(0.9 0.12 90);
+
+  --anatomy-muscle: oklch(0.46 0.035 30);
+  --anatomy-bone: oklch(0.84 0.02 85);
 
   --bronze: oklch(0.68 0.11 55);
   --silver: oklch(0.84 0.015 250);

@@ -149,6 +149,13 @@
           ]
         },
         {
+          "title": "Modelo anatómico 3D",
+          "body": [
+            "El modelo 3D de músculos y esqueleto deriva de Z-Anatomy («The libre 3D atlas of anatomy», de Gauthier Kervyn y colaboradores, CC BY-SA 4.0), basado a su vez en BodyParts3D (© The Database Center for Life Science, CC BY-SA 2.1 Japón).",
+            "Forja ha seleccionado solo músculos y huesos, los ha agrupado, simplificado y comprimido. El modelo resultante (anatomy/body.glb) se distribuye bajo la misma licencia, CC BY-SA 4.0, con su archivo de licencia al lado (anatomy/LICENSE.txt). El proceso para generarlo está en el repositorio del proyecto."
+          ]
+        },
+        {
           "title": "Tipografías",
           "body": [
             "Inter, de Rasmus Andersson, bajo SIL Open Font License 1.1.",
@@ -163,7 +170,7 @@
         {
           "title": "Software",
           "body": [
-            "React, React Router, Radix UI, shadcn/ui, Tailwind CSS, Motion, Zustand, Zod, i18next, Sonner, Workbox y Vite, bajo licencia MIT. Dexie.js, bajo licencia Apache 2.0.",
+            "React, React Router, Radix UI, shadcn/ui, Tailwind CSS, Motion, Zustand, Zod, i18next, Sonner, Workbox, Vite, three.js, React Three Fiber, drei y meshoptimizer, bajo licencia MIT. Dexie.js, bajo licencia Apache 2.0.",
             "El listado completo de dependencias y sus licencias está en el repositorio del proyecto."
           ]
         }

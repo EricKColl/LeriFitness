@@ -12,6 +12,8 @@
     "sound": "Pitido al acabar el descanso",
     "vibration": "Vibración",
     "keepAwake": "Mantener la pantalla encendida en la sesión",
+    "anatomy3d": "Anatomía en 3D",
+    "anatomy3dHint": "Desactívala para usar el mapa 2D, más ligero.",
     "language": "Idioma",
     "languageValue": "Español",
     "languageHint": "Más idiomas próximamente."

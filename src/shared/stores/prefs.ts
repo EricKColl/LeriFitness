@@ -10,6 +10,8 @@ interface PrefsState {
   keepAwake: boolean
   /** La invitación a instalar se descartó. */
   installDismissedAt: number | null
+  /** Modelo anatómico 3D: `null` = automático (según el dispositivo). */
+  anatomy3d: boolean | null
   /** Lunes de la semana cuyo check-in se pospuso (no se vuelve a sugerir). */
   checkInDismissed: string | null
   set: (patch: Partial<Omit<PrefsState, 'set'>>) => void
@@ -24,6 +26,7 @@ export const usePrefs = create<PrefsState>()(
       keepAwake: true,
       installDismissedAt: null,
       checkInDismissed: null,
+      anatomy3d: null,
       set: (patch) => set(patch),
     }),
     { name: 'forja-prefs' },

@@ -39,6 +39,8 @@ import {
   type UserEquipment,
   type Weekday,
 } from '@/domain'
+import { AnatomyView } from '@/features/anatomy/anatomy-view'
+import { useAnatomy3D } from '@/features/anatomy/support'
 import { cn } from '@/shared/lib/utils'
 import { GOAL_ICONS } from '@/shared/ui/icons'
 import { Chip, FieldLabel, OptionCard, Segmented } from '@/shared/ui/fields'
@@ -289,8 +291,22 @@ export function InjuryPicker({
   onChange: (injuries: Injury[]) => void
 }) {
   const { t } = useTranslation(['domain', 'onboarding'])
+  const show3d = useAnatomy3D() && value.length > 0
+  const onlyBack = value.length > 0 && value.every((i) => i.zone === 'lowerBack')
   return (
     <div className="flex flex-col gap-5">
+      {show3d && (
+        <AnatomyView
+          className="surface h-72 overflow-hidden"
+          heat={{}}
+          injuries={value}
+          view={onlyBack ? 'back' : 'front'}
+          label={t('onboarding:injuries.mapLabel', {
+            zones: value.map((i) => t(`domain:injuryZones.${i.zone}`)).join(', '),
+          })}
+          fallback={null}
+        />
+      )}
       <div className="flex flex-wrap gap-2">
         {INJURY_ZONES.map((zone) => {
           const selected = value.some((i) => i.zone === zone)

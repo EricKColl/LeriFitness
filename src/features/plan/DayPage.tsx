@@ -5,6 +5,9 @@ import { Link, useParams } from 'react-router'
 import type { PlanDay, Prescription } from '@/engine'
 import { exerciseName, useCatalog, type Catalog } from '@/data/catalog'
 import { useActivePlan } from '@/data/hooks'
+import { AnatomyView } from '@/features/anatomy/anatomy-view'
+import { BodyMap } from '@/features/anatomy/body-map'
+import { dominantView, sessionHeat } from '@/features/anatomy/views'
 import { ExerciseThumb } from '@/features/library/exercise-image'
 import { useDynamicT, useReasonText } from '@/i18n/reason'
 import { formatKg, formatRest } from '@/shared/lib/format'
@@ -49,6 +52,8 @@ function DayView({ day, restricted }: { day: PlanDay; restricted: boolean }) {
           {t('day.injuryNote')}
         </p>
       )}
+
+      <DayMuscles day={day} catalog={catalog} />
 
       <Section title={t('day.warmup')}>
         <div className="surface flex flex-col gap-3 p-4 text-sm">
@@ -204,5 +209,31 @@ function PrescriptionCard({
         )}
       </div>
     </Link>
+  )
+}
+
+function DayMuscles({ day, catalog }: { day: PlanDay; catalog: Catalog }) {
+  const { t } = useTranslation(['plan', 'domain'])
+  const { heat, top } = sessionHeat(day.prescriptions, catalog.byId)
+  const view = dominantView(top)
+  const names = top.map((m) => t(`domain:muscles.${m}`)).join(', ')
+  return (
+    <Section title={t('day.muscles')}>
+      <div className="surface p-3">
+        <AnatomyView
+          className="h-72"
+          heat={heat}
+          view={view}
+          label={t('day.musclesLabel', { muscles: names })}
+          fallback={
+            <div className="mx-auto grid h-full max-w-64 grid-cols-2 gap-2">
+              <BodyMap view="front" heat={heat} />
+              <BodyMap view="back" heat={heat} />
+            </div>
+          }
+        />
+        <p className="mt-2 text-center text-sm text-muted-foreground">{names}</p>
+      </div>
+    </Section>
   )
 }

@@ -24,6 +24,7 @@
     "mistakes": "Errores comunes",
     "tips": "Consejos",
     "muscles": "Músculos",
+    "mapLabel": "Modelo anatómico con los músculos que trabaja: {{muscles}}",
     "primary": "Principales",
     "secondary": "Secundarios",
     "equipment": "Material",

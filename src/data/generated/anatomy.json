@@ -1,0 +1,99 @@
+{
+  "source": {
+    "name": "Z-Anatomy",
+    "repo": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+    "commit": "3f4bbd72ef45ef61483e9b03650c6f8843a0a183",
+    "file": "Z-Anatomy.zip",
+    "sha256": "e029688545627bd0214b269e1063143abb580aad72b2c2445d6d8a9a0d9da736",
+    "license": "CC BY-SA 4.0"
+  },
+  "model": {
+    "path": "anatomy/body.glb",
+    "bytes": 562476,
+    "triangles": 117426
+  },
+  "nodes": [
+    "m:abductors:l",
+    "m:abs:l",
+    "m:adductors:l",
+    "m:biceps:l",
+    "m:calves:l",
+    "m:chest:l",
+    "m:forearms:l",
+    "m:frontDelts:l",
+    "m:glutes:l",
+    "m:hamstrings:l",
+    "m:lats:l",
+    "m:lowerBack:l",
+    "m:neck:l",
+    "m:obliques:l",
+    "m:other:c",
+    "m:other:l",
+    "m:quads:l",
+    "m:rearDelts:l",
+    "m:sideDelts:l",
+    "m:traps:l",
+    "m:triceps:l",
+    "m:upperBack:l",
+    "b:skeleton:c",
+    "b:skeleton:l"
+  ],
+  "anchors": {
+    "neck": {
+      "c": [
+        0,
+        1.4939,
+        -0.019
+      ]
+    },
+    "shoulder": {
+      "l": [
+        0.176,
+        1.3986,
+        -0.0249
+      ]
+    },
+    "elbow": {
+      "l": [
+        0.2143,
+        1.0938,
+        -0.0345
+      ]
+    },
+    "wrist": {
+      "l": [
+        0.2801,
+        0.8583,
+        0.0146
+      ]
+    },
+    "lowerBack": {
+      "c": [
+        0,
+        1.0451,
+        -0.0298
+      ]
+    },
+    "hip": {
+      "l": [
+        0.084,
+        0.8713,
+        -0.0063
+      ]
+    },
+    "knee": {
+      "l": [
+        0.0863,
+        0.4434,
+        0.0075
+      ]
+    },
+    "ankle": {
+      "l": [
+        0.0724,
+        0.0662,
+        -0.0352
+      ]
+    }
+  }
+}
