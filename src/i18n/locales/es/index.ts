@@ -8,6 +8,7 @@ import library from './library.json'
 import motivation from './motivation.json'
 import onboarding from './onboarding.json'
 import plan from './plan.json'
+import premium from './premium.json'
 import profile from './profile.json'
 import progress from './progress.json'
 import session from './session.json'
@@ -28,6 +29,7 @@ const es = {
   profile,
   legal,
   assistant,
+  premium,
 }
 
 export default es

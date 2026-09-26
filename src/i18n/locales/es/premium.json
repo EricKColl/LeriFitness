@@ -1,0 +1,26 @@
+{
+  "title": "Forja+",
+  "subtitle": "Lo esencial es gratis y lo seguirá siendo. Forja+ es una idea para el futuro: hoy no hay nada de pago.",
+  "rowTitle": "Forja+",
+  "rowHint": "Qué es gratis para siempre y qué podría llegar",
+  "plans": {
+    "free": "Gratis",
+    "premium": "Forja+"
+  },
+  "freeTitle": "Gratis para siempre",
+  "premiumTitle": "Forja+ (próximamente)",
+  "features": {
+    "planEngine": "Plan personalizado que se adapta cada semana",
+    "liveSession": "Sesión en vivo con temporizador y registro",
+    "progress": "Progreso, récords, medidas y logros",
+    "anatomy3d": "Anatomía 3D",
+    "localAssistant": "Asistente en tu dispositivo",
+    "cloudSync": "Cuenta opcional y sincronización",
+    "cloudAssistant": "Asistente en la nube con límite diario",
+    "cloudAssistantExtended": "Más preguntas diarias al asistente en la nube",
+    "advancedAnalytics": "Estadísticas avanzadas e informes",
+    "customPrograms": "Programas especiales (por ejemplo, preparación de una prueba)"
+  },
+  "noPayments": "Forja no cobra nada ni pide datos de pago. Si algún día existe Forja+, será opcional, se anunciará antes y nunca quitará nada de lo que hoy es gratis.",
+  "current": "Tu plan: {{plan}}"
+}

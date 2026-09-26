@@ -9,6 +9,7 @@ import { db, type ConsentKind, type ProfileRow } from './db'
 export const CONSENT_VERSIONS: Record<ConsentKind, string> = {
   health: '2026-09-26',
   terms: '2026-09-26',
+  cloud: '2026-09-26',
 }
 
 export async function saveProfile(profile: Profile) {

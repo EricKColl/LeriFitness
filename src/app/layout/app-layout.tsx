@@ -3,6 +3,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { Navigate, Outlet } from 'react-router'
 
 import { exerciseImage, loadCatalog, type Catalog } from '@/data/catalog'
+import { syncInBackground } from '@/data/cloud/auto'
 import { db } from '@/data/db'
 import { createFirstPlan, ensureCurrentPlan, stripProfile } from '@/data/plans'
 import type { PlanRow } from '@/data/db'
@@ -60,6 +61,7 @@ export function RequireProfile() {
       }
       if (plan) void precachePlanImages(plan, catalog)
       await syncAchievements()
+      syncInBackground()
       if (!cancelled) setReady(true)
     }
     void sync()

@@ -6,7 +6,16 @@ import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
 export default defineConfig([
-  globalIgnores(['dist', 'dev-dist', 'coverage', '.cache', 'public', 'src/data/generated']),
+  // supabase/functions es código Deno (Edge Functions): se valida con la CLI de Supabase.
+  globalIgnores([
+    'dist',
+    'dev-dist',
+    'coverage',
+    '.cache',
+    'public',
+    'src/data/generated',
+    'supabase/functions',
+  ]),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
