@@ -1,4 +1,5 @@
 import achievements from './achievements.json'
+import assistant from './assistant.json'
 import common from './common.json'
 import domain from './domain.json'
 import engine from './engine.json'
@@ -26,6 +27,7 @@ const es = {
   motivation,
   profile,
   legal,
+  assistant,
 }
 
 export default es

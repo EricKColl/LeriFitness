@@ -28,6 +28,10 @@
     "note": "Estimación orientativa (Mifflin-St Jeor y tu nivel de actividad). No es una pauta nutricional: si quieres ajustar tu alimentación, consulta a un dietista-nutricionista."
   },
   "edit": "Cambiar días, tiempo o material",
+  "assistant": {
+    "title": "¿Dudas sobre tu plan?",
+    "body": "El asistente te explica por qué es así, sin cambiarlo."
+  },
   "day": {
     "notFound": "Esta sesión no está en el plan de esta semana.",
     "muscles": "Músculos de esta sesión",

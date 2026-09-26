@@ -37,11 +37,21 @@ export function pwaPlugin() {
     },
     workbox: {
       globPatterns: ['**/*.{js,css,html,svg,png,webmanifest,glb}', '**/*-latin-*.woff2'],
-      globIgnores: ['exercises/**'],
+      // WebLLM (~6 MB) solo se descarga si se activa el asistente local; entonces se cachea.
+      globIgnores: ['exercises/**', '**/webllm-*.js', '**/llm.worker-*.js'],
       maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       navigateFallback: 'index.html',
       cleanupOutdatedCaches: true,
       runtimeCaching: [
+        {
+          urlPattern: ({ url }) => /\/assets\/(webllm|llm\.worker)-.*\.js$/.test(url.pathname),
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'assistant-runtime',
+            expiration: { maxEntries: 6 },
+            cacheableResponse: { statuses: [0, 200] },
+          },
+        },
         {
           urlPattern: ({ url }) => url.pathname.startsWith('/exercises/'),
           handler: 'CacheFirst',

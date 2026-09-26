@@ -1,4 +1,10 @@
-import { ChevronRight, CircleAlert, Lightbulb, TriangleAlert } from 'lucide-react'
+import {
+  ChevronRight,
+  CircleAlert,
+  Lightbulb,
+  MessageCircleQuestion,
+  TriangleAlert,
+} from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Link, useParams } from 'react-router'
 
@@ -218,6 +224,14 @@ function ExerciseView({
           </ul>
         </Section>
       )}
+
+      <Link
+        to={`/asistente?ejercicio=${e.id}`}
+        className="mt-7 flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-steel-soft px-4 text-sm font-semibold text-steel"
+      >
+        <MessageCircleQuestion className="size-5" />
+        {t('exercise.ask')}
+      </Link>
 
       {alternatives.length > 0 && (
         <Section title={t('exercise.alternatives')}>
