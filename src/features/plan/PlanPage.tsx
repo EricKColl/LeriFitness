@@ -1,11 +1,4 @@
-import {
-  Check,
-  ChevronRight,
-  Clock,
-  MessageCircleQuestion,
-  Settings2,
-  TriangleAlert,
-} from 'lucide-react'
+import { Check, ChevronRight, Clock, Settings2, TriangleAlert } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router'
 
@@ -14,6 +7,8 @@ import type { Plan, Reason } from '@/engine'
 import { exerciseName, useCatalog } from '@/data/catalog'
 import type { PlanRow } from '@/data/db'
 import { useActivePlan, useProfile, useWeekSessions } from '@/data/hooks'
+import { MagicErickAvatar } from '@/features/assistant/launcher'
+import { openMagicErick } from '@/features/assistant/store'
 import { useDynamicT, useReasonText } from '@/i18n/reason'
 import { fromISODate, today, weekStartOf } from '@/shared/lib/dates'
 import { cn } from '@/shared/lib/utils'
@@ -163,19 +158,18 @@ function PlanView({
         </Accordion>
       </Section>
 
-      <Link
-        to="/asistente"
-        className="surface-glow mt-7 flex items-center gap-4 rounded-3xl border border-border/70 p-4 transition-colors hover:bg-accent/40"
+      <button
+        type="button"
+        onClick={() => openMagicErick()}
+        className="surface-glow mt-7 flex w-full items-center gap-4 rounded-3xl border border-border/70 p-4 text-left transition-colors hover:bg-accent/40"
       >
-        <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-steel-soft text-steel">
-          <MessageCircleQuestion className="size-6" />
-        </span>
+        <MagicErickAvatar className="size-12" />
         <span className="flex-1">
           <span className="block font-semibold">{t('assistant.title')}</span>
           <span className="block text-sm text-muted-foreground">{t('assistant.body')}</span>
         </span>
         <ChevronRight className="size-5 text-muted-foreground" />
-      </Link>
+      </button>
 
       <Section title={t('cardio.title')}>
         <p className="surface p-4 text-sm text-muted-foreground">

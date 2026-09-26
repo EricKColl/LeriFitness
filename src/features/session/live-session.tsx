@@ -30,6 +30,7 @@ import { syncInBackground } from '@/data/cloud/auto'
 import { db } from '@/data/db'
 import { useSessions } from '@/data/hooks'
 import { syncAchievements } from '@/features/achievements/sync'
+import { MagicErickIconButton } from '@/features/assistant/launcher'
 import { ExerciseThumb } from '@/features/library/exercise-image'
 import { isFinished } from '@/features/progress/stats'
 import { useReasonText } from '@/i18n/reason'
@@ -155,6 +156,7 @@ export function LiveSession({
               {t('progress', { done: setsDone, total: setsTotal })}
             </p>
           </div>
+          <MagicErickIconButton exerciseId={item.exerciseId} />
           <Button
             variant={allDone ? 'default' : 'secondary'}
             size="sm"

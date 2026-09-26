@@ -14,10 +14,10 @@
     "liveSession": "Sesión en vivo con temporizador y registro",
     "progress": "Progreso, récords, medidas y logros",
     "anatomy3d": "Anatomía 3D",
-    "localAssistant": "Asistente en tu dispositivo",
+    "localAssistant": "MagicErick con IA en tu dispositivo",
     "cloudSync": "Cuenta opcional y sincronización",
-    "cloudAssistant": "Asistente en la nube con límite diario",
-    "cloudAssistantExtended": "Más preguntas diarias al asistente en la nube",
+    "cloudAssistant": "MagicErick con IA en la nube (límite diario)",
+    "cloudAssistantExtended": "Más preguntas diarias a MagicErick en la nube",
     "advancedAnalytics": "Estadísticas avanzadas e informes",
     "customPrograms": "Programas especiales (por ejemplo, preparación de una prueba)"
   },

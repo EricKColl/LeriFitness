@@ -34,7 +34,7 @@
     "mechanic": "Mecánica",
     "unilateral": "Unilateral (un lado cada vez)",
     "alternatives": "Alternativas",
-    "ask": "Preguntar al asistente sobre este ejercicio",
+    "ask": "Preguntar a MagicErick sobre este ejercicio",
     "stress": "Carga articular",
     "stressHint": "Orientativo: cuánto exige este ejercicio a cada zona.",
     "injuryWarning": "Tienes molestias en {{zones}}. Este ejercicio las carga: si notas dolor, para y elige una alternativa. Ante la duda, consulta con un profesional sanitario.",

@@ -260,6 +260,21 @@ export const KNOWLEDGE: readonly KnowledgeEntry[] = [
     keywords: ['tecnica', 'como se hace', 'postura', 'forma', 'hacerlo bien', 'errores'],
     body: 'La técnica va antes que el peso: recorrido completo y controlado, bajada sin prisa y sin rebotes. En la ficha de cada ejercicio tienes los pasos, los errores más comunes y consejos. Si una variante te resulta incómoda, cámbiala por una alternativa.',
   },
+  {
+    id: 'magicerick',
+    title: 'MagicErick',
+    keywords: [
+      'magicerick',
+      'magic erick',
+      'quien eres',
+      'que eres',
+      'como te llamas',
+      'que puedes hacer',
+      'eres una ia',
+      'como funcionas',
+    ],
+    body: 'Soy MagicErick, el asistente de Forja. Te explico tu plan, los ejercicios y los conceptos de entrenamiento, pero no decido nada: el plan lo calcula el motor de reglas a partir de tu perfil. Según tu dispositivo te respondo con IA en el propio dispositivo, con IA en la nube (con cuenta) o, sin conexión, con este glosario. No doy consejo médico.',
+  },
 ]
 
 /** Entradas ordenadas por relevancia para una pregunta (0 = sin coincidencias). */

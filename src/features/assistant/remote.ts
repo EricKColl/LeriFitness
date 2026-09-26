@@ -1,5 +1,5 @@
 /**
- * Asistente en la nube (respaldo cuando no hay WebGPU): una Edge Function de Supabase llama a
+ * MagicErick en la nube (la vía principal en móviles): una Edge Function de Supabase llama a
  * Gemini con una cuota diaria por persona. Solo se envía la pregunta y un contexto sin datos
  * personales ni de salud (ver `buildContext(…, 'remote')`).
  */
@@ -22,16 +22,22 @@ export interface RemoteAnswer {
   remaining: number
 }
 
+/** Sin respuesta en este tiempo → error (la red del móvil puede quedarse colgada). */
+const TIMEOUT_MS = 30_000
+
 export async function askRemote(
   question: string,
   context: string,
   history: { role: 'user' | 'assistant'; text: string }[],
+  signal?: AbortSignal,
 ): Promise<RemoteAnswer> {
   const client = await getClient()
   const auth = await client.auth.getSession()
   if (!auth.data.session) throw new RemoteError('signedOut')
   const response = await client.functions.invoke<RemoteAnswer>('assistant', {
     body: { question, context, history: history.slice(-4) },
+    timeout: TIMEOUT_MS,
+    signal,
   })
   if (response.error) {
     const failure = response.error as unknown as { context?: { status?: number } }
