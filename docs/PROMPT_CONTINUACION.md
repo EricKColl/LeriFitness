@@ -194,7 +194,29 @@ como referencia del diseño. Estado real ahora (ver `docs/ROADMAP.md`, que es la
 - Supabase: `supabase/` (migraciones, funciones y README con los pasos y límites gratuitos).
   La copia de `SYSTEM_PROMPT` en `supabase/functions/_shared/prompt.ts` debe coincidir (test).
 - Premium: `src/features/premium/features.ts`; el plan solo lo escribe el servidor.
-- Pendiente de la persona titular: crear el proyecto de Supabase y la clave de Gemini.
+- Pendiente de la persona titular: crear el proyecto de Supabase y la clave de Gemini (hecho:
+  ver la actualización siguiente).
+
+## ACTUALIZACIÓN: PRODUCCIÓN EN MARCHA Y VERIFICADA (26/09/2026)
+
+- App: https://forja-13u.pages.dev (Cloudflare añadió el sufijo porque «forja» ya existía; si
+  cambia, crear la variable del repositorio `APP_URL`). Supabase en la UE con migraciones y
+  funciones publicadas por el workflow «Supabase»; secretos y variables ya creados en GitHub.
+- Inicio de sesión con **enlace mágico** (Supabase solo deja editar plantillas con SMTP propio).
+  La Site URL y las Redirect URLs (`https://forja-13u.pages.dev/**`) se configuran a mano en
+  _Authentication › URL Configuration_; la comprobación avisa si no coinciden.
+- Edge Functions con `verify_jwt = false`: verifican la sesión ellas mismas
+  (`supabase/functions/_shared/admin.ts`) porque el proyecto usa las claves nuevas
+  (`sb_publishable_…`/`sb_secret_…`).
+- Asistente en la nube con `gemini-3.5-flash-lite` (Google retiró `gemini-2.5-flash-lite` para
+  cuentas nuevas). Se puede cambiar con el secreto de Supabase `GEMINI_MODEL`.
+- Workflow «Comprobación» (`.github/workflows/smoke.yml` + `scripts/smoke/production.ts`): tras
+  cada despliegue, cada lunes y a mano. Prueba web y cabeceras, Gemini directamente, la
+  configuración de Auth y la nube con un usuario temporal que se borra al final. La clave de
+  servidor se pide en cada ejecución a la API de gestión y nunca se guarda. Primer resultado en
+  `main`: 20/20 en verde. La ejecución semanal además evita que Supabase pause el proyecto.
+- Seguridad: los tokens de Cloudflare y Supabase que se pegaron en el chat deben estar
+  revocados y sustituidos; los secretos solo se guardan en GitHub.
 
 ## ESTADO ACTUAL DEL PROYECTO (26/09/2026, inicio de la Fase 1)
 
