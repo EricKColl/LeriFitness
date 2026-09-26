@@ -36,6 +36,8 @@ jobs:
       SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
       RAW_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
       RAW_PROJECT_REF: ${{ secrets.SUPABASE_PROJECT_REF }}
+      RAW_GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -58,6 +60,17 @@ jobs:
             exit 1
           fi
           echo "::add-mask::$service"
-          echo "SUPABASE_SERVICE_KEY=$service" >> "$GITHUB_ENV"
+          echo "::add-mask::$token"
+          {
+            echo "SUPABASE_SERVICE_KEY=$service"
+            echo "SUPABASE_ACCESS_TOKEN=$token"
+            echo "SUPABASE_PROJECT_REF=$ref"
+          } >> "$GITHUB_ENV"
+      - name: Preparar la clave de Gemini
+        if: env.RAW_GEMINI_API_KEY != ''
+        run: |
+          gemini="$(printf '%s' "$RAW_GEMINI_API_KEY" | tr -d '[:space:]')"
+          echo "::add-mask::$gemini"
+          echo "GEMINI_API_KEY=$gemini" >> "$GITHUB_ENV"
       - name: Comprobar producción
         run: npx tsx scripts/smoke/production.ts

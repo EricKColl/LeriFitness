@@ -8,8 +8,9 @@
  *      sincronización de filas propias, asistente en la nube (Gemini) y borrado de la cuenta
  *      con sus datos en cascada.
  *
- * Variables: APP_URL, SUPABASE_URL, SUPABASE_ANON_KEY y SUPABASE_SERVICE_KEY (opcionales las
- * de Supabase: sin ellas solo se comprueba la web).
+ * Variables: APP_URL, SUPABASE_URL, SUPABASE_ANON_KEY, SUPABASE_SERVICE_KEY y, para revisar la
+ * configuración de Auth, SUPABASE_ACCESS_TOKEN y SUPABASE_PROJECT_REF (opcionales las de
+ * Supabase: sin ellas solo se comprueba la web).
  */
 import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 
@@ -192,6 +193,59 @@ async function checkSupabase(url: string, anonKey: string, serviceKey: string) {
   }
 }
 
+/** Configuración de Auth (API de gestión): la URL del sitio y las de redirección. */
+async function checkAuthConfig(appUrl: string, token: string, ref: string) {
+  await check('Supabase: URLs de inicio de sesión apuntan a la app', async () => {
+    const res = await fetch(`https://api.supabase.com/v1/projects/${ref}/config/auth`, {
+      headers: { Authorization: `Bearer ${token}` },
+    })
+    assert(res.ok, `estado ${res.status}`)
+    const config = (await res.json()) as { site_url?: string; uri_allow_list?: string }
+    const site = (config.site_url ?? '').replace(/\/+$/, '')
+    const allowed = (config.uri_allow_list ?? '').split(',').map((u) => u.trim())
+    assert(site === appUrl, `Site URL es «${site || '(vacía)'}» y debería ser ${appUrl}`)
+    assert(
+      allowed.some((u) => u.startsWith(appUrl)),
+      `Redirect URLs no incluye ${appUrl}/** (tiene: ${allowed.filter(Boolean).join(', ') || 'ninguna'})`,
+    )
+  })
+}
+
+/** Clave de Gemini: válida, con el modelo configurado disponible y con cuota para responder. */
+async function checkGemini(key: string, model: string) {
+  const base = 'https://generativelanguage.googleapis.com/v1beta'
+  const headers = { 'x-goog-api-key': key, 'Content-Type': 'application/json' }
+  let available: string[] = []
+  await check('Gemini: la clave es válida', async () => {
+    const res = await fetch(`${base}/models?pageSize=200`, { headers })
+    const body = (await res.json().catch(() => ({}))) as {
+      models?: { name: string; supportedGenerationMethods?: string[] }[]
+      error?: { message?: string; status?: string }
+    }
+    assert(res.ok, `estado ${res.status}: ${body.error?.status ?? ''} ${body.error?.message ?? ''}`)
+    available = (body.models ?? [])
+      .filter((m) => m.supportedGenerationMethods?.includes('generateContent'))
+      .map((m) => m.name.replace('models/', ''))
+    return `${available.length} modelos disponibles`
+  })
+  if (!available.length) return
+  await check(`Gemini: el modelo ${model} está disponible`, async () => {
+    const flash = available.filter((m) => m.includes('flash')).slice(0, 8)
+    assert(available.includes(model), `no está; modelos «flash» disponibles: ${flash.join(', ')}`)
+  })
+  await check('Gemini: responde con la cuota gratuita', async () => {
+    const res = await fetch(`${base}/models/${model}:generateContent`, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: 'Di «hola».' }] }] }),
+    })
+    const body = (await res.json().catch(() => ({}))) as {
+      error?: { message?: string; status?: string }
+    }
+    assert(res.ok, `estado ${res.status}: ${body.error?.status ?? ''} ${body.error?.message ?? ''}`)
+  })
+}
+
 const appUrl = env('APP_URL')
 if (appUrl) await checkWeb(appUrl)
 const [url, anonKey, serviceKey] = [
@@ -199,6 +253,10 @@ const [url, anonKey, serviceKey] = [
   env('SUPABASE_ANON_KEY'),
   env('SUPABASE_SERVICE_KEY'),
 ]
+const gemini = env('GEMINI_API_KEY')
+if (gemini) await checkGemini(gemini, env('GEMINI_MODEL') || 'gemini-2.5-flash-lite')
+const [accessToken, ref] = [env('SUPABASE_ACCESS_TOKEN'), env('SUPABASE_PROJECT_REF')]
+if (appUrl && accessToken && ref) await checkAuthConfig(appUrl, accessToken, ref)
 if (url && anonKey && serviceKey) await checkSupabase(url, anonKey, serviceKey)
 else results.push({ name: 'Supabase', ok: true, detail: 'sin configurar: se omite' })
 
