@@ -1,1 +1,50 @@
-{}
+{
+  "title": "Logros",
+  "subtitle": "Cada logro es una prueba de constancia. Se forjan entrenando, no hay atajos.",
+  "summary": "{{count}} de {{total}}",
+  "locked": "Bloqueado",
+  "unlockedOn": "Conseguido el {{date}}",
+  "progress": "{{value}} de {{goal}}",
+  "tiers": {
+    "bronze": "Bronce",
+    "silver": "Plata",
+    "gold": "Oro",
+    "damascus": "Damasco"
+  },
+  "unlocked": "¡Logro desbloqueado!",
+  "unlockedMany": "¡{{count}} logros desbloqueados!",
+  "great": "¡Genial!",
+  "items": {
+    "firstSession": { "name": "Primera chispa", "body": "Completa tu primera sesión." },
+    "sessions10": { "name": "Fuego constante", "body": "Completa 10 sesiones." },
+    "sessions50": { "name": "Fragua encendida", "body": "Completa 50 sesiones." },
+    "sessions150": { "name": "Acero forjado", "body": "Completa 150 sesiones." },
+    "weekComplete": {
+      "name": "Semana redonda",
+      "body": "Haz todas las sesiones del plan en una semana."
+    },
+    "streak4": { "name": "Un mes sin fallar", "body": "Mantén la racha 4 semanas seguidas." },
+    "streak12": { "name": "Temple", "body": "Mantén la racha 12 semanas seguidas." },
+    "streak26": { "name": "Medio año de hierro", "body": "Mantén la racha 26 semanas seguidas." },
+    "firstRecord": {
+      "name": "Primer récord",
+      "body": "Supera tu mejor marca estimada en un ejercicio."
+    },
+    "records10": { "name": "Rompemarcas", "body": "Consigue 10 récords personales." },
+    "records50": { "name": "Sin techo", "body": "Consigue 50 récords personales." },
+    "tonnage10": { "name": "10 toneladas", "body": "Mueve 10 000 kg de volumen total." },
+    "tonnage100": { "name": "100 toneladas", "body": "Mueve 100 000 kg de volumen total." },
+    "tonnage500": { "name": "500 toneladas", "body": "Mueve 500 000 kg de volumen total." },
+    "tonnage1000": { "name": "Mil toneladas", "body": "Mueve 1 000 000 kg de volumen total." },
+    "explorer": { "name": "Explorador", "body": "Entrena 25 ejercicios distintos." },
+    "deload": { "name": "Saber templar", "body": "Completa una sesión en semana de descarga." },
+    "earlyBird": { "name": "Madrugador", "body": "Empieza 5 sesiones antes de las 8:00." },
+    "nightOwl": { "name": "Búho", "body": "Empieza 5 sesiones a partir de las 21:00." },
+    "comeback": {
+      "name": "De vuelta",
+      "body": "Vuelve a entrenar tras dos semanas o más de parón."
+    },
+    "checkIn": { "name": "Escucha tu cuerpo", "body": "Haz tu primer check-in semanal." },
+    "measure": { "name": "Punto de partida", "body": "Registra tu primera medición corporal." }
+  }
+}

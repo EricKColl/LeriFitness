@@ -6,6 +6,7 @@ import { loadCatalog } from '@/data/catalog'
 import { db } from '@/data/db'
 import { createFirstPlan, ensureCurrentPlan, stripProfile } from '@/data/plans'
 import { AchievementCelebration } from '@/features/achievements/celebration'
+import { syncAchievements } from '@/features/achievements/sync'
 
 import { BottomNav } from './bottom-nav'
 import { Splash } from './splash'
@@ -41,6 +42,7 @@ export function RequireProfile() {
         const row = await db.profile.get('me')
         if (row) await createFirstPlan(stripProfile(row), catalog)
       }
+      await syncAchievements()
       if (!cancelled) setReady(true)
     }
     void sync()

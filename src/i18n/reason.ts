@@ -45,3 +45,9 @@ export function useReasonText(exerciseName?: (id: string) => string) {
     return text.charAt(0).toUpperCase() + text.slice(1)
   }
 }
+
+/** `t` para claves construidas en tiempo de ejecución (días del plan, músculos de datos…). */
+export function useDynamicT() {
+  const { t } = useTranslation()
+  return t as unknown as DynamicT
+}

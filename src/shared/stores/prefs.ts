@@ -10,6 +10,8 @@ interface PrefsState {
   keepAwake: boolean
   /** La invitación a instalar se descartó. */
   installDismissedAt: number | null
+  /** Lunes de la semana cuyo check-in se pospuso (no se vuelve a sugerir). */
+  checkInDismissed: string | null
   set: (patch: Partial<Omit<PrefsState, 'set'>>) => void
 }
 
@@ -21,6 +23,7 @@ export const usePrefs = create<PrefsState>()(
       vibration: true,
       keepAwake: true,
       installDismissedAt: null,
+      checkInDismissed: null,
       set: (patch) => set(patch),
     }),
     { name: 'forja-prefs' },
