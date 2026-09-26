@@ -4,9 +4,10 @@
  */
 import type { SupabaseClient } from '@supabase/supabase-js'
 
+// Se limpian espacios, saltos de línea y la barra final por si se pegaron al configurarlos.
 export const CLOUD = {
-  url: import.meta.env.VITE_SUPABASE_URL ?? '',
-  anonKey: import.meta.env.VITE_SUPABASE_ANON_KEY ?? '',
+  url: (import.meta.env.VITE_SUPABASE_URL ?? '').trim().replace(/\/+$/, ''),
+  anonKey: (import.meta.env.VITE_SUPABASE_ANON_KEY ?? '').trim(),
 }
 
 export function cloudConfigured() {
