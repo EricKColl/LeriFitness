@@ -16,7 +16,7 @@ import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 
 const results: { name: string; ok: boolean; detail?: string }[] = []
 
-async function check(name: string, fn: () => Promise<string | void>) {
+async function check(name: string, fn: () => Promise<string | void> | string | void) {
   try {
     const detail = await fn()
     results.push({ name, ok: true, detail: detail ?? undefined })
@@ -229,7 +229,7 @@ async function checkGemini(key: string, model: string) {
     return `${available.length} modelos disponibles`
   })
   if (!available.length) return
-  await check(`Gemini: el modelo ${model} está disponible`, async () => {
+  await check(`Gemini: el modelo ${model} está disponible`, () => {
     const flash = available.filter((m) => m.includes('flash')).slice(0, 8)
     assert(available.includes(model), `no está; modelos «flash» disponibles: ${flash.join(', ')}`)
   })
