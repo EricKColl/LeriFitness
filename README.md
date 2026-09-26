@@ -19,6 +19,9 @@ basado en principios de entrenamiento con respaldo científico. Ninguna IA decid
 | PWA      | vite-plugin-pwa (Workbox), offline completo                  |
 | Tests    | Vitest + Testing Library                                     |
 | Hosting  | Cloudflare Pages (`*.pages.dev`) con CI/CD en GitHub Actions |
+| 3D       | three.js + React Three Fiber + drei (carga perezosa)         |
+| IA       | Glosario propio + WebLLM en el dispositivo; Gemini opcional  |
+| Nube     | Supabase opcional (UE, RLS), sin datos de salud              |
 
 ## Comandos
 
@@ -54,6 +57,12 @@ asigne Cloudflare) y cada pull request obtiene una URL de vista previa. Lo hace
 
 Sin los secretos, el workflow termina sin error y sin publicar. Las cabeceras de seguridad y caché
 están en `public/_headers`.
+
+## Nube opcional
+
+Cuentas sin contraseña, sincronización entre dispositivos (sin datos de salud) y asistente en la
+nube. Es opcional: sin configurarla, la app es 100 % local. Pasos en
+[supabase/README.md](supabase/README.md).
 
 ## Estructura
 

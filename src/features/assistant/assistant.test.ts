@@ -43,6 +43,11 @@ describe('asistente', () => {
     expect(searchKnowledge('cuándo debo subir el peso')[0]?.entry.id).toBe('doubleProgression')
     expect(searchKnowledge('cuantas series por musculo hago')[0]?.entry.id).toBe('volume')
     expect(searchKnowledge('xyz qwerty')).toEqual([])
+    // Las preguntas sugeridas en la pantalla deben encontrar su tema.
+    expect(searchKnowledge('¿Por qué mi semana está repartida así?')[0]?.entry.id).toBe('frequency')
+    expect(searchKnowledge('¿Qué significa dejar 2 en reserva?')[0]?.entry.id).toBe('rir')
+    expect(searchKnowledge('¿Para qué sirve la semana de descarga?')[0]?.entry.id).toBe('deload')
+    expect(searchKnowledge('¿Cuántas series hago por músculo?')[0]?.entry.id).toBe('volume')
   })
 
   it('detecta preguntas de salud', () => {
