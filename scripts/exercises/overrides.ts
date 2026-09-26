@@ -324,6 +324,13 @@ export const OVERRIDES: Record<string, ExerciseOverride> = {
     secondaryMuscles: ['glutes', 'triceps', 'sideDelts'],
     jointStress: { knee: 'moderate', hip: 'moderate', shoulder: 'high', lowerBack: 'moderate' },
   },
+  // Tumbado boca abajo, la elevación «lateral» trabaja el deltoides posterior.
+  'lying-one-arm-lateral-raise': {
+    pattern: 'rearDelt',
+    primaryMuscles: ['rearDelts'],
+    secondaryMuscles: ['upperBack'],
+    jointStress: { shoulder: 'low' },
+  },
   'cable-hip-adduction': { primaryMuscles: ['adductors'], secondaryMuscles: [] },
   // Jalones con brazos rectos: extensión de hombro (patrón de pullover), no tracción vertical.
   'straight-arm-pulldown': { pattern: 'pullover', jointStress: { elbow: 'low' } },
