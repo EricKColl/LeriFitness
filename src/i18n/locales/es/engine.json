@@ -97,7 +97,7 @@
     "plan": {
       "calibration": "Semana de calibración: elige en cada ejercicio un peso que te deje 2-3 repeticiones en reserva. A partir de ahí, Forja calcula tus cargas.",
       "mesocycle": "Semana {{week}} de {{length}} del bloque actual. El volumen sube poco a poco y la última semana es de descarga.",
-      "deload": "Semana de descarga ({{week}} de {{length}}): la mitad de series y más margen. Así llegas fresco al siguiente bloque.",
+      "deload": "Semana de descarga ({{week}} de {{length}}): la mitad de series y más margen. Así llegas con energía al siguiente bloque.",
       "progression": "Doble progresión: cuando completes todas las series en el tope del rango, sube el peso y vuelve al mínimo de repeticiones."
     },
     "adapt": {
@@ -109,7 +109,7 @@
       "earlyDeload": "Rendimiento a la baja o mucha fatiga: adelantamos la descarga.",
       "newMesocycle": "Empieza el bloque {{index}}: volvemos a la base de volumen con cargas renovadas.",
       "temporaryPain": "Molestia en {{zone}} esta semana: se trata como una lesión leve temporal.",
-      "comeback": "¡Bienvenido de vuelta! Tras {{weeks}} semanas sin entrenar, empezamos un bloque nuevo desde la base.",
+      "comeback": "¡Qué bien verte de nuevo! Tras {{weeks}} semanas sin entrenar, empezamos un bloque nuevo desde la base.",
       "profileChanged": "Has actualizado tu perfil: el plan de esta semana se ha recalculado."
     }
   },

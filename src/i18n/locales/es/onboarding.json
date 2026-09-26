@@ -1,0 +1,101 @@
+{
+  "progress": "Paso {{current}} de {{total}}",
+  "welcome": {
+    "title": "Forja tu mejor versión",
+    "body": "Un plan de gimnasio hecho a tu medida que se adapta cada semana a cómo entrenas y cómo te recuperas.",
+    "points": {
+      "adaptive": "Plan basado en ciencia, no en modas: volumen, descansos y progresión con criterio.",
+      "private": "Tus datos se quedan en tu dispositivo. Sin cuentas ni servidores.",
+      "offline": "Funciona sin conexión, también en el sótano del gimnasio."
+    },
+    "start": "Empezar",
+    "import": "Tengo una copia de seguridad",
+    "importDone": "Datos restaurados. ¡Qué bien verte de nuevo!",
+    "importError": "No se ha podido importar el archivo: no es una copia de Forja válida."
+  },
+  "goal": {
+    "title": "¿Cuál es tu objetivo principal?",
+    "subtitle": "Define repeticiones, descansos y volumen. Podrás cambiarlo cuando quieras."
+  },
+  "level": {
+    "title": "¿Cuánta experiencia tienes?",
+    "subtitle": "Con sinceridad: empezar un poco por debajo es la forma más rápida de progresar."
+  },
+  "body": {
+    "title": "Cuéntanos sobre ti",
+    "subtitle": "Solo se usa para estimar tu gasto energético. Nunca sale de tu dispositivo.",
+    "sex": "Sexo",
+    "age": "Edad",
+    "ageUnit": "años",
+    "height": "Altura",
+    "weight": "Peso"
+  },
+  "job": {
+    "title": "¿Cómo es tu día a día?",
+    "subtitle": "Tu trabajo también cuenta: ajusta el volumen y el énfasis del plan."
+  },
+  "availability": {
+    "title": "¿Cuándo puedes entrenar?",
+    "subtitle": "Elige los días. El descanso también construye: hasta 6 días.",
+    "days": "Días de entrenamiento",
+    "daysCount_one": "{{count}} día a la semana",
+    "daysCount_other": "{{count}} días a la semana",
+    "minutes": "Tiempo por sesión",
+    "minutesValue": "{{count}} minutos",
+    "minutesHint": "Incluye calentamiento. El plan se ajusta para que quepa.",
+    "maxDays": "Máximo 6 días: al menos uno de descanso."
+  },
+  "equipment": {
+    "title": "¿Con qué material cuentas?",
+    "subtitle": "Solo se programarán ejercicios que puedas hacer.",
+    "custom": "Personalizar material",
+    "customHint": "Marca todo lo que tengas a mano."
+  },
+  "consent": {
+    "title": "Molestias y lesiones",
+    "subtitle": "Opcional, pero ayuda a elegir ejercicios más seguros para ti.",
+    "what": "Si nos indicas zonas con molestias, Forja evitará los ejercicios que más las cargan.",
+    "why": "Son datos de salud, especialmente protegidos por el RGPD (art. 9). Por eso necesitamos tu consentimiento explícito.",
+    "where": "Se guardan solo en este dispositivo, nunca se envían a ningún servidor y puedes borrarlos o retirar el consentimiento en cualquier momento desde tu perfil.",
+    "checkbox": "Doy mi consentimiento explícito para que Forja trate en este dispositivo mis datos sobre molestias y lesiones con el único fin de adaptar mi plan.",
+    "skipHint": "Si no das el consentimiento, el plan no tendrá en cuenta molestias.",
+    "readPrivacy": "Leer la política de privacidad"
+  },
+  "injuries": {
+    "title": "¿Tienes molestias en alguna zona?",
+    "subtitle": "Marca las zonas y cuánto te molestan.",
+    "none": "No tengo molestias",
+    "severity": "¿Cuánto te molesta?",
+    "zonesSelected_one": "{{count}} zona marcada",
+    "zonesSelected_other": "{{count}} zonas marcadas"
+  },
+  "summary": {
+    "title": "Todo listo para forjar tu plan",
+    "subtitle": "Revisa tus datos. Podrás cambiarlos cuando quieras desde tu perfil.",
+    "goal": "Objetivo",
+    "level": "Nivel",
+    "body": "Datos",
+    "bodyValue": "{{age}} años · {{height}} cm · {{weight}} kg",
+    "job": "Día a día",
+    "schedule": "Disponibilidad",
+    "scheduleValue": "{{days}} · {{minutes}} min",
+    "equipment": "Material",
+    "equipmentCount_one": "{{count}} tipo de material",
+    "equipmentCount_other": "{{count}} tipos de material",
+    "health": "Molestias",
+    "noInjuries": "Ninguna",
+    "noConsent": "No indicadas",
+    "terms": "He leído y acepto los <terms>términos de uso</terms> y la <privacy>política de privacidad</privacy>.",
+    "create": "Forjar mi plan"
+  },
+  "forging": {
+    "title": "Forjando tu plan",
+    "steps": [
+      "Calculando tu volumen semanal…",
+      "Eligiendo tus ejercicios…",
+      "Ajustando series a tu tiempo…",
+      "Templando los descansos…"
+    ],
+    "done": "¡Plan listo!"
+  }
+}

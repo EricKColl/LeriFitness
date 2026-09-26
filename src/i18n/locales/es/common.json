@@ -10,9 +10,18 @@
     "edit": "Editar",
     "done": "Hecho",
     "skip": "Saltar",
-    "start": "Empezar"
+    "start": "Empezar",
+    "add": "Añadir",
+    "confirm": "Confirmar",
+    "retry": "Reintentar",
+    "seeAll": "Ver todo",
+    "undo": "Deshacer",
+    "clear": "Limpiar",
+    "apply": "Aplicar",
+    "reload": "Recargar"
   },
   "nav": {
+    "label": "Navegación principal",
     "today": "Hoy",
     "plan": "Plan",
     "library": "Ejercicios",
@@ -20,8 +29,68 @@
     "profile": "Perfil"
   },
   "theme": {
+    "label": "Tema",
     "dark": "Oscuro",
     "light": "Claro",
     "system": "Sistema"
-  }
+  },
+  "units": {
+    "kg": "{{value}} kg",
+    "cm": "{{value}} cm",
+    "min": "{{value}} min",
+    "sec": "{{value}} s",
+    "reps": "{{count}} rep.",
+    "sets_one": "{{count}} serie",
+    "sets_other": "{{count}} series",
+    "exercises_one": "{{count}} ejercicio",
+    "exercises_other": "{{count}} ejercicios",
+    "sessions_one": "{{count}} sesión",
+    "sessions_other": "{{count}} sesiones",
+    "weeks_one": "{{count}} semana",
+    "weeks_other": "{{count}} semanas",
+    "days_one": "{{count}} día",
+    "days_other": "{{count}} días",
+    "kcal": "{{value}} kcal",
+    "tonnes": "{{value}} t"
+  },
+  "weekdays": {
+    "short": ["L", "M", "X", "J", "V", "S", "D"],
+    "medium": ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"],
+    "long": ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
+  },
+  "loading": "Cargando…",
+  "catalogLoading": "Preparando tus ejercicios…",
+  "errors": {
+    "title": "Algo no ha ido bien",
+    "body": "Ha ocurrido un error inesperado. Tus datos están a salvo en el dispositivo.",
+    "notFound": "Esta página no existe",
+    "notFoundBody": "Puede que el enlace esté roto o que el contenido ya no exista.",
+    "goHome": "Volver a Hoy",
+    "storage": "No se puede acceder al almacenamiento del navegador. En modo privado algunas funciones no están disponibles."
+  },
+  "pwa": {
+    "offline": "Sin conexión: todo sigue funcionando",
+    "updateTitle": "Nueva versión disponible",
+    "updateBody": "Recarga para usar la última versión de Forja.",
+    "updateAction": "Actualizar",
+    "offlineReady": "Forja ya funciona sin conexión",
+    "installTitle": "Instala Forja",
+    "installBody": "Añádela a tu pantalla de inicio: se abre al instante y funciona sin conexión.",
+    "installAction": "Instalar",
+    "iosTitle": "Instala Forja en tu iPhone",
+    "iosSteps": [
+      "Abre Forja en Safari.",
+      "Pulsa el botón Compartir (el cuadrado con una flecha hacia arriba).",
+      "Elige «Añadir a pantalla de inicio» y confirma con «Añadir»."
+    ],
+    "dismiss": "Ahora no"
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido",
+    "increase": "Aumentar",
+    "decrease": "Disminuir",
+    "openMenu": "Abrir menú",
+    "selected": "Seleccionado"
+  },
+  "consultProfessional": "Forja es una app de fitness y bienestar, no de rehabilitación ni tratamiento. Si tienes una lesión, dolor o una condición médica, consulta con un profesional sanitario antes de entrenar."
 }
