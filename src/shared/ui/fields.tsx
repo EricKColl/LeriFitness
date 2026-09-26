@@ -89,7 +89,7 @@ export function Chip({
       disabled={disabled}
       onClick={onClick}
       className={cn(
-        'inline-flex min-h-11 items-center justify-center gap-1.5 rounded-2xl border px-4 text-sm font-semibold transition-[border-color,background-color,color,transform] duration-200 ease-forge active:scale-[0.96] disabled:opacity-40',
+        'inline-flex min-h-11 shrink-0 items-center justify-center gap-1.5 rounded-2xl border px-4 text-sm font-semibold whitespace-nowrap transition-[border-color,background-color,color,transform] duration-200 ease-forge active:scale-[0.96] disabled:opacity-40',
         selected
           ? 'border-primary/70 bg-primary text-primary-foreground'
           : 'border-border/80 bg-card text-foreground hover:bg-accent/50',

@@ -1,1 +1,43 @@
-{}
+{
+  "title": "Ejercicios",
+  "subtitle": "{{count}} ejercicios con técnica explicada paso a paso",
+  "search": "Buscar ejercicios",
+  "results_one": "{{count}} ejercicio",
+  "results_other": "{{count}} ejercicios",
+  "filters": {
+    "title": "Filtros",
+    "mine": "Con mi material",
+    "safe": "Aptos para mis molestias",
+    "muscle": "Músculo",
+    "level": "Nivel",
+    "all": "Todos",
+    "clear": "Quitar filtros",
+    "apply": "Ver {{count}} ejercicios"
+  },
+  "empty": {
+    "title": "Sin resultados",
+    "body": "Prueba con otras palabras o quita algún filtro."
+  },
+  "exercise": {
+    "notFound": "No encontramos este ejercicio.",
+    "steps": "Cómo se hace",
+    "mistakes": "Errores comunes",
+    "tips": "Consejos",
+    "muscles": "Músculos",
+    "primary": "Principales",
+    "secondary": "Secundarios",
+    "equipment": "Material",
+    "details": "Ficha",
+    "level": "Nivel",
+    "category": "Tipo",
+    "mechanic": "Mecánica",
+    "unilateral": "Unilateral (un lado cada vez)",
+    "alternatives": "Alternativas",
+    "stress": "Carga articular",
+    "stressHint": "Orientativo: cuánto exige este ejercicio a cada zona.",
+    "injuryWarning": "Tienes molestias en {{zones}}. Este ejercicio las carga: si notas dolor, para y elige una alternativa. Ante la duda, consulta con un profesional sanitario.",
+    "notAvailable": "Con tu material no puedes hacer este ejercicio.",
+    "imageAlt": "Demostración de {{name}}",
+    "credit": "Imágenes: free-exercise-db (dominio público)"
+  }
+}
