@@ -58,11 +58,15 @@ jobs:
           VITE_SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
       - name: Crear el proyecto de Pages si no existe
         if: steps.secrets.outputs.ready == 'true'
-        run: npx --yes wrangler@4 pages project create "$PROJECT" --production-branch=main || true
+        run: |
+          if ! npx --yes wrangler@4 pages project list 2>/dev/null | grep -qw "$PROJECT"; then
+            npx --yes wrangler@4 pages project create "$PROJECT" --production-branch=main
+          fi
       - name: Publicar
         if: steps.secrets.outputs.ready == 'true'
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
+          wranglerVersion: '4.141.0'
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy dist --project-name=${{ env.PROJECT }} --branch=${{ github.head_ref || github.ref_name }}

@@ -42,8 +42,8 @@ historial para probar las pantallas. No existe en la build de producción.
 
 ## Despliegue (gratis, en Cloudflare Pages)
 
-Cada push a `main` publica la app en `https://forja.pages.dev` (o el subdominio libre que
-asigne Cloudflare) y cada pull request obtiene una URL de vista previa. Lo hace
+Cada push a `main` publica la app en **https://forja-13u.pages.dev** (Cloudflare añadió el sufijo
+porque «forja» ya existía) y cada pull request obtiene una URL de vista previa. Lo hace
 `.github/workflows/deploy.yml`, que necesita dos secretos del repositorio:
 
 1. Crea una cuenta gratuita en <https://dash.cloudflare.com/sign-up> (no pide tarjeta).
@@ -55,7 +55,8 @@ asigne Cloudflare) y cada pull request obtiene una URL de vista previa. Lo hace
    `CLOUDFLARE_API_TOKEN` y `CLOUDFLARE_ACCOUNT_ID` con esos valores.
 5. Vuelve a lanzar el workflow _Despliegue_ (pestaña _Actions_) o haz un push a `main`.
 
-Sin los secretos, el workflow termina sin error y sin publicar. Las cabeceras de seguridad y caché
+Sin los secretos, el workflow termina sin error y sin publicar. Tras cada despliegue, el workflow
+_Comprobación_ revisa la web y la nube en producción (resultado en el resumen de cada ejecución). Las cabeceras de seguridad y caché
 están en `public/_headers`.
 
 ## Nube opcional

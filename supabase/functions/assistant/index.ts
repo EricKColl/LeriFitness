@@ -8,12 +8,12 @@
  * Secretos (supabase secrets set …): GEMINI_API_KEY. Opcionales: GEMINI_MODEL,
  * DAILY_LIMIT_FREE, DAILY_LIMIT_PREMIUM, ALLOWED_ORIGIN.
  */
-import { createClient } from 'jsr:@supabase/supabase-js@2'
-
+import { adminClient, currentUser } from '../_shared/admin.ts'
 import { corsHeaders, json } from '../_shared/cors.ts'
 import { SYSTEM_PROMPT } from '../_shared/prompt.ts'
 
-const MODEL = Deno.env.get('GEMINI_MODEL') ?? 'gemini-2.5-flash-lite'
+// gemini-2.5-flash-lite ya no está disponible para cuentas nuevas (Google, septiembre de 2026).
+const MODEL = Deno.env.get('GEMINI_MODEL') || 'gemini-3.5-flash-lite'
 const LIMIT_FREE = Number(Deno.env.get('DAILY_LIMIT_FREE') ?? 15)
 const LIMIT_PREMIUM = Number(Deno.env.get('DAILY_LIMIT_PREMIUM') ?? 60)
 
@@ -34,17 +34,11 @@ Deno.serve(async (req) => {
   const apiKey = Deno.env.get('GEMINI_API_KEY')
   if (!apiKey) return json({ error: 'unconfigured' }, 503)
 
-  // Identidad a partir del token de la sesión (la plataforma ya verifica el JWT).
-  const authHeader = req.headers.get('Authorization') ?? ''
-  const admin = createClient(
-    Deno.env.get('SUPABASE_URL')!,
-    Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!,
-  )
-  const { data: userData, error: userError } = await admin.auth.getUser(
-    authHeader.replace('Bearer ', ''),
-  )
-  if (userError || !userData.user) return json({ error: 'auth' }, 401)
-  const userId = userData.user.id
+  // Identidad a partir del token de la sesión (lo verifica el servicio de autenticación).
+  const user = await currentUser(req)
+  if (!user) return json({ error: 'auth' }, 401)
+  const userId = user.id
+  const admin = adminClient()
 
   const body = (await req.json().catch(() => ({}))) as Body
   const question = clean(body.question, 500)
@@ -87,7 +81,13 @@ Deno.serve(async (req) => {
       }),
     },
   )
-  if (!response.ok) return json({ error: 'upstream' }, 502)
+  if (!response.ok) {
+    // Solo el estado y el mensaje del proveedor (nunca la clave) para poder diagnosticar.
+    const detail = (await response.json().catch(() => null)) as {
+      error?: { message?: string }
+    } | null
+    return json({ error: 'upstream', status: response.status, detail: detail?.error?.message }, 502)
+  }
   const result = (await response.json()) as {
     candidates?: { content?: { parts?: { text?: string }[] } }[]
   }
