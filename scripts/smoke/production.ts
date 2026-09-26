@@ -233,16 +233,29 @@ async function checkGemini(key: string, model: string) {
     const flash = available.filter((m) => m.includes('flash')).slice(0, 8)
     assert(available.includes(model), `no está; modelos «flash» disponibles: ${flash.join(', ')}`)
   })
+  // Misma configuración que la Edge Function (supabase/functions/assistant) para detectar, por
+  // ejemplo, un modelo que gaste el límite de salida «pensando» y devuelva un texto vacío.
   await check('Gemini: responde con la cuota gratuita', async () => {
     const res = await fetch(`${base}/models/${model}:generateContent`, {
       method: 'POST',
       headers,
-      body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: 'Di «hola».' }] }] }),
+      body: JSON.stringify({
+        systemInstruction: { parts: [{ text: 'Eres un asistente de entrenamiento. Sé breve.' }] },
+        contents: [{ role: 'user', parts: [{ text: '¿Qué es el RIR?' }] }],
+        generationConfig: { temperature: 0.3, maxOutputTokens: 500 },
+      }),
     })
     const body = (await res.json().catch(() => ({}))) as {
+      candidates?: { finishReason?: string; content?: { parts?: { text?: string }[] } }[]
+      usageMetadata?: { thoughtsTokenCount?: number }
       error?: { message?: string; status?: string }
     }
     assert(res.ok, `estado ${res.status}: ${body.error?.status ?? ''} ${body.error?.message ?? ''}`)
+    const candidate = body.candidates?.[0]
+    const text = (candidate?.content?.parts ?? []).map((p) => p.text ?? '').join('')
+    const detail = `${text.length} caracteres, fin ${candidate?.finishReason ?? '?'}, ${body.usageMetadata?.thoughtsTokenCount ?? 0} tokens pensando`
+    assert(text.trim().length > 20, `respuesta vacía o cortada (${detail})`)
+    return detail
   })
 }
 
@@ -254,7 +267,7 @@ const [url, anonKey, serviceKey] = [
   env('SUPABASE_SERVICE_KEY'),
 ]
 const gemini = env('GEMINI_API_KEY')
-if (gemini) await checkGemini(gemini, env('GEMINI_MODEL') || 'gemini-2.5-flash-lite')
+if (gemini) await checkGemini(gemini, env('GEMINI_MODEL') || 'gemini-3.5-flash-lite')
 const [accessToken, ref] = [env('SUPABASE_ACCESS_TOKEN'), env('SUPABASE_PROJECT_REF')]
 if (appUrl && accessToken && ref) await checkAuthConfig(appUrl, accessToken, ref)
 if (url && anonKey && serviceKey) await checkSupabase(url, anonKey, serviceKey)

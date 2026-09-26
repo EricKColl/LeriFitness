@@ -12,7 +12,8 @@ import { adminClient, currentUser } from '../_shared/admin.ts'
 import { corsHeaders, json } from '../_shared/cors.ts'
 import { SYSTEM_PROMPT } from '../_shared/prompt.ts'
 
-const MODEL = Deno.env.get('GEMINI_MODEL') ?? 'gemini-2.5-flash-lite'
+// gemini-2.5-flash-lite ya no está disponible para cuentas nuevas (Google, septiembre de 2026).
+const MODEL = Deno.env.get('GEMINI_MODEL') || 'gemini-3.5-flash-lite'
 const LIMIT_FREE = Number(Deno.env.get('DAILY_LIMIT_FREE') ?? 15)
 const LIMIT_PREMIUM = Number(Deno.env.get('DAILY_LIMIT_PREMIUM') ?? 60)
 
