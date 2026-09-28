@@ -16,6 +16,8 @@ import { SYSTEM_PROMPT } from '../_shared/prompt.ts'
 const MODEL = Deno.env.get('GEMINI_MODEL') || 'gemini-3.5-flash-lite'
 const LIMIT_FREE = Number(Deno.env.get('DAILY_LIMIT_FREE') ?? 15)
 const LIMIT_PREMIUM = Number(Deno.env.get('DAILY_LIMIT_PREMIUM') ?? 60)
+const TRANSIENT = new Set([500, 503])
+const RETRY_WAITS_MS = [1000, 3000]
 
 interface Body {
   question?: unknown
@@ -69,18 +71,25 @@ Deno.serve(async (req) => {
   if (quotaError) return json({ error: 'quota' }, 500)
   if ((used as number) > limit) return json({ error: 'quota', remaining: 0 }, 429)
 
-  const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
-      body: JSON.stringify({
-        systemInstruction: { parts: [{ text: `${SYSTEM_PROMPT}\n\nContexto:\n${context}` }] },
-        contents: [...history, { role: 'user', parts: [{ text: question }] }],
-        generationConfig: { temperature: 0.3, maxOutputTokens: 500 },
-      }),
-    },
-  )
+  const request = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: `${SYSTEM_PROMPT}\n\nContexto:\n${context}` }] },
+      contents: [...history, { role: 'user', parts: [{ text: question }] }],
+      generationConfig: { temperature: 0.3, maxOutputTokens: 500 },
+    }),
+  }
+  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`
+  // Google devuelve 503 («high demand») o 500 en picos de uso pasajeros: se reintenta dos veces
+  // con una espera corta antes de dar el error.
+  let response = await fetch(endpoint, request)
+  for (const wait of RETRY_WAITS_MS) {
+    if (!TRANSIENT.has(response.status)) break
+    await response.body?.cancel()
+    await new Promise((resolve) => setTimeout(resolve, wait))
+    response = await fetch(endpoint, request)
+  }
   if (!response.ok) {
     // Solo el estado y el mensaje del proveedor (nunca la clave) para poder diagnosticar.
     const detail = (await response.json().catch(() => null)) as {
