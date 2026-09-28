@@ -148,6 +148,15 @@ OTHER_MUSCLES = [
     "Flexor digitorum brevis",
 ]
 
+# Músculos cuya aponeurosis (lámina tendinosa) cubre a otro: se recortan las caras que quedan por
+# dentro del borde lateral del músculo cubierto para que este se vea (y se resalte) desde fuera.
+# Las aponeurosis de los oblicuos y del transverso forman la vaina del recto y lo tapaban.
+TRIM_OVER = {
+    "External abdominal oblique muscle": "Rectus abdominis muscle",
+    "Internal abdominal oblique muscle": "Rectus abdominis muscle",
+    "Transversus abdominis muscle": "Rectus abdominis muscle",
+}
+
 # Huesos: se incluye todo el esqueleto salvo estas familias (pequeñas o invisibles con músculos).
 BONE_EXCLUDED_PARENTS = {
     "Posterior teeth.g",

@@ -30,7 +30,7 @@ import { hasConsent, recordConsent, revokeHealthConsent } from '@/data/profile'
 import { cachedCount, cacheImages } from '@/shared/lib/image-cache'
 import { cn } from '@/shared/lib/utils'
 import { usePrefs } from '@/shared/stores/prefs'
-import { useThemeStore, type ThemePreference } from '@/shared/stores/theme'
+import { useSystemTheme, useThemeStore, type ThemePreference } from '@/shared/stores/theme'
 import { Button } from '@/shared/ui/button'
 import {
   Dialog,
@@ -162,6 +162,7 @@ function Preferences() {
   const { t } = useTranslation(['profile', 'common'])
   const prefs = usePrefs()
   const { preference, setPreference } = useThemeStore()
+  const system = useSystemTheme()
   const toggles = ['sound', 'vibration', 'keepAwake'] as const
   const anatomy3d = useAnatomy3D()
   return (
@@ -179,6 +180,11 @@ function Preferences() {
               label: t(`common:theme.${v}`),
             }))}
           />
+          {preference === 'system' && (
+            <p className="mt-2 text-xs text-muted-foreground" aria-live="polite">
+              {t('prefs.themeSystemHint', { theme: t(`common:theme.${system}`).toLowerCase() })}
+            </p>
+          )}
         </div>
         {toggles.map((key) => (
           <Row
