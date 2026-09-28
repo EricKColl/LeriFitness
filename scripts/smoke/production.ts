@@ -14,13 +14,40 @@
  */
 import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 
-const results: { name: string; ok: boolean; detail?: string }[] = []
+const results: { name: string; ok: boolean; warn?: boolean; detail?: string }[] = []
+
+/**
+ * Saturación pasajera del proveedor (Gemini responde 503 «high demand» en picos de uso). No es
+ * un fallo de la app: si persiste tras los reintentos, la prueba queda como aviso.
+ */
+class Transient extends Error {}
+const TRANSIENT = /\b(500|503)\b|UNAVAILABLE|high demand|overloaded/i
+const RETRY_WAITS_MS = [5_000, 15_000]
+
+/** Repite `fn` mientras falle por saturación pasajera; si no se recupera, lanza `Transient`. */
+async function retrying<T>(fn: () => Promise<T>): Promise<T> {
+  for (const wait of [...RETRY_WAITS_MS, null]) {
+    try {
+      return await fn()
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error)
+      if (!TRANSIENT.test(message)) throw error
+      if (wait === null) throw new Transient(`${message} (sigue saturado tras reintentar)`)
+      await new Promise((resolve) => setTimeout(resolve, wait))
+    }
+  }
+  throw new Error('inalcanzable')
+}
 
 async function check(name: string, fn: () => Promise<string | void> | string | void) {
   try {
     const detail = await fn()
     results.push({ name, ok: true, detail: detail ?? undefined })
   } catch (error) {
+    if (error instanceof Transient) {
+      results.push({ name, ok: true, warn: true, detail: error.message })
+      return
+    }
     results.push({
       name,
       ok: false,
@@ -158,11 +185,13 @@ async function checkSupabase(url: string, anonKey: string, serviceKey: string) {
     })
 
     await check('Supabase: asistente en la nube (Gemini)', async () => {
-      const data = await invoke<{ answer: string; remaining: number }>(user, 'assistant', {
-        question: '¿Qué es el RIR?',
-        context: 'Objetivo: ganar músculo.',
-        history: [],
-      })
+      const data = await retrying(() =>
+        invoke<{ answer: string; remaining: number }>(user, 'assistant', {
+          question: '¿Qué es el RIR?',
+          context: 'Objetivo: ganar músculo.',
+          history: [],
+        }),
+      )
       assert(data?.answer && data.answer.length > 20, 'respuesta vacía')
       return `respuesta de ${data.answer.length} caracteres; quedan ${data.remaining} hoy`
     })
@@ -236,21 +265,27 @@ async function checkGemini(key: string, model: string) {
   // Misma configuración que la Edge Function (supabase/functions/assistant) para detectar, por
   // ejemplo, un modelo que gaste el límite de salida «pensando» y devuelva un texto vacío.
   await check('Gemini: responde con la cuota gratuita', async () => {
-    const res = await fetch(`${base}/models/${model}:generateContent`, {
-      method: 'POST',
-      headers,
-      body: JSON.stringify({
-        systemInstruction: { parts: [{ text: 'Eres un asistente de entrenamiento. Sé breve.' }] },
-        contents: [{ role: 'user', parts: [{ text: '¿Qué es el RIR?' }] }],
-        generationConfig: { temperature: 0.3, maxOutputTokens: 500 },
-      }),
+    const body = await retrying(async () => {
+      const res = await fetch(`${base}/models/${model}:generateContent`, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({
+          systemInstruction: { parts: [{ text: 'Eres un asistente de entrenamiento. Sé breve.' }] },
+          contents: [{ role: 'user', parts: [{ text: '¿Qué es el RIR?' }] }],
+          generationConfig: { temperature: 0.3, maxOutputTokens: 500 },
+        }),
+      })
+      const body = (await res.json().catch(() => ({}))) as {
+        candidates?: { finishReason?: string; content?: { parts?: { text?: string }[] } }[]
+        usageMetadata?: { thoughtsTokenCount?: number }
+        error?: { message?: string; status?: string }
+      }
+      assert(
+        res.ok,
+        `estado ${res.status}: ${body.error?.status ?? ''} ${body.error?.message ?? ''}`,
+      )
+      return body
     })
-    const body = (await res.json().catch(() => ({}))) as {
-      candidates?: { finishReason?: string; content?: { parts?: { text?: string }[] } }[]
-      usageMetadata?: { thoughtsTokenCount?: number }
-      error?: { message?: string; status?: string }
-    }
-    assert(res.ok, `estado ${res.status}: ${body.error?.status ?? ''} ${body.error?.message ?? ''}`)
     const candidate = body.candidates?.[0]
     const text = (candidate?.content?.parts ?? []).map((p) => p.text ?? '').join('')
     const detail = `${text.length} caracteres, fin ${candidate?.finishReason ?? '?'}, ${body.usageMetadata?.thoughtsTokenCount ?? 0} tokens pensando`
@@ -273,11 +308,11 @@ if (appUrl && accessToken && ref) await checkAuthConfig(appUrl, accessToken, ref
 if (url && anonKey && serviceKey) await checkSupabase(url, anonKey, serviceKey)
 else results.push({ name: 'Supabase', ok: true, detail: 'sin configurar: se omite' })
 
-for (const r of results)
-  console.log(`${r.ok ? '✅' : '❌'} ${r.name}${r.detail ? ` — ${r.detail}` : ''}`)
-const summary = results
-  .map((r) => `| ${r.ok ? '✅' : '❌'} | ${r.name} | ${r.detail ?? ''} |`)
-  .join('\n')
+const icon = (r: (typeof results)[number]) => (r.warn ? '⚠️' : r.ok ? '✅' : '❌')
+for (const r of results) console.log(`${icon(r)} ${r.name}${r.detail ? ` — ${r.detail}` : ''}`)
+for (const r of results.filter((r) => r.warn))
+  console.log(`::warning::${r.name}: ${r.detail ?? 'saturación pasajera'}`)
+const summary = results.map((r) => `| ${icon(r)} | ${r.name} | ${r.detail ?? ''} |`).join('\n')
 if (process.env.GITHUB_STEP_SUMMARY) {
   const { appendFileSync } = await import('node:fs')
   appendFileSync(
