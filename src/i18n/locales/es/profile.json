@@ -9,6 +9,7 @@
   "prefs": {
     "title": "Preferencias",
     "theme": "Tema",
+    "themeSystemHint": "Sigue el tema que indica tu navegador; ahora mismo es {{theme}}. Si no coincide con el de tu dispositivo, revisa el ajuste de tema del propio navegador.",
     "sound": "Pitido al acabar el descanso",
     "vibration": "Vibración",
     "keepAwake": "Mantener la pantalla encendida en la sesión",

@@ -9,8 +9,8 @@
   },
   "model": {
     "path": "anatomy/body.glb",
-    "bytes": 562476,
-    "triangles": 117426
+    "bytes": 543024,
+    "triangles": 112447
   },
   "nodes": [
     "m:abductors:l",

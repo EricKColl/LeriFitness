@@ -1,3 +1,4 @@
+import { useSyncExternalStore } from 'react'
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 
@@ -26,6 +27,23 @@ const darkQuery = () => window.matchMedia('(prefers-color-scheme: dark)')
 export function resolveTheme(preference: ThemePreference): 'dark' | 'light' {
   if (preference === 'system') return darkQuery().matches ? 'dark' : 'light'
   return preference
+}
+
+function subscribeSystem(onChange: () => void) {
+  const query = darkQuery()
+  query.addEventListener('change', onChange)
+  return () => query.removeEventListener('change', onChange)
+}
+
+/** Tema que indica ahora el navegador (sigue sus cambios en vivo). */
+export const useSystemTheme = () =>
+  useSyncExternalStore(subscribeSystem, () => (darkQuery().matches ? 'dark' : 'light'))
+
+/** Tema que se ve en pantalla: la preferencia, o el del sistema si es «Sistema». */
+export function useResolvedTheme(): 'dark' | 'light' {
+  const preference = useThemeStore((s) => s.preference)
+  const system = useSystemTheme()
+  return preference === 'system' ? system : preference
 }
 
 export function applyTheme(preference: ThemePreference) {

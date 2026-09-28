@@ -1,14 +1,14 @@
 import { RouterProvider } from 'react-router/dom'
 import { Toaster } from 'sonner'
 
-import { useThemeStore, resolveTheme } from '@/shared/stores/theme'
+import { useResolvedTheme } from '@/shared/stores/theme'
 import { TooltipProvider } from '@/shared/ui/tooltip'
 
 import { OfflineBanner, UpdatePrompt } from './layout/pwa'
 import { router } from './router'
 
 export function App() {
-  const preference = useThemeStore((s) => s.preference)
+  const theme = useResolvedTheme()
   return (
     <TooltipProvider delayDuration={300}>
       <RouterProvider router={router} />
@@ -16,7 +16,7 @@ export function App() {
       <UpdatePrompt />
       <Toaster
         position="top-center"
-        theme={resolveTheme(preference)}
+        theme={theme}
         offset={{ top: 'calc(env(safe-area-inset-top) + 12px)' }}
         toastOptions={{
           classNames: {

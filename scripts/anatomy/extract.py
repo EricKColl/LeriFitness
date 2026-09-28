@@ -75,13 +75,44 @@ def merge(meshes: list, name: str) -> bpy.types.Mesh:
     return out
 
 
+def lateral_edge(mesh: bpy.types.Mesh) -> dict[int, float]:
+    """Borde lateral (|x| máximo) de una malla por franjas de altura de EDGE_BIN metros."""
+    edge: dict[int, float] = {}
+    for v in mesh.vertices:
+        k = int(v.co.z // EDGE_BIN)
+        edge[k] = max(edge.get(k, 0.0), abs(v.co.x))
+    return edge
+
+
+def trim_over(mesh: bpy.types.Mesh, edge: dict[int, float]) -> tuple[bpy.types.Mesh, int]:
+    """Quita las caras cuyo centro queda por dentro del borde `edge` (a su misma altura)."""
+    bm = bmesh.new()
+    bm.from_mesh(mesh)
+    doomed = []
+    for face in bm.faces:
+        c = face.calc_center_median()
+        k = int(c.z // EDGE_BIN)
+        # La franja y sus vecinas: el borde no queda dentado entre una franja y la siguiente.
+        limit = max(edge.get(k - 1, 0.0), edge.get(k, 0.0), edge.get(k + 1, 0.0))
+        if limit and abs(c.x) < limit:
+            doomed.append(face)
+    bmesh.ops.delete(bm, geom=doomed, context="FACES")
+    bm.to_mesh(mesh)
+    bm.free()
+    return mesh, len(doomed)
+
+
+EDGE_BIN = 0.01
+
 muscle_group = {n: g for g, names in M.MUSCLES.items() for n in names}
 other = set(M.OTHER_MUSCLES)
 
 groups: dict[str, list] = {}
-stats = {"muscleObjects": 0, "boneObjects": 0}
+stats = {"muscleObjects": 0, "boneObjects": 0, "trimmedFaces": 0}
+muscles = bpy.data.collections["4: Muscular system"].objects
+edges = {n: lateral_edge(world_mesh(muscles[f"{n}.l"])) for n in set(M.TRIM_OVER.values())}
 
-for obj in bpy.data.collections["4: Muscular system"].objects:
+for obj in muscles:
     if obj.type != "MESH" or obj.name.endswith((".j", ".g")):
         continue
     name, side = base_name(obj.name)
@@ -90,7 +121,11 @@ for obj in bpy.data.collections["4: Muscular system"].objects:
     if not group or side == "r":
         continue
     ratio = OTHER_RATIO if group == "other" else MUSCLE_RATIO
-    groups.setdefault(f"m:{group}:{side}", []).append(decimate(world_mesh(obj), ratio))
+    mesh = world_mesh(obj)
+    if name in M.TRIM_OVER:
+        mesh, trimmed = trim_over(mesh, edges[M.TRIM_OVER[name]])
+        stats["trimmedFaces"] += trimmed
+    groups.setdefault(f"m:{group}:{side}", []).append(decimate(mesh, ratio))
     stats["muscleObjects"] += 1
 
 bone_meshes: dict[str, list] = {}
