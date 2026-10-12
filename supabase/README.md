@@ -37,8 +37,16 @@ actualizar `main`.
 
 ## Límites de los planes gratuitos
 
-- Supabase pausa los proyectos gratuitos tras una semana sin actividad; se reactivan desde el
-  panel. Mientras tanto la app sigue funcionando en local y sincroniza al volver.
+- Supabase pausa los proyectos gratuitos que no reciben actividad suficiente en una semana
+  (según su documentación, «unas pocas peticiones a la base de datos cada día»; una sola
+  ejecución semanal no basta). Para evitarlo, el workflow _Supabase activo_
+  (`.github/workflows/keepalive.yml`) hace dos veces al día unas consultas de solo lectura con
+  la clave pública, y falla (GitHub avisa por email) si Supabase no responde. Si aun así se
+  pausa, se reactiva desde el panel en los 90 días siguientes; mientras tanto la app sigue
+  funcionando en local y sincroniza al volver.
+- GitHub desactiva los workflows programados de los repositorios públicos tras 60 días sin
+  actividad en el repositorio (sin commits), y suele avisar por email antes. Si pasa, vuelve a
+  activar _Supabase activo_ y _Comprobación_ en la pestaña _Actions_ (o haz cualquier commit).
 - El envío de correos integrado de Supabase solo llega a los miembros del proyecto y con un
   límite bajo por hora: sirve para uso personal. Para abrir las cuentas a más personas hay que
   configurar un SMTP propio (_Authentication › Emails › SMTP_); una opción gratuita es Brevo

@@ -74,6 +74,8 @@
 - [x] Workflow «Comprobación» (`scripts/smoke/production.ts`): tras cada despliegue, cada lunes
       y a mano prueba la web, Gemini, la configuración de Auth y la nube con un usuario temporal.
       20/20 en verde el 26/09/2026 (asistente con `gemini-3.5-flash-lite`)
+- [x] Workflow «Supabase activo» (`.github/workflows/keepalive.yml`): consultas de solo lectura
+      dos veces al día para que Supabase no pause el proyecto gratuito (12/10/2026)
 
 ## MagicErick ✅ (26/09/2026)
 

@@ -57,7 +57,8 @@ porque «forja» ya existía) y cada pull request obtiene una URL de vista previ
 
 Sin los secretos, el workflow termina sin error y sin publicar. Tras cada despliegue, el workflow
 _Comprobación_ revisa la web y la nube en producción (resultado en el resumen de cada ejecución). Las cabeceras de seguridad y caché
-están en `public/_headers`.
+están en `public/_headers`. El workflow _Supabase activo_ consulta la base de datos dos veces al
+día para que Supabase no pause el proyecto gratuito por inactividad.
 
 ## Nube opcional
 

@@ -214,7 +214,8 @@ como referencia del diseño. Estado real ahora (ver `docs/ROADMAP.md`, que es la
   cada despliegue, cada lunes y a mano. Prueba web y cabeceras, Gemini directamente, la
   configuración de Auth y la nube con un usuario temporal que se borra al final. La clave de
   servidor se pide en cada ejecución a la API de gestión y nunca se guarda. Primer resultado en
-  `main`: 20/20 en verde. La ejecución semanal además evita que Supabase pause el proyecto.
+  `main`: 20/20 en verde. (Ojo: la ejecución semanal NO basta para que Supabase no pause el
+  proyecto; ver «Supabase activo» más abajo.)
 - Seguridad: los tokens de Cloudflare y Supabase que se pegaron en el chat deben estar
   revocados y sustituidos; los secretos solo se guardan en GitHub.
 
@@ -235,6 +236,17 @@ como referencia del diseño. Estado real ahora (ver `docs/ROADMAP.md`, que es la
 - Cambiar el nombre o el prompt: `SYSTEM_PROMPT` en `context.ts` y su copia en
   `supabase/functions/_shared/prompt.ts` (un test exige que coincidan; el workflow «Supabase»
   republica la función al fusionar).
+
+## ACTUALIZACIÓN: SUPABASE ACTIVO (12/10/2026)
+
+- Supabase avisó de que iba a pausar el proyecto por inactividad aunque la «Comprobación» de los
+  lunes se ejecutaba bien: según su documentación hacen falta «unas pocas peticiones a la base
+  de datos cada día», no una ráfaga semanal.
+- Nuevo workflow «Supabase activo» (`.github/workflows/keepalive.yml`): dos veces al día (y a
+  mano) consulta `sync_rows`, `entitlements` y `assistant_usage` con la clave pública (RLS
+  devuelve 0 filas; no lee ni escribe datos). Falla si Supabase no responde, y GitHub avisa.
+- El repositorio es público: GitHub desactiva los workflows programados tras 60 días sin
+  commits. Si llega ese aviso, reactivarlos en _Actions_ o hacer un commit.
 
 ## ESTADO ACTUAL DEL PROYECTO (26/09/2026, inicio de la Fase 1)
 
