@@ -1,0 +1,50 @@
+name: Supabase activo
+
+# Supabase pausa los proyectos gratuitos que no reciben actividad suficiente en una semana: según
+# su documentación, «unas pocas peticiones a la base de datos cada día». La «Comprobación» de los
+# lunes no basta: en octubre de 2026 llegó el aviso de pausa con ella funcionando. Este workflow
+# hace, dos veces al día, unas consultas de solo lectura con la clave pública: las políticas RLS
+# devuelven 0 filas, así que no se lee ni se escribe ningún dato. Si Supabase no responde (por
+# ejemplo, porque el proyecto ya está pausado), falla y GitHub avisa por email.
+# Usa las variables del repositorio SUPABASE_URL y SUPABASE_ANON_KEY; sin ellas se omite.
+
+on:
+  schedule:
+    # Dos veces al día: GitHub retrasa a veces horas las ejecuciones programadas.
+    - cron: '23 5,17 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: keepalive
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    name: Consultas a la base de datos
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      RAW_SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+      RAW_SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
+    steps:
+      - name: Consultar las tablas
+        run: |
+          url="$(printf '%s' "$RAW_SUPABASE_URL" | tr -d '[:space:]' | sed 's:/*$::')"
+          key="$(printf '%s' "$RAW_SUPABASE_ANON_KEY" | tr -d '[:space:]')"
+          if [ -z "$url" ] || [ -z "$key" ]; then
+            echo "::notice::Faltan las variables SUPABASE_URL y SUPABASE_ANON_KEY: se omite."
+            exit 0
+          fi
+          # Las claves clásicas (JWT) van también en Authorization; las nuevas
+          # (sb_publishable_…) solo en apikey.
+          auth=()
+          case "$key" in eyJ*) auth=(-H "Authorization: Bearer $key") ;; esac
+          for table in sync_rows entitlements assistant_usage; do
+            curl -fsS --retry 3 --retry-all-errors --max-time 30 -o /dev/null \
+              -H "apikey: $key" "${auth[@]}" \
+              "$url/rest/v1/$table?select=user_id&limit=1"
+            echo "✅ $table"
+          done
